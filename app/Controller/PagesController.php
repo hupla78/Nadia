@@ -74,4 +74,15 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+    
+    
+    public function testal(){
+        $lapin1 = array('lapin','cochon','cannard');
+        debug($lapin1);
+        die();
+    
+    }
+    
+
+    
 }
