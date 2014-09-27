@@ -76,12 +76,18 @@ class PagesController extends AppController {
 	}
     
     
-    public function testal(){
-        $lapin1 = array('lapin','cochon','cannard');
-        debug($lapin1);
-        die();
     
-    }
+    //page de base qui n'on pas de fonction php compliqué.
+    public function accueil(){}
+    
+    public function contact(){}
+    
+    public function info(){}
+
+    public function aide(){}
+
+    
+    
     
 
     

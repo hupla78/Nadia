@@ -32,12 +32,19 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
     
-    public $components = array('DebugKit.Toolbar');
+    public $components = array('Session','Auth','Panier','DebugKit.Toolbar');
     
     public function beforeRender(){
                 $this->set('Acms',new Acms());
+                $this->Layout='admin';
                                   
                                   }
+    
+    
+    
+    
+    
+    
     
 }
 
