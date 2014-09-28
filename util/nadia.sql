@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Sam 27 Septembre 2014 à 21:13
+-- Généré le :  Dim 28 Septembre 2014 à 13:04
 -- Version du serveur :  5.6.16
 -- Version de PHP :  5.5.9
 
@@ -19,6 +19,59 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `nadia`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `achats`
+--
+
+CREATE TABLE IF NOT EXISTS `achats` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `created` datetime NOT NULL,
+  `users_id` int(11) NOT NULL,
+  `TotalPrix` float NOT NULL,
+  `commande` text NOT NULL,
+  `email_send` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `articles`
+--
+
+CREATE TABLE IF NOT EXISTS `articles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `prix` float NOT NULL,
+  `description` text NOT NULL,
+  `img_id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
+  `updated` datetime NOT NULL,
+  `created` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `categories`
+--
+
+CREATE TABLE IF NOT EXISTS `categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `categories`
+--
+
+INSERT INTO `categories` (`id`, `name`) VALUES
+(1, 'paysage');
 
 -- --------------------------------------------------------
 
@@ -72,6 +125,29 @@ CREATE TABLE IF NOT EXISTS `imgs` (
 INSERT INTO `imgs` (`id`, `id_user`, `name`, `format`, `created`, `modified`, `cm_id`) VALUES
 (1, 1, 'lapin', 'lapin', '2014-09-25', '2014-09-25', 1),
 (4, 2, 'lion', 'lapin', '2014-09-25', '2014-09-25', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `isAdmin` tinyint(1) NOT NULL,
+  `isActivate` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `email`, `isAdmin`, `isActivate`) VALUES
+(1, 'admin', '331021bc258700a2e79d0b7c2a94fd56d7310739', '', 0, 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
