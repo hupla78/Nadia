@@ -79,7 +79,7 @@ class CmsController extends AppController {
 		} else {
 			$options = array('conditions' => array('Cm.' . $this->Cm->primaryKey => $id));
 			$this->request->data = $this->Cm->find('first', $options);
-            $this->set('imgPossi', $this->Cm->img->find('list'));
+            $this->set('imgPossi',array_merge(array(0=>'value et pas image'), $this->Cm->img->find('list')));
 		}
 	}
 
