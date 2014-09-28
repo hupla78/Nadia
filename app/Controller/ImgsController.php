@@ -9,6 +9,7 @@ App::uses('AppController', 'Controller');
  */
 class ImgsController extends AppController {
 
+    
 /**
  * Components
  *
@@ -49,6 +50,7 @@ class ImgsController extends AppController {
 	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->Img->create();
+            debug($this->request->data);die();
 			if ($this->Img->save($this->request->data)) {
 				$this->Session->setFlash(__('The img has been saved.'));
 				return $this->redirect(array('action' => 'index'));

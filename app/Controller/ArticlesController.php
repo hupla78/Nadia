@@ -16,6 +16,8 @@ class ArticlesController extends AppController {
  */
 	public $components = array('Paginator', 'Session');
 
+    
+    
 /**
  * admin_index method
  *
@@ -108,4 +110,14 @@ class ArticlesController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+    
+    //
+    public function Boutique(){
+    }
+    public function Panier(){
+    
+    }
+    
+    
+    
 }

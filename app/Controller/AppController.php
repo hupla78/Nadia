@@ -36,11 +36,24 @@ class AppController extends Controller {
     
     public function beforeRender(){
                 $this->set('Acms',new Acms());
-                $this->Layout='admin';
-                                  
                                   }
     
+    protected function _isAuthorizedFor($admin){
+            
+        if(! $this->Session->check('Auth.User.id')){return;}
+          if ($this->Session->read('Auth.User.isAdmin') != $admin) {
+                 $this->Session->setFlash("cette partie du site n'est pas pour vous!!");
+                 $this->redirect(array('controller'=>'pages','action'=>'display'));
+            }
     
+    
+    }
+    
+      public function beforeFilter(){
+      echo($this->action);
+          
+        
+      } 
     
     
     

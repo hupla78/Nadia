@@ -66,8 +66,8 @@ class User extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-			'numeric' => array(
-				'rule' => array('numeric'),
+			'isUnique' => array(
+				'rule' => array('isUnique'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -97,7 +97,29 @@ class User extends AppModel {
 		),
 	);
 
-
+	public function beforeValidate($options = array()){
+	
+	$this->validator()->add(
+	'passwordVerif',array(
+	'equalTo'=>array('rule'=>array('equalto',$this->data['User']['password']),
+	'message'=>'les mots de passe ne sont pas identique.'))
+	);
+	
+    }
+    
+    public function beforeSave($options = array()){
+        if(!empty($this->data['User']['password']))
+    $this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+        
+        
+        
+        return true;
+    
+    }
+    
+    
+    
+    
 
 
 }

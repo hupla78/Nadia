@@ -2,7 +2,8 @@
 
 class UsersController extends AppController{
     
-    public function beforefilter(){
+    public function beforeFilter(){
+        parent::beforeFilter();
         $this->Auth->allow('inscription');
     
     }
@@ -42,7 +43,21 @@ public function logout(){
     
     
     
-public function inscription(){}    
+public function inscription(){
+
+if ($this->request->is('post')) {
+			$this->User->create();
+			if ($this->User->save($this->request->data)) {
+				$this->Session->setFlash(__('votre compte a ete crée.'));
+                $this->Auth->login();
+				return $this->redirect(redirect);
+			} else {
+				$this->Session->setFlash(__('no'));
+			}
+		}
+
+
+}    
     
     
 }
