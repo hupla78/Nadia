@@ -1,7 +1,7 @@
 <div class="cms form">
 <?php echo $this->Form->create('Cm'); ?>
 	<fieldset>
-		<legend><?php echo __('Admin Add Cm'); ?></legend>
+		<legend><?php echo __('Add Cm'); ?></legend>
 	<?php
 		echo $this->Form->input('name');
 		echo $this->Form->input('value');

@@ -22,7 +22,6 @@ class CmsController extends AppController {
  * @return void
  */
 	public function admin_index() {
-		$this->Cm->recursive = 0;
 		$this->set('cms', $this->Paginator->paginate());
 	}
 
@@ -70,6 +69,8 @@ class CmsController extends AppController {
 			throw new NotFoundException(__('Invalid cm'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
+            debug($this->request->data);
+            
 			if ($this->Cm->save($this->request->data)) {
 				$this->Session->setFlash(__('The cm has been saved.'));
 				return $this->redirect(array('action' => 'index'));
@@ -79,7 +80,12 @@ class CmsController extends AppController {
 		} else {
 			$options = array('conditions' => array('Cm.' . $this->Cm->primaryKey => $id));
 			$this->request->data = $this->Cm->find('first', $options);
-            $this->set('imgPossi',array_merge(array(0=>'value et pas image'), $this->Cm->img->find('list')));
+            
+            
+            $lap = $this->Cm->img->find('list');
+            $lap[0] = "cette information n'est pas une img";
+            $this->set('imgPossi',$lap);
+            
 		}
 	}
 

@@ -50,9 +50,17 @@ class Cm extends AppModel {
 		),
 	);
     
+        public function beforeSave( $options = array()){
+            
+            if($this->data['Cm']['img_id']!= 0)
+            {$this->data['Cm']['value']='img-type';}
+        
+        }
+    
     
         public function afterSave($created, $options = array()){
         
+    
         $this->recursive = 1;    
             //debug($this->find('all'));
         file_put_contents(APP.'cms/base.json',json_encode($this->find('all')));

@@ -51,7 +51,7 @@ class AppController extends Controller {
     
       public function beforeFilter(){
       echo($this->action);
-          
+
         
       } 
     
