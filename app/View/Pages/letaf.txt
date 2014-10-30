@@ -1,5 +1,0 @@
-Mise a jour du Css du webroot
-Mise en place de la page d'acceuil contenant la portion "header"
-Mise en place de l'élément header
-Mise en place d'un moteur de recherche pour intéragir avec la base de donnée ( correspond a la barre de recherche)
-Implantation de Foundation
