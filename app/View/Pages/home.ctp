@@ -9,7 +9,7 @@
  * @package       app.View.Pages
  * @since         CakePHP(tm) v 0.10.0.1076
  */
-debug($Acms->getAll('colorBg'));
+
 
 if (!Configure::read('debug')):
 	throw new NotFoundException();

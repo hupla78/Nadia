@@ -32,7 +32,7 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
     
-    public $components = array('Session','Auth','Panier','DebugKit.Toolbar');
+    public $components = array('Session','Auth','Panier');
     
     public function beforeRender(){
                 $this->set('Acms',new Acms());
@@ -48,17 +48,7 @@ class AppController extends Controller {
     
     
     }
-    
-      public function beforeFilter(){
-      echo($this->action);
-          
-        
-      } 
-    
-    
-    
-    
-    
+      
 }
 
 class Acms{
