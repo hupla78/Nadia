@@ -12,6 +12,7 @@
 		echo $this->Html->script('foundation');
 		echo $this->Html->script('foundation.orbit');
 		echo $this->Html->script('jquery');
+		echo $this->Html->script('modernizr');
 		echo $this->Html->script('foundation.min');			
 	?>
 </head>
@@ -93,10 +94,7 @@
 		
 		<div id="content">
 			
-		<br>
-		<br>
-		<br>
-		<br>
+	<?php echo $this->fetch('content'); ?>
 		
 		</div>
 		
@@ -118,35 +116,35 @@
 			</p>
 			
 			<div class="tot">
-			<div class="lien">
+			
 			<?php echo $this->Html->link(
 					$this->Html->image('buttonfb.jpg'),
 					'http://www.facebook.com',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
+					array('target' => '_blank', 'escape' => false, 'class' => 'lien')
 				);
 				?>
-				</div>
 				
-				<div class="lien">
+				
+				
 				<?php
 				echo $this->Html->link(
 					$this->Html->image('buttontwitter.jpg'),
 					'http://www.twitter.com',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
+					array('target' => '_blank', 'escape' => false, 'class' => 'lien')
 				);
 				
 				?>
-				</div>
+			
 				
-				<div class="lien">
+				
 				<?php
 				echo $this->Html->link(
 					$this->Html->image('Logo_little_market.png'),
 					'http://www.alittlemarket.com',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
+					array('target' => '_blank', 'escape' => false, 'class' => 'lien')
 				);
 			?>
-			</div>
+			
 			</div>
 			<p id="copy">
 			    Copyright : Tout droit réservés
