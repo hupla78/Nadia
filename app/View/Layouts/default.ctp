@@ -9,11 +9,11 @@
 		echo $this->Html->css('foundation');
 		echo $this->Html->css('foundation.min');
 		echo $this->Html->css('style');
-		echo $this->Html->script('foundation');
+		echo $this->Html->script('foundation/foundation');
 		echo $this->Html->script('foundation.orbit');
-		echo $this->Html->script('jquery');
-		echo $this->Html->script('modernizr');
-		echo $this->Html->script('foundation.min');			
+		echo $this->Html->script('vendor/jquery');
+//		echo $this->Html->script('modernizr');
+		echo $this->Html->script('foundation.min');						
 	?>
 </head>
 <body>
