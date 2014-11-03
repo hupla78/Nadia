@@ -31,7 +31,7 @@ class Article extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 			'maxLength' => array(
-				'rule' => array('maxLength'),
+				'rule' => array('maxLength',30),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
