@@ -66,46 +66,17 @@ class Acms{
 	{
 		if($lap=='undefine'){return 'ereur 1';}//le parametre est rentré est mauvais
 
-		foreach($this->arr2 as $Iar)
-		{
-			if($Iar['Cm']['name']==$lap){return $Iar['Cm']['value'];}
-
-		}
-		return 'erreur 2' ;
+		return $this->arr2[$lap];
 	}
 
-
-
-
-
 	public function getAll($lap = 'undefine')
-	{
-		if($lap=='undefine'){return 'ereur 1';}//le parametre rentré est mauvais
-		if($lap=='all'){return $this->arr2;}
-
-		$valReturn= array();
-		$i = 0 ;
-
-
-
-
-		foreach($this->arr2 as $Iar)
-		{
-
-			if( strstr($Iar['Cm']['name'],$lap) ){
-				if($Iar['Cm']['img_id']!=0){
-					$valReturn[$i] = $Iar['img']['name'].'.'.$Iar['img']['format'];
-				}else{    
-					$valReturn[$i] = $Iar['Cm']['value'];
-
-				}           
-				$i++;    
-			}
-
-
+	{	$retu = array();	
+		$i = 0;
+		while(array_key_exists($lap.$i,$this->arr2)){
+			$retu[1]= $this->arr2[$lap.$i];	
+			$i++;	
 		}
-		return $valReturn;
-
+	return $retu;	
 	}
 
 

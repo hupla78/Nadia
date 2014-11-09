@@ -185,7 +185,7 @@ class Cm extends AppModel {
 
 
 
-	file_put_contents(APP.'cms/base.json',json_encode($tabSave));
+	file_put_contents(APP.'cms/base.json',json_encode($tabDeSave));
 		}
 }?>
 
