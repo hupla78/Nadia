@@ -1,11 +1,11 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Text Model
+ * Value Model
  *
  * @property Cm $Cm
  */
-class Text extends AppModel {
+class Value extends AppModel {
 
 /**
  * Display field
@@ -21,6 +21,14 @@ class Text extends AppModel {
  */
 	public $validate = array(
 		'name' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
 			'alphaNumeric' => array(
 				'rule' => array('alphaNumeric'),
 				//'message' => 'Your custom message here',
@@ -29,18 +37,10 @@ class Text extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
 		),
 		'value' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
+			'alphaNumeric' => array(
+				'rule' => array('alphaNumeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -60,7 +60,7 @@ class Text extends AppModel {
 	public $hasMany = array(
 		'Cm' => array(
 			'className' => 'Cm',
-			'foreignKey' => 'text_id',
+			'foreignKey' => 'value_id',
 			'dependent' => false,
 			'conditions' => '',
 			'fields' => '',

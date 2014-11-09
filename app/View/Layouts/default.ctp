@@ -66,8 +66,15 @@ if (AuthComponent::user('isAdmin')){
   <ul class="off-canvas-list">
     <li><label>Menu</label></li>
     <li>
-    <?php echo $this->Html->link('Se connecter',array('controller'=>'users','action'=>'login'))?>
-   </li>
+        
+    <?php
+        if (empty(AuthComponent::user()))
+            echo $this->Html->link('Se connecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'login'));
+        else
+            echo $this->Html->link('Se Deconnecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'logout'));
+        ?>
+        
+      </li>
      <li>
      <?php echo $this->Html->link('Panier',array('controller'=>'users','action'=>'login'))?>
    </li>
