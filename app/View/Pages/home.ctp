@@ -20,42 +20,34 @@ App::uses('Debugger', 'Utility');
 
 
 
-<!-- Slide orbit probleme avec le javascript
-<div class="slideme">
-      <ul class="example-orbit" data-orbit>
-  <li>
-  <?php echo $this->Html->link(
-					$this->Html->image('noirs.jpg'),
-					'http://www.fildeboheme/nouveautes.com',
-					array('target' => '_blank', 'escape' => false)
-				);
-				?>
+
+<div class="espacejj">
+<ul class="example-orbit" data-orbit>
+  <li >
+
+	<?php 	echo $this->Html->image('Slide.jpg');?>
     
   </li>
-  <li class="active">
-  <?php echo $this->Html->link(
-					$this->Html->image('AMILIA.jpg'),
-					'http://www.fildeboheme/nouveautes.com',
-					array('target' => '_blank', 'escape' => false)
-				);
-				?>
+  <li>
+
+	<?php 	echo $this->Html->image('slider.jpg');?>
+    
   </li>
   <li>
-  <?php echo $this->Html->link(
-					$this->Html->image('MILA.jpg'),
-					'http://www.fildeboheme/nouveautes.com',
-					array('target' => '_blank', 'escape' => false)
-				);
-				?>
-   
+
+	<?php 	echo $this->Html->image('slider.jpg');?>
+    
   </li>
+  
 </ul>
-     </div> -->
+   </div> 
      
      
      
  <div class="trait2">
 			 </div>
+			 
+
 
 <p id="accroche">
 <?php echo __d('presentation', 'Créé en 2011 dans la région de Marseille par la créatrice Nadia
@@ -76,6 +68,7 @@ de la Maison Méditerranéenne des métiers de la Mode-
 MARSEILLE.<br>', Configure::version()); ?>
 </p>
 
+
  <div class="trait3">
 			 </div>
 
@@ -84,7 +77,7 @@ MARSEILLE.<br>', Configure::version()); ?>
 
 
  <div class="large-4 columns medium-4 columns small-12 columns hul">
-     	<?php echo $this->Html->image('logo.jpg');
+     	<?php echo $this->Html->image('noirs.jpg');
 			?>
       <p id="dessous">
           Article1
@@ -93,7 +86,7 @@ MARSEILLE.<br>', Configure::version()); ?>
       
       
        <div class="large-4 columns medium-4 columns small-12 columns hul">
-     	<?php echo $this->Html->image('logo.jpg');
+     	<?php echo $this->Html->image('MILA.jpg');
 			?>
        <p id="dessous">
           Article1
@@ -102,7 +95,7 @@ MARSEILLE.<br>', Configure::version()); ?>
       
       
        <div class="large-4 columns medium-4 columns small-12 columns hul">
-     	<?php echo $this->Html->image('logo.jpg');
+     	<?php echo $this->Html->image('AMALIA.jpg');
 			?>
        <p id="dessous">
           Article1

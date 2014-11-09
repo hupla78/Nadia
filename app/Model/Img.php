@@ -92,7 +92,7 @@ class Img extends AppModel {
             if(isset($var)){
                 if(!empty($var['tmp_name'])){
                     move_uploaded_file($var['tmp_name'],IMAGES.'import'.DS.
-                        $this->data['name'].'.'.this->data['format'];
+                        $this->data['name'].'.'.$this->data['format']
                                       
                                       
                                       );

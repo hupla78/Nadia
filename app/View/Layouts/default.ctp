@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+		
+	
 	<title>
 		Fil de Bohème
 	</title>
 	<?php
+			
 		echo $this->Html->css('foundation');
 		echo $this->Html->css('foundation.min');
 		echo $this->Html->css('style');
-		echo $this->Html->script('foundation');
-		echo $this->Html->script('foundation.orbit');
-		echo $this->Html->script('jquery');
-		echo $this->Html->script('modernizr');
-		echo $this->Html->script('foundation.min');			
+		echo $this->Html->script('vendor/jquery');
+		echo $this->Html->script('vendor/modernizr');
+		echo $this->Html->script('foundation/foundation');
+		echo $this->Html->script('foundation/foundation.abide');
+		echo $this->Html->script('foundation/foundation.accordion');
+		echo $this->Html->script('foundation/foundation.alert');
+		echo $this->Html->script('foundation/foundation.clearing');
+		echo $this->Html->script('foundation/foundation.dropdown');
+		echo $this->Html->script('foundation/foundation.equalizer');
+		echo $this->Html->script('foundation/foundation.interchange');
+		echo $this->Html->script('foundation/foundation.joyride');
+		echo $this->Html->script('foundation/foundation.magellan');
+		echo $this->Html->script('foundation/foundation.offcanvas');
+		echo $this->Html->script('foundation/foundation.reveal');
+		echo $this->Html->script('foundation/foundation.slider');
+		echo $this->Html->script('foundation/foundation.tab');
+		echo $this->Html->script('foundation/foundation.tooltip');
+		echo $this->Html->script('foundation/foundation.topbar');
+		echo $this->Html->script('foundation/foundation.orbit');
+	
+								
 	?>
 </head>
 <body>
@@ -40,9 +58,15 @@
     <aside class="left-off-canvas-menu">
   <ul class="off-canvas-list">
     <li><label>Menu</label></li>
-    <li><a href="connection.php">Se connecter</a></li>
-    <li><a href="panier.php">Panier</a></li>
-    <li><a href="nouveautes.php">Les nouveautés</a></li>
+    <li>
+    <?php echo $this->Html->link('Se connecter',array('controller'=>'users','action'=>'login'))?>
+   </li>
+     <li>
+     <?php echo $this->Html->link('Panier',array('controller'=>'users','action'=>'login'))?>
+   </li>
+    <li>
+    <?php echo $this->Html->link('Nouveautés',array('controller'=>'users','action'=>'login'))?>
+   </li>
   </ul>
 </aside>
 
@@ -72,15 +96,36 @@
       
        </div>
       
-       <div class="large-12 columns medium-12 columns small-12 columns">
-      <ul id="menu_horizontal">
-<li class="boutonnn"><a href="produit.php">Produit</a></li>
-<li class="boutonnn"><a href="fdbhistoire.php">Qui est Fil de Bohème</a></li>
-<li class="boutonnn"><a href="actualitebolg.php">Actualité ou Blog</a></li>
-<li class="boutonnn2"><a href="vente.php">Points de vente</a></li>
-</ul>
+      
+      
+       <div class="large-12 columns medium-12 columns small-12 columns menu">
+     
+         <div class="large-3 columns medium-3 columns small-6 columns text">
+         <li class="menud">
+       <?php echo $this->Html->link('Produits',array('controller'=>'pages','action'=>'home', ))?>
        
+       </li>
+       </div>
        
+        <div class="large-3 columns medium-3 columns small-6 columns">
+         <li class="menud">
+       <?php echo $this->Html->link('Qui est Fil de Bohème',array('controller'=>'pages','action'=>'home', ))?>
+       
+       </li>
+       </div>
+       
+        <div class="large-3 columns medium-3 columns small-6 columns">
+        <li class="menud">
+       <?php echo $this->Html->link('Actualité ou Blog',array('controller'=>'pages','action'=>'home', ))?>
+       </li>
+       </div>
+       
+        <div class="large-3 columns medium-3 columns small-6 columns">
+        <li class="menud1">
+       <?php echo $this->Html->link('Points de vente',array('controller'=>'pages','action'=>'home', ))?>
+       </li>
+       </div>
+     
        </div>
       
       </section>   
@@ -88,14 +133,12 @@
     
     
     </div>
-    </div>
+    
     
 	
 		
-		<div id="content">
-			
-	<?php echo $this->fetch('content'); ?>
-		
+		<div id="content">	
+	<?php echo $this->fetch('content'); ?>	
 		</div>
 		
 		
@@ -115,7 +158,10 @@
 			    
 			</p>
 			
-			<div class="tot">
+			
+			<div class="large-12 columns medium-12 columns small-12 columns">
+			<div class="large-4 columns medium-4 columns small-4 columns">
+			
 			
 			<?php echo $this->Html->link(
 					$this->Html->image('buttonfb.jpg'),
@@ -123,9 +169,9 @@
 					array('target' => '_blank', 'escape' => false, 'class' => 'lien')
 				);
 				?>
+				</div>
 				
-				
-				
+				<div class="large-4 columns medium-4 columns small-4 columns">
 				<?php
 				echo $this->Html->link(
 					$this->Html->image('buttontwitter.jpg'),
@@ -134,9 +180,8 @@
 				);
 				
 				?>
-			
-				
-				
+		</div>
+				<div class="large-4 columns medium-4 columns small-4 columns">
 				<?php
 				echo $this->Html->link(
 					$this->Html->image('Logo_little_market.png'),
@@ -144,6 +189,7 @@
 					array('target' => '_blank', 'escape' => false, 'class' => 'lien')
 				);
 			?>
+			</div>
 			
 			</div>
 			<p id="copy">
@@ -153,8 +199,8 @@
 		</div>
 	</div>
 		</div>
-		</div>
-   
+</div>
+   </div>
     <script>
       $(document).foundation();
     </script>
