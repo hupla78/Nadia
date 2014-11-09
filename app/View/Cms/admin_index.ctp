@@ -10,6 +10,8 @@
 	</tr>
 	</thead>
 	<tbody>
+	<?php echo $cms;  ?>
+
 	<?php foreach ($cms as $cm): ?>
 	<tr>
 		<td><?php echo h($cm['Cm']['id']); ?>&nbsp;</td>
