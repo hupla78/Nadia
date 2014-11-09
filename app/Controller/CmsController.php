@@ -42,7 +42,7 @@ class CmsController extends AppController {
 	}
 
 /**
- * admin_add metsod
+ * admin_add method
  *
  * @return void
  */
@@ -56,6 +56,12 @@ class CmsController extends AppController {
 				$this->Session->setFlash(__('The cm could not be saved. Please, try again.'));
 			}
 		}
+		$imgs = $this->Cm->Img->find('list');
+		$articles = $this->Cm->Article->find('list');
+		$categories = $this->Cm->Categorie->find('list');
+		$values = $this->Cm->Value->find('list');
+		$texts = $this->Cm->Text->find('list');
+		$this->set(compact('imgs', 'articles', 'categories', 'values', 'texts'));
 	}
 
 /**
@@ -79,8 +85,13 @@ class CmsController extends AppController {
 		} else {
 			$options = array('conditions' => array('Cm.' . $this->Cm->primaryKey => $id));
 			$this->request->data = $this->Cm->find('first', $options);
-            $this->set('imgPossi',array_merge(array(0=>'value et pas image'), $this->Cm->img->find('list')));
 		}
+		$imgs = $this->Cm->Img->find('list');
+		$articles = $this->Cm->Article->find('list');
+		$categories = $this->Cm->Categorie->find('list');
+		$values = $this->Cm->Value->find('list');
+		$texts = $this->Cm->Text->find('list');
+		$this->set(compact('imgs', 'articles', 'categories', 'values', 'texts'));
 	}
 
 /**

@@ -1,11 +1,11 @@
 <?php
-App::uses('CmsController', 'Controller');
+App::uses('TextsController', 'Controller');
 
 /**
- * CmsController Test Case
+ * TextsController Test Case
  *
  */
-class CmsControllerTest extends ControllerTestCase {
+class TextsControllerTest extends ControllerTestCase {
 
 /**
  * Fixtures
@@ -13,13 +13,13 @@ class CmsControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.text',
 		'app.cm',
 		'app.img',
 		'app.article',
 		'app.category',
 		'app.categorie',
-		'app.value',
-		'app.text'
+		'app.value'
 	);
 
 /**

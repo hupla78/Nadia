@@ -1,59 +1,5 @@
 
 
-
-
-
-<?php
-/**
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Pages
- * @since         CakePHP(tm) v 0.10.0.1076
- */
-
-
-if (!Configure::read('debug')):
-	throw new NotFoundException();
-endif;
-
-App::uses('Debugger', 'Utility');
-?>
-
-
-
-<!-- Slide orbit probleme avec le javascript
-<div class="slideme">
-      <ul class="example-orbit" data-orbit>
-  <li>
-  <?php echo $this->Html->link(
-					$this->Html->image('noirs.jpg'),
-					'http://www.fildeboheme/nouveautes.com',
-					array('target' => '_blank', 'escape' => false)
-				);
-				?>
-    
-  </li>
-  <li class="active">
-  <?php echo $this->Html->link(
-					$this->Html->image('AMILIA.jpg'),
-					'http://www.fildeboheme/nouveautes.com',
-					array('target' => '_blank', 'escape' => false)
-				);
-				?>
-  </li>
-  <li>
-  <?php echo $this->Html->link(
-					$this->Html->image('MILA.jpg'),
-					'http://www.fildeboheme/nouveautes.com',
-					array('target' => '_blank', 'escape' => false)
-				);
-				?>
-   
-  </li>
-</ul>
-     </div> -->
-     
-     
-     
  <div class="trait2">
 			 </div>
 
@@ -84,28 +30,28 @@ MARSEILLE.<br>', Configure::version()); ?>
 
 
  <div class="large-4 columns medium-4 columns small-12 columns hul">
-     	<?php echo $this->Html->image('logo.jpg');
-			?>
+<?php echo $this->Html->image('logo.jpg');
+?>
       <p id="dessous">
-          Article1
+	  Article1
       </p>
       </div>
-      
-      
+
+
        <div class="large-4 columns medium-4 columns small-12 columns hul">
-     	<?php echo $this->Html->image('logo.jpg');
-			?>
+<?php echo $this->Html->image('logo.jpg');
+?>
        <p id="dessous">
-          Article1
+	  Article1
       </p>
       </div>
-      
-      
+
+
        <div class="large-4 columns medium-4 columns small-12 columns hul">
-     	<?php echo $this->Html->image('logo.jpg');
-			?>
+<?php echo $this->Html->image('logo.jpg');
+?>
        <p id="dessous">
-          Article1
+	  Article1
       </p>
       </div>
 

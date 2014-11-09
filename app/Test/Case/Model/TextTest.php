@@ -1,11 +1,11 @@
 <?php
-App::uses('Cm', 'Model');
+App::uses('Text', 'Model');
 
 /**
- * Cm Test Case
+ * Text Test Case
  *
  */
-class CmTest extends CakeTestCase {
+class TextTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,13 +13,13 @@ class CmTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.text',
 		'app.cm',
 		'app.img',
 		'app.article',
 		'app.category',
 		'app.categorie',
-		'app.value',
-		'app.text'
+		'app.value'
 	);
 
 /**
@@ -29,7 +29,7 @@ class CmTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Cm = ClassRegistry::init('Cm');
+		$this->Text = ClassRegistry::init('Text');
 	}
 
 /**
@@ -38,7 +38,7 @@ class CmTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Cm);
+		unset($this->Text);
 
 		parent::tearDown();
 	}

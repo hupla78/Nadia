@@ -88,22 +88,36 @@ class Img extends AppModel {
 	}
 
 	public function afterSave($created,$options = array()){
+
+
+		if(!array_key_exists ('value',$this->data['Img'])){
+			$ext = substr($this->data['Img']['img_file']['name'],-3);
+		//	$this->data = $this->findById($this->data['Img']['id']);
+			$this->data['Img']['value']=$this->data['Img']['id'].'.'.$ext;
+		//	$this->save();
+			debug($this->data);
+		}
+
+
+
+	
 	$var = $this->data['Img']['img_file'];
-		debug($var);
-			
-	if(!empty($var)){
-		echo IMAGES.'import'.DS.$this->data['Img']['id'].'.'.$this->datai['Img']['format'];
+		if(!empty($var)){
+			echo IMAGES.'import'.DS.$this->data['Img']['value'];
 
-				move_uploaded_file($var['tmp_name'],IMAGES.'import'.DS.
-					$this->data['Img']['id'].'.'.substr($this->data['Img']['img_file']['name'],-3)
-				);
-			}
-
-		
+move_uploaded_file($var['tmp_name'],IMAGES.'import'.DS.	$this->data['Img']['id'].'.'.substr($this->data['Img']['img_file']['name'],-3));
+			$this->data['Img']['img_file']= array();	
+			$this->save();
+		}
+	
 
 
 	}
 
+/*	public function beforesave($options =array())
+	{
+		$this->data['Img']['value']=$this->data['Img']['id'].'.'.substr($this->data['Img']['img_file']['name'],-3); 
+}*/
 
 
 /*	public function beforeValidate($options = array()){
@@ -115,6 +129,6 @@ class Img extends AppModel {
 					'message'=>'merci de mettre un fichier'))
 				);
 
-	}
+a	}
  */
 }
