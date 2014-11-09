@@ -1,5 +1,5 @@
-<div class="imgs index">
-	<h2><?php echo __('Imgs'); ?></h2>
+<div class="texts index">
+	<h2><?php echo __('Texts'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
@@ -10,15 +10,15 @@
 	</tr>
 	</thead>
 	<tbody>
-	<?php foreach ($imgs as $img): ?>
+	<?php foreach ($texts as $text): ?>
 	<tr>
-		<td><?php echo h($img['Img']['id']); ?>&nbsp;</td>
-		<td><?php echo h($img['Img']['name']); ?>&nbsp;</td>
-		<td><?php echo $this->Html->image('import/'.($img['Img']['value']),array('width'=>'200px')); ?>&nbsp;</td>
+		<td><?php echo h($text['Text']['id']); ?>&nbsp;</td>
+		<td><?php echo h($text['Text']['name']); ?>&nbsp;</td>
+		<td><?php echo h($text['Text']['value']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $img['Img']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $img['Img']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $img['Img']['id']), array(), __('Are you sure you want to delete # %s?', $img['Img']['id'])); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $text['Text']['id'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $text['Text']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $text['Text']['id']), array(), __('Are you sure you want to delete # %s?', $text['Text']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -41,7 +41,7 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Img'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('New Text'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Cms'), array('controller' => 'cms', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Cm'), array('controller' => 'cms', 'action' => 'add')); ?> </li>
 	</ul>

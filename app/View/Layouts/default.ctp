@@ -11,7 +11,6 @@
 		echo $this->Html->css('foundation');
 		echo $this->Html->css('foundation.min');
 		echo $this->Html->css('style');
-<<<<<<< HEAD
 		echo $this->Html->script('vendor/jquery');
 		echo $this->Html->script('vendor/modernizr');
 		echo $this->Html->script('foundation/foundation');
@@ -31,19 +30,19 @@
 		echo $this->Html->script('foundation/foundation.tooltip');
 		echo $this->Html->script('foundation/foundation.topbar');
 		echo $this->Html->script('foundation/foundation.orbit');
-	
-								
-=======
-		echo $this->Html->script('foundation/foundation');
-		echo $this->Html->script('foundation.orbit');
-		echo $this->Html->script('vendor/jquery');
-//		echo $this->Html->script('modernizr');
-		echo $this->Html->script('foundation.min');						
->>>>>>> origin/up
+
+
 	?>
 </head>
 <body>
-	
+        <?php
+if (AuthComponent::user('isAdmin')){
+	echo $this->element('admin_menu');
+}
+?>
+
+
+
 	
 	<div id="container">
 		<div id="header">
@@ -215,3 +214,4 @@
 	
 </body>
 </html>
+
