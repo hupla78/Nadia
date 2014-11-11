@@ -1,3 +1,4 @@
+
 <?php
 App::uses('Cm', 'Model');
 
@@ -13,7 +14,13 @@ class CmTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.cm'
+		'app.cm',
+		'app.img',
+		'app.article',
+		'app.category',
+		'app.categorie',
+		'app.value',
+		'app.text'
 	);
 
 /**
@@ -38,3 +45,4 @@ class CmTest extends CakeTestCase {
 	}
 
 }
+

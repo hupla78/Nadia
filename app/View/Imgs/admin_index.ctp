@@ -4,11 +4,8 @@
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('id_user'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
-			<th><?php echo $this->Paginator->sort('format'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
+			<th><?php echo $this->Paginator->sort('value'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -16,11 +13,8 @@
 	<?php foreach ($imgs as $img): ?>
 	<tr>
 		<td><?php echo h($img['Img']['id']); ?>&nbsp;</td>
-		<td><?php echo h($img['Img']['id_user']); ?>&nbsp;</td>
 		<td><?php echo h($img['Img']['name']); ?>&nbsp;</td>
-		<td><?php echo h($img['Img']['format']); ?>&nbsp;</td>
-		<td><?php echo h($img['Img']['created']); ?>&nbsp;</td>
-		<td><?php echo h($img['Img']['modified']); ?>&nbsp;</td>
+		<td><?php echo $this->Html->image('import/'.($img['Img']['value']),array('width'=>'200px')); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $img['Img']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $img['Img']['id'])); ?>

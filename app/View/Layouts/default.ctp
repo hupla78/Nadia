@@ -1,63 +1,224 @@
-<?php
-/**
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
-?>
 <!DOCTYPE html>
 <html>
 <head>
-	<?php echo $this->Html->charset(); ?>
+		
+	
 	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
+		Fil de Bohème
 	</title>
 	<?php
-		echo $this->Html->meta('icon');
+			
+		echo $this->Html->css('foundation');
+		echo $this->Html->css('foundation.min');
+		echo $this->Html->css('style');
+		echo $this->Html->script('vendor/jquery');
+		echo $this->Html->script('vendor/modernizr');
+		echo $this->Html->script('foundation/foundation');
+		echo $this->Html->script('foundation/foundation.abide');
+		echo $this->Html->script('foundation/foundation.accordion');
+		echo $this->Html->script('foundation/foundation.alert');
+		echo $this->Html->script('foundation/foundation.clearing');
+		echo $this->Html->script('foundation/foundation.dropdown');
+		echo $this->Html->script('foundation/foundation.equalizer');
+		echo $this->Html->script('foundation/foundation.interchange');
+		echo $this->Html->script('foundation/foundation.joyride');
+		echo $this->Html->script('foundation/foundation.magellan');
+		echo $this->Html->script('foundation/foundation.offcanvas');
+		echo $this->Html->script('foundation/foundation.reveal');
+		echo $this->Html->script('foundation/foundation.slider');
+		echo $this->Html->script('foundation/foundation.tab');
+		echo $this->Html->script('foundation/foundation.tooltip');
+		echo $this->Html->script('foundation/foundation.topbar');
+		echo $this->Html->script('foundation/foundation.orbit');
 
-		echo $this->Html->css('cake.generic');
 
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
 	?>
 </head>
 <body>
+        <?php
+if (AuthComponent::user('isAdmin')){
+	echo $this->element('admin_menu');
+}
+?>
+
+
+
+	
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
+		 <div class="row">
+  <div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+      
+      <section class="left-medium">
+        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+      </section>
 
-			<?php echo $this->Session->flash(); ?>
+      <section class="middle tab-bar-section">
+        <h1 class="title">Fil de Bohème</h1>
+      </section>
 
-			<?php echo $this->fetch('content'); ?>
+  
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+  <ul class="off-canvas-list">
+    <li><label>Menu</label></li>
+    <li>
+        
+    <?php
+        if (empty(AuthComponent::user()))
+            echo $this->Html->link('Se connecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'login'));
+        else
+            echo $this->Html->link('Se Deconnecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'logout'));
+        ?>
+        
+      </li>
+     <li>
+     <?php echo $this->Html->link('Panier',array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false))?>
+   </li>
+    <li>
+    <?php echo $this->Html->link('Nouveautés',array('controller'=>'users','action'=>'login'))?>
+   </li>
+  </ul>
+</aside>
+
+
+
+    <section class="main-section">
+    
+       <div class="large-5 columns medium-5 columns small-12 columns hul">
+     	<?php echo $this->Html->image('logo.jpg');
+			?>
+      </div>
+      
+    <div class="large-6 columns medium-6 columns small-12 columns">
+    
+      
+  
+      
+      <div id="searchbar">
+    <form action="resultat.php">
+        <input class="champ" type="text" placeholder="Rechercher un article..."/>
+        <input class="bouton" type="submit" value=" " />
+    </form>
+</div>
+      <p id="pani">
+          Panier (<a href="panier.php">vide</a>)
+      </p>
+      
+       </div>
+      
+      
+      
+       <div class="large-12 columns medium-12 columns small-12 columns menu">
+     
+         <div class="large-3 columns medium-3 columns small-6 columns text">
+         <li class="menud">
+       <?php echo $this->Html->link('Produits',array('controller'=>'boutiques','action'=>'index' ))?>
+       
+       </li>
+       </div>
+       
+        <div class="large-3 columns medium-3 columns small-6 columns">
+         <li class="menud">
+       <?php echo $this->Html->link('Qui est Fil de Bohème',array('controller'=>'pages','action'=>'home', ))?>
+       
+       </li>
+       </div>
+       
+        <div class="large-3 columns medium-3 columns small-6 columns">
+        <li class="menud">
+       <?php echo $this->Html->link('Actualité ou Blog',array('controller'=>'pages','action'=>'home', ))?>
+       </li>
+       </div>
+       
+        <div class="large-3 columns medium-3 columns small-6 columns">
+        <li class="menud1">
+       <?php echo $this->Html->link('Points de vente',array('controller'=>'pages','action'=>'home', ))?>
+       </li>
+       </div>
+     
+       </div>
+      
+      </section>   
+
+    
+    
+    </div>
+    
+    
+	
+		
+		<div id="content">	
+	<?php echo $this->fetch('content'); ?>	
 		</div>
+		
+		
+		
+		
+		
 		<div id="footer">
+			
+			
+			 <div class="large-12 columns medium-12 columns small-12 columns">
+			 <div class="trait">
+			 </div>
+			 
+			<p id="nousre">
+			    
+			   Nous retrouver sur
+			    
+			</p>
+			
+			
+			<div class="large-12 columns medium-12 columns small-12 columns">
+			<div class="large-4 columns medium-4 columns small-4 columns">
+			
+			
 			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
+					$this->Html->image('buttonfb.jpg'),
+					'http://www.facebook.com',
+					array('target' => '_blank', 'escape' => false, 'class' => 'lien')
+				);
+				?>
+				</div>
+				
+				<div class="large-4 columns medium-4 columns small-4 columns">
+				<?php
+				echo $this->Html->link(
+					$this->Html->image('buttontwitter.jpg'),
+					'http://www.twitter.com',
+					array('target' => '_blank', 'escape' => false, 'class' => 'lien')
+				);
+				
+				?>
+		</div>
+				<div class="large-4 columns medium-4 columns small-4 columns">
+				<?php
+				echo $this->Html->link(
+					$this->Html->image('Logo_little_market.png'),
+					'http://www.alittlemarket.com',
+					array('target' => '_blank', 'escape' => false, 'class' => 'lien')
 				);
 			?>
-			<p>
-				<?php echo $cakeVersion; ?>
+			</div>
+			
+			</div>
+			<p id="copy">
+			    Copyright : Tout droit réservés
+			    
 			</p>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+		</div>
+</div>
+   </div>
+    <script>
+      $(document).foundation();
+    </script>
+	
 </body>
 </html>
+

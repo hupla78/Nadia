@@ -1,3 +1,4 @@
+
 <?php
 App::uses('AppController', 'Controller');
 /**
@@ -16,7 +17,8 @@ class CmsController extends AppController {
  */
 	public $components = array('Paginator', 'Session');
 
-/**
+        
+        /**
  * admin_index method
  *
  * @return void
@@ -25,7 +27,8 @@ class CmsController extends AppController {
 		$this->set('cms', $this->Paginator->paginate());
 	}
 
-/**
+        /**
+         *
  * admin_view method
  *
  * @throws NotFoundException
@@ -41,7 +44,7 @@ class CmsController extends AppController {
 	}
 
 /**
- * admin_add metsod
+ * admin_add method
  *
  * @return void
  */
@@ -55,9 +58,17 @@ class CmsController extends AppController {
 				$this->Session->setFlash(__('The cm could not be saved. Please, try again.'));
 			}
 		}
+		$imgs = $this->Cm->Img->find('list');
+		$articles = $this->Cm->Article->find('list');
+		$categories = $this->Cm->Categorie->find('list');
+		$values = $this->Cm->Value->find('list');
+		$texts = $this->Cm->Text->find('list');
+		$this->set(compact('imgs', 'articles', 'categories', 'values', 'texts'));
 	}
 
-/**
+
+        /**
+         *
  * admin_edit method
  *
  * @throws NotFoundException
@@ -80,16 +91,18 @@ class CmsController extends AppController {
 		} else {
 			$options = array('conditions' => array('Cm.' . $this->Cm->primaryKey => $id));
 			$this->request->data = $this->Cm->find('first', $options);
-            
-            
-            $lap = $this->Cm->img->find('list');
-            $lap[0] = "cette information n'est pas une img";
-            $this->set('imgPossi',$lap);
-            
+
 		}
+		$imgs = $this->Cm->Img->find('list');
+		$articles = $this->Cm->Article->find('list');
+		$categories = $this->Cm->Categorie->find('list');
+		$values = $this->Cm->Value->find('list');
+		$texts = $this->Cm->Text->find('list');
+		$this->set(compact('imgs', 'articles', 'categories', 'values', 'texts'));
 	}
 
-/**
+        /
+        **
  * admin_delete method
  *
  * @throws NotFoundException
@@ -110,3 +123,4 @@ class CmsController extends AppController {
 		return $this->redirect(array('action' => 'index'));
 	}
 }
+        ?>

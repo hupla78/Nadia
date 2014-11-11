@@ -1,0 +1,175 @@
+.hul{
+    
+ margin-top: 20px;   
+    
+}
+body{
+ background: black;   
+}
+.row{
+ background: white;   
+}
+#searchbar{
+    position:relative;
+    width:840px;
+    height:auto;
+    display:inline-block;
+    margin-top: 20px;
+}
+#searchbar .text{
+    width:200px;
+    float:left;    
+}
+#searchbar .champ{
+    width:300px;
+    height:35px;
+    float:left;
+}
+#searchbar .bouton{
+    margin-top: 3px;
+    margin-left: 3px;
+    background-image: url(../img/loupe.jpg);
+    width: 20px;
+    height: 25px;
+    padding: 0;
+    border:none;
+    float:left;
+}
+
+
+#nousre{
+text-align: center;
+font-family: arial black;
+font-size: 2em;
+margin-top: 15p;}
+
+.tot{
+    
+    margin: auto;
+  width: auto;
+    display: table;
+    
+    
+    
+}
+#copy{
+    font-family:  arial;
+     margin-top: 10px;
+    font-size: 0.7em;
+    text-align: right;
+    
+}
+#pani{
+    
+padding-left: 10px;
+padding-top: 10px;
+    
+    
+}
+
+
+
+#accroche{text-align: justify; background: #445454; padding: 15px; border-radius: 5px; margin: auto; color: white; font-family:Trebuchet MS; width: auto; width: auto; display: table; max-width: 600px;}
+    
+    
+.trait2{width: 500px;border-bottom: 1px solid black;margin: auto; display: table;margin-bottom: 15px;}
+
+
+.trait3{width: 250px;border-bottom: 1px solid black;margin-top: 20px; margin-left: auto; margin-right: auto; margin-bottom: 5px; display: table;}
+
+
+#dessous{
+    padding-top: 10px;
+    text-align: center;
+    font-family: arial;
+    
+}
+  
+
+.menud{
+    
+ color: white;
+  height: 55px;
+  line-height : 20px;
+    padding-top: 15px;
+    border-right : 1px solid white;
+   list-style-type:none;
+    padding-right: 20px;
+}
+.menud1{
+    
+ color: white;
+  height: 55px;
+  line-height : 20px;
+    padding-top: 15px;
+   list-style-type:none;
+   
+}
+.text{
+    
+ text-align: center;   
+}
+
+.espacejj{
+    
+ margin-top: 15px;   
+    
+}
+
+.menu{
+text-align: center;
+border : 1px solid black;
+border-radius: 5px;
+background-color : #545454; 
+
+    margin-top: 25px;
+}
+
+#menu_horizontal { 
+width: auto;
+min-width : 800px;
+margin-top: 50px;
+margin-bottom: : auto;
+margin-left:auto;
+margin-right: auto;
+display:table; 
+padding: auto;
+height : 50px;
+background-color : #545454;
+border : 1px solid black;
+border-radius: 5px;
+
+}
+ 
+ul#menu_horizontal li {
+line-height : 40px;
+display: table;
+margin: auto;
+padding-top: 5px;
+}
+ 
+ul#menu_horizontal li.boutonnn {
+float : left;
+width: 25%;
+text-align: center;
+height: 50px;
+border-right : 1px solid white;
+}
+ul#menu_horizontal li.boutonnn2 {
+float : left;
+width: 25%;
+text-align: center;
+height: 50px;
+}
+ 
+ul#menu_horizontal a {
+    width: 25%;
+color : white;
+
+padding : 0 0.5em; 
+font :  1em "Trebuchet MS";
+text-align: center;
+}
+ 
+ul#menu_horizontal a:hover { color: #e0dfdf }
+.trait{width: 200px;border-bottom: 1px solid black;margin: auto; display: table;margin-bottom: 15px;}
