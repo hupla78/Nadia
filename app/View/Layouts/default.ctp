@@ -76,7 +76,7 @@ if (AuthComponent::user('isAdmin')){
         
       </li>
      <li>
-     <?php echo $this->Html->link('Panier',array('controller'=>'users','action'=>'login'))?>
+     <?php echo $this->Html->link('Panier',array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false))?>
    </li>
     <li>
     <?php echo $this->Html->link('Nouveautés',array('controller'=>'users','action'=>'login'))?>
@@ -116,7 +116,7 @@ if (AuthComponent::user('isAdmin')){
      
          <div class="large-3 columns medium-3 columns small-6 columns text">
          <li class="menud">
-       <?php echo $this->Html->link('Produits',array('controller'=>'pages','action'=>'home', ))?>
+       <?php echo $this->Html->link('Produits',array('controller'=>'boutiques','action'=>'index' ))?>
        
        </li>
        </div>

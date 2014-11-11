@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 09, 2014 at 08:43 PM
+-- Generation Time: Nov 11, 2014 at 06:50 PM
 -- Server version: 10.0.14-MariaDB-log
 -- PHP Version: 5.6.2
 
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `category_id` int(11) NOT NULL,
   `updated` datetime NOT NULL,
   `created` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `articles`
@@ -58,7 +58,48 @@ CREATE TABLE IF NOT EXISTS `articles` (
 
 INSERT INTO `articles` (`id`, `name`, `prix`, `description`, `img_id`, `category_id`, `updated`, `created`) VALUES
 (1, 'sac ', 50, 'lla\r\n', 1, 1, '2014-11-03 16:15:32', '2014-11-03 16:15:32'),
-(2, 'sac', 50, 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l''imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n''a pas fait que survivre cinq siècles, mais s''est aussi adapté à la bureautique informatique, sans que son contenu n''en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 2, 1, '2014-11-09 16:53:19', '2014-11-09 16:53:19');
+(2, 'sac', 50, 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l''imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n''a pas fait que survivre cinq siècles, mais s''est aussi adapté à la bureautique informatique, sans que son contenu n''en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 2, 1, '2014-11-09 16:53:19', '2014-11-09 16:53:19'),
+(3, 'gros sac', 32, 'ornecdzk,splqivenf ezjdf oezn voe oneo noeaov oezvo n oenoveo ne nvozs vo eovn moenvo mjze vnoez svmeaz ', 1, 2, '2014-11-11 15:19:36', '2014-11-11 15:19:36'),
+(4, 'sac petit', 10, 'jgroesn ^âhzr vne v^asrozvonosv oe àrzhoifvjorzjvo hoe&rhojvoejvegen v og ogoneon oehoéevneoo  ojoez h ei pi hohkh kyink ig jgihig pib jb obk oh bz p j hoeé kjvzh ojeké e éeo hpoe henv eh ovhepo oe^\r\n\r\nPanier (vide)\r\n', 1, 1, '2014-11-11 15:21:06', '2014-11-11 15:21:06');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `boutique`
+--
+
+CREATE TABLE IF NOT EXISTS `boutique` (
+`id` int(11) NOT NULL,
+  `achat` varchar(50) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `created` datetime NOT NULL,
+  `updated` datetime NOT NULL,
+  `panier` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `boutiques_articles`
+--
+
+CREATE TABLE IF NOT EXISTS `boutiques_articles` (
+`id` int(11) NOT NULL,
+  `boutique_id` int(11) NOT NULL,
+  `article_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `boutiques_categories`
+--
+
+CREATE TABLE IF NOT EXISTS `boutiques_categories` (
+  `id` int(11) NOT NULL,
+  `boutiques_id` int(11) NOT NULL,
+  `categories_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -178,9 +219,18 @@ INSERT INTO `users` (`id`, `username`, `password`, `email`, `isAdmin`, `isActiva
 
 CREATE TABLE IF NOT EXISTS `values` (
 `id` int(10) unsigned NOT NULL,
-  `name` int(11) NOT NULL,
+  `name` varchar(11) NOT NULL,
   `value` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `values`
+--
+
+INSERT INTO `values` (`id`, `name`, `value`) VALUES
+(1, 'red', '#ff0000'),
+(2, 'green', '#00ff00'),
+(3, 'blue', '#0000ff');
 
 --
 -- Indexes for dumped tables
@@ -196,6 +246,18 @@ ALTER TABLE `achats`
 -- Indexes for table `articles`
 --
 ALTER TABLE `articles`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `boutique`
+--
+ALTER TABLE `boutique`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `boutiques_articles`
+--
+ALTER TABLE `boutiques_articles`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -247,7 +309,17 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `boutique`
+--
+ALTER TABLE `boutique`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `boutiques_articles`
+--
+ALTER TABLE `boutiques_articles`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `categories`
 --
@@ -277,7 +349,7 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `values`
 --
 ALTER TABLE `values`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
