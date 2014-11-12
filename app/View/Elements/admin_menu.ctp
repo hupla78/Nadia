@@ -1,6 +1,8 @@
 <nav>
 	<h2>admin-menu</h2>
 	<ul>		
+
+	<li><?php echo $this->Html->link('color',array('admin'=>true,'controller'=>'colors','action'=>'index')); ?></li>
 	<li><?php echo $this->Html->link('value',array('admin'=>true,'controller'=>'values','action'=>'index')); ?></li>
         <li><?php echo $this->Html->link('text',array('admin'=>true,'controller'=>'texts','action'=>'index')); ?></li>
         <li><?php echo $this->Html->link('image',array('admin'=>true,'prefix'=>'admin','controller'=>'imgs','action'=>'index')); ?></li>

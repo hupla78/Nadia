@@ -16,7 +16,14 @@ if($panier==null):?>
 	<?php if(is_array($key)):?>
 	<tr>
 		<td><?php echo $key['Article']['name']?></td>
-		<td><?php echo $key['nombre']?></td>
+		<td>
+		<?php
+		echo $this->Html->link('-',array('controller'=>'boutiques','action'=>'subArticle',$key['Article']['id']));
+		echo $key['nombre'];
+		echo $this->Html->link('+',array('controller'=>'boutiques','action'=>'addArticle',$key['Article']['id']));
+		?>
+		
+		</td>
 		<td><?php echo $key['Article']['prix']?>€</td>
 		<td><?php 
 			

@@ -80,10 +80,16 @@ if (AuthComponent::user('isAdmin')){
         
     <?php
         if ( null==AuthComponent::user('id')){
-            echo $this->Html->link('Se connecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'login'));}
+		echo $this->Html->link('Se connecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'login'));
+       		echo '</li><li>';
+ 		 echo $this->Html->link('Inscription',array('controller'=>'Users','action'=>''));
+}
         else{
-            echo $this->Html->link('Se Deconnecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'logout'));}
-        ?>
+           	 echo $this->Html->link('Se Deconnecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'logout'));
+			}	
+		
+
+	?>
         
       </li>
      <li>
@@ -203,7 +209,7 @@ if (AuthComponent::user('isAdmin')){
 			<?php echo $this->Html->link(
 					$this->Html->image('buttonfb.jpg'),
 					'http://www.facebook.com',
-					array('target' => '_blank', 'escape' => false, 'class' => 'lien')
+					array('target' => '_blank', 'escape' => false, 'class' => 'lien center')
 				);
 				?>
 				</div>
@@ -213,7 +219,7 @@ if (AuthComponent::user('isAdmin')){
 				echo $this->Html->link(
 					$this->Html->image('buttontwitter.jpg'),
 					'http://www.twitter.com',
-					array('target' => '_blank', 'escape' => false, 'class' => 'lien')
+					array('target' => '_blank', 'escape' => false, 'class' => 'lien center')
 				);
 				
 				?>
@@ -223,7 +229,7 @@ if (AuthComponent::user('isAdmin')){
 				echo $this->Html->link(
 					$this->Html->image('Logo_little_market.png'),
 					'http://www.alittlemarket.com',
-					array('target' => '_blank', 'escape' => false, 'class' => 'lien')
+					array('target' => '_blank', 'escape' => false, 'class' => 'lien center')
 				);
 			?>
 			</div>

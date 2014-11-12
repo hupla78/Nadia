@@ -12,8 +12,8 @@
 			case 'article' :	echo $this->Form->input('article_id');break;
 			case 'categorie' :	echo $this->Form->input('categorie_id');break;
 			case 'value' :		echo $this->Form->input('value_id');break;
-			case 'text' :		echo $this->Form->input('text_id');break;}
-
+			case 'text' :		echo $this->Form->input('text_id');break;
+                        case 'color':           echo $this->Form->input('color_id');break;}
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
@@ -26,8 +26,6 @@
 		<li><?php echo $this->Html->link(__('List Cms'), array('action' => 'index')); ?></li>
 		<li><?php echo $this->Html->link(__('List Imgs'), array('controller' => 'imgs', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Img'), array('controller' => 'imgs', 'action' => 'add')); ?> </li>
-<<<<<<< HEAD
-=======
 		<li><?php echo $this->Html->link(__('List Articles'), array('controller' => 'articles', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Article'), array('controller' => 'articles', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Categories'), array('controller' => 'categories', 'action' => 'index')); ?> </li>
@@ -36,6 +34,5 @@
 		<li><?php echo $this->Html->link(__('New Value'), array('controller' => 'values', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Texts'), array('controller' => 'texts', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Text'), array('controller' => 'texts', 'action' => 'add')); ?> </li>
->>>>>>> up
 	</ul>
 </div>

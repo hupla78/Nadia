@@ -97,7 +97,8 @@ class CmsController extends AppController {
 		$categories = $this->Cm->Categorie->find('list');
 		$values = $this->Cm->Value->find('list');
 		$texts = $this->Cm->Text->find('list');
-		$this->set(compact('imgs', 'articles', 'categories', 'values', 'texts'));
+		$colors = $this->Cm->Color->find('list');
+		$this->set(compact('imgs', 'articles', 'categories', 'values', 'texts','colors'));
 	}
 
  /**
@@ -120,6 +121,11 @@ class CmsController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+public function admin_export()
+{
+	$this->Cm->export();	
+	return $this->redirect(array('prefix'=>'admin','admin'=>true,'controller'=>'cms','action'=>'index'));	// code...
+}
 }
 
 ?>

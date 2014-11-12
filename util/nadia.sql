@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 11, 2014 at 06:50 PM
+-- Generation Time: Nov 12, 2014 at 10:43 PM
 -- Server version: 10.0.14-MariaDB-log
 -- PHP Version: 5.6.2
 
@@ -109,14 +109,14 @@ CREATE TABLE IF NOT EXISTS `boutiques_categories` (
 
 CREATE TABLE IF NOT EXISTS `categories` (
 `id` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL
+  `value` varchar(50) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `categories`
 --
 
-INSERT INTO `categories` (`id`, `name`) VALUES
+INSERT INTO `categories` (`id`, `value`) VALUES
 (1, 'paysage'),
 (2, 'sac'),
 (3, 'bijoux');
@@ -135,16 +135,46 @@ CREATE TABLE IF NOT EXISTS `cms` (
   `article_id` int(11) NOT NULL,
   `categorie_id` int(11) NOT NULL,
   `value_id` int(11) NOT NULL,
-  `text_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+  `text_id` int(11) NOT NULL,
+  `color_id` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `cms`
 --
 
-INSERT INTO `cms` (`id`, `name`, `type`, `img_id`, `article_id`, `categorie_id`, `value_id`, `text_id`) VALUES
-(1, 'val', 'img', 1, 0, 0, 0, 0),
-(2, 'lapin', 'text', 0, 0, 0, 0, 1);
+INSERT INTO `cms` (`id`, `name`, `type`, `img_id`, `article_id`, `categorie_id`, `value_id`, `text_id`, `color_id`) VALUES
+(1, 'val', 'img', 2, 0, 0, 0, 0, 0),
+(6, 'lapin', 'img', 4, 0, 0, 0, 0, 0),
+(7, 'lapin2', 'img', 3, 0, 0, 0, 0, 0),
+(8, 'lapin3', 'img', 0, 0, 0, 0, 0, 0),
+(9, 'colorlink', 'value', 0, 0, 0, 5, 0, 0),
+(10, 'colorfond', 'value', 0, 0, 0, 4, 0, 0),
+(11, 'slide0', 'img', 1, 0, 0, 0, 0, 0),
+(12, 'slide1', 'img', 0, 0, 0, 0, 0, 0),
+(13, 'slide2', 'img', 3, 0, 0, 0, 0, 0),
+(14, 'color1', 'color', 0, 0, 0, 0, 0, 0),
+(15, 'color2', 'color', 0, 0, 0, 0, 0, 0),
+(16, 'color', 'color', 0, 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `colors`
+--
+
+CREATE TABLE IF NOT EXISTS `colors` (
+`id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `value` varchar(50) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `colors`
+--
+
+INSERT INTO `colors` (`id`, `name`, `value`) VALUES
+(1, 'red', '#5fe931');
 
 -- --------------------------------------------------------
 
@@ -160,15 +190,17 @@ CREATE TABLE IF NOT EXISTS `imgs` (
   `modified` date NOT NULL,
   `cm_id` int(11) NOT NULL,
   `value` varchar(50) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `imgs`
 --
 
 INSERT INTO `imgs` (`id`, `id_user`, `name`, `created`, `modified`, `cm_id`, `value`) VALUES
-(1, 0, 'img1', '2014-11-09', '2014-11-09', 0, '1.jpg'),
-(2, 0, 'img2', '2014-11-09', '2014-11-09', 0, '2.png');
+(1, 0, 'img1', '2014-11-09', '2014-11-12', 0, '1.png'),
+(2, 0, 'img2', '2014-11-09', '2014-11-09', 0, '2.png'),
+(3, 0, 'amilia', '2014-11-12', '2014-11-12', 0, '3.jpg'),
+(4, 0, 'fb', '2014-11-12', '2014-11-12', 0, '4.jpg');
 
 -- --------------------------------------------------------
 
@@ -202,14 +234,16 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email` varchar(255) NOT NULL,
   `isAdmin` tinyint(1) NOT NULL,
   `isActivate` tinyint(1) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `isAdmin`, `isActivate`) VALUES
-(1, 'admin', '331021bc258700a2e79d0b7c2a94fd56d7310739', '', 1, 0);
+(1, 'admin', '331021bc258700a2e79d0b7c2a94fd56d7310739', '', 1, 0),
+(2, 'test', 'eec4e6a8a4051bbf4e15483b89b14ae4242fcdcd', 'ruhtra.mar@gmail.com', 0, 0),
+(3, 'test1', 'eec4e6a8a4051bbf4e15483b89b14ae4242fcdcd', 'ruhtra.mar1@gmail.com', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -221,7 +255,7 @@ CREATE TABLE IF NOT EXISTS `values` (
 `id` int(10) unsigned NOT NULL,
   `name` varchar(11) NOT NULL,
   `value` varchar(50) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `values`
@@ -230,7 +264,9 @@ CREATE TABLE IF NOT EXISTS `values` (
 INSERT INTO `values` (`id`, `name`, `value`) VALUES
 (1, 'red', '#ff0000'),
 (2, 'green', '#00ff00'),
-(3, 'blue', '#0000ff');
+(3, 'blue', '#0000ff'),
+(4, 'black', '#222222'),
+(5, 'rien', 'none');
 
 --
 -- Indexes for dumped tables
@@ -270,6 +306,12 @@ ALTER TABLE `categories`
 -- Indexes for table `cms`
 --
 ALTER TABLE `cms`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `colors`
+--
+ALTER TABLE `colors`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -329,12 +371,17 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 -- AUTO_INCREMENT for table `cms`
 --
 ALTER TABLE `cms`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT for table `colors`
+--
+ALTER TABLE `colors`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `imgs`
 --
 ALTER TABLE `imgs`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `texts`
 --
@@ -344,12 +391,12 @@ MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `values`
 --
 ALTER TABLE `values`
-MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

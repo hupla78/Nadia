@@ -44,16 +44,16 @@ class Cm extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'type' => array(
-			'a' => array(
-				'rule' => array('a'),
+	//	'type' => array(
+//			'a' => array(
+//				'rule' => array('a'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-					),
+//				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+//			),
+				//	),
 		'img_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
@@ -95,6 +95,16 @@ class Cm extends AppModel {
 			),
 		),
 		'text_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'color_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
 				//'message' => 'Your custom message here',
@@ -149,6 +159,13 @@ class Cm extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
+		),
+		'Color' => array(
+			'className' => 'Color',
+			'foreignKey' => 'color_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		)
 	);
 
@@ -180,20 +197,20 @@ class Cm extends AppModel {
 	}
     
     
-	public function afterSave($created, $options = array()){
+	public function export(){
 		$this->recursive = 1;
-		debug($this->find('all'));
+//		debug($this->find('all'));
 
 		$tabDeSave= array();
 		
 		foreach ($this->find('all') as $key) {
 			$cat=ucfirst($key['Cm']['type']);
-            echo $cat;
-            echo  $key[$cat]['value'];
+    //        echo $cat;
+  //          echo  $key[$cat]['value'];
 		    $tabDeSave[$key['Cm']['name']]= $key[$cat]['value'];				
         }
-        debug($tabDeSave);
+//        debug($tabDeSave);
         file_put_contents(APP.'cms/base.json',json_encode($tabDeSave));
 		}
-}?>
+}
 
