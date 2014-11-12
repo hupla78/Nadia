@@ -23,7 +23,7 @@
      
  <div class="trait2">
 			 </div>
-			 
+			<!-- <?php echo $Acms->getOne('val'); ?> -->
 
 
 <p id="accroche">

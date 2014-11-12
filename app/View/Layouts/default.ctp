@@ -6,11 +6,17 @@
 	<title>
 		Fil de Bohème
 	</title>
+	
+	
+	
+	
 	<?php
-			
+        
+
+
 		echo $this->Html->css('foundation');
 		echo $this->Html->css('foundation.min');
-		echo $this->Html->css('style');
+		echo $this->Html->css('style'); 
 		echo $this->Html->script('vendor/jquery');
 		echo $this->Html->script('vendor/modernizr');
 		echo $this->Html->script('foundation/foundation');
@@ -33,6 +39,11 @@
 
 
 	?>
+	
+	
+	<style>
+    <?php include('css/cms.css'); ?>
+    </style>
 </head>
 <body>
         <?php
@@ -53,7 +64,7 @@ if (AuthComponent::user('isAdmin')){
       
       <section class="left-medium">
         <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-      </section>
+      </secMenution>
 
       <section class="middle tab-bar-section">
         <h1 class="title">Fil de Bohème</h1>
@@ -68,10 +79,10 @@ if (AuthComponent::user('isAdmin')){
     <li>
         
     <?php
-        if (empty(AuthComponent::user()))
-            echo $this->Html->link('Se connecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'login'));
-        else
-            echo $this->Html->link('Se Deconnecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'logout'));
+        if ( null==AuthComponent::user('id')){
+            echo $this->Html->link('Se connecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'login'));}
+        else{
+            echo $this->Html->link('Se Deconnecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'logout'));}
         ?>
         
       </li>

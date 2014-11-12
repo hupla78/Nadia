@@ -80,7 +80,6 @@ class CmsController extends AppController {
 			throw new NotFoundException(__('Invalid cm'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
-            debug($this->request->data);
             
 			if ($this->Cm->save($this->request->data)) {
 				$this->Session->setFlash(__('The cm has been saved.'));

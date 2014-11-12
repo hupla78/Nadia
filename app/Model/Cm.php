@@ -35,6 +35,14 @@ class Cm extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+            'isUnique' => array(
+				'rule' => array('isUnique'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
 		),
 		'type' => array(
 			'a' => array(
@@ -168,9 +176,10 @@ class Cm extends AppModel {
 
 
 	public function beforeSave( $options = array()){
-		if($this->data['Cm']['img_id']!= 0)
-		{$this->data['Cm']['value']='img-type';}
+		
 	}
+    
+    
 	public function afterSave($created, $options = array()){
 		$this->recursive = 1;
 		debug($this->find('all'));
@@ -179,14 +188,12 @@ class Cm extends AppModel {
 		
 		foreach ($this->find('all') as $key) {
 			$cat=ucfirst($key['Cm']['type']);
-			echo $cat;
-		
-				$tabDeSave[$key['Cm']['name']] = $key[$cat]['value'];				
-		}
-
-
-
-	file_put_contents(APP.'cms/base.json',json_encode($tabDeSave));
+            echo $cat;
+            echo  $key[$cat]['value'];
+		    $tabDeSave[$key['Cm']['name']]= $key[$cat]['value'];				
+        }
+        debug($tabDeSave);
+        file_put_contents(APP.'cms/base.json',json_encode($tabDeSave));
 		}
 }?>
 

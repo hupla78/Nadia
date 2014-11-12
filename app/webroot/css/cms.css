@@ -1,0 +1,6 @@
+a{
+background: <?php echo $Acms->getOne('colorlink');?>
+}
+body{
+background: <?php echo $Acms->getOne('colorfond');?>
+}
