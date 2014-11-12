@@ -112,35 +112,47 @@ if (AuthComponent::user('isAdmin')){
       
       
       
-       <div class="large-12 columns medium-12 columns small-12 columns menu">
-     
-         <div class="large-3 columns medium-3 columns small-6 columns text">
-         <li class="menud">
-       <?php echo $this->Html->link('Produits',array('controller'=>'boutiques','action'=>'index' ))?>
-       
-       </li>
+ <div class="large-12  medium-12  small-12 columns margin-menu">
+                 <ul class="row menu-generale ">
+                     
+         
+         <li class="menud large-3 small-6 medium-3 columns separbot">
+               <div class="panel">
+                 <?php echo $this->Html->link('Produits',array('prefix'=>false,'admin'=>false,'controller'=>'boutiques','action'=>'index', ),array('class'=>'pi-text-center'))?>  
+               </div>
+               
+        
+        </li>
+        <li class="menud large-3 small-6 medium-3 columns separbot">
+               <div class="panel">
+                 <?php echo $this->Html->link('Fil de Boheme',array('prefix'=>false,'admin'=>false,'controller'=>'pages','action'=>'home', ),array('class'=>'pi-text-center'))?>  
+               </div>
+               
+        
+        </li>
+        
+        <li class="menud large-3 small-6 medium-3 columns separbot">
+               <div class="panel">
+                 <?php echo $this->Html->link('Actualité',array('prefix'=>false,'admin'=>false,'controller'=>'pages','action'=>'home', ),array('class'=>'pi-text-center'))?>  
+               </div>
+               
+        
+        </li>
+        <li class="menud large-3 small-6 medium-3 columns separbot">
+               <div class="panel">
+                 <?php echo $this->Html->link('Points de vente',array('prefix'=>false,'admin'=>false,'controller'=>'pages','action'=>'home', ),array('class'=>'pi-text-center'))?>  
+               </div>
+               
+        
+        </li>
+       </ul>
        </div>
-       
-        <div class="large-3 columns medium-3 columns small-6 columns">
-         <li class="menud">
-       <?php echo $this->Html->link('Qui est Fil de Bohème',array('controller'=>'pages','action'=>'home', ))?>
-       
-       </li>
-       </div>
-       
-        <div class="large-3 columns medium-3 columns small-6 columns">
-        <li class="menud">
-       <?php echo $this->Html->link('Actualité ou Blog',array('controller'=>'pages','action'=>'home', ))?>
-       </li>
-       </div>
-       
-        <div class="large-3 columns medium-3 columns small-6 columns">
-        <li class="menud1">
-       <?php echo $this->Html->link('Points de vente',array('controller'=>'pages','action'=>'home', ))?>
-       </li>
-       </div>
-     
-       </div>
+
+
+
+
+
+
       
       </section>   
 

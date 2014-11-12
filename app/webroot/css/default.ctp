@@ -140,28 +140,6 @@ if (AuthComponent::user('isAdmin')){
                
         
         </li>
-                   
-                   <!--   </div>
-       
-                    <div class="large-3 columns medium-3 columns small-6 columns">
-         <li class="menud">
-       <?php echo $this->Html->link('Qui est Fil de Bohème',array('controller'=>'pages','action'=>'home', ))?>
-       
-       </li>
-                   </div>
-       
-                    <div class="large-3 columns medium-3 columns small-6 columns">
-        <li class="menud">
-       <?php echo $this->Html->link('Actualité ou Blog',array('controller'=>'pages','action'=>'home', ))?>
-       </li>
-                   </div>
-       
-                    <div class="large-3 columns medium-3 columns small-6 columns">
-        <li class="menud1">
-       <?php echo $this->Html->link('Points de vente',array('controller'=>'pages','action'=>'home', ))?>
-       </li>
-       
-               </div>-->
                  </ul>
        </div>
       
