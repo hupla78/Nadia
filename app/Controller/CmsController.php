@@ -1,6 +1,6 @@
 
 <?php
-App::uses('AppController', 'Controller');
+
 /**
  * Cms Controller
  *
@@ -101,8 +101,7 @@ class CmsController extends AppController {
 		$this->set(compact('imgs', 'articles', 'categories', 'values', 'texts'));
 	}
 
-        /
-        **
+ /**
  * admin_delete method
  *
  * @throws NotFoundException
@@ -123,4 +122,5 @@ class CmsController extends AppController {
 		return $this->redirect(array('action' => 'index'));
 	}
 }
-        ?>
+
+?>

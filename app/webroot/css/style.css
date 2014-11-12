@@ -41,7 +41,7 @@ body{
 text-align: center;
 font-family: arial black;
 font-size: 2em;
-margin-top: 15p;}
+margin-top: 15px;}
 
 .tot{
     
@@ -86,25 +86,8 @@ padding-top: 10px;
 }
   
 
-.menud{
-    
- color: white;
-  height: 55px;
-  line-height : 20px;
-    padding-top: 15px;
-    border-right : 1px solid white;
-   list-style-type:none;
-    padding-right: 20px;
-}
-.menud1{
-    
- color: white;
-  height: 55px;
-  line-height : 20px;
-    padding-top: 15px;
-   list-style-type:none;
-   
-}
+
+
 .text{
     
  text-align: center;   
@@ -148,28 +131,72 @@ margin: auto;
 padding-top: 5px;
 }
  
-ul#menu_horizontal li.boutonnn {
-float : left;
-width: 25%;
-text-align: center;
-height: 50px;
-border-right : 1px solid white;
-}
-ul#menu_horizontal li.boutonnn2 {
-float : left;
-width: 25%;
-text-align: center;
-height: 50px;
-}
- 
-ul#menu_horizontal a {
-    width: 25%;
-color : white;
-
-padding : 0 0.5em; 
-font :  1em "Trebuchet MS";
-text-align: center;
-}
  
 ul#menu_horizontal a:hover { color: #e0dfdf }
+
+.hov{ color: #e0dfdf }
 .trait{width: 200px;border-bottom: 1px solid black;margin: auto; display: table;margin-bottom: 15px;}
+
+
+.lolo {
+   
+    
+width: auto;
+margin: auto;
+display: table;
+    
+}
+.center{
+   
+    
+width: auto;
+margin: auto;
+display: table;
+    
+}
+.pi-text-center:hover { color: #e0dfdf;
+}
+.pi-text-center
+{
+text-align: center;
+color:white;
+
+}
+
+a.pi-text-center{
+margin-left: auto;
+margin-right: auto;
+display: table;
+}
+
+li.separbot{
+list-style-type: none;
+    border-right : 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 0px;
+
+}
+li.separbot:hover{
+background: #656565;}
+
+li.separbot div.panel{
+    
+   line-height : 20px;
+    
+    background: none;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.menu-generale {
+    background: #545454;
+}
+
+.margin-menu {
+    padding-left:  2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    
+}

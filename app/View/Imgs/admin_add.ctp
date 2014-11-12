@@ -4,7 +4,7 @@
 		<legend><?php echo __('Admin Add Img'); ?></legend>
 	<?php
 		//echo $this->Form->input('id_user');
-		echo $this->Form->input('name');
+	echo $this->Form->input('name');
         echo $this->Form->input('img_file',array(
                 'type'  =>  'file',
                 'label' =>  'import de votre images'

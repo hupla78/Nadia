@@ -1,5 +1,5 @@
 <?php
-App::uses('AppController', 'Controller');
+
 /**
  * Values Controller
  *

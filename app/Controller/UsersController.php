@@ -50,7 +50,7 @@ if ($this->request->is('post')) {
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('votre compte a ete crée.'));
                 $this->Auth->login();
-				return $this->redirect(redirect);
+				return $this->redirect('/');
 			} else {
 				$this->Session->setFlash(__('no'));
 			}
