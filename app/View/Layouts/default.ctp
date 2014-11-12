@@ -82,7 +82,7 @@ if (AuthComponent::user('isAdmin')){
         if ( null==AuthComponent::user('id')){
 		echo $this->Html->link('Se connecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'login'));
        		echo '</li><li>';
- 		 echo $this->Html->link('Inscription',array('controller'=>'Users','action'=>''));
+ 		 echo $this->Html->link('Inscription',array('controller'=>'Users','action'=>'inscription'));
 }
         else{
            	 echo $this->Html->link('Se Deconnecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'logout'));
