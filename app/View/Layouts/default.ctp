@@ -121,9 +121,18 @@ if (AuthComponent::user('isAdmin')){
         <input class="bouton" type="submit" value=" " />
     </form>
 </div>
-      <p id="pani">
-          Panier (<a href="panier.php">vide</a>)
-      </p>
+    <div class="row">
+        <div class="large-3 columns">Panier</div>
+        <div class="large-9 columns">
+           <?php 
+              $val =   SessionComponent::read('Panier.TotalArticle');
+                if($val==0){echo"vide";}else{
+                echo 'Prix:'.SessionComponent::read('Panier.Total').'€ <br>';
+                 echo 'Articles:'.SessionComponent::read('Panier.TotalArticle');}?>
+                
+              </div>
+    </div>
+      
       
        </div>
       

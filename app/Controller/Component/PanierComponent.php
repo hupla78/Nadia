@@ -32,6 +32,8 @@ class PanierComponent extends Component{
 						$nombre = $this->controller->Session->read('Panier.'.$id.'.nombre');
 						$this->controller->Session->write('Panier.'.$id.'.nombre',$nombre+$quant);
 						$this->modifTotal( $article['Article']['prix']);
+                        $this->modifTotalArticle($quant);
+                        
 						return;
 					}
 
@@ -43,6 +45,7 @@ class PanierComponent extends Component{
 
 		$this->controller->Session->write('Panier.'.$id,$article);
 		$this->modifTotal( $article['Article']['prix']);
+        $this->modifTotalArticle($quant);
 		//$this->controller->Session->destroy();
 
 	}
@@ -59,6 +62,7 @@ class PanierComponent extends Component{
 		if($quantActuel-$quant <= 0){   
 			$this->remove($id);
 			$this->modifTotal(- $prix );
+            $this->modifTotalArticle(-$quant);
 			return; 
 		}
 
@@ -83,7 +87,7 @@ class PanierComponent extends Component{
 	public function create(){
 
 		$this->controller->Session->write('Panier.Total' ,0.00);
-
+        $this->controller->Session->write('Panier.TotalArticle' ,0);
 	}
 
 
@@ -111,6 +115,13 @@ class PanierComponent extends Component{
 
 		}
 
+    private function modifTotalArticle($numbre){
+
+			$total = $this->controller->Session->read('Panier.TotalArticle');
+			$total = $total + $numbre;
+			$this->controller->Session->Write('Panier.TotalArticle',$total);
+
+		}
 
 
 }
