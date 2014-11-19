@@ -1,5 +1,5 @@
 <?php 
-
+App::uses('CakeEmail', 'Network/Email');
 class UsersController extends AppController{
     
     public function beforeFilter(){
@@ -30,8 +30,6 @@ public function login(){
 }
     
     
-
-    
     
 public function logout(){
     $this->Auth->logout();
@@ -39,9 +37,7 @@ public function logout(){
                         'action'=>'display'  ));
                         }
     
-    
-    
-    
+        
     
 public function inscription(){
 
@@ -49,6 +45,15 @@ if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('votre compte a ete crée.'));
+
+				$email = new CakeEmail('gmail');
+				$email->template('inscription');		
+				$email	->emailFormat('both')
+					->to('ruhtra.php@gmail.com')
+					->from('ruhtra.php@gmail.com')
+					->viewVars(array('message'=>'inscription sucess'))
+					->send();
+
                 $this->Auth->login();
 				return $this->redirect('/');
 			} else {
