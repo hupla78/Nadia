@@ -151,4 +151,20 @@ class BoutiquesController extends AppController {
 	}
 
 
+	public function comande()
+	{
+		
+	}
+
+	public function choixAdresse()
+	{
+		
+	}
+
+	public function pay(){
+
+
+	}
+	
+
 }

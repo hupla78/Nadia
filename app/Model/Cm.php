@@ -205,10 +205,17 @@ class Cm extends AppModel {
 		
 		foreach ($this->find('all') as $key) {
 			$cat=ucfirst($key['Cm']['type']);
-    //        echo $cat;
-  //          echo  $key[$cat]['value'];
-		    $tabDeSave[$key['Cm']['name']]= $key[$cat]['value'];				
-        }
+    //           echo $cat;
+                        //          echo  $key[$cat]['value'];
+                        //
+                        if($cat!='Article'){
+                                echo $cat;
+		        $tabDeSave[$key['Cm']['name']]= $key[$cat]['value'];				
+                     }else{
+                        $tabDeSave[$key['Cm']['name']]= $key[$cat];
+                     }
+
+                     }
 //        debug($tabDeSave);
         file_put_contents(APP.'cms/base.json',json_encode($tabDeSave));
 		}
