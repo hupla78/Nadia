@@ -12,7 +12,7 @@ class Category extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'name';
+	public $displayField = 'value';
 
 /**
  * Validation rules
@@ -20,7 +20,7 @@ class Category extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'name' => array(
+		'value' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
