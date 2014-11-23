@@ -5,6 +5,7 @@ background: <?php echo $Acms->getOne('color-fond-exterieur');?>
 
 
 
+
 .tab-bar {
     
     background: <?php echo $Acms->getOne('color-fond-top-bar');?>
