@@ -75,7 +75,7 @@ class Acms{
 	{	$retu = array();	
 		$i = 0;
 		while(array_key_exists($lap.$i,$this->arr2)){
-			$retu[1]= $this->arr2[$lap.$i];	
+			$retu[$i]= $this->arr2[$lap.$i];	
 			$i++;	
 		}
 	return $retu;	

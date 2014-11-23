@@ -27,14 +27,14 @@ class Cm extends AppModel {
 	 */
 	public $validate = array(
 		'name' => array(
-			'alphaNumeric' => array(
+			/*'alphaNumeric' => array(
 				'rule' => array('alphaNumeric'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
+			),*/
             'isUnique' => array(
 				'rule' => array('isUnique'),
 				//'message' => 'Your custom message here',

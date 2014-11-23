@@ -1,10 +1,10 @@
-.hul{
+body{
+ background: black;   
+}
+.espacejj{
     
  margin-top: 20px;   
     
-}
-body{
- background: black;   
 }
 .row{
  background: white;   
@@ -37,13 +37,14 @@ body{
 }
 
 
+
 #nousre{
 text-align: center;
-font-family: arial black;
-font-size: 2em;
+font-family: arial ;
+font-size: 1.8em;
 margin-top: 15px;}
 
-.tot{
+.center{
     
     margin: auto;
   width: auto;
@@ -93,67 +94,11 @@ padding-top: 10px;
  text-align: center;   
 }
 
-.espacejj{
-    
- margin-top: 15px;   
-    
-}
-
-.menu{
-text-align: center;
-border : 1px solid black;
-border-radius: 5px;
-background-color : #545454; 
-
-    margin-top: 25px;
-}
-
-#menu_horizontal { 
-width: auto;
-min-width : 800px;
-margin-top: 50px;
-margin-bottom: : auto;
-margin-left:auto;
-margin-right: auto;
-display:table; 
-padding: auto;
-height : 50px;
-background-color : #545454;
-border : 1px solid black;
-border-radius: 5px;
-
-}
- 
-ul#menu_horizontal li {
-line-height : 40px;
-display: table;
-margin: auto;
-padding-top: 5px;
-}
- 
- 
-ul#menu_horizontal a:hover { color: #e0dfdf }
-
 .hov{ color: #e0dfdf }
+
 .trait{width: 200px;border-bottom: 1px solid black;margin: auto; display: table;margin-bottom: 15px;}
 
 
-.lolo {
-   
-    
-width: auto;
-margin: auto;
-display: table;
-    
-}
-.center{
-   
-    
-width: auto;
-margin: auto;
-display: table;
-    
-}
 .pi-text-center:hover { color: #e0dfdf;
 }
 .pi-text-center
@@ -191,7 +136,7 @@ li.separbot div.panel{
 }
 
 .menu-generale {
-    background: #545454;
+    background: #999994;
 }
 
 .margin-menu {

@@ -38,7 +38,7 @@ switch ($cm['Cm']['type']) {
                        echo  $this->Html->link($cm['Text']['name'], array('controller' => 'texts', 'action' => 'view', $cm['Text']['id']));
 		       break;
 	      case 'color':
-		      echo $this->Html->link($cm['Color']['name'], array('controller' => 'color', 'action' => 'view', $cm['Color']['id']));
+		      echo $this->Html->link($cm['Color']['name'], array('controller' => 'color', 'action' => 'view', $cm['Color']['id']));break;
               default:
                       echo "pb";
                        break;

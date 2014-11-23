@@ -1,6 +1,40 @@
-a{
-background: <?php echo $Acms->getOne('colorlink');?>
-}
+
 body{
-background: <?php echo $Acms->getOne('colorfond');?>
+background: <?php echo $Acms->getOne('color-fond-exterieur');?>
 }
+
+
+
+
+.tab-bar {
+    
+    background: <?php echo $Acms->getOne('color-fond-top-bar');?>
+   
+}
+
+
+.menu-generale {
+    
+    background: <?php echo $Acms->getOne('color-fond-menu-générale');?>
+   
+}
+
+
+li.separbot:hover{
+background: <?php echo $Acms->getOne('color-passage-souris-menu-générale');?>}
+
+.row {
+    
+    background: <?php echo $Acms->getOne('color-fond-interieur');?>
+   
+}
+
+
+
+.pi-text-center:hover { color: <?php echo $Acms->getOne('color-police-menu-generale-passage-souris');?>}
+    
+    
+ .pi-text-center: { color: <?php echo $Acms->getOne('color-police-menu-generale-sans-souris');?>}
+     
+     
+.tab-bar h1{ color: <?php echo $Acms->getOne('color-police-top-bar');?>}

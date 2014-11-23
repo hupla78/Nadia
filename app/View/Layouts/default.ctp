@@ -10,40 +10,22 @@
 	
 	
 	
-	<?php
-        
-
-
+	<?php    
 		echo $this->Html->css('foundation');
-		echo $this->Html->css('foundation.min');
+                echo $this->Html->css('foundation.min');
 		echo $this->Html->css('style'); 
 		echo $this->Html->script('vendor/jquery');
 		echo $this->Html->script('vendor/modernizr');
 		echo $this->Html->script('foundation/foundation');
-		echo $this->Html->script('foundation/foundation.abide');
-		echo $this->Html->script('foundation/foundation.accordion');
-		echo $this->Html->script('foundation/foundation.alert');
-		echo $this->Html->script('foundation/foundation.clearing');
-		echo $this->Html->script('foundation/foundation.dropdown');
-		echo $this->Html->script('foundation/foundation.equalizer');
-		echo $this->Html->script('foundation/foundation.interchange');
-		echo $this->Html->script('foundation/foundation.joyride');
-		echo $this->Html->script('foundation/foundation.magellan');
 		echo $this->Html->script('foundation/foundation.offcanvas');
-		echo $this->Html->script('foundation/foundation.reveal');
 		echo $this->Html->script('foundation/foundation.slider');
-		echo $this->Html->script('foundation/foundation.tab');
-		echo $this->Html->script('foundation/foundation.tooltip');
-		echo $this->Html->script('foundation/foundation.topbar');
 		echo $this->Html->script('foundation/foundation.orbit');
-
-
 	?>
-	
 	
 	<style>
     <?php include('css/cms.css'); ?>
     </style>
+    
 </head>
 <body>
         <?php
@@ -54,45 +36,44 @@ if (AuthComponent::user('isAdmin')){
 
 
 
-	
-	<div id="container">
-		<div id="header">
+<div id="container">
+    <div id="header">
 		 <div class="row">
-  <div class="off-canvas-wrap" data-offcanvas>
-  <div class="inner-wrap">
-    <nav class="tab-bar">
+              <div class="off-canvas-wrap" data-offcanvas>
+                  <div class="inner-wrap">
+                  
+                  
+    <nav class="tab-bar"><!-- menu de la top bar -->
       
       <section class="left-medium">
         <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-      </secMenution>
-
+    </section>
+      
       <section class="middle tab-bar-section">
         <h1 class="title">Fil de Bohème</h1>
       </section>
 
   
-    </nav>
+    </nav><!-- fin menu -->
 
+    
     <aside class="left-off-canvas-menu">
-  <ul class="off-canvas-list">
-    <li><label>Menu</label></li>
-    <li>
+      <ul class="off-canvas-list">
+        <li><label>Menu</label></li>
+            <li>
         
-    <?php
-        if ( null==AuthComponent::user('id')){
-		echo $this->Html->link('Se connecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'login'));
-       		echo '</li><li>';
- 		 echo $this->Html->link('Inscription',array('controller'=>'Users','action'=>''));
-}
-        else{
-           	 echo $this->Html->link('Se Deconnecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'logout'));
-			}	
-		
-
-	?>
-        
-      </li>
-     <li>
+        <?php
+            if ( null==AuthComponent::user('id')){
+            echo $this->Html->link('Se connecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'login'));
+                echo '</li><li>';
+             echo $this->Html->link('Inscription',array('controller'=>'Users','action'=>'inscription'));
+    }
+            else{
+                 echo $this->Html->link('Se Deconnecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'logout'));
+                }	
+        ?>
+          </li>
+          <li>
      <?php echo $this->Html->link('Panier',array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false))?>
    </li>
     <li>
@@ -105,7 +86,7 @@ if (AuthComponent::user('isAdmin')){
 
     <section class="main-section">
     
-       <div class="large-5 columns medium-5 columns small-12 columns hul">
+       <div class="large-5 columns medium-5 columns small-12 columns espacejj">
      	<?php echo $this->Html->image('logo.jpg');
 			?>
       </div>
@@ -218,7 +199,7 @@ if (AuthComponent::user('isAdmin')){
 			<?php echo $this->Html->link(
 					$this->Html->image('buttonfb.jpg'),
 					'http://www.facebook.com',
-					array('target' => '_blank', 'escape' => false, 'class' => 'lien center')
+					array('target' => '_blank', 'escape' => false, 'class' => 'center')
 				);
 				?>
 				</div>
@@ -228,7 +209,7 @@ if (AuthComponent::user('isAdmin')){
 				echo $this->Html->link(
 					$this->Html->image('buttontwitter.jpg'),
 					'http://www.twitter.com',
-					array('target' => '_blank', 'escape' => false, 'class' => 'lien center')
+					array('target' => '_blank', 'escape' => false, 'class' => 'center')
 				);
 				
 				?>
@@ -238,7 +219,7 @@ if (AuthComponent::user('isAdmin')){
 				echo $this->Html->link(
 					$this->Html->image('Logo_little_market.png'),
 					'http://www.alittlemarket.com',
-					array('target' => '_blank', 'escape' => false, 'class' => 'lien center')
+					array('target' => '_blank', 'escape' => false, 'class' => 'center')
 				);
 			?>
 			</div>
