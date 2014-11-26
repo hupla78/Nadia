@@ -150,6 +150,16 @@ class BoutiquesController extends AppController {
 
 	}
 
+ public function article($id=null)
+	{	
+		if (!$this->Boutique->Article->exists($id)) {
+			throw new NotFoundException(__('Invalid cm'));
+		}
+		$options = array('conditions' => array('Article.' . $this->Boutique->Article->primaryKey => $id));
+		$this->set('article', $this->Boutique->Article->find('first', $options));
+                
+        }
+
 
 	public function comande()
 	{

@@ -1,4 +1,4 @@
-<?php debug($boutique);?>
+
 <br>
 <div class="row panel panel-noborder">
 <?php foreach ($boutique as $keii):?>
