@@ -2662,7 +2662,9 @@ ul.pagination {
   text-align: right !important; }
 
 .text-center {
-  text-align: center !important; }
+  text-align: center !important; 
+font-family: arial;
+font-size: 2.3em;}
 
 .text-justify {
   text-align: justify !important; }
@@ -5261,3 +5263,4 @@ th.hide-for-touch {
 
 .touch th.show-for-touch {
   display: table-cell !important; }
+

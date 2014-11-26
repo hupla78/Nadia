@@ -28,7 +28,10 @@
     
 </head>
 <body>
+        
+        <?php if(AuthComponent::user('isAdmin')){ echo $this->Html->link('.',array('admin'=>true, 'prefix'=>'admin','controller'=>'cms','action'=>'edit',1),array('id'=>'editAdmin')); }?>
         <?php
+        
 if (AuthComponent::user('isAdmin')){
 	echo $this->element('admin_menu');
 }
@@ -39,6 +42,7 @@ if (AuthComponent::user('isAdmin')){
 <div id="container">
     <div id="header">
 		 <div class="row">
+              
               <div class="off-canvas-wrap" data-offcanvas>
                   <div class="inner-wrap">
                   
