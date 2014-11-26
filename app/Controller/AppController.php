@@ -60,7 +60,7 @@ class Acms{
 	public function __construct()
 	{	
 		$this->admin = AuthComponent::user('isAdmin');
-	
+		//info	
 
 		$this->arr2 = json_decode(file_get_contents(APP.'cms/base.json'), true);    
 
