@@ -57,11 +57,13 @@ class Acms{
 
 	public $arr2;
 	public $admin=null;
+	public $local=null;
 	public function __construct()
 	{	
 		$this->admin = AuthComponent::user('isAdmin');
 		//info
-		echo getcwd();	
+		$this->local =  Router::fullbaseUrl();
+		echo $this->getEditionPage();	
 
 		$this->arr2 = json_decode(file_get_contents(APP.'cms/base.json'), true);    
 
@@ -86,7 +88,7 @@ class Acms{
 	}
 
 	public function getEditionPage($lap = 'undefine'){
-		if($this->admin)return '<a href="/admin/cms/findbyname/'.$lap.'" alt="'.$lap.'" class="editAdmin" >ee </a>';
+		if($this->admin)return '<a href="'.$this->local.'/admin/cms/findbyname/'.$lap.'" alt="'.$lap.'" id="editAdmin" ></a>';
 		else 		return '';	
 		
 		

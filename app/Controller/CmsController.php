@@ -102,15 +102,7 @@ class CmsController extends AppController {
 	}
 
 
-        public function article($id=null)
-        {	if (!$this->Cm->exists($id)) {
-			throw new NotFoundException(__('Invalid cm'));
-		}
-		$options = array('conditions' => array('Cm.' . $this->Cm->primaryKey => $id));
-		$this->set('cm', $this->Cm->find('first', $options));
-                
-        }
-
+       
  /**
  * admin_delete method
  *
