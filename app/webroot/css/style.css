@@ -1,3 +1,12 @@
+#editAdmin{
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/editcolor.png');
+    display:inline-block;
+    position: absolute;
+}
+
+
 body{
  background: black;   
 }
@@ -144,4 +153,113 @@ li.separbot div.panel{
     padding-right: 2rem;
     padding-top: 1rem;
     
+}
+
+
+.element-article-img{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+
+
+.ajoutpanier{   
+    
+    text-align: right;
+    
+}
+
+
+
+
+#prix-article{
+    font-family: arial;
+    font-size: 15px;
+    padding-left: 15px;
+
+    margin-top: 30px;
+}
+
+@media only screen and (max-width:64.063em) {
+ #prix-article {
+    margin-top: 30px;
+ }
+}
+@media only screen and (max-width:64.063em) {
+.txt-debordement-article{
+    margin-top: 10px;
+}
+    
+}
+
+
+
+
+.text-center1{
+text-align: center !important; 
+font-family: arial;
+font-size: 2.3em;}
+
+
+
+
+.txt-debordement-article {
+   
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+    text-overflow: ellipsis; 
+    
+}
+
+.inline-text {
+    display: inline;
+}
+
+.savoir-article {
+    text-align: center;
+}
+
+
+
+.panel-noborder {
+    border: none;
+}
+
+
+
+.transition-souris {
+    background: white ;
+     -webkit-animation: lap 0.3s; 
+    animation: lap 0.3s;}
+
+.transition-souris:hover {
+   
+    background: white;
+    -webkit-animation: myfirst 0.3s; 
+    animation: myfirst 0.3s;
+    background: #F0F0F0;
+}
+
+
+@-webkit-keyframes myfirst {
+    from {background: white;}
+    to {background: #F0F0F0;}
+}
+
+@keyframes myfirst {
+    from {background: white;}
+    to {background: #F0F0F0;}
+}
+
+@-webkit-keyframes lap {
+     from {background: #F0F0F0;}
+    to {background: white;}
+}
+
+@keyframes lap {
+    from {background: #F0F0F0;}
+    to {background: white;}
 }

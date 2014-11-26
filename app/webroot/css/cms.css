@@ -23,7 +23,7 @@ background: <?php echo $Acms->getOne('color-fond-exterieur');?>
 li.separbot:hover{
 background: <?php echo $Acms->getOne('color-passage-souris-menu-générale');?>}
 
-.row {
+div.header div.row {
     
     background: <?php echo $Acms->getOne('color-fond-interieur');?>
    
