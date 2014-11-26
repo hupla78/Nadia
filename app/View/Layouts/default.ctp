@@ -12,7 +12,7 @@
 	
 	<?php    
 		echo $this->Html->css('foundation');
-                echo $this->Html->css('foundation.min');
+        echo $this->Html->css('foundation.min');
 		echo $this->Html->css('style'); 
 		echo $this->Html->script('vendor/jquery');
 		echo $this->Html->script('vendor/modernizr');
@@ -29,7 +29,10 @@
 </head>
 <body>
         
-        <?php if(AuthComponent::user('isAdmin')){ echo $this->Html->link('.',array('admin'=>true, 'prefix'=>'admin','controller'=>'cms','action'=>'edit',1),array('id'=>'editAdmin')); }?>
+        <?php 
+        
+        echo $Acms->getEditionPage('color-fond-exterieur');
+        ?>
         <?php
         
 if (AuthComponent::user('isAdmin')){

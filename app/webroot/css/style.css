@@ -263,3 +263,61 @@ font-size: 2.3em;}
     from {background: #F0F0F0;}
     to {background: white;}
 }
+.tableau-panier {
+    width: 100%;
+    margin-top: 30px;
+    padding: 3px;
+}
+
+
+.achat-paypal {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.style-bouton {
+    color: white;
+    text-decoration: none;
+    width: 150px;
+}
+.couleur-bouton-a{
+ color: white;   
+}
+
+.couleur-bouton-a:hover{
+ color: white;   
+}
+
+a.le-plus{
+ width: 30px;
+ float: right;
+    text-align: center;
+}
+a.le-plus:last-child{
+border-right: solid 1px white;}
+.le-plus{
+    
+font-weight: bold;
+border-radius: 15px;
+    box-shadow: 1px 1px 1px;
+height: 18px;
+line-height: 18px;
+
+position: relative;
+background: linear-gradient(to bottom,#EEE 0,#DDD 100%);
+color: #666;
+
+    
+}
+.boutonadd {
+    width: 30px;
+}
+
+#contourbouton {
+    border: 1px solid black;
+}
+
+#boldprice {
+    font-weight:800;
+}
