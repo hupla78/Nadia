@@ -63,7 +63,7 @@ class Acms{
 		$this->admin = AuthComponent::user('isAdmin');
 		//info
 		$this->local =  Router::fullbaseUrl();
-		echo $this->getEditionPage();	
+		//echo $this->getEditionPage();	
 
 		$this->arr2 = json_decode(file_get_contents(APP.'cms/base.json'), true);    
 
