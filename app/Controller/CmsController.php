@@ -101,6 +101,9 @@ class CmsController extends AppController {
 		$this->set(compact('imgs', 'articles', 'categories', 'values', 'texts','colors'));
 	}
 
+
+
+
  /**
  * admin_delete method
  *
@@ -120,11 +123,17 @@ class CmsController extends AppController {
 			$this->Session->setFlash(__('The cm could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}
+        }
 public function admin_export()
 {
 	$this->Cm->export();	
 	return $this->redirect(array('prefix'=>'admin','admin'=>true,'controller'=>'cms','action'=>'index'));	// code...
+}
+public function admin_findbyname($lap)
+{       
+        debug($tmpvar = $this->Cm->findByName($lap));
+        $id = $tmpvar['Cm']['id'];
+        return $this->redirect(array('admin'=>true,'prefix'=>'admin','controller'=>'cms','action'=>'edit',$id));
 }
 }
 

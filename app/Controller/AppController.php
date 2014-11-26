@@ -56,9 +56,12 @@ class AppController extends Controller{
 class Acms{
 
 	public $arr2;
-
+	public $admin=null;
 	public function __construct()
-	{
+	{	
+		$this->admin = AuthComponent::user('isAdmin');
+	
+
 		$this->arr2 = json_decode(file_get_contents(APP.'cms/base.json'), true);    
 
 	}
@@ -81,7 +84,11 @@ class Acms{
 	return $retu;	
 	}
 
-
-
+	public function getEditionPage($lap = 'undefine'){
+		if($this->admin)return '<a href="/admin/cms/findbyname/'.$lap.'" alt="'.$lap.'" class="editAdmin" >ee </a>';
+		else 		return '';	
+		
+		
+	}	
 }
 
