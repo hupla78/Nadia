@@ -45,7 +45,13 @@ if($panier==null):?>
 </table>
 
 <?php
-echo $this->Html->link('achat',array('controller'=>'users','action'=>'inscription'));
+            if(!SessionComponent::read('Auth.User.id')){
+echo $this->Html->link('Inscription',array('controller'=>'users','action'=>'inscription'));
+echo $this->Html->link('Connection',array('controller'=>'users','action'=>'login'));
+        }else{
+echo $this->Html->link('achat',array('controller'=>'Boutiques','action'=>'command'));
+        }
+
 ?>
 
 

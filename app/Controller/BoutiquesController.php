@@ -8,6 +8,14 @@
  * @property SessionComponent $Session
  */
 class BoutiquesController extends AppController {
+    
+    public function beforeFilter(){
+		parent::beforeFilter();
+		$this->Auth->allow('panier','index','article','subArticle','addArticle');
+	}
+    
+    
+    
 
 	/**
 	 * Components
@@ -161,7 +169,7 @@ class BoutiquesController extends AppController {
         }
 
 
-	public function comande()
+	public function command()
 	{
 		
 	}
@@ -175,6 +183,19 @@ class BoutiquesController extends AppController {
 
 
 	}
+    
+    public function ispayd(){
+            
+
+
+	}
+    
+    
+    public function error(){
+
+
+	}
+    
 	
 
 }
