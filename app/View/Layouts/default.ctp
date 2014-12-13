@@ -29,10 +29,7 @@
 </head>
 <body>
         
-        <?php 
-        
-        echo $Acms->getEditionPage('color-fond-exterieur');
-        ?>
+       
         <?php
         
 if (AuthComponent::user('isAdmin')){

@@ -7,15 +7,31 @@ App::uses('CakeEmail', 'Network/Email');
 class MailController extends AppController
 {
 
+	
+	/*public function index($d) {
+    
+  if(!empty($this->request->data)){
+			$vtd = $this->request-data;
+			$Email = new CakeEmail('gmail');
+			$Email->from('test.beauval@gmail.com');
+			$Email->to('test.beauval@gmail.com' );
+			$Email->emailFormat('html');
+			$Email->template('contact')->viewVars(array($d));
+			$Email->subject('Contact :: site');
+			$Email->send('coucou');}	
+
+	 }*/
+	
+	
 	public function sendToMany()
 	{	
 		if(!empty($this->request->data)){
 			$vtd = $this->request-data;
 			$Email = new CakeEmail('gmail');
 			$Email->from('ruhtra.php@gmail.com');
-			$Email->to(vtd['desti'] );
-			$Email->subject(vtd['sujet']);
-			$Email->viewVars(array('message'=>vtd['text']));
+			$Email->to(vtd('desti') );
+			$Email->subject(vtd('sujet'));
+			$Email->viewVars(array('message'=>vtd('text')));
 			$Email->send();}	
 	}
 	
@@ -25,9 +41,9 @@ class MailController extends AppController
 			$vtd = $this->request-data;
 			$Email = new CakeEmail('gmail');
 			$Email->from('ruhtra.php@gmail.com');
-			$Email->to(vtd['desti'] );
-			$Email->subject(vtd['sujet']);
-			$Email->viewVars(array('message'=>vtd['text']));
+			$Email->to(vtd('desti') );
+			$Email->subject(vtd('sujet'));
+			$Email->viewVars(array('message'=>vtd('text')));
 			$Email->send();}	
 
 	}
@@ -43,7 +59,7 @@ class MailController extends AppController
 	
 	}
 
-
+ 
 }
 
 

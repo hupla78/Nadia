@@ -40,6 +40,9 @@
 
 class EmailConfig {
 
+
+   
+
         public $gmail = array(
 		'host' => 'ssl://smtp.gmail.com',
                 'port' => 465,
@@ -51,5 +54,20 @@ class EmailConfig {
 		'charset' => 'utf-8', 
 		'headerCharset' => 'utf-8'
 	);
+	
+	
+	/*
+	       public $gmail = array(
+		'host' => 'ssl://smtp.gmail.com',
+                'port' => 465,
+		'username' => 'test.beauval@gmail.com',
+		'password' => '28e184b81db7',
+		'transport' => 'Smtp',
+		'tls'=>false,
+		'timeout'=>100,
+		'charset' => 'utf-8', 
+		'headerCharset' => 'utf-8'
+	);*/
+	
 
 }
