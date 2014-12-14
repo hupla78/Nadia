@@ -29,7 +29,7 @@ class MailController extends AppController
 			$vtd = $this->request-data;
 			$Email = new CakeEmail('gmail');
 			$Email->from('ruhtra.php@gmail.com');
-			$Email->to(vtd('desti') );
+			$Email->to(vtd('desti'));
 			$Email->subject(vtd('sujet'));
 			$Email->viewVars(array('message'=>vtd('text')));
 			$Email->send();}	
