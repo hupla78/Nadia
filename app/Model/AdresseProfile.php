@@ -1,25 +1,25 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Boutique Model
+ * AdresseProfile Model
  *
  * @property User $User
  */
-class Boutique extends AppModel {
+class AdresseProfile extends AppModel {
 
 /**
  * Use table
  *
  * @var mixed False or table name
  */
-	public $useTable = 'boutique';
+	public $useTable = 'adresseProfile';
 
 /**
  * Display field
  *
  * @var string
  */
-	public $displayField = 'achat';
+	public $displayField = 'name';
 
 /**
  * Validation rules
@@ -27,7 +27,55 @@ class Boutique extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'achat' => array(
+		'name' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'rue' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'num_rue' => array(
+			'numeric' => array(
+				'rule' => array('numeric'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'codePostal' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+			'numeric' => array(
+				'rule' => array('numeric'),
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+			),
+		),
+		'vile' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
@@ -40,16 +88,6 @@ class Boutique extends AppModel {
 		'user_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'panier' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,
@@ -73,25 +111,6 @@ class Boutique extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
-	);
-
-    
-    
-	public $hasAndBelongsToMany =array(
-		'Categorie'=>array(
-			'clasName'=>'Categorie',
-			'joinTable'=>'boutiques_categories',
-		//	'foreignKey' => 'recipe_id',
-		//	'associationForeignKey' => 'ingredient_id',
-		),
-		'Article'=>array(
-			'className'=>'Article',
-			'joinTable'=>'boutiques_articles'
-		),
-        'User'=>array(
-			'className'=>'User',
-			'joinTable'=>'boutiques_articles'
 		)
 	);
 }

@@ -122,6 +122,19 @@ class PanierComponent extends Component{
 			$this->controller->Session->Write('Panier.TotalArticle',$total);
 
 		}
+    
+    private function needAdresse(){
+        
+        if($this->controller->Session->check('Panier.PayInfo.adresse')){
+            die('ok');
+        }else{
+            die('no');
+        }
+        
+        
+    }
+    private function setAdress(){}
+    
 
 
 }

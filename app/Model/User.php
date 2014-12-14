@@ -120,6 +120,29 @@ class User extends AppModel {
     
     
     
+    /**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'AdressePofile' => array(
+			'className' => 'AdressePofile',
+			'foreignKey' => 'User_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+    
+    
+    
     
 
 

@@ -176,12 +176,31 @@ class BoutiquesController extends AppController {
 
 	public function choixAdresse()
 	{
-		
+        
+        
+        
+        if(!empty($this->request->data)){
+            $this->Panier->setAdresse($this->request->data['option']);
+        }else{
+            $temps = $this->Boutique->User->findById($this->Session->read('Auth.User.id')); 
+            
+            id = 0;
+            
+//            foreach(temp as temps){
+//                lap
+//                adresse[]= 
+//                id++;
+//            }
+        }
+        
+           
 	}
 
 	public function pay(){
 
+        
 
+        
 	}
     
     public function ispayd(){
