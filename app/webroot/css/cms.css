@@ -15,13 +15,13 @@ background: <?php echo $Acms->getOne('color-fond-exterieur');?>
 
 .menu-generale {
     
-    background: <?php echo $Acms->getOne('color-fond-menu-générale');?>
+    background: <?php echo $Acms->getOne('color-fond-menu-generale');?>
    
 }
 
 
 li.separbot:hover{
-background: <?php echo $Acms->getOne('color-passage-souris-menu-générale');?>}
+background: <?php echo $Acms->getOne('color-passage-souris-menu-generale');?>}
 
 div.header div.row {
     
@@ -38,3 +38,6 @@ div.header div.row {
      
      
 .tab-bar h1{ color: <?php echo $Acms->getOne('color-police-top-bar');?>}
+.title2 {
+    
+}

@@ -1,4 +1,5 @@
 
+
 <?php
 /**
  * Application level Controller
@@ -87,8 +88,9 @@ class Acms{
 	return $retu;	
 	}
 
+	
 	public function getEditionPage($lap = 'undefine'){
-		if($this->admin)return '<a href="'.$this->local.'/admin/cms/findbyname/'.$lap.'" alt="'.$lap.'" id="editAdmin" ></a>';
+		if($this->admin) return '<a href="'.$this->local.'/nadiafin/Nadia/admin/cms/findbyname/'.$lap.'" alt="'.$lap.'" id="editAdmin" ></a>';
 		else 		return '';	
 		
 		
