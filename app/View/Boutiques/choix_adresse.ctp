@@ -2,23 +2,8 @@
 
 
 echo $this->Form->create('');
-
-echo $this->Form->end('choisir');
-echo $this->Form->input('field', array(
-    'type' => 'radiobox',
-    'before' => '--avant--',
-    'after' => '--après--',
-    'between' => '--entre---',
-    'separator' => '--séparateur--',
-    'options' => array('1', '2')
-));
-
-
-
-
-
-
-echo $this->Form->radio('type',$adresse, array('legend' => false));
+echo $this->Form->radio('adresse',$adresse, array('legend' => false));
+echo $this->Form->end('next');
 
 
 

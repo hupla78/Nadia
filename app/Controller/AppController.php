@@ -88,7 +88,7 @@ class Acms{
 	}
 
 	public function getEditionPage($lap = 'undefine'){
-		if($this->admin)return '<a href="'.$this->local.'/admin/cms/findbyname/'.$lap.'" alt="'.$lap.'" id="editAdmin" ></a>';
+		if($this->admin)return '<a  href="'.$this->local.'/admin/cms/findbyname/'.$lap.'" alt="'.$lap.'" id="editAdmin" ></a>';
 		else 		return '';	
 		
 		

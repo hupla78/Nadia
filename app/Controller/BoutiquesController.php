@@ -127,6 +127,19 @@ class BoutiquesController extends AppController {
 
 		$this->set('boutique',$ele);
 	}
+    
+    
+    
+    public function view($id = null) {
+		if (!$this->Boutique->Article->exists($id)) {
+			throw new NotFoundException(__('Invalid boutique'));
+		}
+		
+		$this->set('article', $this->Boutique->Article->findById($id));
+	}
+    
+    
+    
 
 
 	public function panier()
@@ -180,17 +193,25 @@ class BoutiquesController extends AppController {
         
         
         if(!empty($this->request->data)){
-            $this->Panier->setAdresse($this->request->data['option']);
+            $this->Panier->setAdresse($this->request->data['Boutique']['adresse']);
+            $this->redirect(array('action'=>'pay'));
         }else{
             $temps = $this->Boutique->User->findById($this->Session->read('Auth.User.id')); 
             
-            id = 0;
+            $id = 0;
+            $adresse = array();
+            foreach($temps['AdressePofile'] as $temp){
+                
+                $tempAdresse = '<b>'.$temp['name'].'</b><br>'
+                    .$temp['num_rue'].' '
+                    .$temp['rue'].' '
+                    .$temp['codePostal'].' '
+                    .$temp['vile'];
+             $adresse[$temp['id']]=$tempAdresse;
+           }
             
-//            foreach(temp as temps){
-//                lap
-//                adresse[]= 
-//                id++;
-//            }
+            debug($adresse);
+            $this->set('adresse',$adresse);
         }
         
            
@@ -198,15 +219,13 @@ class BoutiquesController extends AppController {
 
 	public function pay(){
 
-        
+        $this->Panier->needAdresse();
 
         
 	}
     
     public function ispayd(){
             
-
-
 	}
     
     

@@ -123,17 +123,21 @@ class PanierComponent extends Component{
 
 		}
     
-    private function needAdresse(){
+    public function needAdresse(){
         
-        if($this->controller->Session->check('Panier.PayInfo.adresse')){
-            die('ok');
+        if($this->controller->Session->check('Panier.PayInfo.adresseId')){
+           return true;
         }else{
-            die('no');
+            $this->controller->redirect(array('action'=>'choixAdresse'));
         }
         
         
     }
-    private function setAdress(){}
+    
+    public function setAdresse($id){
+        $this->controller->Session->Write('Panier.PayInfo.adresseId',$id);
+    
+    }
     
 
 

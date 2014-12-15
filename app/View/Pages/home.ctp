@@ -5,9 +5,12 @@
 
 <div class="espacejj">
         <ul class="example-orbit" data-orbit>
-              <?php foreach($Acms->getAll('slider') as $key): ?>
+              <?php 
+        $count = 0;
+foreach($Acms->getAll('slider') as $key): ?>
                   <li >
-	                    <?php 	echo $this->Html->image('import/'.$key, array('width'=>'100%'));?>
+<?php   echo $Acms->getEditionPages('slider'.$count++);
+        echo $this->Html->image('import/'.$key, array('width'=>'100%'));?>
                   </li>
           <?php endforeach; ?>
         </ul>

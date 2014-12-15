@@ -6,9 +6,7 @@
 	<title>
 		Fil de Bohème
 	</title>
-	
-	
-	
+
 	
 	<?php    
 		echo $this->Html->css('foundation');
@@ -29,7 +27,12 @@
 </head>
 <body>
         
-        <?php if(AuthComponent::user('isAdmin')){ echo $this->Html->link('.',array('admin'=>true, 'prefix'=>'admin','controller'=>'cms','action'=>'edit',1),array('id'=>'editAdmin')); }?>
+<?php if(AuthComponent::user('isAdmin')){ 
+        echo $this->Html->link('.',array('admin'=>true, 'prefix'=>'admin','controller'=>'cms','action'=>'edit',1),array('id'=>'editAdmin'));
+        
+    echo $Acms->getEditionPage('lap');
+    }?>
+        
         <?php
         
 if (AuthComponent::user('isAdmin')){
@@ -40,6 +43,7 @@ if (AuthComponent::user('isAdmin')){
 
 
 <div id="container">
+   
     <div id="header">
 		 <div class="row">
               
@@ -54,10 +58,11 @@ if (AuthComponent::user('isAdmin')){
     </section>
       
       <section class="middle tab-bar-section">
+        <?php echo $Acms->getEditionPage('val');?>
         <h1 class="title">Fil de Bohème</h1>
       </section>
 
-  
+ 
     </nav><!-- fin menu -->
 
     
