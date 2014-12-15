@@ -27,12 +27,12 @@
 </head>
 <body>
         
-<?php if(AuthComponent::user('isAdmin')){ 
-        echo $this->Html->link('.',array('admin'=>true, 'prefix'=>'admin','controller'=>'cms','action'=>'edit',1),array('id'=>'editAdmin'));
+
+        <?php echo $Acms->getEditionPage('color-fond-exterieur'); ?>
         
-    echo $Acms->getEditionPage('lap');
-    }?>
+      
         
+       
         <?php
         
 if (AuthComponent::user('isAdmin')){
@@ -40,7 +40,7 @@ if (AuthComponent::user('isAdmin')){
 }
 ?>
 
-
+ <?php echo $Acms->getEditionPage('color-fond-interieur'); ?>
 
 <div id="container">
    
@@ -56,10 +56,13 @@ if (AuthComponent::user('isAdmin')){
       <section class="left-medium">
         <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
     </section>
-      
+         
       <section class="middle tab-bar-section">
-        <?php echo $Acms->getEditionPage('val');?>
-        <h1 class="title">Fil de Bohème</h1>
+
+    
+        
+        
+        <h1 class="title">Fil de Bohème   <?php echo $Acms->getEditionPage('color-police-top-bar'); ?>   </h1> 
       </section>
 
  
@@ -68,7 +71,7 @@ if (AuthComponent::user('isAdmin')){
     
     <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-        <li><label>Menu</label></li>
+        <li><label>Menu <?php echo $Acms->getEditionPage('color-fond-top-bar'); ?>  </label></li>
             <li>
         
         <?php
@@ -98,6 +101,7 @@ if (AuthComponent::user('isAdmin')){
        <div class="large-5 columns medium-5 columns small-12 columns espacejj">
      	<?php echo $this->Html->image('logo.jpg');
 			?>
+      
       </div>
       
     <div class="large-6 columns medium-6 columns small-12 columns">
@@ -134,13 +138,19 @@ if (AuthComponent::user('isAdmin')){
          
          <li class="menud large-3 small-6 medium-3 columns separbot">
                <div class="panel">
+                   
+                   <?php echo $Acms->getEditionPage('color-fond-menu-generale'); ?>
+                 
                  <?php echo $this->Html->link('Produits',array('prefix'=>false,'admin'=>false,'controller'=>'boutiques','action'=>'index', ),array('class'=>'pi-text-center'))?>  
+                  <?php echo $Acms->getEditionPage('color-passage-souris-menu-generale'); ?>
+                 
                </div>
                
         
         </li>
         <li class="menud large-3 small-6 medium-3 columns separbot">
                <div class="panel">
+                
                  <?php echo $this->Html->link('Fil de Boheme',array('prefix'=>false,'admin'=>false,'controller'=>'pages','action'=>'home', ),array('class'=>'pi-text-center'))?>  
                </div>
                
@@ -149,7 +159,14 @@ if (AuthComponent::user('isAdmin')){
         
         <li class="menud large-3 small-6 medium-3 columns separbot">
                <div class="panel">
+                 
+                  <?php echo $Acms->getEditionPage('color-police-menu-generale-sans-souris'); ?>
+                 
+                 
                  <?php echo $this->Html->link('Actualité',array('prefix'=>false,'admin'=>false,'controller'=>'pages','action'=>'home', ),array('class'=>'pi-text-center'))?>  
+                 
+                 <?php echo $Acms->getEditionPage('color-police-menu-generale-passage-souris'); ?>
+                 
                </div>
                
         
