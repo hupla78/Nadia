@@ -42,19 +42,29 @@ public function logout(){
 public function inscription(){
 
 if ($this->request->is('post')) {
-			$this->User->create();
+			$this->User->create();                   
 			if ($this->User->save($this->request->data)) {
+                
+                
+                
+                
+                
 				$this->Session->setFlash(__('votre compte a ete crée.'));
 
-				$email = new CakeEmail('gmail');
-				$email->template('inscription');		
-				$email	->emailFormat('both')
-					->to('ruhtra.php@gmail.com')
-					->from('ruhtra.php@gmail.com')
-					->viewVars(array('message'=>'inscription sucess'))
-					->send();
+//				$email = new CakeEmail('gmail');
+//				$email->template('inscription');		
+//				$email	->emailFormat('both')
+//					->to('ruhtra.php@gmail.com')
+//					->from('ruhtra.php@gmail.com')
+//					->viewVars(array('message'=>'inscription sucess'))
+//					->send();
+                
 
                 $this->Auth->login();
+                $this->request->data['adresseProfile']['user_id'] = $this->Session->read('Auth.User.id');
+                
+                 $this->User->AdressePofile->create();
+                $this->User->AdressePofile->save($this->request->data['adresseProfile']);
 				return $this->redirect('/');
 			} else {
 				$this->Session->setFlash(__('no'));
@@ -72,6 +82,11 @@ if ($this->request->is('post')) {
     }
     
     
+    
+    public function index(){
+        $temp = $this->User->findById($this->Session->read('Auth.User.id'));
+        $this->set('userInfo',$temp);
+    }
     
     
     
