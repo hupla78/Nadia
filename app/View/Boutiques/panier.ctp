@@ -13,7 +13,8 @@ if($panier==null):?>
 	</thead>
 	<?php $total = 0;?>
 	<?php foreach ($panier as $key):?>
-	<?php if(is_array($key)):?>
+	<?php
+	 if(is_array($key)and key($key)!="adresseId" ):?>
 	<tr>
 		<td><?php echo $key['Article']['name']?></td>
 		<td>

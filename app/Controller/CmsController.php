@@ -10,6 +10,13 @@
  */
 class CmsController extends AppController {
 
+    public function beforeFilter(){
+		parent::beforeFilter();
+        $this->needToBeAdmin();
+           // die();
+        }
+
+
 /**
  * Components
  *

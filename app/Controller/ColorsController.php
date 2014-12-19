@@ -9,6 +9,13 @@ App::uses('AppController', 'Controller');
  */
 class ColorsController extends AppController {
 
+    public function beforeFilter(){
+		parent::beforeFilter();
+        $this->needToBeAdmin();
+           // die();
+        }
+
+
 /**
  * Components
  *

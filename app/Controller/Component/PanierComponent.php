@@ -100,6 +100,7 @@ class PanierComponent extends Component{
 
 	//je renvoi la liste des articles
 	public function listArticle(){
+
 		return $this->controller->Session->read('Panier');
 	}
 

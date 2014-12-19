@@ -1,5 +1,6 @@
 <?php
-
+App::uses('CakeEmail', 'Network/Email');
+App::uses('CakeTime', 'Utility');
 /**
  * Boutiques Controller
  *
@@ -210,7 +211,7 @@ class BoutiquesController extends AppController {
              $adresse[$temp['id']]=$tempAdresse;
            }
             
-            debug($adresse);
+            //debug($adresse);
             $this->set('adresse',$adresse);
         }
         
@@ -225,6 +226,26 @@ class BoutiquesController extends AppController {
 	}
     
     public function ispayd(){
+
+setlocale(LC_TIME, "fr_FR");
+
+
+        $temp = array(
+            'userName'      => $this->Session->read('Auth.User.username'),
+            'Adresse'       => $this->Boutique->User->AdressePofile->findById( $this->Session->read('Panier.PayInfo.adresseId'),array('recursive'=>0)),
+            'prix!Total'    =>$this->Session->read('Panier.Total'),
+            'date'          => strftime("%d/%m/%Y")
+        );
+        debug($temp);
+        die();
+
+               $email = new CakeEmail('gmail');
+				$email->template('informatif');
+				$email	->emailFormat('both')
+					->to($this->Session->read('Auth.User.email'))
+					->from('ruhtra.php@gmail.com')
+					->viewVars($temp)
+					->send();
             
 	}
     

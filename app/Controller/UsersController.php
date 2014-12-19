@@ -1,14 +1,25 @@
 <?php 
 App::uses('CakeEmail', 'Network/Email');
+
 class UsersController extends AppController{
     
+    public $admin = 'ruhtra.php@gmail.com';
+
     public function beforeFilter(){
         parent::beforeFilter();
         $this->Auth->allow('inscription');
+        $this->needToBeAdmin();
+        }
     
-    }
     
-    
+
+public function needToBeAdmin(){
+        if($this->request->params['prefix'] == 'admin' and !$this->Session->read('Auth.User.isAdmin')){
+            $this->redirect('/');
+        }
+}
+
+
 
 public function login(){
     //$this->User->create(array(
@@ -54,7 +65,7 @@ if ($this->request->is('post')) {
 //				$email = new CakeEmail('gmail');
 //				$email->template('inscription');		
 //				$email	->emailFormat('both')
-//					->to('ruhtra.php@gmail.com')
+//					->to($this->admin)
 //					->from('ruhtra.php@gmail.com')
 //					->viewVars(array('message'=>'inscription sucess'))
 //					->send();
@@ -88,7 +99,64 @@ if ($this->request->is('post')) {
         $this->set('userInfo',$temp);
     }
     
+    public function admin_sendToMany()
+	{
+        parent::needToBeAdmin();
+
+        $tepo = $this->User->find('list',array('fields'=>'User.email'));
+        debug($tepo);
+		if(!empty($this->request->data)){
+			$vtd = $this->request-data;
+			$Email = new CakeEmail('gmail');
+			$Email->from($this->admin);
+			$Email->to(vtd['desti']);
+			$Email->subject(vtd['sujet']);
+			$Email->viewVars(array('message'=>vtd['text']));
+			$Email->send();}
+	}
+
+	public function admin_sendToOne()
+	{
+		if(!empty($this->request->data)){
+			$vtd = $this->request-data;
+			$Email = new CakeEmail('gmail');
+			$Email->from($this->admin);
+			$Email->to($tepo);
+			$Email->subject(vtd['sujet']);
+			$Email->viewVars(array('message'=>vtd['text']));
+			$Email->send();}else{
+            $this->set('users',$this->User->find('list',array('fields'=>'User.email')));
+        }
+
+	}
     
+    public function sendToAdmin()
+	{
+
+		if(!empty($this->request->data)){
+			$vtd = $this->request-data;
+			$Email = new CakeEmail('gmail');
+			$Email->from($this->Session->read('Auth.User.email'));
+			$Email->to('ruhtra.php@gmail.com');
+			$Email->subject(vtd['sujet']);
+			$Email->viewVars(array('message'=>vtd['text']));
+			$Email->send();
+        }
+
+	}
+
+	public function text()
+	{
+		$Email = new CakeEmail();
+				$Email->template('inscription','informatif');
+				$Email	->emailFormat('both')
+					->to('ruhtra.mar@gmail.com')
+					->from('ruhtra.php@gmail.com')
+					->send();
+
+	}
+
+
     
     
 }

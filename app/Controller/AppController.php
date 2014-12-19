@@ -41,6 +41,14 @@ class AppController extends Controller{
 		$this->set('Acms',new Acms());
 	}
 
+
+    public function needToBeAdmin(){
+        if(!$this->Session->read('Auth.User.isAdmin')){
+            $this->redirect('/');
+        }
+    }
+
+
 	protected function _isAuthorizedFor($admin){
 
 		if(! $this->Session->check('Auth.User.id')){return;}
