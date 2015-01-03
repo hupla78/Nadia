@@ -263,3 +263,10 @@ font-size: 2.3em;}
     from {background: #F0F0F0;}
     to {background: white;}
 }
+
+
+.barsearch {
+    display: block;
+    width: auto;
+    margin-top: 30px;
+}

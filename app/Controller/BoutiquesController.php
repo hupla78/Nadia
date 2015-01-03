@@ -12,7 +12,7 @@ class BoutiquesController extends AppController {
     
     public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('panier','index','article','subArticle','addArticle');
+		$this->Auth->allow('panier','index','article','subArticle','addArticle','search');
 	}
     
     
@@ -255,6 +255,28 @@ setlocale(LC_TIME, "fr_FR");
 
 	}
     
+  public function search() {
+      $this->autoRender = false;
+       $term = $this->request->query['q'];
+       $list =  $this->Boutique->Article->find('all',array('fields'=>array('id','name'),
+                                                           'conditions' => array(
+                                                                                'Article.name LIKE' => '%'.$term.'%'
+        )
+));
+        foreach($list as $key => $tem){
+            $result[$key]['id'] = $tem['Article']['id'];
+            $result[$key]['text'] = $tem['Article']['name'];
+
+        }
+
+
+        echo json_encode($result);
+}
+
+
+
+
+
 	
 
 }

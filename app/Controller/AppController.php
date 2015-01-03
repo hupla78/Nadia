@@ -22,6 +22,7 @@
  */
 
 App::uses('Controller', 'Controller');
+App::uses('ConnectionManager', 'Model');
 
 /**
  * Application Controller
@@ -59,6 +60,41 @@ class AppController extends Controller{
 
 
 	}
+
+
+
+    public function search() {
+        $this->autoRender = false;
+        App::Import('ConnectionManager');
+	$ds = ConnectionManager::getDataSource('default');
+	$dsc = $ds->config;
+
+        // get the search term from URL
+        $mysqli = new mysqli($dsc['host'],$dsc['login'],$dsc['password'], $dsc['database']);
+        $res = $mysqli->query("SELECT id,username as text FROM users");
+        $result;
+
+        foreach($res->fetch_all() as $key => $tem){
+            $result[$key]['id'] = $tem[0];
+            $result[$key]['text'] = $tem[1];
+
+        }
+
+
+        echo json_encode($result);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -105,5 +141,6 @@ class Acms{
 		
 		
 	}	
+
 }
 
