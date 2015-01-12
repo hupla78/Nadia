@@ -218,6 +218,7 @@ if (AuthComponent::user('isAdmin')){
 
 
 		<div id="content">
+		<?php echo $this->Session->flash();?>
 	<?php echo $this->fetch('content'); ?>
 		</div>
 
