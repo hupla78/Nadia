@@ -2,7 +2,7 @@
 
         <div class="large-6 columns medium-6 columns small-6 columns espacejj">
 
-        <div class="trait"></div>
+
 
 <?php
 if($panier==null):?>
@@ -17,7 +17,7 @@ if($panier==null):?>
 
 
 <?php else: ?>
-<table>
+<table class="tailletab">
 	<thead>
 
 		<tr>

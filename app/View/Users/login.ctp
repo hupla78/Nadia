@@ -1,12 +1,26 @@
 
+
+<div class="decal">
+
 <?php
 
-echo $this->Form->create('User');
+echo $this->Form->create('User');?>
 
-echo $this->Form->input('username');
-echo $this->Form->input('password');
+<div class="log">
+<?php
+echo $this->Form->input('username');?>
 
 
-echo $this->Form->end('connection');
 
-?>
+<?php
+echo $this->Form->input('password');?>
+</div>
+
+
+
+<?php
+echo $this->Form->submit('Connection',array('class'=>'button'));
+echo $this->Form->end();?>
+
+
+</div>

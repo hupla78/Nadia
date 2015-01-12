@@ -2,7 +2,7 @@
 <p class="recap">Récapitulatif de votre commande</p>
 
 
-<table>
+<table class="tailletab">
 	<thead>
 
 		<tr>
@@ -16,6 +16,8 @@
 			<th class="tabb2">Total</th>
 		</tr>
 	</thead>
+
+
 	<?php $total = 0;?>
 	<?php foreach ($panier as $key):?>
 	<?php
@@ -52,7 +54,8 @@
 </table>
 
 
-</div>
+
 <?php 
-echo $this->Html->link("Choix l'adresse de livraison",array('controller'=>'Boutiques','action'=>'choixAdresse'),array('class'=>'livraison'));
+echo $this->Html->link("Choix l'adresse de livraison",array('controller'=>'Boutiques','action'=>'choixAdresse'),array('class'=>'livraison button'));
 ?>
+</div>
