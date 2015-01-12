@@ -185,7 +185,7 @@ class BoutiquesController extends AppController {
 
 	public function command()
 	{
-		
+		$this->set('panier',$this->Panier->listArticle());
 	}
 
 	public function choixAdresse()
@@ -198,7 +198,7 @@ class BoutiquesController extends AppController {
             $this->redirect(array('action'=>'pay'));
         }else{
             $temps = $this->Boutique->User->findById($this->Session->read('Auth.User.id')); 
-            if(empty($temps)){}
+
             $id = 0;
             $adresse = array();
             foreach($temps['AdressePofile'] as $temp){
