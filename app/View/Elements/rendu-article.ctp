@@ -1,4 +1,4 @@
-<div class="large-6 medium-12 small-12 columns " >
+<div class="large-6 medium-12 small-12 columns hauteur-elmt" >
 <div class="panel row transition-souris"  >
 	
 	<p class="text-center1 hide-for-medium" ><?php echo  $key['Article']['name'];?></p>

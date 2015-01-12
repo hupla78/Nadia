@@ -126,23 +126,33 @@ if (AuthComponent::user('isAdmin')){
 
 
     </div>
-    <div class="large-6 columns medium-6 small-12">
-        <div class="large-3 columns">Panier</div>
-        <div class="large-9 columns">
+    <div class="large-6 columns medium-6 small-12 espace-barre">
+        <div class=" medium-6 small-6 columns class-panier">
+
            <?php
               $val =   SessionComponent::read('Panier.TotalArticle');
-                if($val==0){echo"vide";}else{
-                echo 'Prix:'.SessionComponent::read('Panier.Total').'€ <br>';
-                 echo 'Articles:'.SessionComponent::read('Panier.TotalArticle');}?>
+                if($val==0){echo"Le panier est vide";}else{
+                echo 'Prix du panier : '.SessionComponent::read('Panier.Total').' € <br>';?>
+
+                   </div>
+                    <div class=" medium-6 small-6 columns">
+
+
+                   <?php
+
+
+                 echo "Nombres d'articles : ".SessionComponent::read('Panier.TotalArticle');}?>
 
               </div>
     </div>
-
+     <div class="large-6 columns medium-12 small-12 ">
+ <div class="large-6 columns medium-12 small-12 espace-barre2 button ">
+  <?php echo $this->Html->link("Voir l'etat de son panier",array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false),array('class'=>'pi-text-center'))?>
+     </div>
 
        </div>
 
-
-
+</div>
  <div class="large-12  medium-12  small-12 columns margin-menu">
                  <ul class="row menu-generale ">
 
