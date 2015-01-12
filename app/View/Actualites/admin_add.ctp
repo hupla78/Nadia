@@ -5,8 +5,8 @@
 	<?php
 		echo $this->Form->input('titre');
 		echo $this->Form->input('text');
-		echo $this->Form->input('image_id');
-		echo $this->Form->input('Img');
+		echo $this->Form->input('image_id',
+                    array('options'=>$imgs));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

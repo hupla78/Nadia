@@ -16,6 +16,15 @@ class ActualitesController extends AppController {
  */
 	public $components = array('Paginator', 'Session');
 
+
+
+
+    public function index(){
+            $this->set('actu', $this->Actualite->find('all'));
+
+    }
+
+
 /**
  * admin_index method
  *
@@ -58,6 +67,7 @@ class ActualitesController extends AppController {
 		}
 		$imgs = $this->Actualite->Img->find('list');
 		$this->set(compact('imgs'));
+
 	}
 
 /**
