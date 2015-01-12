@@ -12,7 +12,7 @@ body{
 }
 .espacejj{
     
- margin-top: 20px;   
+ margin-top: 20px;
     
 }
 .row{
@@ -269,4 +269,116 @@ font-size: 2.3em;}
     display: block;
     width: auto;
     margin-top: 30px;
+}
+
+.hauteur-elmt {
+
+    max-height: 550px;
+    min-height: 550px;
+
+}
+
+.surarticle {
+    text-align: justify;
+    padding: 10px;
+}
+
+.espace-barre2 {
+    margin-top: 35px;
+}
+
+.class-panier {
+    font-family: arial black;
+
+    text-align: center;
+}
+
+.espace-barre {
+    margin-top: 35px;
+}
+
+.hoverdubutton {
+    color: white;
+    opacity: 0;
+}
+
+.buttonpanierr {
+
+
+    border: 1 px solid black;
+    color: black;
+    padding-top: 5px;
+
+
+}
+
+
+.buttonpanierr:hover {
+
+
+    border: 1 px solid black;
+    color: black;
+
+
+
+}
+.inscri{
+
+ color:black;
+    font-family: Geogia;
+    font-size: 20px;
+    padding: 35px;
+
+
+
+}
+
+.espacejjj {
+   margin-top:  50px;
+}
+
+.moinplus {
+
+}
+
+.moin {
+
+    font-size: 25px;
+   margin-top: 10px;
+    font-family: arial;
+
+
+}
+
+.plus {
+
+     font-size: 20px;
+   margin-top: 10px;
+    font-family: arial;
+
+
+}
+
+.nombre {
+    font-size: 20px;
+}
+
+
+
+.recap {
+    text-align: center;
+    font-family: arial;
+    font-size: 25px;
+}
+
+.tabb2 {
+    width: 25%;
+}
+.livraison{
+
+ text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: arial;
 }
