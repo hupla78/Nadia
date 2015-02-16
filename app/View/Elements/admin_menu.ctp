@@ -9,6 +9,8 @@
                 <li><?php echo $this->Html->link('images',array('admin'=>true,'prefix'=>'admin','controller'=>'imgs','action'=>'index')); ?></li>
 	            <li><?php echo $this->Html->link('articles',array('admin'=>true,'controller'=>'articles','action'=>'index')); ?></li>
 	            <li><?php echo $this->Html->link('categories',array('admin'=>true,'controller'=>'categories','action'=>'index')); ?></li>
+	            <li><?php echo $this->Html->link('pointDeVentes',array('admin'=>true,'controller'=>'pointDeVentes','action'=>'index')); ?></li>
+	            <li><?php echo $this->Html->link('actu',array('admin'=>true,'controller'=>'actualites','action'=>'index')); ?></li>
         </ul>
         
         </div>

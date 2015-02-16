@@ -4,8 +4,8 @@ $(document).ready(function () {
   $('#item-select2').select2({
       minimumInputLength: 1,
       placeholder:'Faire une Recherche',
-      allowClear: false,
-      dropdownAutoWidth:false,
+     // allowClear: false,
+      dropdownAutoWidth:true,
     ajax: {
       url: CbunnyObj.APP_PATH + 'boutiques/search',
       dataType: 'json',

@@ -12,11 +12,11 @@ class BoutiquesController extends AppController {
     
     public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('panier','index','article','subArticle','addArticle','search');
+		$this->Auth->allow('panier','index','article','subArticle','addArticle','search','view');
 	}
     
     
-    
+     
 
 	/**
 	 * Components

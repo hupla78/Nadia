@@ -17,13 +17,20 @@ class ActualitesController extends AppController {
 	public $components = array('Paginator', 'Session');
 
 
-
+    public function beforeFilter(){
+		parent::beforeFilter();
+		$this->Auth->allow('index','view');
+	}
 
     public function index(){
             $this->set('actu', $this->Actualite->find('all'));
 
     }
 
+    public function view($id){
+            $this->set('actu', $this->Actualite->findById($id));
+
+    }
 
 /**
  * admin_index method
