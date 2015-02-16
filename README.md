@@ -43,7 +43,11 @@ Our primary goal is to provide a structured framework that enables PHP users at 
 [Roadmaps](https://github.com/cakephp/cakephp/wiki#roadmaps) - Want to contribute? Get involved!
 
 
+<<<<<<< HEAD
 ## Contributing14
+=======
+## Contributing5
+>>>>>>> origin/master
 
 [CONTRIBUTING.md](CONTRIBUTING.md) - Quick pointers for contributing to the CakePHP project
 
