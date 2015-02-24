@@ -244,9 +244,9 @@ if (AuthComponent::user('isAdmin')){
 
 
 			<?php echo $this->Html->link(
-					$this->Html->image('buttonfb.jpg'),
+					$this->Html->image('rejoindre-facebook.png'),
 					'http://www.facebook.com',
-					array('target' => '_blank', 'escape' => false, 'class' => 'center')
+					array('target' => '_blank', 'escape' => false, 'class' => '')
 				);
 				?>
 				</div>
@@ -254,9 +254,9 @@ if (AuthComponent::user('isAdmin')){
 				<div class="large-4 columns medium-4 columns small-4 columns">
 				<?php
 				echo $this->Html->link(
-					$this->Html->image('buttontwitter.jpg'),
+					$this->Html->image('bouton-twitter.png'),
 					'http://www.twitter.com',
-					array('target' => '_blank', 'escape' => false, 'class' => 'center')
+					array('target' => '_blank', 'escape' => false, 'class' => '')
 				);
 
 				?>
@@ -266,7 +266,7 @@ if (AuthComponent::user('isAdmin')){
 				echo $this->Html->link(
 					$this->Html->image('Logo_little_market.png'),
 					'http://www.alittlemarket.com',
-					array('target' => '_blank', 'escape' => false, 'class' => 'center')
+					array('target' => '_blank', 'escape' => false, 'class' => '')
 				);
 			?>
 			</div>
