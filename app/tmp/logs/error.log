@@ -25351,3 +25351,12 @@ Request URL: /css/select2/select2-spinner.gif
 Stack Trace:
 #0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-02-22 12:34:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/select2/select2-spinner.gif
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
