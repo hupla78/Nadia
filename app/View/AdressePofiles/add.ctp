@@ -1,24 +1,26 @@
 <div class="adressePofiles form">
 <?php echo $this->Form->create('AdressePofile'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Adresse Pofile'); ?></legend>
+		<legend><?php echo __('Création d\'une nouvelle adresse'); ?></legend>
 	<?php
 		echo $this->Form->input('name');
+		echo $this->Form->input('num_rue',array('label'=>'N° rue'));
 		echo $this->Form->input('rue');
-		echo $this->Form->input('num_rue');
 		echo $this->Form->input('codePostal');
 		echo $this->Form->input('vile');
-		echo $this->Form->input('user_id');
+
 	?>
 	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php
+echo $this->Form->submit('création',array('class'=>'button center'));  ?>
+
+<?php echo $this->Form->end(); ?>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 
-		<li><?php echo $this->Html->link(__('List Adresse Pofiles'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Mes adresseé'), array('action' => 'index')); ?></li>
+
 	</ul>
 </div>

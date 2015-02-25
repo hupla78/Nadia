@@ -1,5 +1,5 @@
 <div class="adressePofiles index">
-	<h2><?php echo __('Adresse Pofiles'); ?></h2>
+	<h2><?php echo __('Mes Adresse'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>

@@ -1,3 +1,21 @@
+div.choixAdress div.check{
+background: #d8d8d8;
+border-left:1px #5b6554 solid;
+border-right:1px #5b6554 solid;
+padding: 5px;
+}
+
+.goRight{
+margin-right: 0px;
+
+}
+
+div#content{
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
 #editAdmin{
     width: 20px;
     height: 20px;
@@ -405,3 +423,12 @@ font-size: 2.3em;}
 }
 
 
+
+h5.adresse {
+   margin-left: 30px;
+
+}
+
+.adressecont {
+    border-top: 1px black solid;
+}

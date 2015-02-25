@@ -81,7 +81,7 @@ if ($this->request->is('post')) {
 }
 
 
-    public function seeUser(){
+    public function userInfo(){
         $idUser = $this->Session->read('Auth.User.id');
         $user   = $this->User->findById($idUser);
         $this->set('userInfo',$user);

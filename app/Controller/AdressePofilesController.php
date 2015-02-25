@@ -23,7 +23,6 @@ class AdressePofilesController extends AppController {
  */
 	public function index() {
 		$this->AdressePofile->recursive = 0;
-		debug($this->AdressePofile);
         $this->Paginator->settings= array('conditions' => array('AdressePofile.user_id =' => $this->Session->read('Auth.User.id')));
 		$this->set('adressePofiles', $this->Paginator->paginate());
 	}
@@ -58,13 +57,13 @@ class AdressePofilesController extends AppController {
 			$this->AdressePofile->create();
 			if ($this->AdressePofile->save($this->request->data)) {
 				$this->Session->setFlash(__('The adresse pofile has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('controller'=>'Boutiques','action' => 'choixAdresse'));
 			} else {
 				$this->Session->setFlash(__('The adresse pofile could not be saved. Please, try again.'));
 			}
 		}
-		$users = $this->AdressePofile->User->find('list');
-		$this->set(compact('users'));
+		//$users = $this->AdressePofile->User->find('list');
+		//$this->set(compact('users'));
 	}
 
 /**

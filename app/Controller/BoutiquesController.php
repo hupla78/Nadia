@@ -193,10 +193,14 @@ class BoutiquesController extends AppController {
         
         
         
-        if(!empty($this->request->data)){
+        if(!empty($this->request->data) and $this->request->data['Boutique']['adresse']!='' ){
             $this->Panier->setAdresse($this->request->data['Boutique']['adresse']);
             $this->redirect(array('action'=>'pay'));
         }else{
+            if ($this->request->data['Boutique']['adresse']!=''){
+                $this->Session->setFlash('hi');}
+
+
             $temps = $this->Boutique->User->findById($this->Session->read('Auth.User.id')); 
 
             $id = 0;
