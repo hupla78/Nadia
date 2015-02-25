@@ -432,3 +432,7 @@ h5.adresse {
 .adressecont {
     border-top: 1px black solid;
 }
+
+.justify {
+    text-align: justify;
+}

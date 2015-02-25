@@ -5,7 +5,13 @@
 	
 	<div class="large-12 medium-6 small-12 columns element-bordure" >
 	<?php
-	echo $this->Html->image('import/'.$key['Img']['value'],array('width'=>'100%', 'style'=>'max-height:200px', 'class'=>'element-article-img '));?>
+if($key['Img']['value']!=null){
+	echo $this->Html->image('import/'.$key['Img']['value'],array('width'=>'100%', 'style'=>'max-height:200px', 'class'=>'element-article-img '));
+}else{
+	echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:200px', 'class'=>'element-article-img '));
+
+}
+        ?>
 		
 		</div>
 		

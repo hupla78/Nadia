@@ -27,6 +27,9 @@ echo $this->Html->script('cbunny');
 
 
 
+
+
+
 $cbunny = array(
     'APP_PATH' => Router::url('/',true)
 );
@@ -273,6 +276,9 @@ echo $this->Html->link(
     <script>
         $(document).foundation();
     </script>
+
+
+
 
     </body>
 </html>

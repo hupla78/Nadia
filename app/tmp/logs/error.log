@@ -25615,3 +25615,308 @@ Stack Trace:
 #3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-02-25 14:55:29 Error: Fatal Error (4): syntax error, unexpected ')', expecting '(' in [/usr/share/nginx/html/Nadia/app/View/Actualites/index.ctp, line 5]
+2015-02-25 14:55:29 Error: [FatalErrorException] syntax error, unexpected ')', expecting '('
+Request URL: /actualites
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-25 19:21:15 Error: Fatal Error (4): syntax error, unexpected ')', expecting '(' in [/usr/share/nginx/html/Nadia/app/View/Actualites/index.ctp, line 5]
+2015-02-25 19:21:15 Error: [FatalErrorException] syntax error, unexpected ')', expecting '('
+Request URL: /actualites
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-25 19:21:15 Error: Fatal Error (4): syntax error, unexpected ')', expecting '(' in [/usr/share/nginx/html/Nadia/app/View/Actualites/index.ctp, line 5]
+2015-02-25 19:21:15 Error: [FatalErrorException] syntax error, unexpected ')', expecting '('
+Request URL: /actualites
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-25 19:21:15 Error: Fatal Error (4): syntax error, unexpected ')', expecting '(' in [/usr/share/nginx/html/Nadia/app/View/Actualites/index.ctp, line 5]
+2015-02-25 19:21:15 Error: [FatalErrorException] syntax error, unexpected ')', expecting '('
+Request URL: /actualites
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-25 19:30:56 Error: Fatal Error (4): syntax error, unexpected ']' in [/usr/share/nginx/html/Nadia/app/View/Actualites/index.ctp, line 12]
+2015-02-25 19:30:56 Error: [FatalErrorException] syntax error, unexpected ']'
+Request URL: /actualites
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 12, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 12, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-25 20:04:39 Error: Fatal Error (4): syntax error, unexpected ')' in [/usr/share/nginx/html/Nadia/app/View/PointDeVentes/index.ctp, line 28]
+2015-02-25 20:04:39 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /pointDeVentes
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 28, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 28, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-25 20:08:33 Error: Fatal Error (1): Call to a member function find() on null in [/usr/share/nginx/html/Nadia/app/Controller/PointDeVentesController.php, line 185]
+2015-02-25 20:08:33 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /admin/pointDeVentes/edit/0
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/usr/share/ngin...', 185)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/usr/share/ngin...', 185, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/usr/share/ngin...', 185, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-25 20:16:03 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /admin/pointDeVentes/add
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1854): DboSource->create(Object(PointDeVente), Array, Array)
+#4 /usr/share/nginx/html/Nadia/app/Controller/PointDeVentesController.php(152): Model->save(Array)
+#5 [internal function]: PointDeVentesController->admin_add()
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PointDeVentesController), Array)
+#7 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PointDeVentesController), Object(CakeRequest))
+#9 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-02-25 20:16:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /admin/pointDeVentes/edit/0
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1854): DboSource->create(Object(PointDeVente), Array, Array)
+#4 /usr/share/nginx/html/Nadia/app/Controller/PointDeVentesController.php(175): Model->save(Array)
+#5 [internal function]: PointDeVentesController->admin_edit('0')
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PointDeVentesController), Array)
+#7 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PointDeVentesController), Object(CakeRequest))
+#9 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-02-25 20:17:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /admin/pointDeVentes/edit/0
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1854): DboSource->create(Object(PointDeVente), Array, Array)
+#4 /usr/share/nginx/html/Nadia/app/Controller/PointDeVentesController.php(175): Model->save(Array)
+#5 [internal function]: PointDeVentesController->admin_edit('0')
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PointDeVentesController), Array)
+#7 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PointDeVentesController), Object(CakeRequest))
+#9 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-02-25 20:17:51 Error: [NotFoundException] Invalid point de vente
+Request URL: /admin/pointDeVentes/edit/0
+Stack Trace:
+#0 [internal function]: PointDeVentesController->admin_edit('0')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PointDeVentesController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PointDeVentesController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-02-25 20:18:00 Error: [NotFoundException] Invalid point de vente
+Request URL: /admin/pointDeVentes/edit/0
+Stack Trace:
+#0 [internal function]: PointDeVentesController->admin_edit('0')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PointDeVentesController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PointDeVentesController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-02-25 21:59:00 Error: Fatal Error (4): syntax error, unexpected ''marker'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/usr/share/nginx/html/Nadia/app/View/PointDeVentes/index.ctp, line 33]
+2015-02-25 21:59:00 Error: [FatalErrorException] syntax error, unexpected ''marker'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /pointDeVentes
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 33, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 33, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-25 22:34:58 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/View/PointDeVentes/index.ctp, line 37]
+2015-02-25 22:34:58 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /pointDeVentes
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 37, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 37, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-25 22:52:07 Error: Fatal Error (4): syntax error, unexpected ''localize'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/usr/share/nginx/html/Nadia/app/View/PointDeVentes/index.ctp, line 29]
+2015-02-25 22:52:07 Error: [FatalErrorException] syntax error, unexpected ''localize'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /pointDeVentes
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 29, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 29, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-25 22:57:35 Error: Fatal Error (4): syntax error, unexpected 'width' (T_STRING), expecting ')' in [/usr/share/nginx/html/Nadia/app/View/PointDeVentes/index.ctp, line 25]
+2015-02-25 22:57:35 Error: [FatalErrorException] syntax error, unexpected 'width' (T_STRING), expecting ')'
+Request URL: /pointDeVentes
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 25, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 25, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-25 23:06:50 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noImg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:12:33 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:12:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:13:29 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:13:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:13:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:14:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:14:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:14:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:14:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:14:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:14:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:14:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:14:41 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/noirs.jpg
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-25 23:17:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/select2/select2-spinner.gif
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

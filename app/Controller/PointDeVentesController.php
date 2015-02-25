@@ -15,6 +15,7 @@ class PointDeVentesController extends AppController {
  * @var array
  */
 	public $components = array('Paginator', 'Session');
+    public $helpers = array('GoogleMap');
 
     
     
@@ -182,8 +183,8 @@ class PointDeVentesController extends AppController {
 			$options = array('conditions' => array('PointDeVente.' . $this->PointDeVente->primaryKey => $id));
 			$this->request->data = $this->PointDeVente->find('first', $options);
 		}
-		$images = $this->PointDeVente->Image->find('list');
-		$this->set(compact('images'));
+		$imgs = $this->PointDeVente->Img->find('list');
+		$this->set(compact('imgs'));
 	}
 
 /**
