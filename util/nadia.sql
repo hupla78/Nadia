@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.3.9
+-- version 4.3.10
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 18, 2015 at 07:35 PM
+-- Generation Time: Feb 25, 2015 at 11:18 PM
 -- Server version: 10.0.16-MariaDB-log
--- PHP Version: 5.6.5
+-- PHP Version: 5.6.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -53,8 +53,8 @@ CREATE TABLE IF NOT EXISTS `actualites` (
 --
 
 INSERT INTO `actualites` (`id`, `titre`, `text`, `image_id`) VALUES
-(1, 'lapin', '', 0),
-(2, 'lapin', 'info\r\n', 10);
+(1, 'Nouvelle collection', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, libero ut iure ab, accusamus illum tempore maiores similique dolore excepturi quas natus itaque non eum eos, deserunt. Totam quos, tempore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, libero ut iure ab, accusamus illum tempore maiores similique dolore excepturi quas natus itaque non eum eos, deserunt. Totam quos, tempore.\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, libero ut iure ab, accusamus illum tempore maiores similique dolore excepturi quas natus itaque non eum eos, deserunt. Totam quos, tempore.\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, libero ut iure ab, accusamus illum tempore maiores similique dolore excepturi quas natus itaque non eum eos, deserunt. Totam quos, tempore.\r\n', 6),
+(2, 'Le Printent', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, libero ut iure ab, accusamus illum tempore maiores similique dolore excepturi quas natus itaque non eum eos, deserunt. Totam quos, tempore.\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, libero ut iure ab, accusamus illum tempore maiores similique dolore excepturi quas natus itaque non eum eos, deserunt. Totam quos, tempore.\r\n', 7);
 
 -- --------------------------------------------------------
 
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `adresse_pofiles` (
   `codePostal` varchar(6) NOT NULL,
   `vile` varchar(200) NOT NULL,
   `user_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `adresse_pofiles`
@@ -83,7 +83,10 @@ INSERT INTO `adresse_pofiles` (`id`, `name`, `rue`, `num_rue`, `codePostal`, `vi
 (4, '', '', 0, '', '', 41),
 (5, 'chez moi', '4444', 1222, '4441', 'paris', 42),
 (6, 'chez moi', '444', 44, '444', '444', 43),
-(7, 'chez moi', 'rie', 77, 'ee', 'ee', 44);
+(7, 'chez moi', 'rie', 77, 'ee', 'ee', 44),
+(8, 'ma gm', 'du cochon', 10, '77750', 'saint cyr', 1),
+(9, 'ma gms', 'du cochon', 10, '77750', 'saint cyr', 1),
+(10, 'lapin ', 'paris', 10, '77750', 'paris', 1);
 
 -- --------------------------------------------------------
 
@@ -255,7 +258,7 @@ CREATE TABLE IF NOT EXISTS `imgs` (
   `modified` date NOT NULL,
   `cm_id` int(11) NOT NULL,
   `value` varchar(50) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `imgs`
@@ -268,7 +271,8 @@ INSERT INTO `imgs` (`id`, `id_user`, `name`, `created`, `modified`, `cm_id`, `va
 (7, 0, 'article2', '2014-11-23', '2014-11-23', 0, '7.jpg'),
 (8, 0, 'article3', '2014-11-23', '2014-11-23', 0, '8.JPG'),
 (9, 0, 'slider0', '2014-12-14', '2014-12-14', 0, '9.jpg'),
-(10, 0, 'slider1', '2014-12-14', '2014-12-14', 0, '10.jpg');
+(10, 0, 'slider1', '2014-12-14', '2014-12-14', 0, '10.jpg'),
+(11, 0, 'monMag', '2015-02-25', '2015-02-25', 0, '11.jpg');
 
 -- --------------------------------------------------------
 
@@ -336,14 +340,17 @@ CREATE TABLE IF NOT EXISTS `point_de_ventes` (
   `num_rue` int(5) NOT NULL,
   `codePostal` int(6) NOT NULL,
   `vile` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `point_de_ventes`
 --
 
 INSERT INTO `point_de_ventes` (`id`, `name`, `description`, `img_id`, `rue`, `num_rue`, `codePostal`, `vile`) VALUES
-(0, 'Mon Mag', 'mon petit mag \r\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores quia ex, quo voluptate, temporibus eum placeat nobis nostrum molestias quis adipisci, odit dolore hic iste dicta unde minima. Omnis?', 10, 'rue des lapin', 10, 777750, 'saint le ');
+(1, 'Mon Mag', '    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a sint animi ipsa minus, voluptates dignissimos assumenda nam facilis laborum suscipit doloremque eos deleniti blanditiis delectus asperiores, quidem quod voluptatum.    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a sint animi ipsa minus, voluptates dignissimos assumenda nam facilis laborum suscipit doloremque eos deleniti blanditiis delectus asperiores, quidem quod voluptatum.\r\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a sint animi ipsa minus, voluptates dignissimos assumenda nam facilis laborum suscipit doloremque eos deleniti blanditiis delectus asperiores, quidem quod voluptatum.', 11, 'rue du bonhomme monthomé ', 10, 77750, 'saint cyr sur morin'),
+(2, 'mon showroom', 'lsrdtfyguhij  (edr-fyuino rcvu fyf iu y u iygo uo ', 8, 'rue du bonhomme monthomé', 10, 77750, 'saint cyr sur morin'),
+(3, 'forge', 'eswrdtfyguhbinjo,kl tcyvgubhinj xcyvubhinjo xtcyvubinj x(cvubinjo yuino,k  tyuijo', 2, 'rue de l\\''ile caquot', 11, 77260, 'la ferte sous jouarre'),
+(4, 'ppp', 'pppppp', 2, 'rue chone', 4, 77260, 'la ferte sous jouarre');
 
 -- --------------------------------------------------------
 
@@ -514,6 +521,12 @@ ALTER TABLE `livraison_article`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `point_de_ventes`
+--
+ALTER TABLE `point_de_ventes`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `texts`
 --
 ALTER TABLE `texts`
@@ -549,7 +562,7 @@ ALTER TABLE `actualites`
 -- AUTO_INCREMENT for table `adresse_pofiles`
 --
 ALTER TABLE `adresse_pofiles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `articles`
 --
@@ -579,7 +592,7 @@ ALTER TABLE `colors`
 -- AUTO_INCREMENT for table `imgs`
 --
 ALTER TABLE `imgs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `imgs_actualites`
 --
@@ -600,6 +613,11 @@ ALTER TABLE `livraison`
 --
 ALTER TABLE `livraison_article`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `point_de_ventes`
+--
+ALTER TABLE `point_de_ventes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `texts`
 --
