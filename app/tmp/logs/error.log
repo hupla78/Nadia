@@ -25950,3 +25950,53 @@ Stack Trace:
 #3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-02-26 13:32:02 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/View/PointDeVentes/index.ctp, line 5]
+2015-02-26 13:32:02 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /pointDeVentes
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-26 13:32:27 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/View/PointDeVentes/index.ctp, line 5]
+2015-02-26 13:32:27 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /pointDeVentes
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 5, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-26 13:36:08 Error: Fatal Error (4): syntax error, unexpected '++' (T_INC) in [/usr/share/nginx/html/Nadia/app/View/PointDeVentes/index.ctp, line 42]
+2015-02-26 13:36:08 Error: [FatalErrorException] syntax error, unexpected '++' (T_INC)
+Request URL: /pointDeVentes
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 42, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 42, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-26 13:42:53 Error: Fatal Error (4): syntax error, unexpected '"width"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/usr/share/nginx/html/Nadia/app/View/PointDeVentes/index.ctp, line 12]
+2015-02-26 13:42:53 Error: [FatalErrorException] syntax error, unexpected '"width"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /pointDeVentes
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 12, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 12, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-26 13:43:02 Error: Fatal Error (4): syntax error, unexpected '"width"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/usr/share/nginx/html/Nadia/app/View/PointDeVentes/index.ctp, line 12]
+2015-02-26 13:43:02 Error: [FatalErrorException] syntax error, unexpected '"width"' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /pointDeVentes
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 12, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 12, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
