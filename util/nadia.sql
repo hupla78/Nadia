@@ -2,10 +2,10 @@
 -- version 4.3.10
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Feb 25, 2015 at 11:18 PM
--- Server version: 10.0.16-MariaDB-log
--- PHP Version: 5.6.6
+-- Client :  localhost
+-- Généré le :  Jeu 26 Février 2015 à 16:40
+-- Version du serveur :  10.0.16-MariaDB-log
+-- Version de PHP :  5.6.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `nadia`
+-- Base de données :  `nadia`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `achats`
+-- Structure de la table `achats`
 --
 
 CREATE TABLE IF NOT EXISTS `achats` (
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `achats` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `actualites`
+-- Structure de la table `actualites`
 --
 
 CREATE TABLE IF NOT EXISTS `actualites` (
@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS `actualites` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `actualites`
+-- Contenu de la table `actualites`
 --
 
 INSERT INTO `actualites` (`id`, `titre`, `text`, `image_id`) VALUES
@@ -59,7 +59,7 @@ INSERT INTO `actualites` (`id`, `titre`, `text`, `image_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `adresse_pofiles`
+-- Structure de la table `adresse_pofiles`
 --
 
 CREATE TABLE IF NOT EXISTS `adresse_pofiles` (
@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS `adresse_pofiles` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `adresse_pofiles`
+-- Contenu de la table `adresse_pofiles`
 --
 
 INSERT INTO `adresse_pofiles` (`id`, `name`, `rue`, `num_rue`, `codePostal`, `vile`, `user_id`) VALUES
@@ -91,7 +91,7 @@ INSERT INTO `adresse_pofiles` (`id`, `name`, `rue`, `num_rue`, `codePostal`, `vi
 -- --------------------------------------------------------
 
 --
--- Table structure for table `articles`
+-- Structure de la table `articles`
 --
 
 CREATE TABLE IF NOT EXISTS `articles` (
@@ -103,10 +103,10 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `category_id` int(11) NOT NULL,
   `updated` datetime NOT NULL,
   `created` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `articles`
+-- Contenu de la table `articles`
 --
 
 INSERT INTO `articles` (`id`, `name`, `prix`, `description`, `img_id`, `category_id`, `updated`, `created`) VALUES
@@ -115,12 +115,13 @@ INSERT INTO `articles` (`id`, `name`, `prix`, `description`, `img_id`, `category
 (3, 'gros sac', 32, 'ornecdzk,splqivenf ezjdf oezn voe oneo noeaov oezvo n oenoveo ne nvozs vo eovn moenvo mjze vnoez svmeaz ', 1, 2, '2014-11-11 15:19:36', '2014-11-11 15:19:36'),
 (4, 'sac petit', 10, 'jgroesn ^âhzr vne v^asrozvonosv oe àrzhoifvjorzjvo hoe&rhojvoejvegen v og ogoneon oehoéevneoo  ojoez h ei pi hohkh kyink ig jgihig pib jb obk oh bz p j hoeé kjvzh ojeké e éeo hpoe henv eh ovhepo oe^\r\n\r\nPanier (vide)\r\n', 1, 1, '2014-11-11 15:21:06', '2014-11-11 15:21:06'),
 (6, 'sac a ma mere ', 42.42, 'salut', 5, 2, '2014-12-23 17:43:01', '2014-12-23 17:43:01'),
-(8, 'name', 52.4, 'dfsjvpqsfm', 1, 2, '2014-11-23 22:37:40', '2014-11-23 22:37:40');
+(8, 'name', 52.4, 'dfsjvpqsfm', 1, 2, '2014-11-23 22:37:40', '2014-11-23 22:37:40'),
+(9, 'sac de ville', 52.99, 'laorem rze o oreaonaeo l rlnl aenln a nlbnel noj g ngoeao, gl agjale,  lz:g maj mgna:j ppaojvùm ,mg paejg slgnajp,ol', 10, 1, '2015-02-26 11:39:46', '2015-02-26 11:39:46');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `boutique`
+-- Structure de la table `boutique`
 --
 
 CREATE TABLE IF NOT EXISTS `boutique` (
@@ -135,7 +136,7 @@ CREATE TABLE IF NOT EXISTS `boutique` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `boutiques_articles`
+-- Structure de la table `boutiques_articles`
 --
 
 CREATE TABLE IF NOT EXISTS `boutiques_articles` (
@@ -145,7 +146,7 @@ CREATE TABLE IF NOT EXISTS `boutiques_articles` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `boutiques_categories`
+-- Structure de la table `boutiques_categories`
 --
 
 CREATE TABLE IF NOT EXISTS `boutiques_categories` (
@@ -155,7 +156,7 @@ CREATE TABLE IF NOT EXISTS `boutiques_categories` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- Structure de la table `categories`
 --
 
 CREATE TABLE IF NOT EXISTS `categories` (
@@ -164,7 +165,7 @@ CREATE TABLE IF NOT EXISTS `categories` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `categories`
+-- Contenu de la table `categories`
 --
 
 INSERT INTO `categories` (`id`, `value`) VALUES
@@ -175,7 +176,7 @@ INSERT INTO `categories` (`id`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cms`
+-- Structure de la table `cms`
 --
 
 CREATE TABLE IF NOT EXISTS `cms` (
@@ -188,10 +189,10 @@ CREATE TABLE IF NOT EXISTS `cms` (
   `value_id` int(11) NOT NULL,
   `text_id` int(11) NOT NULL,
   `color_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `cms`
+-- Contenu de la table `cms`
 --
 
 INSERT INTO `cms` (`id`, `name`, `type`, `img_id`, `article_id`, `categorie_id`, `value_id`, `text_id`, `color_id`) VALUES
@@ -202,33 +203,34 @@ INSERT INTO `cms` (`id`, `name`, `type`, `img_id`, `article_id`, `categorie_id`,
 (6, 'color-police-menu-generale-passage-souris', 'color', 0, 0, 0, 0, 0, 10),
 (7, 'color-police-menu-generale-sans-souris', 'color', 0, 0, 0, 0, 0, 6),
 (8, 'color-police-top-bar', 'color', 0, 0, 0, 0, 0, 4),
-(9, 'color-fond-top-bar', 'color', 0, 0, 0, 0, 0, 7),
+(9, 'color-fond-top-bar', 'color', 0, 0, 0, 0, 0, 1),
 (10, 'texte-presentation-home', 'text', 0, 0, 0, 0, 2, 0),
 (11, 'slider1', 'img', 10, 0, 0, 0, 0, 0),
 (12, 'slider2', 'img', 9, 0, 0, 0, 0, 0),
 (13, 'slider0', 'img', 9, 0, 0, 0, 0, 0),
-(14, 'article-home1', 'img', 6, 0, 0, 0, 0, 0),
-(15, 'article-home2', 'img', 7, 0, 0, 0, 0, 0),
-(16, 'article-home3', 'img', 8, 0, 0, 0, 0, 0),
 (17, 'texte-presentation-article1-home-courte', 'text', 0, 0, 0, 0, 3, 0),
-(18, 'texte-presentation-article2-home-courte', 'text', 0, 0, 0, 0, 3, 0),
-(19, 'texte-presentation-article3-home-courte', 'text', 0, 0, 0, 0, 3, 0),
-(20, 'articleEnDevant', 'article', 0, 3, 0, 0, 0, 0);
+(20, 'articleEnDevant', 'article', 0, 3, 0, 0, 0, 0),
+(21, 'article-home-1', 'article', 0, 2, 0, 0, 0, 0),
+(22, 'article-home-2', 'article', 0, 6, 0, 0, 0, 0),
+(23, 'article-home-3', 'article', 0, 2, 0, 0, 0, 0),
+(24, 'panier-fond-color', 'color', 0, 0, 0, 0, 0, 12),
+(25, 'panier-text-color', 'color', 0, 0, 0, 0, 0, 4),
+(26, 'panier-fond-passage-color', 'color', 0, 0, 0, 0, 0, 6);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `colors`
+-- Structure de la table `colors`
 --
 
 CREATE TABLE IF NOT EXISTS `colors` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   `value` varchar(50) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `colors`
+-- Contenu de la table `colors`
 --
 
 INSERT INTO `colors` (`id`, `name`, `value`) VALUES
@@ -242,12 +244,13 @@ INSERT INTO `colors` (`id`, `name`, `value`) VALUES
 (8, 'couleur-menu-base-sans-souris', '#545454'),
 (9, 'couleur-menu-base-avec-souris', '#5f5f5f'),
 (10, 'couleur-menu-police-apres-passage-souris', '#ebebeb'),
-(11, 'fond', '#b1947b');
+(11, 'fond', '#b1947b'),
+(12, 'button-panier', '#acbebb');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `imgs`
+-- Structure de la table `imgs`
 --
 
 CREATE TABLE IF NOT EXISTS `imgs` (
@@ -261,7 +264,7 @@ CREATE TABLE IF NOT EXISTS `imgs` (
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `imgs`
+-- Contenu de la table `imgs`
 --
 
 INSERT INTO `imgs` (`id`, `id_user`, `name`, `created`, `modified`, `cm_id`, `value`) VALUES
@@ -277,7 +280,7 @@ INSERT INTO `imgs` (`id`, `id_user`, `name`, `created`, `modified`, `cm_id`, `va
 -- --------------------------------------------------------
 
 --
--- Table structure for table `imgs_actualites`
+-- Structure de la table `imgs_actualites`
 --
 
 CREATE TABLE IF NOT EXISTS `imgs_actualites` (
@@ -290,7 +293,7 @@ CREATE TABLE IF NOT EXISTS `imgs_actualites` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `imgs_articles`
+-- Structure de la table `imgs_articles`
 --
 
 CREATE TABLE IF NOT EXISTS `imgs_articles` (
@@ -302,7 +305,7 @@ CREATE TABLE IF NOT EXISTS `imgs_articles` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `livraison`
+-- Structure de la table `livraison`
 --
 
 CREATE TABLE IF NOT EXISTS `livraison` (
@@ -315,7 +318,7 @@ CREATE TABLE IF NOT EXISTS `livraison` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `livraison_article`
+-- Structure de la table `livraison_article`
 --
 
 CREATE TABLE IF NOT EXISTS `livraison_article` (
@@ -328,7 +331,7 @@ CREATE TABLE IF NOT EXISTS `livraison_article` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `point_de_ventes`
+-- Structure de la table `point_de_ventes`
 --
 
 CREATE TABLE IF NOT EXISTS `point_de_ventes` (
@@ -343,11 +346,11 @@ CREATE TABLE IF NOT EXISTS `point_de_ventes` (
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `point_de_ventes`
+-- Contenu de la table `point_de_ventes`
 --
 
 INSERT INTO `point_de_ventes` (`id`, `name`, `description`, `img_id`, `rue`, `num_rue`, `codePostal`, `vile`) VALUES
-(1, 'Mon Mag', '    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a sint animi ipsa minus, voluptates dignissimos assumenda nam facilis laborum suscipit doloremque eos deleniti blanditiis delectus asperiores, quidem quod voluptatum.    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a sint animi ipsa minus, voluptates dignissimos assumenda nam facilis laborum suscipit doloremque eos deleniti blanditiis delectus asperiores, quidem quod voluptatum.\r\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a sint animi ipsa minus, voluptates dignissimos assumenda nam facilis laborum suscipit doloremque eos deleniti blanditiis delectus asperiores, quidem quod voluptatum.', 11, 'rue du bonhomme monthomé ', 10, 77750, 'saint cyr sur morin'),
+(1, 'Mon Mag', '   lapin  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a sint animi ipsa minus, voluptates dignissimos assumenda nam facilis laborum suscipit doloremque eos deleniti blanditiis delectus asperiores, quidem quod voluptatum.    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a sint animi ipsa minus, voluptates dignissimos assumenda nam facilis laborum suscipit doloremque eos deleniti blanditiis delectus asperiores, quidem quod voluptatum.\r\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia a sint animi ipsa minus, voluptates dignissimos assumenda nam facilis laborum suscipit doloremque eos deleniti blanditiis delectus asperiores, quidem quod voluptatum.', 11, 'rue de la pompe', 5, 78113, 'la hauteville'),
 (2, 'mon showroom', 'lsrdtfyguhij  (edr-fyuino rcvu fyf iu y u iygo uo ', 8, 'rue du bonhomme monthomé', 10, 77750, 'saint cyr sur morin'),
 (3, 'forge', 'eswrdtfyguhbinjo,kl tcyvgubhinj xcyvubhinjo xtcyvubinj x(cvubinjo yuino,k  tyuijo', 2, 'rue de l\\''ile caquot', 11, 77260, 'la ferte sous jouarre'),
 (4, 'ppp', 'pppppp', 2, 'rue chone', 4, 77260, 'la ferte sous jouarre');
@@ -355,7 +358,7 @@ INSERT INTO `point_de_ventes` (`id`, `name`, `description`, `img_id`, `rue`, `nu
 -- --------------------------------------------------------
 
 --
--- Table structure for table `test`
+-- Structure de la table `test`
 --
 
 CREATE TABLE IF NOT EXISTS `test` (
@@ -363,7 +366,7 @@ CREATE TABLE IF NOT EXISTS `test` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `test`
+-- Contenu de la table `test`
 --
 
 INSERT INTO `test` (`id`) VALUES
@@ -372,7 +375,7 @@ INSERT INTO `test` (`id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `texts`
+-- Structure de la table `texts`
 --
 
 CREATE TABLE IF NOT EXISTS `texts` (
@@ -382,7 +385,7 @@ CREATE TABLE IF NOT EXISTS `texts` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `texts`
+-- Contenu de la table `texts`
 --
 
 INSERT INTO `texts` (`id`, `name`, `value`) VALUES
@@ -393,7 +396,7 @@ INSERT INTO `texts` (`id`, `name`, `value`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Structure de la table `users`
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
@@ -406,7 +409,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `users`
+-- Contenu de la table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `isAdmin`, `isActivate`) VALUES
@@ -418,7 +421,7 @@ INSERT INTO `users` (`id`, `username`, `password`, `email`, `isAdmin`, `isActiva
 -- --------------------------------------------------------
 
 --
--- Table structure for table `values`
+-- Structure de la table `values`
 --
 
 CREATE TABLE IF NOT EXISTS `values` (
@@ -428,7 +431,7 @@ CREATE TABLE IF NOT EXISTS `values` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `values`
+-- Contenu de la table `values`
 --
 
 INSERT INTO `values` (`id`, `name`, `value`) VALUES
@@ -439,197 +442,197 @@ INSERT INTO `values` (`id`, `name`, `value`) VALUES
 (5, 'rien', 'none');
 
 --
--- Indexes for dumped tables
+-- Index pour les tables exportées
 --
 
 --
--- Indexes for table `achats`
+-- Index pour la table `achats`
 --
 ALTER TABLE `achats`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `actualites`
+-- Index pour la table `actualites`
 --
 ALTER TABLE `actualites`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `adresse_pofiles`
+-- Index pour la table `adresse_pofiles`
 --
 ALTER TABLE `adresse_pofiles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `articles`
+-- Index pour la table `articles`
 --
 ALTER TABLE `articles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `boutique`
+-- Index pour la table `boutique`
 --
 ALTER TABLE `boutique`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `categories`
+-- Index pour la table `categories`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `cms`
+-- Index pour la table `cms`
 --
 ALTER TABLE `cms`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `colors`
+-- Index pour la table `colors`
 --
 ALTER TABLE `colors`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `imgs`
+-- Index pour la table `imgs`
 --
 ALTER TABLE `imgs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `imgs_actualites`
+-- Index pour la table `imgs_actualites`
 --
 ALTER TABLE `imgs_actualites`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `imgs_articles`
+-- Index pour la table `imgs_articles`
 --
 ALTER TABLE `imgs_articles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `livraison`
+-- Index pour la table `livraison`
 --
 ALTER TABLE `livraison`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `livraison_article`
+-- Index pour la table `livraison_article`
 --
 ALTER TABLE `livraison_article`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `point_de_ventes`
+-- Index pour la table `point_de_ventes`
 --
 ALTER TABLE `point_de_ventes`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `texts`
+-- Index pour la table `texts`
 --
 ALTER TABLE `texts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Index pour la table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `values`
+-- Index pour la table `values`
 --
 ALTER TABLE `values`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT pour les tables exportées
 --
 
 --
--- AUTO_INCREMENT for table `achats`
+-- AUTO_INCREMENT pour la table `achats`
 --
 ALTER TABLE `achats`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `actualites`
+-- AUTO_INCREMENT pour la table `actualites`
 --
 ALTER TABLE `actualites`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT for table `adresse_pofiles`
+-- AUTO_INCREMENT pour la table `adresse_pofiles`
 --
 ALTER TABLE `adresse_pofiles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
--- AUTO_INCREMENT for table `articles`
+-- AUTO_INCREMENT pour la table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
--- AUTO_INCREMENT for table `boutique`
+-- AUTO_INCREMENT pour la table `boutique`
 --
 ALTER TABLE `boutique`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `categories`
+-- AUTO_INCREMENT pour la table `categories`
 --
 ALTER TABLE `categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `cms`
+-- AUTO_INCREMENT pour la table `cms`
 --
 ALTER TABLE `cms`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=27;
 --
--- AUTO_INCREMENT for table `colors`
+-- AUTO_INCREMENT pour la table `colors`
 --
 ALTER TABLE `colors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
--- AUTO_INCREMENT for table `imgs`
+-- AUTO_INCREMENT pour la table `imgs`
 --
 ALTER TABLE `imgs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
--- AUTO_INCREMENT for table `imgs_actualites`
+-- AUTO_INCREMENT pour la table `imgs_actualites`
 --
 ALTER TABLE `imgs_actualites`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `imgs_articles`
+-- AUTO_INCREMENT pour la table `imgs_articles`
 --
 ALTER TABLE `imgs_articles`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `livraison`
+-- AUTO_INCREMENT pour la table `livraison`
 --
 ALTER TABLE `livraison`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `livraison_article`
+-- AUTO_INCREMENT pour la table `livraison_article`
 --
 ALTER TABLE `livraison_article`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `point_de_ventes`
+-- AUTO_INCREMENT pour la table `point_de_ventes`
 --
 ALTER TABLE `point_de_ventes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT for table `texts`
+-- AUTO_INCREMENT pour la table `texts`
 --
 ALTER TABLE `texts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=45;
 --
--- AUTO_INCREMENT for table `values`
+-- AUTO_INCREMENT pour la table `values`
 --
 ALTER TABLE `values`
   MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
