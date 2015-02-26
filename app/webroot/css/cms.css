@@ -1,45 +1,59 @@
+div.acm-panier{
+    background: <?php echo $Acms->getOne('panier-fond-color');?>;
+
+}
+
+div.acm-panier:hover{
+    background: <?php echo $Acms->getOne('panier-fond-passage-color');?>;
+
+}
+
+div.acm-panier a{
+     color: <?php echo $Acms->getOne('panier-text-color');?>;
+
+}
 
 body{
-background: <?php echo $Acms->getOne('color-fond-exterieur');?>
+    background: <?php echo $Acms->getOne('color-fond-exterieur');?>
 }
 
 
 
 
 .tab-bar {
-    
+
     background: <?php echo $Acms->getOne('color-fond-top-bar');?>
-   
+
 }
 
 
 .menu-generale {
-    
+
     background: <?php echo $Acms->getOne('color-fond-menu-generale');?>
-   
+
 }
 
 
 li.separbot:hover{
-background: <?php echo $Acms->getOne('color-passage-souris-menu-generale');?>}
+    background: <?php echo $Acms->getOne('color-passage-souris-menu-generale');?>}
 
 div.header div.row {
-    
+
     background: <?php echo $Acms->getOne('color-fond-interieur');?>
-   
+
 }
 
 
 
 .pi-text-center:hover { color: <?php echo $Acms->getOne('color-police-menu-generale-passage-souris');?>}
-    
-    
- .pi-text-center: { color: <?php echo $Acms->getOne('color-police-menu-generale-sans-souris');?>}
-     
-     
+
+
+.pi-text-center: { color: <?php echo $Acms->getOne('color-police-menu-generale-sans-souris');?>}
+
+
 .tab-bar h1{ color: <?php echo $Acms->getOne('color-police-top-bar');?>}
 .title2 {
-    
+
 }
 
 

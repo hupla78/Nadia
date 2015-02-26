@@ -76,9 +76,11 @@ if (AuthComponent::user('isAdmin')){
 			    <section class="middle tab-bar-section">
 
 
+            <?php echo $Acms->getEditionPages(array('color-police-top-bar','color-fond-interieur'));?>
 
+				<h1 class="title">Fil de Bohème
 
-				<h1 class="title">Fil de Bohème   <?php echo $Acms->getEditionPage('color-police-top-bar'); ?>   </h1>
+                </h1>
 			    </section>
 
 
@@ -141,8 +143,10 @@ if($val==0){echo"Le panier est vide";}else{
 				</div>
 			    </div>
 			    <div class="large-6 columns medium-12 small-12 ">
-				<div class="large-6 columns medium-12 small-12 espace-barre2 button ">
-				    <?php echo $this->Html->link("Voir l'etat de son panier",array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false),array('class'=>'pi-text-center'))?>
+
+				<div class="large-6 columns medium-12 small-12 espace-barre2 button acm-panier">
+                   <?php echo $Acms->getEditionPages(array('panier-fond-color','panier-text-color','panier-fond-passage-color'));?>
+                    <?php echo $this->Html->link("Voir l'etat de son panier",array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false),array('class'=>'pi-text-center'))?>
 				</div>
 
 			    </div>

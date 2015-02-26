@@ -1,3 +1,22 @@
+#editAdminList > li > a{
+    width: 20px;
+    height: 20px;
+display:block;
+    }
+
+#editAdminList > li{
+
+display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/editcolor.png');
+
+}
+#editAdminList{
+    position:absolute;
+}
+
+
 div.choixAdress div.check{
 background: #d8d8d8;
 border-left:1px #5b6554 solid;

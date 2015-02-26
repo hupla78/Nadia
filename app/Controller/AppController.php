@@ -104,13 +104,13 @@ class Acms{
 	public $admin=null;
 	public $local=null;
 	public function __construct()
-	{	
+	{
 		$this->admin = AuthComponent::user('isAdmin');
 		//info
 		$this->local =  Router::fullbaseUrl();
-		//echo $this->getEditionPage();	
+		//echo $this->getEditionPage();
 
-		$this->arr2 = json_decode(file_get_contents(APP.'cms/base.json'), true);    
+		$this->arr2 = json_decode(file_get_contents(APP.'cms/base.json'), true);
 
 	}
 
@@ -123,24 +123,38 @@ class Acms{
 	}
 
 	public function getAll($lap = 'undefine')
-	{	$retu = array();	
+	{	$retu = array();
 		$i = 0;
 		while(array_key_exists($lap.$i,$this->arr2)){
-			$retu[$i]= $this->arr2[$lap.$i];	
-			$i++;	
+			$retu[$i]= $this->arr2[$lap.$i];
+			$i++;
 		}
-	return $retu;	
+	return $retu;
 	}
 
-	
+
 	public function getEditionPage($lap = 'undefine'){
 
-		if($this->admin)return '<a  href="'.$this->local.'/admin/cms/findbyname/'.$lap.'" alt="'.$lap.'" id="editAdmin" ></a>';
+		if($this->admin)return '<a  href="'.$this->local.'/admin/cms/findbyname/'.$lap.'" title="'.$lap.'" id="editAdmin" ></a>';
 
-		else 		return '';	
-		
-		
-	}	
+		else 		return '';
+	}
+
+    public function getEditionPages($lap){
+
+		if($this->admin){
+            $retList = '<ul id="editAdminList">';
+            foreach($lap as $a){
+                $retList = $retList.'<li><a  href="'.$this->local.'/admin/cms/findbyname/'.$a.'" title="'.$a.'"  ></a></li>';
+            }
+            $retList = $retList."</ul>";
+            return $retList;
+            }
+
+		else 		return '';
+	}
+
+
 
 }
 

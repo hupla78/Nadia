@@ -3,31 +3,31 @@ echo $this->Html->script('http://maps.google.com/maps/api/js?key=AIzaSyCcjATeNc8
 $b = 0;?>
 
 <?php
-      $map_options = array(
-        "localize" => 'true',
-        "type" => "ROADMAP",
-        "zoom" => 10,
-        "marker" => true,
-        "draggableMarker" => false,
-        "width"=>'auto',
-        "height"=>'300px'
-      );
-    ?>
-    <?php echo $this->GoogleMap->map( $map_options); ?>
+$map_options = array(
+    "localize" => 'true',
+    "type" => "ROADMAP",
+    "zoom" => 10,
+    "marker" => true,
+    "draggableMarker" => false,
+    "width"=>'auto',
+    "height"=>'400px'
+);
+?>
+<?php echo $this->GoogleMap->map( $map_options); ?>
 
 
 
 <?php foreach($pointDeVentes as $a ): ?>
 
- <?php echo $this->GoogleMap->addMarker(
-      "map_canvas",
-      $b++,
+<?php echo $this->GoogleMap->addMarker(
+    "map_canvas",
+    $b++,
     $a['PointDeVente']['num_rue'].' '.
     $a['PointDeVente']['rue'].' '.
     $a['PointDeVente']['codePostal'].' '.
     $a['PointDeVente']['vile'],
-      array("draggableMarker" => true,'markerTitle'=>$a['PointDeVente']['name'], "windowText" =>$a['PointDeVente']['name'])
-    ); ?>
+    array("draggableMarker" => true,'markerTitle'=>$a['PointDeVente']['name'], "windowText" =>$a['PointDeVente']['name'])
+); ?>
 
 
 <div class="large-12 columns medium-12 small-12 panel">
@@ -46,16 +46,14 @@ $b = 0;?>
 
 
         <div class="adresse center">
-            <?php echo(
+            <p>
+<?php echo(
     $a['PointDeVente']['num_rue'].' '.
     $a['PointDeVente']['rue'].'<br>'.
     $a['PointDeVente']['codePostal'].' <b>'.
     $a['PointDeVente']['vile'].'</b>'
 ); ?>
-
-
-
-
+            </p>
         </div>
     </div>
 </div>
