@@ -1,6 +1,6 @@
 <?php
 echo $this->Html->script('http://maps.google.com/maps/api/js?key=AIzaSyCcjATeNc8V6oVr672cPFuRn8P_wmPULoU&sensor=true');
-$b = 0;?>
+$b = 1;?>
 
 <?php
 $map_options = array(
