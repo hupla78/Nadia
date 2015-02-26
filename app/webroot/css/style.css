@@ -10,10 +10,12 @@ display: inline-block;
     width: 20px;
     height: 20px;
     background-image: url('../img/editcolor.png');
+    z-index:5;
 
 }
 #editAdminList{
     position:absolute;
+        z-index:5;
 }
 
 
@@ -156,13 +158,15 @@ color:white;
 }
 
 a.pi-text-center{
-margin-left: auto;
-margin-right: auto;
-display: table;
+display: block;
 }
 
+li.separbot > a {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 li.separbot{
-list-style-type: none;
+    list-style-type: none;
     border-right : 1px solid white;
     border-bottom: 1px solid white;
     padding: 0px;

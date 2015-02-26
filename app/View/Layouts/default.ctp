@@ -144,9 +144,9 @@ if($val==0){echo"Le panier est vide";}else{
 			    </div>
 			    <div class="large-6 columns medium-12 small-12 ">
 
-				<div class="large-6 columns medium-12 small-12 espace-barre2 button acm-panier">
+				<div class="large-6 columns medium-12 small-12 espace-barre2">
                    <?php echo $Acms->getEditionPages(array('panier-fond-color','panier-text-color','panier-fond-passage-color'));?>
-                    <?php echo $this->Html->link("Voir l'etat de son panier",array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false),array('class'=>'pi-text-center'))?>
+                    <?php echo $this->Html->link("Voir l'etat de son panier",array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false),array('class'=>'button acm-panier'))?>
 				</div>
 
 			    </div>
@@ -157,28 +157,32 @@ if($val==0){echo"Le panier est vide";}else{
 
 
 				<li class="menud large-3 small-6 medium-3 columns separbot">
-				    <div class="panel">
+
 
 					<?php echo $Acms->getEditionPage('color-fond-menu-generale'); ?>
 
-					<?php echo $this->Html->link('Produits',array('prefix'=>false,'admin'=>false,'controller'=>'boutiques','action'=>'index', ),array('class'=>'pi-text-center'))?>
+					<?php echo $this->Html->link('Produits',
+                                                 array('prefix'=>false,
+                                                       'admin'=>false,
+                                                       'controller'=>'boutiques',
+                                                       'action'=>'index'),
+                                                 array('class'=>'pi-text-center'))?>
+
 					<?php echo $Acms->getEditionPage('color-passage-souris-menu-generale'); ?>
 
-				    </div>
 
 
 				</li>
 				<li class="menud large-3 small-6 medium-3 columns separbot">
-				    <div class="panel">
+
 
 					<?php echo $this->Html->link('Fil de Boheme',array('prefix'=>false,'admin'=>false,'controller'=>'pages','action'=>'home', ),array('class'=>'pi-text-center'))?>
-				    </div>
 
 
 				</li>
 
 				<li class="menud large-3 small-6 medium-3 columns separbot">
-				    <div class="panel">
+
 
 					<?php echo $Acms->getEditionPage('color-police-menu-generale-sans-souris'); ?>
 
@@ -187,14 +191,14 @@ if($val==0){echo"Le panier est vide";}else{
 
 					<?php echo $Acms->getEditionPage('color-police-menu-generale-passage-souris'); ?>
 
-				    </div>
+
 
 
 				</li>
 				<li class="menud large-3 small-6 medium-3 columns separbot">
-				    <div class="panel">
+
 					<?php echo $this->Html->link('Points de vente',array('prefix'=>false,'admin'=>false,'controller'=>'pointDeVentes','action'=>'index', ),array('class'=>'pi-text-center'))?>
-				    </div>
+
 
 
 				</li>

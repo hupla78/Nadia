@@ -1,14 +1,14 @@
-div.acm-panier{
+a.acm-panier{
     background: <?php echo $Acms->getOne('panier-fond-color');?>;
 
 }
 
-div.acm-panier:hover{
+a.acm-panier:hover{
     background: <?php echo $Acms->getOne('panier-fond-passage-color');?>;
 
 }
 
-div.acm-panier a{
+a.acm-panier a{
      color: <?php echo $Acms->getOne('panier-text-color');?>;
 
 }
