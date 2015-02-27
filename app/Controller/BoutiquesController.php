@@ -159,6 +159,19 @@ class BoutiquesController extends AppController {
 		return $this->redirect($this->referer()) ;
 	}       
 
+    public function removeArticle($id=null)
+	{
+		$elem = 1;
+
+		if(!empty($this->request->data))
+			$elem = $this->request->data['Boutique']['quantity'];
+
+		$this->Panier->rem($id,$elem);
+		return $this->redirect($this->referer()) ;
+
+	}
+
+
 
 	public function subArticle($id=null)
 	{

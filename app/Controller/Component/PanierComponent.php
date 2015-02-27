@@ -82,6 +82,20 @@ class PanierComponent extends Component{
 	}
 
 
+    public function rem($id){
+        $totalArticle           = $this->controller->Session->read('Panier.TotalArticle');
+        $total           = $this->controller->Session->read('Panier.Total');
+
+        $nbactuelleDe    = $this->controller->Session->read('Panier.'.$id.'.nombre');
+        $prix            = $this->controller->Session->read('Panier.'.$id.'.Article.prix');
+
+        $this->controller->Session->write('Panier.TotalArticle',$totalArticle-$nbactuelleDe);
+        $this->controller->Session->write('Panier.Total',$total-$nbactuelleDe*$prix);
+		$this->controller->Session->delete('Panier.'.$id);
+
+	}
+
+
 
 	// je cree la commande pas 
 	public function create(){

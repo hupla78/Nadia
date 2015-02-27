@@ -90,7 +90,7 @@ class AdressePofilesController extends AppController {
             $this->request->data['AdressePofile']['user_id']= $this->Session->read('Auth.User.id');
 			if ($this->AdressePofile->save($this->request->data)) {
 				$this->Session->setFlash(__('The adresse pofile has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect(array('controller'=>'Users','action' => 'userInfo'));
 			} else {
 				$this->Session->setFlash(__('The adresse pofile could not be saved. Please, try again.'));
 			}

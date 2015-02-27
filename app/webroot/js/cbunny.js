@@ -6,6 +6,7 @@ $(document).ready(function () {
       placeholder:'Faire une Recherche',
      // allowClear: false,
       dropdownAutoWidth:true,
+      language: "fr",
     ajax: {
       url: CbunnyObj.APP_PATH + 'boutiques/search',
       dataType: 'json',

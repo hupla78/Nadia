@@ -26247,3 +26247,61 @@ Request URL: /css/select2/select2-spinner.gif
 Stack Trace:
 #0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-02-26 19:17:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/select2/select2-spinner.gif
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-26 19:43:37 Error: [MissingControllerException] Controller class PartialsController could not be found.
+Exception Attributes: array (
+  'class' => 'PartialsController',
+  'plugin' => NULL,
+)
+Request URL: /partials/home.html
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-26 19:43:42 Error: [MissingControllerException] Controller class PartialsController could not be found.
+Exception Attributes: array (
+  'class' => 'PartialsController',
+  'plugin' => NULL,
+)
+Request URL: /partials/home.html
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-26 19:43:47 Error: [MissingControllerException] Controller class PartialsController could not be found.
+Exception Attributes: array (
+  'class' => 'PartialsController',
+  'plugin' => NULL,
+)
+Request URL: /partials/home.html
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-02-27 12:56:33 Error: [MissingActionException] Action BoutiquesController::rem() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'rem',
+)
+Request URL: /boutiques/rem/1
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-02-27 12:56:58 Error: [MissingActionException] Action BoutiquesController::rem() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'rem',
+)
+Request URL: /boutiques/rem/1
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

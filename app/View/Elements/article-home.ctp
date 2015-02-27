@@ -10,12 +10,36 @@
 
     	     </div>
             <div class="large-12 medium-12 small-6 columns">
-                   <p id="dessous">
+
+    <p id="dessous">
                          <?php echo ($arti['name']); ?>
                          <?php echo ($arti['prix'].'€'); ?>
-                         <?php echo $Acms->getEditionPage($name); ?>
+<p>
+        <?php echo $this->Html->link('En savoir plus',array('prefix'=>false,
+			'controller'=>'boutiques',
+			'action'=>'view',
+			$arti['id']));?>
+</p>
 
-                  </p>
+
+
+
+    </p>
+
+    <p id="prix-article">
+
+		<?php echo $this->Html->link('Ajouter au panier',array(
+			'controller'=>'boutiques',
+			'action'=>'addArticle',
+			$arti['id'],1));?>
+
+		<?php echo $this->Html->image('panierajout.png',array('width'=>'30px','height'=>'30px', 'url'=>array(
+			'controller'=>'boutiques',
+			'action'=>'addArticle',
+			$arti['id'],1)));?>
+
+    </p>
+        <?php echo $Acms->getEditionPage($name); ?>
             </div>
 
  </div>

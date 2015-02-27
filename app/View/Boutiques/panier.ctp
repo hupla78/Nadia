@@ -5,14 +5,14 @@
 
 
 <?php
-if($panier==null):?>
+if($panier['TotalArticle']==0):?>
 <?php echo "Le Panier est vide";?>
 
 
 <?php echo $this->Html->link('Retourner dans la boutique',array('prefix'=>false,
 			'controller'=>'boutiques',
 			'action'=>'index',
-			$panier['Article']['id']));?></p>
+                            );?></p>
 
 
 
@@ -26,6 +26,7 @@ if($panier==null):?>
 			<th class="tabb">Quantite</th>
 			<th class="tabb">Prix</th>
 			<th class="tabb">Total</th>
+			<th class="tabb"></th>
 		</tr>
 	</thead>
 	<?php $total = 0;?>
@@ -57,6 +58,14 @@ if($panier==null):?>
 		$total = $cal + $total;
 			echo $cal; ?>€
  		</td>
+ 		<td>
+            <span class="moin">
+		<?php
+		echo $this->Html->link('x ',array('controller'=>'boutiques','action'=>'removeArticle',$key['Article']['id']),array('class'=>'buttonpanierr'));?>
+            </span>
+        </td>
+
+
 	<tr>
 	<?php endif;?>
 	<?php endforeach;?>
@@ -79,7 +88,7 @@ echo $this->Html->link('Inscription',array('controller'=>'users','action'=>'insc
 
 echo $this->Html->link('Connection',array('controller'=>'users','action'=>'login'),array('class'=>'inscri'));
         }else{
-echo $this->Html->link('Payement de son panier',array('controller'=>'Boutiques','action'=>'command'),array('class'=>'inscri'));
+echo $this->Html->link('Payer',array('controller'=>'Boutiques','action'=>'command'),array('class'=>'inscri'));
         }
 
 ?>

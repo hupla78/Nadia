@@ -23,6 +23,7 @@ echo $this->Html->script('foundation/foundation.offcanvas');
 echo $this->Html->script('foundation/foundation.slider');
 echo $this->Html->script('foundation/foundation.orbit');
 echo $this->Html->script('select2-3.5.2/select2.min');
+echo $this->Html->script('select2-3.5.2/select2_locale_fr.js');
 echo $this->Html->script('cbunny');
 
 
@@ -94,12 +95,12 @@ if (AuthComponent::user('isAdmin')){
 
 <?php
 if ( null==AuthComponent::user('id')){
-	echo $this->Html->link('Se connecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'login'));
+	echo $this->Html->link('Connexion',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'login'));
 	echo '</li><li>';
 	echo $this->Html->link('Inscription',array('controller'=>'Users','action'=>'inscription'));
 }
 else{
-	echo $this->Html->link('Se Deconnecter',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'logout'));
+	echo $this->Html->link('Déconnexion',array('admin'=>false,'prefix'=>false,'controller'=>'users','action'=>'logout'));
 	echo '</li><li>';
 	echo $this->Html->link('Mon compte',array('controller'=>'users','action'=>'userInfo'));
 }
@@ -146,7 +147,7 @@ if($val==0){echo"Le panier est vide";}else{
 
 				<div class="large-6 columns medium-12 small-12 espace-barre2">
                    <?php echo $Acms->getEditionPages(array('panier-fond-color','panier-text-color','panier-fond-passage-color'));?>
-                    <?php echo $this->Html->link("Voir l'etat de son panier",array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false),array('class'=>'button acm-panier'))?>
+                    <?php echo $this->Html->link("Mon panier",array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false),array('class'=>'button acm-panier'))?>
 				</div>
 
 			    </div>
