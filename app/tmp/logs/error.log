@@ -26435,3 +26435,38 @@ Stack Trace:
 #6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
 #7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2015-02-27 13:45:16 Error: Fatal Error (4): syntax error, unexpected ',' in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 15]
+2015-02-27 13:45:16 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 15, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 15, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-27 13:45:20 Error: Fatal Error (4): syntax error, unexpected ',' in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 15]
+2015-02-27 13:45:20 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 15, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 15, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-27 13:45:35 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp',
+)
+Request URL: /pages/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.ico', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.ico')
+#3 [internal function]: PagesController->display('img', 'iconn.ico')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}

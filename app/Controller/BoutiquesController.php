@@ -12,7 +12,7 @@ class BoutiquesController extends AppController {
     
     public function beforeFilter(){
 		parent::beforeFilter();
-		$this->Auth->allow('panier','index','article','subArticle','addArticle',,'removeArticle','search','view');
+		$this->Auth->allow('panier','index','article','subArticle','addArticle','removeArticle','search','view');
 	}
     
     
