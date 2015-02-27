@@ -7,6 +7,8 @@
 	    Fil de Bohème
 	</title>
 
+<link rel="shortcut icon" href="img/iconn.ico">
+
 
 <?php
 echo $this->Html->css('foundation');
@@ -188,7 +190,7 @@ if($val==0){echo"Le panier est vide";}else{
 					<?php echo $Acms->getEditionPage('color-police-menu-generale-sans-souris'); ?>
 
 
-					<?php echo $this->Html->link('Actualité',array('prefix'=>false,'admin'=>false,'controller'=>'actualites','action'=>'index', ),array('class'=>'pi-text-center'))?>
+					<?php echo $this->Html->link('Actualités',array('prefix'=>false,'admin'=>false,'controller'=>'actualites','action'=>'index', ),array('class'=>'pi-text-center'))?>
 
 					<?php echo $Acms->getEditionPage('color-police-menu-generale-passage-souris'); ?>
 
@@ -221,7 +223,9 @@ if($val==0){echo"Le panier est vide";}else{
 
 
 		<div id="content" class="row">
+
 		    <?php echo $this->Session->flash();?>
+
 		    <?php echo $this->fetch('content'); ?>
 		</div>
 
