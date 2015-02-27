@@ -26305,3 +26305,33 @@ Stack Trace:
 #1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
 #2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2015-02-27 13:24:27 Error: Fatal Error (4): syntax error, unexpected ';' in [/usr/share/nginx/html/Nadia/app/View/Boutiques/panier.ctp, line 15]
+2015-02-27 13:24:27 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 15, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 15, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-27 13:24:46 Error: Fatal Error (4): syntax error, unexpected ';' in [/usr/share/nginx/html/Nadia/app/View/Boutiques/panier.ctp, line 15]
+2015-02-27 13:24:46 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 15, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 15, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-02-27 13:25:18 Error: Fatal Error (4): syntax error, unexpected ';' in [/usr/share/nginx/html/Nadia/app/View/Boutiques/panier.ctp, line 15]
+2015-02-27 13:25:18 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 15, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 15, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -6,7 +6,18 @@
 <p class="text-center1 hide-for-medium" ><?php echo  $article['Article']['name'];?></p>
 
 <?php
-	echo $this->Html->image('import/'.$article['Img']['value'],array('width'=>'100%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));?>
+
+if($article['Img']['value'] == null){
+	echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
+}else{
+	echo $this->Html->image('import/'.$article['Img']['value'],array('width'=>'100%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
+}
+
+
+
+
+
+    ?>
 
 <div class="large-9 medium-8 small-7 columns" >
 		<p id="prix-article">Prix: <b><?php echo $article['Article']['prix'] ?>€ </b>

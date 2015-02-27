@@ -11,8 +11,8 @@ if($panier['TotalArticle']==0):?>
 
 <?php echo $this->Html->link('Retourner dans la boutique',array('prefix'=>false,
 			'controller'=>'boutiques',
-			'action'=>'index',
-                            );?></p>
+			'action'=>'index'
+                            ));?></p>
 
 
 
@@ -21,7 +21,6 @@ if($panier['TotalArticle']==0):?>
 	<thead>
 
 		<tr>
-
 			<th class="tabb">Nom</th>
 			<th class="tabb">Quantite</th>
 			<th class="tabb">Prix</th>
