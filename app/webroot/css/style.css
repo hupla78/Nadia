@@ -18,6 +18,19 @@ display: inline-block;
         z-index:5;
 }
 
+.button-command{
+display: inline-block;
+margin-right: 0px;
+}
+
+.command-con>h5{
+display: inline-block;
+
+}
+
+.command-con{
+border-top: 1px black solid;
+}
 
 div.choixAdress div.check{
 background: #d8d8d8;

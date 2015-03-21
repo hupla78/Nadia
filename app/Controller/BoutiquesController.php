@@ -244,21 +244,23 @@ class BoutiquesController extends AppController {
     
     public function ispayd(){
 
-setlocale(LC_TIME, "fr_FR");
+        $this->Boutique->PanierCommand->recursive = 1;
+        $tab=$this->Panier->exportToBDDFormat();
+        debug($this->Boutique->PanierCommand->findById(20));
+        $this->Boutique->PanierCommand->saveAssociated($tab);
+        die;
 
 
+        setlocale(LC_TIME, "fr_FR");
         $temp = array(
             'userName'      => $this->Session->read('Auth.User.username'),
             'Adresse'       => $this->Boutique->User->AdressePofile->findById( $this->Session->read('Panier.PayInfo.adresseId'),array('recursive'=>0)),
             'prix!Total'    =>$this->Session->read('Panier.Total'),
             'date'          => strftime("%d/%m/%Y")
         );
-        debug($temp);
-        die();
-
-               $email = new CakeEmail('gmail');
+                $email = new CakeEmail('gmail');
 				$email->template('informatif');
-				$email	->emailFormat('both')
+				$email->emailFormat('both')
 					->to($this->Session->read('Auth.User.email'))
 					->from('ruhtra.php@gmail.com')
 					->viewVars($temp)
@@ -289,10 +291,6 @@ setlocale(LC_TIME, "fr_FR");
 
         echo json_encode($result);
 }
-
-
-
-
 
 	
 

@@ -76,6 +76,8 @@ class Boutique extends AppModel {
 		)
 	);
 
+    public $hasOne = 'PanierCommand';
+
     
     
 	public $hasAndBelongsToMany =array(

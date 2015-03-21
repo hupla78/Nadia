@@ -154,6 +154,34 @@ class PanierComponent extends Component{
     
     }
     
+    public function exportToBDDFormat(){
+
+
+        $tempo = $this->controller->Session->read('Panier');
+        debug($tempo);
+        foreach($tempo as $key => $temp){
+            if(is_array($temp)&&$key!="PayInfo"){
+               $tab[$key]= array(
+
+                    'article_id'=>$key,
+                    'p'=>$temp['Article']['prix'],
+                    'q'=>$temp['nombre']
+               );
+            }
+        }
+
+        $tab1 = array(
+            'PanierCommand'=> array(
+            'adresse_pofile_id'=>$tempo['PayInfo']['adresseId'],
+            'user_id'=>$this->controller->Session->read('Auth.User.id')),
+            'PanierVente'=>$tab
+            );
+        debug($tab1);
+        return $tab1;
+
+
+    }
+
 
 
 }

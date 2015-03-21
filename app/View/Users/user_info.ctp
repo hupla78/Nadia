@@ -13,6 +13,23 @@
 <div class="large-6 medium-12 columns">
 <div class="panel">
     <h3 class="center">Mes Commandes</h3>
+    <?php foreach($userInfo['PanierCommand'] as $com ): ?>
+
+    <div class="large-12 small-12 command-con">
+        <h5 class="adresse">
+            <?php echo $com['created'];?>
+        </h5>
+        <?php echo( $this->Html->link('voir',array(
+                    'controller'=>'PanierCommand',
+                    'action'=>'view',$com['id']),
+                                array('class'=>'button-command'))
+); ?>
+
+
+    </div>
+
+
+    <?php endforeach; ?>
 
 </div>
 </div>
