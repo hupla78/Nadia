@@ -1,11 +1,11 @@
 <?php
-App::uses('ActualitesController', 'Controller');
+App::uses('PanierCommandsController', 'Controller');
 
 /**
- * ActualitesController Test Case
+ * PanierCommandsController Test Case
  *
  */
-class ActualitesControllerTest extends ControllerTestCase {
+class PanierCommandsControllerTest extends ControllerTestCase {
 
 /**
  * Fixtures
@@ -13,9 +13,15 @@ class ActualitesControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.actualite',
+		'app.panier_command',
+		'app.user',
+		'app.adresse_pofile',
+		'app.panier_vente',
+		'app.article',
 		'app.img',
-		'app.cm'
+		'app.cm',
+		'app.category',
+		'app.command'
 	);
 
 /**

@@ -181,7 +181,10 @@ class PanierComponent extends Component{
 
 
     }
+public function destroy(){
+   $this->controller->Session->delete('Panier');
 
+}
 
 
 }

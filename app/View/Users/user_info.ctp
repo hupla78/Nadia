@@ -20,7 +20,7 @@
             <?php echo $com['created'];?>
         </h5>
         <?php echo( $this->Html->link('voir',array(
-                    'controller'=>'PanierCommand',
+                    'controller'=>'PanierCommands',
                     'action'=>'view',$com['id']),
                                 array('class'=>'button-command'))
 ); ?>

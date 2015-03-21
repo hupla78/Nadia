@@ -27602,3 +27602,1220 @@ Request URL: /PanierCommand/view/19
 Stack Trace:
 #0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-03-21 11:12:08 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 11:20:16 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 11:24:48 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:45:09 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:45:09 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:45:09 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:45:10 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:46:11 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:46:12 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:46:12 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:46:12 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:46:12 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:48:34 Error: [MissingActionException] Action ActualitesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'ActualitesController',
+  'action' => 'index',
+)
+Request URL: /actualites
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ActualitesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-21 13:50:12 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:14 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:14 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:15 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:15 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:15 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:15 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:16 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:16 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:16 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:45 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:46 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:46 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:46 Error: [MissingControllerException] Controller class PanierCommandController could not be found.
+Exception Attributes: array (
+  'class' => 'PanierCommandController',
+  'plugin' => NULL,
+)
+Request URL: /PanierCommand/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-21 13:50:54 Error: [MissingActionException] Action PanierCommandsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PanierCommandsController',
+  'action' => 'view',
+)
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-21 13:50:54 Error: [MissingActionException] Action PanierCommandsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PanierCommandsController',
+  'action' => 'view',
+)
+Request URL: /PanierCommands/view/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-21 13:52:25 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('19')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:52:47 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('19')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:52:48 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('19')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:52:48 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('19')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:52:48 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('19')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:53:00 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:53:37 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:53:37 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:53:38 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:53:38 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:54:00 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:54:05 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:54:06 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:54:06 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:54:06 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:54:15 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:54:16 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:54:16 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:54:48 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:56:01 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/img/iconn.ico
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('img', 'iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 13:59:09 Error: Fatal Error (4): syntax error, unexpected ')' in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 131]
+2015-03-21 13:59:09 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 131)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 131, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 131, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 13:59:09 Error: Fatal Error (4): syntax error, unexpected ')' in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 131]
+2015-03-21 13:59:09 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 131)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 131, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 131, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 13:59:09 Error: Fatal Error (4): syntax error, unexpected ')' in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 131]
+2015-03-21 13:59:09 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 131)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 131, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 131, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 13:59:30 Error: [NotFoundException] Invalid command
+Request URL: /PanierCommands/view/20
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('20')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 14:00:25 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /users/view/43
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-21 14:00:25 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /users/view/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-21 14:00:30 Error: [MissingActionException] Action UsersController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'view',
+)
+Request URL: /users/view/43
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-21 14:21:45 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'adresse_pofile_id' cannot be null
+Request URL: /Boutiques/isPayd
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1854): DboSource->create(Object(PanierCommand), Array, Array)
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2428): Model->save(Array, Array)
+#5 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(244): Model->saveAssociated(Array)
+#6 [internal function]: BoutiquesController->ispayd()
+#7 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#8 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#10 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-21 14:21:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'adresse_pofile_id' cannot be null
+Request URL: /Boutiques/isPayd
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1854): DboSource->create(Object(PanierCommand), Array, Array)
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2428): Model->save(Array, Array)
+#5 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(244): Model->saveAssociated(Array)
+#6 [internal function]: BoutiquesController->ispayd()
+#7 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#8 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#10 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-21 14:22:07 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-21 14:22:09 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/img/iconn.ico
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('img', 'iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 14:24:16 Error: [NotFoundException] Invalid adresse pofile
+Request URL: /adresse_pofiles/view/img/iconn.ico
+Stack Trace:
+#0 [internal function]: AdressePofilesController->view('img', 'iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(AdressePofilesController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdressePofilesController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-21 14:30:22 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:15 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:19 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:20 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:21 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:42 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:44 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:44 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:45 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:45 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:45 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:45 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:46 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:46 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:46 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:32:46 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:34:26 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:35:01 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:35:02 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:35:03 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:35:03 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:35:03 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:35:18 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:35:21 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:35:22 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:35:22 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:36:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'panier_ventes.panier_command_id' in 'where clause'
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `PanierC...', Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `PanierC...', Array, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `PanierC...', false)
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierCommand), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#6 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first', Array)
+#7 [internal function]: PanierCommandsController->view('35')
+#8 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-21 14:36:36 Error: [MissingTableException] Table commands for model Command was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'commands',
+  'class' => 'Command',
+  'ds' => 'default',
+)
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('commands')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(AppModel), 'Command', '')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(PanierVente), Object(AppModel), 'belongsTo', 'Command', Array, Array, false)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(PanierVente), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#7 /usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php(133): Model->find('first')
+#8 [internal function]: PanierCommandsController->view('35')
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#10 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#12 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-21 14:42:10 Error: Fatal Error (4): syntax error, unexpected ';' in [/usr/share/nginx/html/Nadia/app/View/PanierCommands/view.ctp, line 37]
+2015-03-21 14:42:10 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 37, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 37, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 14:46:51 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/View/PanierCommands/view.ctp, line 41]
+2015-03-21 14:46:51 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /PanierCommands/view/35
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 41, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 41, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-21 14:50:59 Error: [NotFoundException] Invalid boutique
+Request URL: /boutiques/view/img/iconn.ico
+Stack Trace:
+#0 [internal function]: BoutiquesController->view('img', 'iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

@@ -78,12 +78,12 @@ class PanierVente extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		'Command' => array(
+		/*'Command' => array(
 			'className' => 'Command',
 			'foreignKey' => 'command_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
-		)
+		)*/
 	);
 }
