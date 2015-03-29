@@ -26,6 +26,19 @@ class PanierCommandsController extends AppController {
         $this->set('panierCommands', $this->Paginator->paginate());
     }
 
+
+    /**
+     * admin_index method
+     *
+     * @return void
+     */
+    public function admin_status($id){
+        $this->PanierCommand->nextState();
+
+
+
+    }
+
     /**
  * admin_view method
  *

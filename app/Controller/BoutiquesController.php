@@ -1,6 +1,7 @@
 <?php
 App::uses('CakeEmail', 'Network/Email');
 App::uses('CakeTime', 'Utility');
+App::uses('Paypal', 'Paypal.Lib');
 /**
  * Boutiques Controller
  *
@@ -235,10 +236,38 @@ class BoutiquesController extends AppController {
 
         $this->Panier->needAdresse();
 
+        $this->Paypal = new Paypal(array(
+    'sandboxMode' => true,
+    'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
+    'nvpPassword' =>'4WAPNUK89HCNBHRK',
+    'nvpSignature' => 'AhrRhl.RJcePgUz73FTprggMHMuXAla2HRDwV9x5UUl7KMU2Xh9lFfjX'
+));
 
-    }
+       $payment = array(
+    'amount' => 30.00,
+    'card' => '4008 0687 0641 8697', // This is a sandbox CC
+    'expiry' => array(
+        'M' => '2',
+        'Y' => '2016',
+    ),
+    'cvv' => '321',
+    'currency' => 'USD' // Defaults to GBP if not provided
+);
+
+
+ try {
+    $this->Paypal->doDirectPayment($payment);
+
+} catch (Exception $e) {
+    debug($e->getMessage());
+}
+}
+
+
+
 
     public function ispayd(){
+
 
         $tab=$this->Panier->exportToBDDFormat();
         $this->Boutique->PanierCommand->saveAssociated($tab);
@@ -284,6 +313,13 @@ class BoutiquesController extends AppController {
 
         echo json_encode($result);
     }
+
+
+
+
+
+
+
 
 
 

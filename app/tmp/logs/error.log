@@ -28819,3 +28819,535 @@ Stack Trace:
 #3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
 #4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-03-22 14:21:43 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 280]
+2015-03-22 14:21:43 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/isPayd
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 280)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 280, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 280, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-22 14:21:43 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 280]
+2015-03-22 14:21:43 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 280)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 280, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 280, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-22 14:21:48 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-22 14:21:53 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 280]
+2015-03-22 14:21:53 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/isPayd
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 280)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 280, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 280, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-22 14:21:55 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 280]
+2015-03-22 14:21:55 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 280)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 280, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 280, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-22 14:21:56 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 280]
+2015-03-22 14:21:56 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 280)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 280, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 280, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-22 14:22:29 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-22 14:22:32 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-22 17:21:32 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /admin/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-22 17:21:53 Error: [MissingActionException] Action BoutiquesController::admin_consulteCommand() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'admin_consulteCommand',
+)
+Request URL: /admin/Boutiques/consulteCommand
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-22 17:21:53 Error: [MissingActionException] Action BoutiquesController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'admin_img',
+)
+Request URL: /admin/Boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-22 17:23:24 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/PanierCommands/admin_index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/PanierCommands/admin_index.ctp',
+)
+Request URL: /admin/PanierCommands
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-29 18:05:14 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-29 18:05:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'adresse_pofile_id' cannot be null
+Request URL: /Boutiques/isPayd
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1854): DboSource->create(Object(PanierCommand), Array, Array)
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2428): Model->save(Array, Array)
+#5 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(273): Model->saveAssociated(Array)
+#6 [internal function]: BoutiquesController->ispayd()
+#7 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#8 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#10 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-29 18:05:38 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp',
+)
+Request URL: /pages/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.ico', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.ico')
+#3 [internal function]: PagesController->display('img', 'iconn.ico')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-03-29 18:05:53 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-29 18:06:17 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-29 18:06:25 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-03-29 18:06:29 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:06:29 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:06:29 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:06:29 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:29 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:29 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:29 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:29 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:29 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:29 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:30 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:30 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:30 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:30 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:30 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:30 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:30 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:30 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:31 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:31 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:32 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:32 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:32 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:32 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:32 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:32 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:32 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:32 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:32 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:32 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:32 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:32 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:33 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:33 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:33 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:33 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:33 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:33 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:33 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:33 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:33 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:33 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:33 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:33 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:33 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:33 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:34 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:34 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:34 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:34 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:34 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:34 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:34 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:34 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:34 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:34 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:34 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:34 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:35 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:35 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:35 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:35 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:07:35 Error: Fatal Error (64): Cannot redeclare PanierCommandsController::index() in [/usr/share/nginx/html/Nadia/app/Controller/PanierCommandsController.php, line 130]
+2015-03-29 18:07:35 Error: [FatalErrorException] Cannot redeclare PanierCommandsController::index()
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/usr/share/ngin...', 130, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-29 18:08:28 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/PanierCommands/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/PanierCommands/view.ctp',
+)
+Request URL: /PanierCommands/view/19
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
