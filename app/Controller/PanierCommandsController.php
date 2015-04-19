@@ -1,5 +1,8 @@
 <?php
 App::uses('AppController', 'Controller');
+
+App::uses('CakeEmail', 'Network/Email');
+
 /**
  * PanierCommands Controller
  *
@@ -15,6 +18,7 @@ class PanierCommandsController extends AppController {
  * @var array
  */
     public $components = array('Paginator', 'Session');
+
 
     /**
  * admin_index method
@@ -32,10 +36,16 @@ class PanierCommandsController extends AppController {
      *
      * @return void
      */
-    public function admin_status($id){
-        $this->PanierCommand->nextState();
-
-
+    public function admin_isSend($id){
+        $this->PanierCommand->isSend($id);
+        /*$email = new CakeEmail('gmail');
+        $email->template('CommandSend');
+        $email->emailFormat('both')
+            ->to($this->Session->read('Auth.User.email'))
+            ->from('ruhtra.php@gmail.com')
+            ->viewVars($temp)
+            ->send();*/
+        $this->redirect(array('action' => 'index'));
 
     }
 
@@ -52,6 +62,8 @@ class PanierCommandsController extends AppController {
         }
         $options = array('conditions' => array('PanierCommand.' . $this->PanierCommand->primaryKey => $id));
         $this->set('panierCommand', $this->PanierCommand->find('first', $options));
+        $this->set('article',$this->PanierCommand->PanierVente->find('all',array('conditions' => array('panier_command_id' => $id))));
+
     }
 
     /**
@@ -122,18 +134,13 @@ class PanierCommandsController extends AppController {
         return $this->redirect(array('action' => 'index'));
     }
 
-    public function index(){
-
-
-
-    }
-
 
     public function view($id){
 
         if (!$this->PanierCommand->exists($id)) {
             throw new NotFoundException(__('Invalid panier command'));
         }
+
         $options = array('conditions' => array('PanierCommand.' . $this->PanierCommand->primaryKey => $id));
         $tab =  $this->PanierCommand->find('first', $options);
         if($this->Session->read('Auth.User.id')!=$tab['User']['id']){

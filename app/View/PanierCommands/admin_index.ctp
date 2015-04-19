@@ -7,6 +7,7 @@
 			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th><?php echo $this->Paginator->sort('updated'); ?></th>
 			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('state'); ?></th>
 			<th><?php echo $this->Paginator->sort('adresse_pofile_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
@@ -17,15 +18,17 @@
 		<td><?php echo h($panierCommand['PanierCommand']['id']); ?>&nbsp;</td>
 		<td><?php echo h($panierCommand['PanierCommand']['created']); ?>&nbsp;</td>
 		<td><?php echo h($panierCommand['PanierCommand']['updated']); ?>&nbsp;</td>
+
 		<td>
 			<?php echo $this->Html->link($panierCommand['User']['id'], array('controller' => 'users', 'action' => 'view', $panierCommand['User']['id'])); ?>
 		</td>
+		<td><?php echo h($panierCommand['PanierCommand']['state']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($panierCommand['AdressePofile']['name'], array('controller' => 'adresse_pofiles', 'action' => 'view', $panierCommand['AdressePofile']['id'])); ?>
 		</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $panierCommand['PanierCommand']['id'])); ?>
-
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $panierCommand['PanierCommand']['id'])); ?><br>
+			<?php echo $this->Html->link(__('a ete evoyé'), array('action' => 'isSend', $panierCommand['PanierCommand']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

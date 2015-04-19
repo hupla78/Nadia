@@ -40,6 +40,10 @@ class AppController extends Controller{
 	public function beforeFilter(){
 		parent::beforeFilter();
 		$this->set('Acms',new Acms());
+        if($this->request->prefix){
+        $this->needToBeAdmin();
+        }
+
 	}
 
 

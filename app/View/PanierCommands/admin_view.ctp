@@ -34,7 +34,7 @@
 	<?php foreach ($article as $art): ?>
 		<tr>
 
-            <td><?php echo $this->Html->link($art['Article']['name'],array('controller'=>'boutiques','action'=>'view',$art['Article']['id'])); ?></td>
+            <td><?php echo $this->Html->link($art['Article']['name'],array("admin" => false,'controller'=>'boutiques','action'=>'view',$art['Article']['id'])); ?></td>
 
 			<td><?php echo $art['PanierVente']['q']; ?></td>
 			<td><?php echo $art['PanierVente']['p']; ?></td>

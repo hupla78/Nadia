@@ -271,14 +271,14 @@ class BoutiquesController extends AppController {
 
         $tab=$this->Panier->exportToBDDFormat();
         $this->Boutique->PanierCommand->saveAssociated($tab);
-        $this->Panier->destroy();
 
         setlocale(LC_TIME, "fr_FR");
         $temp = array(
-            'userName'      => $this->Session->read('Auth.User.username'),
-            'Adresse'       => $this->Boutique->User->AdressePofile->findById( $this->Session->read('Panier.PayInfo.adresseId'),array('recursive'=>0)),
-            'prix!Total'    =>$this->Session->read('Panier.Total'),
-            'date'          => strftime("%d/%m/%Y")
+            'userName'      =>  $this->Session->read('Auth.User.username'),
+            'Adresse'       =>  $this->Boutique->User->AdressePofile->findById( $this->Session->read('Panier.PayInfo.adresseId'),array('recursive'=>0)),
+            'prix!Total'    =>  $this->Session->read('Panier.Total'),
+            'date'          =>  strftime("%d/%m/%Y"),
+            'state'         =>  'Votre commande a bien éte enregistré'
         );
         $email = new CakeEmail('gmail');
         $email->template('informatif');
@@ -287,7 +287,7 @@ class BoutiquesController extends AppController {
             ->from('ruhtra.php@gmail.com')
             ->viewVars($temp)
             ->send();
-
+        $this->Panier->destroy();
     }
 
 

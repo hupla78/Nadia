@@ -21,7 +21,12 @@
                 <li><?php echo $this->Html->link('cms',array('admin'=>true,'controller'=>'cms','action'=>'index')); ?></li>              
                 <li><?php echo $this->Html->link('appliquer',array('admin'=>true,'prefix'=>'admin','controller'=>'cms','action'=>'export'));?>
         </ul>
-        
+    </div>
+         <div class="large-6 small-12 columns">
+                <h4>Ventes</h4><ul>
+
+                <li><?php echo $this->Html->link('Mes Ventes',array('admin'=>true,'controller'=>'PanierCommands','action'=>'index')); ?></li>
+
         </div>
 
 
