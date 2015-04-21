@@ -3,83 +3,83 @@
 
 class PanierComponent extends Component{
 
-	private $controller =  false;
+    private $controller =  false;
 
 
 
 
-	public function __construct(ComponentCollection $collection,$settings){
-		$this->controller = $collection->getController();
+    public function __construct(ComponentCollection $collection,$settings){
+        $this->controller = $collection->getController();
 
-	}
-
-
-	//je met un article dans le panier
-	public function add($id = false ,$quant = 1){
+    }
 
 
-		$article = $this->controller->Boutique->Article->findById($id,array('recursive'=>0));
-
-		if($id == false){die('erreur 1 : article introuvable');return;}
-
-		if($quant < 1 or $quant > 100){die('erreur 2 : quantité imposible');return;}
-
-			if(empty($article)){die('erreur 3 : article n\'exite pas ');return;}
-
-				if(!$this->controller->Session->check('Panier')){$this->create();}
-
-					if($this->controller->Session->check('Panier.'.$id)){
-						$nombre = $this->controller->Session->read('Panier.'.$id.'.nombre');
-						$this->controller->Session->write('Panier.'.$id.'.nombre',$nombre+$quant);
-						$this->modifTotal( $article['Article']['prix']);
-                        $this->modifTotalArticle($quant);
-                        
-						return;
-					}
+    //je met un article dans le panier
+    public function add($id = false ,$quant = 1){
 
 
+        $article = $this->controller->Boutique->Article->findById($id,array('recursive'=>0));
+
+        if($id == false){die('erreur 1 : article introuvable');return;}
+
+        if($quant < 1 or $quant > 100){die('erreur 2 : quantité imposible');return;}
+
+        if(empty($article)){die('erreur 3 : article n\'exite pas ');return;}
+
+        if(!$this->controller->Session->check('Panier')){$this->create();}
+
+        if($this->controller->Session->check('Panier.'.$id)){
+            $nombre = $this->controller->Session->read('Panier.'.$id.'.nombre');
+            $this->controller->Session->write('Panier.'.$id.'.nombre',$nombre+$quant);
+            $this->modifTotal( $article['Article']['prix']);
+            $this->modifTotalArticle($quant);
+
+            return;
+        }
 
 
-		$article = array_merge($article,array('nombre'=>$quant,'time'=>'notReady'));
-		debug($id);
 
-		$this->controller->Session->write('Panier.'.$id,$article);
-		$this->modifTotal( $article['Article']['prix']);
+
+        $article = array_merge($article,array('nombre'=>$quant,'time'=>'notReady'));
+        debug($id);
+
+        $this->controller->Session->write('Panier.'.$id,$article);
+        $this->modifTotal( $article['Article']['prix']);
         $this->modifTotalArticle($quant);
-		//$this->controller->Session->destroy();
+        //$this->controller->Session->destroy();
 
-	}
+    }
 
-	//j'enleve les aticle du panier
-	public function sub($id,$quant=1){
+    //j'enleve les aticle du panier
+    public function sub($id,$quant=1){
 
-		$quantActuel = $this->controller->Session->read('Panier.'.$id.'.nombre');
+        $quantActuel = $this->controller->Session->read('Panier.'.$id.'.nombre');
 
-		if($quantActuel ==  null){ return;}
+        if($quantActuel ==  null){ return;}
 
-		$prix = $this->controller->Session->read('Panier.'.$id.'.Article.prix');
+        $prix = $this->controller->Session->read('Panier.'.$id.'.Article.prix');
 
-		if($quantActuel-$quant <= 0){   
-			$this->remove($id);
-			$this->modifTotal(- $prix );
+        if($quantActuel-$quant <= 0){
+            $this->remove($id);
+            $this->modifTotal(- $prix );
             $this->modifTotalArticle(-$quant);
-			return; 
-		}
+            return;
+        }
 
 
-		$this->controller->Session->write('Panier.'.$id.'.nombre',$quantActuel-$quant);
-		$this->modifTotal(- $prix );
+        $this->controller->Session->write('Panier.'.$id.'.nombre',$quantActuel-$quant);
+        $this->modifTotal(- $prix );
 
 
-	}
+    }
 
 
 
-	//j'enleve les aticle du panier
-	public function remove($id){
-		$this->controller->Session->delete('Panier.'.$id);
+    //j'enleve les aticle du panier
+    public function remove($id){
+        $this->controller->Session->delete('Panier.'.$id);
 
-	}
+    }
 
 
     public function rem($id){
@@ -91,101 +91,138 @@ class PanierComponent extends Component{
 
         $this->controller->Session->write('Panier.TotalArticle',$totalArticle-$nbactuelleDe);
         $this->controller->Session->write('Panier.Total',$total-$nbactuelleDe*$prix);
-		$this->controller->Session->delete('Panier.'.$id);
+        $this->controller->Session->delete('Panier.'.$id);
 
-	}
+    }
 
 
 
-	// je cree la commande pas 
-	public function create(){
+    // je cree la commande pas
+    public function create(){
 
-		$this->controller->Session->write('Panier.Total' ,0.00);
+        $this->controller->Session->write('Panier.Total' ,0.00);
         $this->controller->Session->write('Panier.TotalArticle' ,0);
-	}
+    }
 
 
-	// je renvoie vers le lien d'achat
-	public function buy(){
+    // je renvoie vers le lien d'achat
+    public function buy(){
 
 
-	}
+    }
 
 
-	//je renvoi la liste des articles
-	public function listArticle(){
+    //je renvoi la liste des articles
+    public function listArticle(){
 
-		return $this->controller->Session->read('Panier');
-	}
+        return $this->controller->Session->read('Panier');
+    }
 
-	//verifie les prix et ce qui est dans le panier
-	public function check(){}
+    //verifie les prix et ce qui est dans le panier
+    public function check(){}
 
 
-		private function modifTotal($numbre){
+    private function modifTotal($numbre){
 
-			$total = $this->controller->Session->read('Panier.Total');
-			$total = $total + $numbre;
-			$this->controller->Session->Write('Panier.Total',$total);
+        $total = $this->controller->Session->read('Panier.Total');
+        $total = $total + $numbre;
+        $this->controller->Session->Write('Panier.Total',$total);
 
-		}
+    }
 
     private function modifTotalArticle($numbre){
 
-			$total = $this->controller->Session->read('Panier.TotalArticle');
-			$total = $total + $numbre;
-			$this->controller->Session->Write('Panier.TotalArticle',$total);
+        $total = $this->controller->Session->read('Panier.TotalArticle');
+        $total = $total + $numbre;
+        $this->controller->Session->Write('Panier.TotalArticle',$total);
 
-		}
-    
+    }
+
     public function needAdresse(){
-        
+
         if($this->controller->Session->check('Panier.PayInfo.adresseId')){
-           return true;
+            return true;
         }else{
             $this->controller->redirect(array('action'=>'choixAdresse'));
         }
-        
-        
+
+
     }
-    
+
     public function setAdresse($id){
         $this->controller->Session->Write('Panier.PayInfo.adresseId',$id);
-    
+
     }
-    
-    public function exportToBDDFormat(){
+   public function exportToPaypalFormat(){
 
-
-        $tempo = $this->controller->Session->read('Panier');
-        debug($tempo);
-        foreach($tempo as $key => $temp){
+        $tab=array();
+        $id=0;
+        foreach($this->controller->Session->read('Panier') as $key => $temp){
             if(is_array($temp)&&$key!="PayInfo"){
-               $tab[$key]= array(
+                $tab[$id++]= array(
+                    'name' => $temp['Article']['name'],
+                    'description' => 'A pair of really great blue shoes',
+                    'tax' => $temp['Article']['prix']*0.196,
+                    'subtotal' => $temp['Article']['prix']*(1-0.196),
+                    'qty' => $temp['nombre']
 
-                    'article_id'=>$key,
-                    'p'=>$temp['Article']['prix'],
-                    'q'=>$temp['nombre']
-               );
-            }
+                );
+        }
         }
 
-        $tab1 = array(
-            'PanierCommand'=> array(
-            'adresse_pofile_id'=>$tempo['PayInfo']['adresseId'],
-            'user_id'=>$this->controller->Session->read('Auth.User.id')),
-            'PanierVente'=>$tab
+        $adress = substr(Router::url( $this->here, true ),0,-3);
+        $order = array(
+            'description' => 'Achat sur Fil de boheme',
+            'currency' => 'EUR',
+            'return' => $adress."isPayd",
+            'cancel' => $adress."isCancel",
+            'custom' => 'bingbong',
+            'shipping' => '0',
+            'items' => $tab
+
+        );
+
+                return $order;
+
+
+
+
+
+
+        }
+
+        public function exportToBDDFormat(){
+
+
+            $tempo = $this->controller->Session->read('Panier');
+            debug($tempo);
+            foreach($tempo as $key => $temp){
+                if(is_array($temp)&&$key!="PayInfo"){
+                    $tab[$key]= array(
+
+                        'article_id'=>$key,
+                        'p'=>$temp['Article']['prix'],
+                        'q'=>$temp['nombre']
+                    );
+                }
+            }
+
+            $tab1 = array(
+                'PanierCommand'=> array(
+                    'adresse_pofile_id'=>$tempo['PayInfo']['adresseId'],
+                    'user_id'=>$this->controller->Session->read('Auth.User.id')),
+                'PanierVente'=>$tab
             );
-        debug($tab1);
-        return $tab1;
+            debug($tab1);
+            return $tab1;
+
+
+        }
+        public function destroy(){
+            $this->controller->Session->delete('Panier');
+
+        }
 
 
     }
-public function destroy(){
-   $this->controller->Session->delete('Panier');
-
-}
-
-
-}
 ?>

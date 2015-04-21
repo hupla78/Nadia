@@ -239,29 +239,18 @@ class BoutiquesController extends AppController {
         $this->Paypal = new Paypal(array(
     'sandboxMode' => true,
     'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
-    'nvpPassword' =>'4WAPNUK89HCNBHRK',
-    'nvpSignature' => 'AhrRhl.RJcePgUz73FTprggMHMuXAla2HRDwV9x5UUl7KMU2Xh9lFfjX'
+    'nvpPassword' =>'2HR969LT2MH9HDLQ',
+    'nvpSignature' =>'AKTakJYviyXLZdCG0TFUUN7j2S7pA8FBcAE5jnXB8AnV8w.YTO77lXon'
 ));
 
-       $payment = array(
-    'amount' => 30.00,
-    'card' => '4008 0687 0641 8697', // This is a sandbox CC
-    'expiry' => array(
-        'M' => '2',
-        'Y' => '2016',
-    ),
-    'cvv' => '321',
-    'currency' => 'USD' // Defaults to GBP if not provided
-);
+
+    $order= $this->Panier->exportToPaypalFormat();
+    debug($order);
+    $this->redirect($this->Paypal->setExpressCheckout($order));
 
 
- try {
-    $this->Paypal->doDirectPayment($payment);
+    }
 
-} catch (Exception $e) {
-    debug($e->getMessage());
-}
-}
 
 
 

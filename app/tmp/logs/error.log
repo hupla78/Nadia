@@ -30393,3 +30393,1257 @@ Stack Trace:
 #3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
 #4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-04-19 16:07:38 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-19 16:07:50 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Users/admin_testemail.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Users/admin_testemail.ctp',
+)
+Request URL: /admin/Users/testemail
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-19 16:07:50 Error: [MissingActionException] Action UsersController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_img',
+)
+Request URL: /admin/Users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-19 16:11:47 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Users/admin_testemail.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Users/admin_testemail.ctp',
+)
+Request URL: /admin/Users/testemail
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-21 08:41:33 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-21 08:41:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'adresse_pofile_id' cannot be null
+Request URL: /Boutiques/isPayd
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `na...', Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `na...')
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(1854): DboSource->create(Object(PanierCommand), Array, Array)
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Model/Model.php(2428): Model->save(Array, Array)
+#5 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(273): Model->saveAssociated(Array)
+#6 [internal function]: BoutiquesController->ispayd()
+#7 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#8 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#10 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-21 08:42:03 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-21 08:42:11 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-21 08:42:13 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /Boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-21 10:29:21 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/usr/share/nginx/html/Nadia/app/View/Boutiques/is_payd.ctp, line 4]
+2015-04-21 10:29:21 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /Boutiques/isPayd
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 4, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 4, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 10:32:49 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-21 10:32:57 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-21 10:33:00 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /Boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-21 10:33:28 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/usr/share/nginx/html/Nadia/app/View/Boutiques/is_payd.ctp, line 4]
+2015-04-21 10:33:28 Error: [FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /Boutiques/isPayd
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 4, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 4, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 10:43:47 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/img/iconn.ico
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('img', 'iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-21 11:14:55 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-21 11:15:04 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp',
+)
+Request URL: /pages/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.ico', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.ico')
+#3 [internal function]: PagesController->display('img', 'iconn.ico')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-04-21 11:15:09 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp',
+)
+Request URL: /pages/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.ico', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.ico')
+#3 [internal function]: PagesController->display('img', 'iconn.ico')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-04-21 11:15:12 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-21 11:15:13 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /Boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-21 11:34:56 Error: Fatal Error (1): Call to undefined method BoutiquesController::getMock() in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 302]
+2015-04-21 11:34:56 Error: [FatalErrorException] Call to undefined method BoutiquesController::getMock()
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/usr/share/ngin...', 302)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/usr/share/ngin...', 302, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/usr/share/ngin...', 302, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 11:35:26 Error: [PaypalException] The Express Checkout transaction has expired and the transaction needs to be restarted
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(302): Paypal->doExpressCheckoutPayment(Array, 'EC-482053995J41...', 'GSEK8P4ARYMYS')
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 11:35:37 Error: [PaypalException] The Express Checkout transaction has expired and the transaction needs to be restarted
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(302): Paypal->doExpressCheckoutPayment(Array, 'EC-482053995J41...', 'GSEK8P4ARYMYS')
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 11:36:28 Error: Fatal Error (4): syntax error, unexpected '=' in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 272]
+2015-04-21 11:36:28 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 272)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 272, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 272, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 11:37:56 Error: Fatal Error (4): syntax error, unexpected '=' in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 239]
+2015-04-21 11:37:56 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 239)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 239, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 239, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 11:38:22 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 33653902 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 11:38:22 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 33653902 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:45:13 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:45:13 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:45:18 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986687 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:45:18 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986687 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:45:23 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:45:23 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:55:53 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986687 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:55:53 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986687 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:56:09 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:56:09 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:56:30 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:56:30 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:56:54 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:56:54 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:56:57 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:56:57 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:57:01 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:57:01 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:57:04 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:57:04 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:57:07 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986687 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:57:07 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986687 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:57:10 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:57:10 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:57:15 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:57:15 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:57:18 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:57:18 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:57:21 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:57:21 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:57:25 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:57:25 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:57:50 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes) in [/usr/share/nginx/html/Nadia/lib/Cake/Utility/Debugger.php, line 610]
+2015-04-21 12:57:50 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39986909 bytes)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/usr/share/ngin...', 610)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/usr/share/ngin...', 610, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 12:59:18 Error: [PaypalException] Invalid token.
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(270): Paypal->doExpressCheckoutPayment(Array, '100', '100')
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 14:59:30 Error: Fatal Error (4): syntax error, unexpected 'try' (T_TRY) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 277]
+2015-04-21 14:59:30 Error: [FatalErrorException] syntax error, unexpected 'try' (T_TRY)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 277)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 14:59:31 Error: Fatal Error (4): syntax error, unexpected 'try' (T_TRY) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 277]
+2015-04-21 14:59:31 Error: [FatalErrorException] syntax error, unexpected 'try' (T_TRY)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 277)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 14:59:31 Error: Fatal Error (4): syntax error, unexpected 'try' (T_TRY) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 277]
+2015-04-21 14:59:31 Error: [FatalErrorException] syntax error, unexpected 'try' (T_TRY)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 277)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 14:59:32 Error: Fatal Error (4): syntax error, unexpected 'try' (T_TRY) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 277]
+2015-04-21 14:59:32 Error: [FatalErrorException] syntax error, unexpected 'try' (T_TRY)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 277)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 14:59:32 Error: Fatal Error (4): syntax error, unexpected 'try' (T_TRY) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 277]
+2015-04-21 14:59:32 Error: [FatalErrorException] syntax error, unexpected 'try' (T_TRY)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 277)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 14:59:32 Error: Fatal Error (4): syntax error, unexpected 'try' (T_TRY) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 277]
+2015-04-21 14:59:32 Error: [FatalErrorException] syntax error, unexpected 'try' (T_TRY)
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 277)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 277, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 14:59:53 Error: [SocketException] Network is unreachable
+Request URL: /Boutiques/isPayd
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Network/Email/SmtpTransport.php(154): CakeSocket->connect()
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Network/Email/SmtpTransport.php(95): SmtpTransport->_connect()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Network/Email/CakeEmail.php(1150): SmtpTransport->send(Object(CakeEmail))
+#3 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(310): CakeEmail->send()
+#4 [internal function]: BoutiquesController->ispayd()
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#8 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-04-21 15:01:55 Error: [PaypalException] Invalid token.
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(278): Paypal->getExpressCheckoutDetails('lapin')
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 15:01:57 Error: [PaypalException] Invalid token.
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(278): Paypal->getExpressCheckoutDetails('lapin')
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 15:04:30 Error: [PaypalException] Invalid token.
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(273): Paypal->getExpressCheckoutDetails('lapin')
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 15:06:08 Error: [PaypalException] Invalid token.
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(274): Paypal->getExpressCheckoutDetails('lapin')
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 15:09:35 Error: [PaypalException] Invalid token.
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(273): Paypal->getExpressCheckoutDetails('https://www.san...')
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 15:09:43 Error: [PaypalException] Invalid token.
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(273): Paypal->getExpressCheckoutDetails('https://www.san...')
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 15:09:44 Error: [PaypalException] Invalid token.
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(273): Paypal->getExpressCheckoutDetails('https://www.san...')
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 15:09:46 Error: [PaypalException] Invalid token.
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(273): Paypal->getExpressCheckoutDetails('https://www.san...')
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 15:53:41 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 157]
+2015-04-21 15:53:41 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 157)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 15:53:44 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 157]
+2015-04-21 15:53:44 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 157)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 15:53:44 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 157]
+2015-04-21 15:53:44 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 157)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 15:53:44 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 157]
+2015-04-21 15:53:44 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /boutiques
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 157)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 15:53:44 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 157]
+2015-04-21 15:53:44 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 157]
+2015-04-21 15:53:44 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /Boutiques/isPayd
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 157)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 15:53:44 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /boutiques
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 157)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 15:53:44 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 157]
+2015-04-21 15:53:44 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 157)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 15:53:55 Error: Fatal Error (4): syntax error, unexpected '<' in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 157]
+2015-04-21 15:53:55 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 157)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 157, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 15:55:32 Error: [PaypalException] There was a problem initiating the transaction, please try again.
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(271): Paypal->setExpressCheckout(Array)
+#1 [internal function]: BoutiquesController->pay()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-21 16:17:36 Error: Fatal Error (4): syntax error, unexpected ')' in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 182]
+2015-04-21 16:17:36 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /boutiques
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 182)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 182, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 182, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:17:39 Error: Fatal Error (4): syntax error, unexpected ')' in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 182]
+2015-04-21 16:17:39 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /Boutiques/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 182)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 182, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 182, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:17:43 Error: Fatal Error (4): syntax error, unexpected ')' in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 182]
+2015-04-21 16:17:43 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 182)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 182, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 182, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:32:15 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:32:15 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:32:18 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:32:18 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:32:18 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:32:18 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:32:19 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:32:19 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:00 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:00 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:01 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:01 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:01 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:01 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:01 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:01 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:01 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:01 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:02 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:02 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:02 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:02 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:34 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:34 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:34 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:34 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:35 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:35 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:35 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:35 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:35 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:35 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:35 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:35 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:37 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:37 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/choixAdresse
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:38 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:38 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:38 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:38 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:40 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:40 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:40 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:40 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:40 Error: Fatal Error (4): syntax error, unexpected ')', expecting function (T_FUNCTION) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 155]
+2015-04-21 16:33:40 Error: [FatalErrorException] syntax error, unexpected ')', expecting function (T_FUNCTION)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 155, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:51 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:33:51 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:52 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:33:52 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:52 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:33:52 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:52 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:33:52 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:33:53 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:33:53 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:34:07 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:34:07 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:34:31 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:34:31 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:34:31 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:34:31 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:34:32 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:34:32 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:34:32 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:34:32 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:34:32 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:34:32 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:34:32 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:34:32 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /boutiques/panier
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:35:09 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:35:09 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:35:11 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:35:11 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:35:11 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:35:11 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:35:11 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:35:11 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:35:28 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:35:28 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:35:29 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:35:29 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:35:29 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:35:29 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:35:29 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:35:29 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:35:43 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 192]
+2015-04-21 16:35:43 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 192)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 192, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:36:03 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 193]
+2015-04-21 16:36:03 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 193)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:36:25 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 193]
+2015-04-21 16:36:25 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 193)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:36:26 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 193]
+2015-04-21 16:36:26 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 193)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:36:26 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 193]
+2015-04-21 16:36:26 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 193)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:36:26 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 193]
+2015-04-21 16:36:26 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 193)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:36:26 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/Component/PanierComponent.php, line 193]
+2015-04-21 16:36:26 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /Boutiques/command
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 193)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 193, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-21 16:42:20 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /Users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
