@@ -32085,3 +32085,197 @@ Stack Trace:
 #6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
 #7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2015-04-26 12:54:18 Error: [PaypalException] This transaction cannot be processed. The amount to be charged is zero.
+Request URL: /boutiques/pay/paypal
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(249): Paypal->setExpressCheckout(Array)
+#1 [internal function]: BoutiquesController->pay('paypal')
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-26 12:59:10 Error: [MissingActionException] Action BoutiquesController::ispay() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'ispay',
+)
+Request URL: /Boutiques/ispay/payisPayd?token=EC-6YM76598JN296134M&PayerID=UU2JSTR9JK5RE
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-26 12:59:10 Error: [MissingActionException] Action BoutiquesController::ispay() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'ispay',
+)
+Request URL: /Boutiques/ispay/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-26 12:59:20 Error: [MissingActionException] Action BoutiquesController::is_pay() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'is_pay',
+)
+Request URL: /Boutiques/is_pay/payisPayd?token=EC-6YM76598JN296134M&PayerID=UU2JSTR9JK5RE
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-26 12:59:20 Error: [MissingActionException] Action BoutiquesController::is_pay() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'is_pay',
+)
+Request URL: /Boutiques/is_pay/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-26 12:59:27 Error: [MissingActionException] Action BoutiquesController::isPay() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'isPay',
+)
+Request URL: /Boutiques/isPay/payisPayd?token=EC-6YM76598JN296134M&PayerID=UU2JSTR9JK5RE
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-26 12:59:27 Error: [MissingActionException] Action BoutiquesController::isPay() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'isPay',
+)
+Request URL: /Boutiques/isPay/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-26 14:00:46 Error: [PaypalException] This transaction cannot be processed. The amount to be charged is zero.
+Request URL: /Boutiques/pay/paypal
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(250): Paypal->setExpressCheckout(Array)
+#1 [internal function]: BoutiquesController->pay('paypal')
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-04-26 14:18:38 Error: Fatal Error (4): syntax error, unexpected ')' in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 204]
+2015-04-26 14:18:38 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /boutiques
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 204)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 204, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 204, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-26 15:10:09 Error: Fatal Error (4): syntax error, unexpected ''card'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/usr/share/nginx/html/Nadia/app/View/Boutiques/choix_payment.ctp, line 14]
+2015-04-26 15:10:09 Error: [FatalErrorException] syntax error, unexpected ''card'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /Boutiques/choixPayment
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 14, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 14, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-26 15:22:08 Error: Fatal Error (1): Call to undefined method PanierComponent::getTotal() in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 265]
+2015-04-26 15:22:08 Error: [FatalErrorException] Call to undefined method PanierComponent::getTotal()
+Request URL: /Boutiques/pay/card
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/usr/share/ngin...', 265)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/usr/share/ngin...', 265, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/usr/share/ngin...', 265, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-26 15:36:21 Error: [MissingControllerException] Controller class PaysController could not be found.
+Exception Attributes: array (
+  'class' => 'PaysController',
+  'plugin' => NULL,
+)
+Request URL: /pays/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-26 15:36:41 Error: [MissingControllerException] Controller class PaysController could not be found.
+Exception Attributes: array (
+  'class' => 'PaysController',
+  'plugin' => NULL,
+)
+Request URL: /pays/pay
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-26 15:47:06 Error: Fatal Error (4): syntax error, unexpected '$payment' (T_VARIABLE) in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 265]
+2015-04-26 15:47:06 Error: [FatalErrorException] syntax error, unexpected '$payment' (T_VARIABLE)
+Request URL: /boutiques/pay/card
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 265)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 265, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 265, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-26 15:48:10 Error: Fatal Error (1): Call to a member function setFlach() on null in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 283]
+2015-04-26 15:48:10 Error: [FatalErrorException] Call to a member function setFlach() on null
+Request URL: /boutiques/pay/card
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/usr/share/ngin...', 283)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/usr/share/ngin...', 283, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/usr/share/ngin...', 283, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-26 15:48:29 Error: Fatal Error (1): Call to a member function setFlash() on null in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 283]
+2015-04-26 15:48:29 Error: [FatalErrorException] Call to a member function setFlash() on null
+Request URL: /boutiques/pay/card
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/usr/share/ngin...', 283)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/usr/share/ngin...', 283, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/usr/share/ngin...', 283, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-26 15:57:26 Error: Fatal Error (4): syntax error, unexpected ')' in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 270]
+2015-04-26 15:57:26 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /boutiques/pay/card
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 270)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 270, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 270, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-26 15:59:03 Error: Fatal Error (4): syntax error, unexpected ';' in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 273]
+2015-04-26 15:59:03 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /boutiques/pay/card
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 273)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 273, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 273, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-26 15:59:18 Error: [PaypalException] Invalid token.
+Request URL: /boutiques/ispayd
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(302): Paypal->getExpressCheckoutDetails(NULL)
+#1 [internal function]: BoutiquesController->ispayd()
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

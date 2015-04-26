@@ -197,7 +197,16 @@ class BoutiquesController extends AppController {
     {
         $this->set('panier',$this->Panier->listArticle());
     }
+    public function choixPayment()
+    {
+        $this->Panier->needAdresse();
+        if(!empty($this->request->data)){
 
+        }
+
+
+
+    }
     public function choixAdresse()
     {
 
@@ -205,7 +214,8 @@ class BoutiquesController extends AppController {
 
         if(!empty($this->request->data) and $this->request->data['Boutique']['adresse']!='' ){
             $this->Panier->setAdresse($this->request->data['Boutique']['adresse']);
-            $this->redirect(array('action'=>'pay'));
+            $this->redirect(array('action'=>'choixPayment'));
+
         }else{
             if ($this->request->data['Boutique']['adresse']!=''){
                 $this->Session->setFlash('hi');}
@@ -232,9 +242,10 @@ class BoutiquesController extends AppController {
 
     }
 
-    public function pay(){
+    public function pay($by){
 
         $this->Panier->needAdresse();
+
 
         $this->Paypal = new Paypal(array(
             'sandboxMode' => true,
@@ -243,91 +254,128 @@ class BoutiquesController extends AppController {
             'nvpSignature' =>'AKTakJYviyXLZdCG0TFUUN7j2S7pA8FBcAE5jnXB8AnV8w.YTO77lXon'
         ));
 
-        $order= $this->Panier->exportToPaypalFormat();
-        debug($order);
-        $this->Panier->setPaypal($this->Paypal->setExpressCheckout($order));
-        $this->redirect($this->Panier->getPaypal());
+        if($by == "paypal"){
+            $order= $this->Panier->exportToPaypalFormat();
+            debug($order);
+            $this->Panier->setPaypal($this->Paypal->setExpressCheckout($order));
+            $this->redirect($this->Panier->getPaypal());
+        }elseif($by == "card"){
+            if(!empty($this->request->data)){
 
+                $payment = $this->request->data['boutiques'];
+                $payment['amount'] = $this->Panier->getTotal();
+                $payment['currency'] = 'EUR';
 
-    }
-
-
-
-
-
-    public function ispayd(){
-        $this->Panier->needAdresse();
-
-        $this->Paypal = new Paypal(array(
-            'sandboxMode' => true,
-            'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
-            'nvpPassword' =>'2HR969LT2MH9HDLQ',
-            'nvpSignature' =>'AKTakJYviyXLZdCG0TFUUN7j2S7pA8FBcAE5jnXB8AnV8w.YTO77lXon'
-        ));
-
-        $token      = $this->request->query('token');
-        $PayerID    = $this->request->query('PayerID');
-        $order      = $this->Panier->exportToPaypalFormat();
-        $req        = $this->Paypal->getExpressCheckoutDetails($token);
-
-        if($req['ACK']=="Success"){
-
-            try {
-                $this->Paypal->doExpressCheckoutPayment($order, $token, $PayerID);
-            } catch (PaypalRedirectException $e) {
-                $this->redirect($e->getMessage());
-            } catch (Exception $e) {
-                $e->getMessage();
+                try {
+                    $var = $this->Paypal->doDirectPayment($payment);
+                    if($var['ACK']=="Success")
+                    {
+                        $this->redirect(array('action'=>'ispayd','card'));
+                    }
+                } catch (Exception $e) {
+                    $this->Session->setFlash($e->getMessage());
+                }
             }
-            $tab=$this->Panier->exportToBDDFormat();
-            $this->Boutique->PanierCommand->saveAssociated($tab);
 
-            setlocale(LC_TIME, "fr_FR");
-            $temp = array(
-                'userName'      =>  $this->Session->read('Auth.User.username'),
-                'Adresse'       =>  $this->Boutique->User->AdressePofile->findById( $this->Session->read('Panier.PayInfo.adresseId'),array('recursive'=>0)),
-                'prix!Total'    =>  $this->Session->read('Panier.Total'),
-                'date'          =>  strftime("%d/%m/%Y"),
-                'state'         =>  'Votre commande a bien éte enregistré'
-            );
-            $email = new CakeEmail('gmail');
-            $email->template('informatif');
-            $email->emailFormat('both')
-                ->to($this->Session->read('Auth.User.email'))
-                ->from('ruhtra.php@gmail.com')
-                ->viewVars($temp)
-                ->send();
-           $this->Panier->destroy();
+
+        }
+
+    }
+
+
+
+
+
+    public function ispayd($by){
+        $this->Panier->needAdresse();
+        if($by = 'paypal'){
+            $this->Paypal = new Paypal(array(
+                'sandboxMode' => true,
+                'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
+                'nvpPassword' =>'2HR969LT2MH9HDLQ',
+                'nvpSignature' =>'AKTakJYviyXLZdCG0TFUUN7j2S7pA8FBcAE5jnXB8AnV8w.YTO77lXon'
+            ));
+
+            $token      = $this->request->query('token');
+            $PayerID    = $this->request->query('PayerID');
+            $order      = $this->Panier->exportToPaypalFormat();
+            $req        = $this->Paypal->getExpressCheckoutDetails($token);
+
+            if($req['ACK']=="Success"){
+
+                try {
+                    $this->Paypal->doExpressCheckoutPayment($order, $token, $PayerID);
+                } catch (PaypalRedirectException $e) {
+                    $this->Session->setFlash($e->getMessage());
+                } catch (Exception $e) {
+                    $this->Session->setFlash($e->getMessage());
+                }
+
+                $this->set('success',true);
+
+
+            }else{
+                $this->set('success',false);
+                return;
+            }
+
+        }elseif($by == 'card'){
+            $this->set('sucess',true);
+        }
+
+
+        $tab=$this->Panier->exportToBDDFormat();
+        $this->Boutique->PanierCommand->saveAssociated($tab);
+
+        setlocale(LC_TIME, "fr_FR");
+        $temp = array(
+            'userName'      =>  $this->Session->read('Auth.User.username'),
+            'Adresse'       =>  $this->Boutique->User->AdressePofile->findById( $this->Session->read('Panier.PayInfo.adresseId'),array('recursive'=>0)),
+            'prix!Total'    =>  $this->Session->read('Panier.Total'),
+            'date'          =>  strftime("%d/%m/%Y"),
+            'state'         =>  'Votre commande a bien éte enregistré'
+        );
+
+        $email = new CakeEmail('gmail');
+        $email->template('informatif');
+        $email->emailFormat('both')
+            ->to($this->Session->read('Auth.User.email'))
+            ->from('ruhtra.php@gmail.com')
+            ->viewVars($temp)
+            ->send();
+        $this->Panier->destroy();
         $this->set('success',true);
-        }
+    }
 
-        $this->set('success',false);
+
+
+
+
+
+
+public function isCancel(){
+
+
+
+}
+
+public function search() {
+    $this->autoRender = false;
+    $term = $this->request->query['q'];
+    $list =  $this->Boutique->Article->find('all',array('fields'=>array('id','name'),
+                                                        'conditions' => array(
+                                                            'Article.name LIKE' => '%'.$term.'%'
+                                                        )
+                                                       ));
+    foreach($list as $key => $tem){
+        $result[$key]['id'] = $tem['Article']['id'];
+        $result[$key]['text'] = $tem['Article']['name'];
 
     }
 
 
-    public function error(){
-
-
-    }
-
-    public function search() {
-        $this->autoRender = false;
-        $term = $this->request->query['q'];
-        $list =  $this->Boutique->Article->find('all',array('fields'=>array('id','name'),
-                                                            'conditions' => array(
-                                                                'Article.name LIKE' => '%'.$term.'%'
-                                                            )
-                                                           ));
-        foreach($list as $key => $tem){
-            $result[$key]['id'] = $tem['Article']['id'];
-            $result[$key]['text'] = $tem['Article']['name'];
-
-        }
-
-
-        echo json_encode($result);
-    }
+    echo json_encode($result);
+}
 
 
 

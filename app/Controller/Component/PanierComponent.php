@@ -170,11 +170,11 @@ class PanierComponent extends Component{
         }
         }
 
-        $adress = substr(Router::url( $this->here, true ),0,-3);
+        $adress = 'https://' . $_SERVER['SERVER_NAME']."/Boutiques/";
         $order = array(
             'description' => 'Achat sur Fil de boheme',
             'currency' => 'EUR',
-            'return' => $adress."isPayd",
+            'return' => $adress."isPayd/paypal",
             'cancel' => $adress."isCancel",
             'custom' => 'bingbong',
             'shipping' => '0',
@@ -184,12 +184,12 @@ class PanierComponent extends Component{
 
                 return $order;
 
+   }
 
+    public function getTotal(){
+        return $this->controller->Session->read('Panier.Total');
+    }
 
-
-
-
-        }
 
         public function exportToBDDFormat(){
 

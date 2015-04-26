@@ -35,17 +35,23 @@ App::uses('ConnectionManager', 'Model');
  */
 class AppController extends Controller{
 
-	public $components = array('Session','Auth','Panier','DebugKit.Toolbar','Panier');
+    public $components = array('Session','Auth','Panier','DebugKit.Toolbar','Panier');
 
-	public function beforeFilter(){
-		parent::beforeFilter();
-		$this->set('Acms',new Acms());
+    public function beforeFilter(){
+        parent::beforeFilter();
+        $this->set('Acms',new Acms());
+        if (!isset($_SERVER['HTTPS'])) {
+            $this->forceSSL();
+        }
         if($this->request->prefix){
-        $this->needToBeAdmin();
+            $this->needToBeAdmin();
         }
 
-	}
-
+    }
+    public function forceSSL() {
+       //$this->redirect('https://' . $_SERVER['SERVER_NAME'] . $this->here);
+        debug($_SERVER);
+    }
 
     public function needToBeAdmin(){
         if(!$this->Session->read('Auth.User.isAdmin')){
@@ -54,24 +60,24 @@ class AppController extends Controller{
     }
 
 
-	protected function _isAuthorizedFor($admin){
+    protected function _isAuthorizedFor($admin){
 
-		if(! $this->Session->check('Auth.User.id')){return;}
-		if ($this->Session->read('Auth.User.isAdmin') != $admin) {
-			$this->Session->setFlash("cette partie du site n'est pas pour vous!!");
-			$this->redirect(array('controller'=>'pages','action'=>'display'));
-		}
+        if(! $this->Session->check('Auth.User.id')){return;}
+        if ($this->Session->read('Auth.User.isAdmin') != $admin) {
+            $this->Session->setFlash("cette partie du site n'est pas pour vous!!");
+            $this->redirect(array('controller'=>'pages','action'=>'display'));
+        }
 
 
-	}
+    }
 
 
 
     public function search() {
         $this->autoRender = false;
         App::Import('ConnectionManager');
-	$ds = ConnectionManager::getDataSource('default');
-	$dsc = $ds->config;
+        $ds = ConnectionManager::getDataSource('default');
+        $dsc = $ds->config;
 
         // get the search term from URL
         $mysqli = new mysqli($dsc['host'],$dsc['login'],$dsc['password'], $dsc['database']);
@@ -86,7 +92,7 @@ class AppController extends Controller{
 
 
         echo json_encode($result);
-}
+    }
 
 
 
@@ -104,59 +110,59 @@ class AppController extends Controller{
 
 class Acms{
 
-	public $arr2;
-	public $admin=null;
-	public $local=null;
-	public function __construct()
-	{
-		$this->admin = AuthComponent::user('isAdmin');
-		//info
-		$this->local =  Router::fullbaseUrl();
-		//echo $this->getEditionPage();
+    public $arr2;
+    public $admin=null;
+    public $local=null;
+    public function __construct()
+    {
+        $this->admin = AuthComponent::user('isAdmin');
+        //info
+        $this->local =  Router::fullbaseUrl();
+        //echo $this->getEditionPage();
 
-		$this->arr2 = json_decode(file_get_contents(APP.'cms/base.json'), true);
+        $this->arr2 = json_decode(file_get_contents(APP.'cms/base.json'), true);
 
-	}
-
-
-	public function getOne($lap = 'undefine' )
-	{
-		if($lap=='undefine'){return 'ereur 1';}//le parametre est rentré est mauvais
-
-		return $this->arr2[$lap];
-	}
-
-	public function getAll($lap = 'undefine')
-	{	$retu = array();
-		$i = 0;
-		while(array_key_exists($lap.$i,$this->arr2)){
-			$retu[$i]= $this->arr2[$lap.$i];
-			$i++;
-		}
-	return $retu;
-	}
+    }
 
 
-	public function getEditionPage($lap = 'undefine'){
+    public function getOne($lap = 'undefine' )
+    {
+        if($lap=='undefine'){return 'ereur 1';}//le parametre est rentré est mauvais
 
-		if($this->admin)return '<a  href="'.$this->local.'/admin/cms/findbyname/'.$lap.'" title="'.$lap.'" id="editAdmin" ></a>';
+        return $this->arr2[$lap];
+    }
 
-		else 		return '';
-	}
+    public function getAll($lap = 'undefine')
+    {	$retu = array();
+     $i = 0;
+     while(array_key_exists($lap.$i,$this->arr2)){
+         $retu[$i]= $this->arr2[$lap.$i];
+         $i++;
+     }
+     return $retu;
+    }
+
+
+    public function getEditionPage($lap = 'undefine'){
+
+        if($this->admin)return '<a  href="'.$this->local.'/admin/cms/findbyname/'.$lap.'" title="'.$lap.'" id="editAdmin" ></a>';
+
+        else 		return '';
+    }
 
     public function getEditionPages($lap){
 
-		if($this->admin){
+        if($this->admin){
             $retList = '<ul id="editAdminList">';
             foreach($lap as $a){
                 $retList = $retList.'<li><a  href="'.$this->local.'/admin/cms/findbyname/'.$a.'" title="'.$a.'"  ></a></li>';
             }
             $retList = $retList."</ul>";
             return $retList;
-            }
+        }
 
-		else 		return '';
-	}
+        else 		return '';
+    }
 
 
 
