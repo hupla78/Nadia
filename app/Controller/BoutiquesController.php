@@ -237,16 +237,16 @@ class BoutiquesController extends AppController {
         $this->Panier->needAdresse();
 
         $this->Paypal = new Paypal(array(
-    'sandboxMode' => true,
-    'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
-    'nvpPassword' =>'2HR969LT2MH9HDLQ',
-    'nvpSignature' =>'AKTakJYviyXLZdCG0TFUUN7j2S7pA8FBcAE5jnXB8AnV8w.YTO77lXon'
-));
+            'sandboxMode' => true,
+            'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
+            'nvpPassword' =>'2HR969LT2MH9HDLQ',
+            'nvpSignature' =>'AKTakJYviyXLZdCG0TFUUN7j2S7pA8FBcAE5jnXB8AnV8w.YTO77lXon'
+        ));
 
-
-    $order= $this->Panier->exportToPaypalFormat();
-    debug($order);
-    $this->redirect($this->Paypal->setExpressCheckout($order));
+        $order= $this->Panier->exportToPaypalFormat();
+        debug($order);
+        $this->Panier->setPaypal($this->Paypal->setExpressCheckout($order));
+        $this->redirect($this->Panier->getPaypal());
 
 
     }
@@ -256,27 +256,53 @@ class BoutiquesController extends AppController {
 
 
     public function ispayd(){
+        $this->Panier->needAdresse();
 
+        $this->Paypal = new Paypal(array(
+            'sandboxMode' => true,
+            'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
+            'nvpPassword' =>'2HR969LT2MH9HDLQ',
+            'nvpSignature' =>'AKTakJYviyXLZdCG0TFUUN7j2S7pA8FBcAE5jnXB8AnV8w.YTO77lXon'
+        ));
 
-        $tab=$this->Panier->exportToBDDFormat();
-        $this->Boutique->PanierCommand->saveAssociated($tab);
+        $token      = $this->request->query('token');
+        $PayerID    = $this->request->query('PayerID');
+        $order      = $this->Panier->exportToPaypalFormat();
+        $req        = $this->Paypal->getExpressCheckoutDetails($token);
 
-        setlocale(LC_TIME, "fr_FR");
-        $temp = array(
-            'userName'      =>  $this->Session->read('Auth.User.username'),
-            'Adresse'       =>  $this->Boutique->User->AdressePofile->findById( $this->Session->read('Panier.PayInfo.adresseId'),array('recursive'=>0)),
-            'prix!Total'    =>  $this->Session->read('Panier.Total'),
-            'date'          =>  strftime("%d/%m/%Y"),
-            'state'         =>  'Votre commande a bien éte enregistré'
-        );
-        $email = new CakeEmail('gmail');
-        $email->template('informatif');
-        $email->emailFormat('both')
-            ->to($this->Session->read('Auth.User.email'))
-            ->from('ruhtra.php@gmail.com')
-            ->viewVars($temp)
-            ->send();
-        $this->Panier->destroy();
+        if($req['ACK']=="Success"){
+
+            try {
+                $this->Paypal->doExpressCheckoutPayment($order, $token, $PayerID);
+            } catch (PaypalRedirectException $e) {
+                $this->redirect($e->getMessage());
+            } catch (Exception $e) {
+                $e->getMessage();
+            }
+            $tab=$this->Panier->exportToBDDFormat();
+            $this->Boutique->PanierCommand->saveAssociated($tab);
+
+            setlocale(LC_TIME, "fr_FR");
+            $temp = array(
+                'userName'      =>  $this->Session->read('Auth.User.username'),
+                'Adresse'       =>  $this->Boutique->User->AdressePofile->findById( $this->Session->read('Panier.PayInfo.adresseId'),array('recursive'=>0)),
+                'prix!Total'    =>  $this->Session->read('Panier.Total'),
+                'date'          =>  strftime("%d/%m/%Y"),
+                'state'         =>  'Votre commande a bien éte enregistré'
+            );
+            $email = new CakeEmail('gmail');
+            $email->template('informatif');
+            $email->emailFormat('both')
+                ->to($this->Session->read('Auth.User.email'))
+                ->from('ruhtra.php@gmail.com')
+                ->viewVars($temp)
+                ->send();
+           $this->Panier->destroy();
+        $this->set('success',true);
+        }
+
+        $this->set('success',false);
+
     }
 
 

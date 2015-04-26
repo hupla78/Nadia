@@ -162,8 +162,8 @@ class PanierComponent extends Component{
                 $tab[$id++]= array(
                     'name' => $temp['Article']['name'],
                     'description' => 'A pair of really great blue shoes',
-                    'tax' => $temp['Article']['prix']*0.196,
-                    'subtotal' => $temp['Article']['prix']*(1-0.196),
+                    'tax' =>number_format($temp['Article']['prix']*0.196,2),
+                    'subtotal' => number_format($temp['Article']['prix']*(1-0.196),2),
                     'qty' => $temp['nombre']
 
                 );
@@ -195,7 +195,7 @@ class PanierComponent extends Component{
 
 
             $tempo = $this->controller->Session->read('Panier');
-            debug($tempo);
+          //  debug($tempo);
             foreach($tempo as $key => $temp){
                 if(is_array($temp)&&$key!="PayInfo"){
                     $tab[$key]= array(
@@ -213,7 +213,7 @@ class PanierComponent extends Component{
                     'user_id'=>$this->controller->Session->read('Auth.User.id')),
                 'PanierVente'=>$tab
             );
-            debug($tab1);
+           // debug($tab1);
             return $tab1;
 
 
@@ -223,6 +223,14 @@ class PanierComponent extends Component{
 
         }
 
+    public function setPaypal($token){
+        $this->controller->Session->write('Panier.PayInfo.token',$token);
+
+    }
+    public function getPaypal(){
+        return $this->controller->Session->read('Panier.PayInfo.token');
+
+    }
 
     }
 ?>
