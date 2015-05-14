@@ -101,10 +101,12 @@ body{
 
 
 #nousre{
-text-align: center;
-font-family: arial ;
+text-align: left;
+margin-left: 10px;
+    font-family: Helvetica neue,Helvetica,Arial;
 font-size: 1.8em;
-margin-top: 15px;}
+margin-top: 15px;
+margin-bottom: 30px;}
 
 .center{
     
@@ -116,10 +118,11 @@ margin-top: 15px;}
     
 }
 #copy{
-    font-family:  arial;
-     margin-top: 10px;
+    font-family:  georgia;
+  margin-top: 10px;
     font-size: 0.7em;
     text-align: right;
+    margin-bottom: 0px;
     
 }
 #pani{
@@ -138,7 +141,7 @@ padding-top: 10px;
 .trait2{width: 500px;border-bottom: 1px solid black;margin: auto; display: table;margin-bottom: 15px;}
 
 
-.trait3{width: 250px;border-bottom: 1px solid black;margin-top: 20px; margin-left: auto; margin-right: auto; margin-bottom: 5px; display: table;}
+.trait3{width: 85%;border-bottom: 1px solid #C1AFA3;margin-top: 70px; margin-left: auto; margin-right: auto; margin-bottom: 0px; }
 
 
 #dessous{
@@ -234,6 +237,7 @@ li.separbot div.panel{
     font-size: 15px;
     padding-left: 15px;
 
+   text-align: center;
     margin-top: 30px;
 }
 
@@ -327,9 +331,10 @@ font-size: 2.3em;}
 }
 
 .hauteur-elmt {
+min-height: 700px;
+    max-height: 700px;
+height: 700px;
 
-    max-height: 550px;
-    min-height: 550px;
 
 }
 
@@ -471,4 +476,56 @@ h5.adresse {
 
 .justify {
     text-align: justify;
+}
+
+.hul {
+
+    margin: 5px;
+
+}
+
+.hul2 {
+      border: 3px solid #045656;
+    margin: 1px;
+}
+
+#nousre2 {
+    text-align: left;
+    margin-left: 15px;
+
+font-size: 1.8em;
+margin-top: 15px;
+margin-bottom: 30px;
+}
+
+.font-footer {
+
+    background: #FAF7E9;
+    border-left: 2px solid #C1AFA3;
+    border-top: 2px solid #C1AFA3;
+    border-right: 2px solid #C1AFA3;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+
+.place2 {
+    padding-top: 5px;
+    display: table;
+    margin: auto;
+    width: auto;
+}
+
+.place {
+    padding-top: 15px;
+}
+
+.mise-forme {
+    text-align: right;
+
+
+
+margin-top: 30px;
+
 }

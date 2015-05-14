@@ -126,13 +126,15 @@ else{
 			    </div>
 
 			    <div class="large-6 columns medium-6 columns small-12 ">
+
 				<div class="barsearch">
 				    <input type="text" id="item-select2">
 				</div>
+
 			    </div>
 
 
-			    <div class="large-6 columns medium-6 small-12 espace-barre">
+			    <div class="large-6 columns medium-6 small-6 espace-barre">
 				<div class=" medium-6 small-6 columns class-panier">
 
 <?php
@@ -145,14 +147,14 @@ if($val==0){echo"Le panier est vide";}else{
 				    <?php echo "Nombres d'articles : ".SessionComponent::read('Panier.TotalArticle');}?>
 				</div>
 			    </div>
-			    <div class="large-6 columns medium-12 small-12 ">
 
-				<div class="large-6 columns medium-12 small-12 espace-barre2">
+
+				<div class="large-6 columns medium-6 small-6 espace-barre2">
                    <?php echo $Acms->getEditionPages(array('panier-fond-color','panier-text-color','panier-fond-passage-color'));?>
                     <?php echo $this->Html->link("Mon panier",array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false),array('class'=>'button acm-panier'))?>
 				</div>
 
-			    </div>
+
 
 			    </div>
 			<div class="large-12  medium-12  small-12 columns margin-menu">
@@ -190,7 +192,7 @@ if($val==0){echo"Le panier est vide";}else{
 					<?php echo $Acms->getEditionPage('color-police-menu-generale-sans-souris'); ?>
 
 
-					<?php echo $this->Html->link('Actualités',array('prefix'=>false,'admin'=>false,'controller'=>'actualites','action'=>'index', ),array('class'=>'pi-text-center'))?>
+					<?php echo $this->Html->link('Collection',array('prefix'=>false,'admin'=>false,'controller'=>'actualites','action'=>'index', ),array('class'=>'pi-text-center'))?>
 
 					<?php echo $Acms->getEditionPage('color-police-menu-generale-passage-souris'); ?>
 
@@ -234,19 +236,30 @@ if($val==0){echo"Le panier est vide";}else{
 
 
 		<div id="footer" class="row">
-		    <div class="large-12 columns medium-12 columns small-12 columns">
-			<div class="trait">
-			</div>
 
+        <div class="trait">
+			</div>
+        <div class="font-footer">
+		    <div class="large-12 columns medium-12 columns small-12 columns ">
+
+ <div class="large-6 columns medium-6 columns small-6 columns">
 			<p id="nousre">
 
-			    Nous retrouver sur
+			    Nous retrouver sur :
 
 			</p>
+                </div>
+		 <div class="large-6 columns medium-6 columns small-6 columns place">
+		 	 <div class="large-4 columns medium-3 columns small-3 columns place">
+             <p>Traduire le site :</p>
+             </div>
+             <div class="large-2 columns medium-3 columns small-3 columns place2">
+             <div id="translator_910"> <noscript>Javascript is disable - <a href="http://www.supportduweb.com/">http://www.supportduweb.com/</a> - <a href="http://www.supportduweb.com/generateur-boutons-traduction-translation-google-gratuit-html-code=script-boutons-traduire-page-web.html">Générateur de boutons de traduction</a></noscript> <script type="text/javascript" src="http://services.supportduweb.com/translator/910-3-yyyynynnn.js"></script></div>
+                 </div>
 
-
+     </div>
 			<div class="large-12 columns medium-12 columns small-12 columns">
-			    <div class="large-4 columns medium-4 columns small-4 columns">
+			    <div class="large-3 columns medium-3 columns small-3 columns">
 
 
 <?php echo $this->Html->link(
@@ -257,7 +270,7 @@ if($val==0){echo"Le panier est vide";}else{
 ?>
 				</div>
 
-				<div class="large-4 columns medium-4 columns small-4 columns">
+				<div class="large-3 columns medium-3 columns small-3 columns">
 <?php
 	echo $this->Html->link(
 		$this->Html->image('bouton-twitter.png'),
@@ -267,7 +280,7 @@ if($val==0){echo"Le panier est vide";}else{
 
 ?>
 		</div>
-				<div class="large-4 columns medium-4 columns small-4 columns">
+				<div class="large-3 columns medium-3 columns small-3 columns">
 <?php
 	echo $this->Html->link(
 		$this->Html->image('Logo_little_market.png'),
@@ -275,14 +288,29 @@ if($val==0){echo"Le panier est vide";}else{
 		array('target' => '_blank', 'escape' => false, 'class' => '')
 	);
 ?>
+
+			</div>
+
+			<div class="large-3 columns medium-3 columns small-3 columns">
+<?php
+	echo $this->Html->link(
+		$this->Html->image('insta.png'),
+		'https://instagram.com/fildeboheme/',
+		array('target' => '_blank', 'escape' => false, 'class' => '')
+	);
+?>
+
 			</div>
 
 			</div>
-			<p id="copy">
-			    Copyright : Tout droit réservés
+
+			</div>
+
+		   	<p id="copy">
+			    Copyright : Tout droit réservés - Site crée par Pierre Beauval en coopération avec Arthur Margerit
 
 			</p>
-		    </div>
+			</div>
 		</div>
 
 	    </div>

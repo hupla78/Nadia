@@ -1,14 +1,14 @@
 <div class="large-6 medium-12 small-12 columns hauteur-elmt" >
-<div class="panel row transition-souris"  >
+<div class="panel row transition-souris hauteur-elmt"  >
 	
 	<p class="text-center1 hide-for-medium" ><?php echo  $key['Article']['name'];?></p>
 
 	<div class="large-12 medium-6 small-12 columns element-bordure" >
 	<?php
 if($key['Img']['value']!=null){
-	echo $this->Html->image('import/'.$key['Img']['value'],array('width'=>'100%', 'style'=>'max-height:200px', 'class'=>'element-article-img '));
+	echo $this->Html->image('import/'.$key['Img']['value'],array('width'=>'100%', 'style'=>'max-height:600px', 'class'=>'element-article-img '));
 }else{
-	echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:200px', 'class'=>'element-article-img '));
+	echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:600px', 'class'=>'element-article-img '));
 
 }
         ?>

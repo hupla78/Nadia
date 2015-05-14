@@ -50,7 +50,7 @@ class AppController extends Controller{
     }
     public function forceSSL() {
        //$this->redirect('https://' . $_SERVER['SERVER_NAME'] . $this->here);
-        debug($_SERVER);
+       // debug($_SERVER);
     }
 
     public function needToBeAdmin(){
