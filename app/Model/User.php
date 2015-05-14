@@ -42,11 +42,8 @@ class User extends AppModel {
 			),
 			'isUnique' => array(
 				'rule' => array('isUnique'),
-<<<<<<< HEAD
 				'message' => 'Deja utilisé'
-=======
-				'message' => 'Deja utilisé'
->>>>>>> origin/master
+
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
