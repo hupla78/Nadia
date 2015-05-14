@@ -77,15 +77,13 @@ class AdressePofilesController extends AppController {
 		if (!$this->AdressePofile->exists($id)) {
 			throw new NotFoundException(__('Invalid adresse pofile'));
 		}
-        
-        
+
          $temp = $this->AdressePofile->findById($id);
         debug($temp);
         if($temp['AdressePofile']['user_id'] != $this->Session->read('Auth.User.id')){
         $this->redirect('/');
         }
-        
-        
+
 		if ($this->request->is(array('post', 'put'))) {
             $this->request->data['AdressePofile']['user_id']= $this->Session->read('Auth.User.id');
 			if ($this->AdressePofile->save($this->request->data)) {
@@ -110,12 +108,12 @@ class AdressePofilesController extends AppController {
  * @return void
  */
 	public function delete($id = null) {
-        
+
 		$this->AdressePofile->id = $id;
 		if (!$this->AdressePofile->exists()) {
 			throw new NotFoundException(__('Invalid adresse pofile'));
 		}
-       
+
 		$this->request->allowMethod('post', 'delete');
 		if ($this->AdressePofile->delete()) {
 			$this->Session->setFlash(__('The adresse pofile has been deleted.'));

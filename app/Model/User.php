@@ -24,7 +24,11 @@ class User extends AppModel {
 		'username' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
+<<<<<<< HEAD
 				'message' => 'Merci de rentré un nom valide',
+=======
+				'message' => 'Merci de rentré un nom valide',
+>>>>>>> origin/master
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -40,7 +44,11 @@ class User extends AppModel {
 			),
 			'isUnique' => array(
 				'rule' => array('isUnique'),
+<<<<<<< HEAD
 				'message' => 'Deja utilisé'
+=======
+				'message' => 'Deja utilisé'
+>>>>>>> origin/master
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -107,10 +115,17 @@ class User extends AppModel {
 	
     }
     
+<<<<<<< HEAD
 	public function beforeSave($options = array()){
 
         if(!empty($this->data['User']['password']))
     		$this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+=======
+	public function beforeSave($options = array()){
+
+        if(!empty($this->data['User']['password']))
+    		$this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+>>>>>>> origin/master
         
         
         
@@ -120,6 +135,7 @@ class User extends AppModel {
     
     
     
+<<<<<<< HEAD
     /**
  * hasMany associations
  *
@@ -144,6 +160,32 @@ class User extends AppModel {
     
     
     
+=======
+    /**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'AdressePofile' => array(
+			'className' => 'AdressePofile',
+			'foreignKey' => 'User_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+        'PanierCommand'
+	);
+
+
+
+>>>>>>> origin/master
     
 
 

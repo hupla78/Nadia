@@ -11,7 +11,7 @@
 				 	'article'=>'article',
 					'categorie'=>'categorie',
 		       			'value'=>'valeur',
-					'text'=>'text',			
+					'text'=>'text',
 					'color'=>'color'	)));
 	//	echo $this->Form->input('img_id');
 	//	echo $this->Form->input('article_id');

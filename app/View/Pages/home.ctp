@@ -1,7 +1,7 @@
 
 
 
-<!-- Slider de la page Home -->
+
  
                  
 <div class="espacejj">
@@ -24,6 +24,7 @@
 </div> 
      
 <!-- Fin Slider -->     
+
      
      
  <div class="trait2">
@@ -46,6 +47,8 @@
 
             <!-- Fin Texte présentation --> 
              
+
+
  <div class="trait3">
 			 </div>
 
@@ -61,5 +64,6 @@
   echo $this->element('article-home',array('arti'=>$Acms->getOne('article-home-3'),'name'=>'article-home-3'));
 
   ?>
- 
+
+
          <!-- Fin Articles de la page Home -->

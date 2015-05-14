@@ -56,6 +56,7 @@
 
 
 <?php 
+
 echo $this->Html->link("Choix l'adresse de livraison",array('controller'=>'Boutiques','action'=>'choixAdresse'),array('class'=>'livraison button'));
 ?>
 </div>

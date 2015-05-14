@@ -223,6 +223,7 @@ class BoutiquesController extends AppController {
 
             $temps = $this->Boutique->User->findById($this->Session->read('Auth.User.id')); 
 
+
             $id = 0;
             $adresse = array();
             foreach($temps['AdressePofile'] as $temp){

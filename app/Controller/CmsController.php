@@ -109,7 +109,6 @@ class CmsController extends AppController {
 	}
 
 
-       
  /**
  * admin_delete method
  *
@@ -137,6 +136,7 @@ public function admin_export()
 }
 public function admin_findbyname($lap)
 {       
+
 	$tmpvar = $this->Cm->findByName($lap);
 	$id = $tmpvar['Cm']['id'];
         return $this->redirect(array('admin'=>true,'prefix'=>'admin','controller'=>'cms','action'=>'edit',$id));

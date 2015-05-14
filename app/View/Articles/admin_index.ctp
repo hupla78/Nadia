@@ -25,7 +25,8 @@
 		<td>
 			<?php echo $this->Html->link($article['Category']['value'], array('controller' => 'categories', 'action' => 'view', $article['Category']['id'])); ?>
 		</td>
-		
+
+
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $article['Article']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $article['Article']['id'])); ?>

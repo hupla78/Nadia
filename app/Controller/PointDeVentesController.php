@@ -17,15 +17,15 @@ class PointDeVentesController extends AppController {
 	public $components = array('Paginator', 'Session');
     public $helpers = array('GoogleMap');
 
-    
-    
-    
-    
+
+
+
+
     public function beforeFilter(){
 		parent::beforeFilter();
 		$this->Auth->allow('index','view');
 	}
-    
+
 /**
  * index method
  *
