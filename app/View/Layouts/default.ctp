@@ -230,7 +230,7 @@ if (AuthComponent::user('isAdmin')){
 			
 			</div>
 			<p id="copy">
-			    Copyright : Tout droit réservés
+			    Copyright : Tout droit réservésss
 			    
 			</p>
 		</div>
