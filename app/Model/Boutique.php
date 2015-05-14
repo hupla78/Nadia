@@ -79,13 +79,7 @@ class Boutique extends AppModel {
 
     public $hasOne = 'PanierCommand';
 
-<<<<<<< HEAD
-    
-    
-=======
 
-
->>>>>>> origin/master
 	public $hasAndBelongsToMany =array(
 		'Categorie'=>array(
 			'clasName'=>'Categorie',
