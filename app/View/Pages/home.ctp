@@ -51,13 +51,16 @@
 
 <p id="nousre"> Les Nouveautés </p>
 
+
             <!-- Article page Home -->
 
 
 
   <?php
   echo $this->element('article-home',array('arti'=>$Acms->getOne('article-home-1'),'name'=>'article-home-1'));
+
   echo $this->element('article-home',array('arti'=>$Acms->getOne('article-home-2'),'name'=>'article-home-2'));
+
   echo $this->element('article-home',array('arti'=>$Acms->getOne('article-home-3'),'name'=>'article-home-3'));
 
   ?>
