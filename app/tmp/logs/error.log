@@ -214,3 +214,69 @@ Stack Trace:
 #11 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
 #12 /opt/lampp/htdocs/www/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2015-05-14 13:38:57 Error: [MissingTableException] Table imgs for model Img was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'imgs',
+  'class' => 'Img',
+  'ds' => 'default',
+)
+Request URL: /www/Nadia/boutiques
+Stack Trace:
+#0 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('imgs')
+#1 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(Img), 'Img', '')
+#4 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(Article), Object(Img), 'belongsTo', 'Img', Array, Array, false)
+#5 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Article), Array)
+#6 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#7 /opt/lampp/htdocs/www/Nadia/app/Controller/BoutiquesController.php(127): Model->find('all')
+#8 [internal function]: BoutiquesController->index()
+#9 /opt/lampp/htdocs/www/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#10 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#12 /opt/lampp/htdocs/www/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-05-14 13:38:58 Error: [MissingTableException] Table imgs for model Img was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'imgs',
+  'class' => 'Img',
+  'ds' => 'default',
+)
+Request URL: /www/Nadia/boutiques
+Stack Trace:
+#0 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('imgs')
+#1 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(Img), 'Img', '')
+#4 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(Article), Object(Img), 'belongsTo', 'Img', Array, Array, false)
+#5 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Article), Array)
+#6 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#7 /opt/lampp/htdocs/www/Nadia/app/Controller/BoutiquesController.php(127): Model->find('all')
+#8 [internal function]: BoutiquesController->index()
+#9 /opt/lampp/htdocs/www/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#10 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#12 /opt/lampp/htdocs/www/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-05-14 13:39:16 Error: [MissingTableException] Table imgs for model Img was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'imgs',
+  'class' => 'Img',
+  'ds' => 'default',
+)
+Request URL: /www/Nadia/boutiques
+Stack Trace:
+#0 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(3551): Model->setSource('imgs')
+#1 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Datasource/DboSource.php(2491): Model->schema()
+#3 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Datasource/DboSource.php(1716): DboSource->fields(Object(Img), 'Img', '')
+#4 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Datasource/DboSource.php(1093): DboSource->generateAssociationQuery(Object(Article), Object(Img), 'belongsTo', 'Img', Array, Array, false)
+#5 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Article), Array)
+#6 /opt/lampp/htdocs/www/Nadia/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#7 /opt/lampp/htdocs/www/Nadia/app/Controller/BoutiquesController.php(127): Model->find('all')
+#8 [internal function]: BoutiquesController->index()
+#9 /opt/lampp/htdocs/www/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#10 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#12 /opt/lampp/htdocs/www/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
