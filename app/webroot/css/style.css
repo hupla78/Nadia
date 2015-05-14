@@ -259,7 +259,7 @@ li.separbot div.panel{
 .text-center1{
 text-align: center !important; 
 font-family: arial;
-font-size: 2.3em;}
+font-size: 2em;}
 
 
 
@@ -534,4 +534,32 @@ margin-top: 30px;
 .position-bas {
     padding-top: 80%;
 
+}
+
+.hauteur-home {
+    min-height: 500px;
+    max-height: 500px;
+height: 500px;
+
+}
+
+.up-pad {
+    padding-top: 10%;
+}
+
+.place-elt {
+    height: 70%;
+}
+
+.place-elt2 {
+    height: 80%;
+}
+
+#prix-article2 {
+        font-family: arial;
+    font-size: 15px;
+    padding-left: 15px;
+
+   text-align: left;
+    margin-top: 30px;
 }

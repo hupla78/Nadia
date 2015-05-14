@@ -20,7 +20,7 @@ if($article['Img']['value'] == null){
     ?>
 
 <div class="large-9 medium-8 small-7 columns" >
-		<p id="prix-article">Prix: <b><?php echo $article['Article']['prix'] ?>€ </b>
+		<p id="prix-article2">Prix: <b><?php echo $article['Article']['prix'] ?>€ </b>
 		</p>
 
 		</div>

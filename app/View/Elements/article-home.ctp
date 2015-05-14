@@ -1,7 +1,7 @@
 
-    	     <div class="large-4 columns medium-4 columns small-12 columns ">
-    <div class="panel row transition-souris "  >
-    	     <div class="large-12 medium-12 small-6 columns">
+    	     <div class="large-4 columns medium-4 columns small-12 columns  hauteur-home ">
+    <div class="panel row transition-souris  hauteur-home "  >
+    	     <div class="large-12 medium-12 small-6 columns place-elt2">
     	            <p id="dessous">
                          <?php echo ($arti['name']); ?>
 
@@ -14,9 +14,9 @@
 
 
      	    <?php   if(array_key_exists('value',$arti['Img']))
-                        echo $this->Html->image('import/'.$arti['Img']['value'],array('width'=>'100%', 'style'=>'max-height:600px', 'class'=>'element-article-img '));
+                        echo $this->Html->image('import/'.$arti['Img']['value'],array('width'=>'100%', 'style'=>'max-height:350px', 'class'=>'element-article-img '));
                     else
-                        echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:600px', 'class'=>'element-article-img '));
+                        echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:350px', 'class'=>'element-article-img '));
                  ?>
 
 
@@ -26,7 +26,7 @@
 
 
     	     </div>
-            <div class="large-12 medium-12 small-6 columns">
+            <div class="large-12 medium-12 small-6 columns ">
 
 
 
