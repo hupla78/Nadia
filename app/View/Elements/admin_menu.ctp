@@ -1,13 +1,9 @@
 <nav class="row panel">
-<<<<<<< HEAD
+
         <div class="large-12 small-12 columns"><h2 class="pi-text-center">Admin-menu</h2></div>  
         
-        <div class="large-6 small-12 columns">		
-=======
-        <div class="large-12 small-12 columns"><h2 class="pi-text-center">Admin-menu</h2></div>
-
         <div class="large-6 small-12 columns">
->>>>>>> origin/master
+
         <h4>Données</h4><ul>
                 <li><?php echo $this->Html->link('color',array('admin'=>true,'controller'=>'colors','action'=>'index')); ?></li>
         	    <li><?php echo $this->Html->link('valeurs',array('admin'=>true,'controller'=>'values','action'=>'index')); ?></li>
@@ -18,23 +14,15 @@
 	            <li><?php echo $this->Html->link('pointDeVentes',array('admin'=>true,'controller'=>'pointDeVentes','action'=>'index')); ?></li>
 	            <li><?php echo $this->Html->link('actu',array('admin'=>true,'controller'=>'actualites','action'=>'index')); ?></li>
         </ul>
-<<<<<<< HEAD
+
         
         </div>
          <div class="large-6 small-12 columns">		
         <h4>Parametres</h4>
         <ul>
                 
-                <li><?php echo $this->Html->link('cms',array('admin'=>true,'controller'=>'cms','action'=>'index')); ?></li>              
-=======
-
-        </div>
-         <div class="large-6 small-12 columns">
-        <h4>Parametres</h4>
-        <ul>
-
                 <li><?php echo $this->Html->link('cms',array('admin'=>true,'controller'=>'cms','action'=>'index')); ?></li>
->>>>>>> origin/master
+
                 <li><?php echo $this->Html->link('appliquer',array('admin'=>true,'prefix'=>'admin','controller'=>'cms','action'=>'export'));?>
         </ul>
     </div>
@@ -47,9 +35,5 @@
 
 
 
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> origin/master
 </nav>
