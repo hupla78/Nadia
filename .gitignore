@@ -1,4 +1,4 @@
-/app/tmp/
+/app/tmp/*
 /app/tmp/cache/models/myapp_cake_model_default_nadia_list
 /app/tmp/cache/
 /app/tmp/logs/
@@ -14,3 +14,4 @@
 /app/tmp/cache/persistent/myapp_cake_core_method_cache
 /app/tmp/cache/cake_toolbar_cache
 /app/tmp/cache/cake_toolbar_cache2371ba013ff782a2463c513c12cf8c12
+/app/tmp/cache/cake_toolbar_cache1d7b49cd5ac5a419269654be608ac459
