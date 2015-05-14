@@ -2246,7 +2246,7 @@ div.switch {
       max-width: 100%; }
     .orbit-container .orbit-slides-container.fade li {
       opacity: 0;
-      transition: opacity 500ms ease-in-out;
+      transition: opacity 500ms cubic-bezier(.89, .28, .21, .55);
       -ms-transform: translate(0, 0);
       -webkit-transform: translate3d(0, 0, 0);
       -moz-transform: translate3d(0, 0, 0);
@@ -2662,7 +2662,9 @@ ul.pagination {
   text-align: right !important; }
 
 .text-center {
-  text-align: center !important; }
+  text-align: center !important;
+font-family: arial;
+font-size: 2.3em;}
 
 .text-justify {
   text-align: justify !important; }
@@ -5261,3 +5263,4 @@ th.hide-for-touch {
 
 .touch th.show-for-touch {
   display: table-cell !important; }
+

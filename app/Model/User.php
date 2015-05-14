@@ -24,7 +24,7 @@ class User extends AppModel {
 		'username' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Merci de rentré un nom valide',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -40,7 +40,7 @@ class User extends AppModel {
 			),
 			'isUnique' => array(
 				'rule' => array('isUnique'),
-				//'message' => 'Your custom message here',
+				'message' => 'Deja utilisé'
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -107,9 +107,10 @@ class User extends AppModel {
 	
     }
     
-    public function beforeSave($options = array()){
+	public function beforeSave($options = array()){
+
         if(!empty($this->data['User']['password']))
-    $this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+    		$this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
         
         
         
@@ -119,6 +120,30 @@ class User extends AppModel {
     
     
     
+    /**
+ * hasMany associations
+ *
+ * @var array
+ */
+	public $hasMany = array(
+		'AdressePofile' => array(
+			'className' => 'AdressePofile',
+			'foreignKey' => 'User_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+        'PanierCommand'
+	);
+
+
+
     
 
 

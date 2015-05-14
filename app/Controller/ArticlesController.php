@@ -9,6 +9,14 @@
  */
 class ArticlesController extends AppController {
 
+
+
+    public function beforeFilter(){
+		parent::beforeFilter();
+        $this->needToBeAdmin();
+           // die();
+        }
+
 /**
  * Components
  *

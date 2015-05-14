@@ -36,7 +36,9 @@ switch ($cm['Cm']['type']) {
                         break;
                case 'text':
                        echo  $this->Html->link($cm['Text']['name'], array('controller' => 'texts', 'action' => 'view', $cm['Text']['id']));
-                       break;
+		       break;
+	      case 'color':
+		      echo $this->Html->link($cm['Color']['name'], array('controller' => 'color', 'action' => 'view', $cm['Color']['id']));break;
               default:
                       echo "pb";
                        break;
@@ -67,16 +69,16 @@ switch ($cm['Cm']['type']) {
 		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
 		echo $this->Paginator->numbers(array('separator' => ''));
 		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
-	?>
+?>
+
 	</div>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
+	<ul>	<li><?php echo $this->Html->link(__('export'),array('controller'=>'cms','action'=>'export'));?></li>
 		<li><?php echo $this->Html->link(__('New Cm'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Imgs'), array('controller' => 'imgs', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Img'), array('controller' => 'imgs', 'action' => 'add')); ?> </li>
-
 		<li><?php echo $this->Html->link(__('List Articles'), array('controller' => 'articles', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Article'), array('controller' => 'articles', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Categories'), array('controller' => 'categories', 'action' => 'index')); ?> </li>
@@ -85,6 +87,9 @@ switch ($cm['Cm']['type']) {
 		<li><?php echo $this->Html->link(__('New Value'), array('controller' => 'values', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Texts'), array('controller' => 'texts', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Text'), array('controller' => 'texts', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Color'), array('controller' => 'colors', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Color'), array('controller' => 'colors', 'action' => 'index')); ?> </li>
+
 
 	</ul>
 </div>

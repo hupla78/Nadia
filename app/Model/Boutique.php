@@ -1,5 +1,6 @@
 <?php
 App::uses('AppModel', 'Model');
+
 /**
  * Boutique Model
  *
@@ -76,6 +77,10 @@ class Boutique extends AppModel {
 		)
 	);
 
+    public $hasOne = 'PanierCommand';
+
+
+
 	public $hasAndBelongsToMany =array(
 		'Categorie'=>array(
 			'clasName'=>'Categorie',
@@ -85,6 +90,10 @@ class Boutique extends AppModel {
 		),
 		'Article'=>array(
 			'className'=>'Article',
+			'joinTable'=>'boutiques_articles'
+		),
+        'User'=>array(
+			'className'=>'User',
 			'joinTable'=>'boutiques_articles'
 		)
 	);

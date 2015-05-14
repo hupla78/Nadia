@@ -9,8 +9,6 @@
 			<th><?php echo $this->Paginator->sort('description'); ?></th>
 			<th><?php echo $this->Paginator->sort('img_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('category_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('updated'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -25,10 +23,9 @@
 			<?php echo $this->Html->link($article['Img']['name'], array('controller' => 'imgs', 'action' => 'view', $article['Img']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($article['Category']['name'], array('controller' => 'categories', 'action' => 'view', $article['Category']['id'])); ?>
+			<?php echo $this->Html->link($article['Category']['value'], array('controller' => 'categories', 'action' => 'view', $article['Category']['id'])); ?>
 		</td>
-		<td><?php echo h($article['Article']['updated']); ?>&nbsp;</td>
-		<td><?php echo h($article['Article']['created']); ?>&nbsp;</td>
+
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $article['Article']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $article['Article']['id'])); ?>

@@ -1,4 +1,5 @@
 
+
 <?php
 /**
  * Application level Controller
@@ -21,6 +22,7 @@
  */
 
 App::uses('Controller', 'Controller');
+App::uses('ConnectionManager', 'Model');
 
 /**
  * Application Controller
@@ -33,53 +35,134 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller{
 
-	public $components = array('Session','Auth','Panier','DebugKit.Toolbar','Panier');
+    public $components = array('Session','Auth','Panier','DebugKit.Toolbar','Panier');
 
-	public function beforeFilter(){
-		parent::beforeFilter();
-		$this->set('Acms',new Acms());
-	}
+    public function beforeFilter(){
+        parent::beforeFilter();
+        $this->set('Acms',new Acms());
+        if (!isset($_SERVER['HTTPS'])) {
+            $this->forceSSL();
+        }
+        if($this->request->prefix){
+            $this->needToBeAdmin();
+        }
 
-	protected function _isAuthorizedFor($admin){
+    }
+    public function forceSSL() {
+       //$this->redirect('https://' . $_SERVER['SERVER_NAME'] . $this->here);
+        debug($_SERVER);
+    }
 
-		if(! $this->Session->check('Auth.User.id')){return;}
-		if ($this->Session->read('Auth.User.isAdmin') != $admin) {
-			$this->Session->setFlash("cette partie du site n'est pas pour vous!!");
-			$this->redirect(array('controller'=>'pages','action'=>'display'));
-		}
+    public function needToBeAdmin(){
+        if(!$this->Session->read('Auth.User.isAdmin')){
+            $this->redirect('/');
+        }
+    }
 
 
-	}
+    protected function _isAuthorizedFor($admin){
+
+        if(! $this->Session->check('Auth.User.id')){return;}
+        if ($this->Session->read('Auth.User.isAdmin') != $admin) {
+            $this->Session->setFlash("cette partie du site n'est pas pour vous!!");
+            $this->redirect(array('controller'=>'pages','action'=>'display'));
+        }
+
+
+    }
+
+
+
+    public function search() {
+        $this->autoRender = false;
+        App::Import('ConnectionManager');
+        $ds = ConnectionManager::getDataSource('default');
+        $dsc = $ds->config;
+
+        // get the search term from URL
+        $mysqli = new mysqli($dsc['host'],$dsc['login'],$dsc['password'], $dsc['database']);
+        $res = $mysqli->query("SELECT id,username as text FROM users");
+        $result;
+
+        foreach($res->fetch_all() as $key => $tem){
+            $result[$key]['id'] = $tem[0];
+            $result[$key]['text'] = $tem[1];
+
+        }
+
+
+        echo json_encode($result);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
 class Acms{
 
-	public $arr2;
+    public $arr2;
+    public $admin=null;
+    public $local=null;
+    public function __construct()
+    {
+        $this->admin = AuthComponent::user('isAdmin');
+        //info
+        $this->local =  Router::fullbaseUrl();
+        //echo $this->getEditionPage();
 
-	public function __construct()
-	{
-		$this->arr2 = json_decode(file_get_contents(APP.'cms/base.json'), true);    
+        $this->arr2 = json_decode(file_get_contents(APP.'cms/base.json'), true);
 
-	}
+    }
 
 
-	public function getOne($lap = 'undefine' )
-	{
-		if($lap=='undefine'){return 'ereur 1';}//le parametre est rentré est mauvais
+    public function getOne($lap = 'undefine' )
+    {
+        if($lap=='undefine'){return 'ereur 1';}//le parametre est rentré est mauvais
 
-		return $this->arr2[$lap];
-	}
+        return $this->arr2[$lap];
+    }
 
-	public function getAll($lap = 'undefine')
-	{	$retu = array();	
-		$i = 0;
-		while(array_key_exists($lap.$i,$this->arr2)){
-			$retu[1]= $this->arr2[$lap.$i];	
-			$i++;	
-		}
-	return $retu;	
-	}
+    public function getAll($lap = 'undefine')
+    {	$retu = array();
+     $i = 0;
+     while(array_key_exists($lap.$i,$this->arr2)){
+         $retu[$i]= $this->arr2[$lap.$i];
+         $i++;
+     }
+     return $retu;
+    }
+
+
+    public function getEditionPage($lap = 'undefine'){
+
+        if($this->admin)return '<a  href="'.$this->local.'/admin/cms/findbyname/'.$lap.'" title="'.$lap.'" id="editAdmin" ></a>';
+
+        else 		return '';
+    }
+
+    public function getEditionPages($lap){
+
+        if($this->admin){
+            $retList = '<ul id="editAdminList">';
+            foreach($lap as $a){
+                $retList = $retList.'<li><a  href="'.$this->local.'/admin/cms/findbyname/'.$a.'" title="'.$a.'"  ></a></li>';
+            }
+            $retList = $retList."</ul>";
+            return $retList;
+        }
+
+        else 		return '';
+    }
 
 
 

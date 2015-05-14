@@ -12,7 +12,7 @@
 	<?php foreach ($categories as $category): ?>
 	<tr>
 		<td><?php echo h($category['Category']['id']); ?>&nbsp;</td>
-		<td><?php echo h($category['Category']['name']); ?>&nbsp;</td>
+		<td><?php echo h($category['Category']['value']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $category['Category']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $category['Category']['id'])); ?>

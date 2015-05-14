@@ -11,8 +11,8 @@
 				 	'article'=>'article',
 					'categorie'=>'categorie',
 		       			'value'=>'valeur',
-					'text'=>'text'			
-					)));
+					'text'=>'text',
+					'color'=>'color'	)));
 	//	echo $this->Form->input('img_id');
 	//	echo $this->Form->input('article_id');
 	//	echo $this->Form->input('categorie_id');
@@ -32,8 +32,6 @@
 		<li><?php echo $this->Html->link(__('List Cms'), array('action' => 'index')); ?></li>
 		<li><?php echo $this->Html->link(__('List Imgs'), array('controller' => 'imgs', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Img'), array('controller' => 'imgs', 'action' => 'add')); ?> </li>
-<<<<<<< HEAD
-=======
 		<li><?php echo $this->Html->link(__('List Articles'), array('controller' => 'articles', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Article'), array('controller' => 'articles', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Categories'), array('controller' => 'categories', 'action' => 'index')); ?> </li>
@@ -42,6 +40,5 @@
 		<li><?php echo $this->Html->link(__('New Value'), array('controller' => 'values', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Texts'), array('controller' => 'texts', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Text'), array('controller' => 'texts', 'action' => 'add')); ?> </li>
->>>>>>> up
 	</ul>
 </div>
