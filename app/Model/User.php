@@ -24,11 +24,9 @@ class User extends AppModel {
 		'username' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-<<<<<<< HEAD
+
 				'message' => 'Merci de rentré un nom valide',
-=======
-				'message' => 'Merci de rentré un nom valide',
->>>>>>> origin/master
+
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -106,15 +104,15 @@ class User extends AppModel {
 	);
 
 	public function beforeValidate($options = array()){
-	
+
 	$this->validator()->add(
 	'passwordVerif',array(
 	'equalTo'=>array('rule'=>array('equalto',$this->data['User']['password']),
 	'message'=>'les mots de passe ne sont pas identique.'))
 	);
-	
+
     }
-    
+
 <<<<<<< HEAD
 	public function beforeSave($options = array()){
 
@@ -126,15 +124,15 @@ class User extends AppModel {
         if(!empty($this->data['User']['password']))
     		$this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
 >>>>>>> origin/master
-        
-        
-        
+
+
+
         return true;
-    
+
     }
-    
-    
-    
+
+
+
 <<<<<<< HEAD
     /**
  * hasMany associations
@@ -157,9 +155,9 @@ class User extends AppModel {
 		),
         'PanierCommand'
 	);
-    
-    
-    
+
+
+
 =======
     /**
  * hasMany associations
@@ -186,7 +184,7 @@ class User extends AppModel {
 
 
 >>>>>>> origin/master
-    
+
 
 
 }
