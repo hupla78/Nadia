@@ -16,7 +16,8 @@ if($key['Img']['value']!=null){
 		</div>
 		
 			<p class="text-center1 show-for-medium" ><?php echo  $key['Article']['name'];?></p>
-			
+
+			<div class="position-bas">
 <div class="large-6 medium-3 small-6 columns" >
 		<p id="prix-article">Prix: <b><?php echo $key['Article']['prix'] ?>€ </b>
 		</p>
@@ -41,7 +42,8 @@ if($key['Img']['value']!=null){
 			</p>
 </div>
 
-    <div class=" large-12 medium-12 small-12 columns "><p class="txt-debordement-article">
+    <div class=" large-12 medium-12 small-12 columns ">
+        <p class="txt-debordement-article">
 
 	    <?php  echo $key['Article']['description']?>
 	</p>
@@ -50,6 +52,6 @@ if($key['Img']['value']!=null){
 			'action'=>'view',
 			$key['Article']['id']));?></p>
 	</div>
-
+</div>
 </div>
 </div>

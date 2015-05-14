@@ -268,8 +268,9 @@ font-size: 2.3em;}
    
     width: 100%;
     overflow: hidden;
-    height: 100px;
+    height: 50px;
     text-overflow: ellipsis; 
+    padding-bottom: 20px;
     
 }
 
@@ -527,5 +528,10 @@ margin-bottom: 30px;
 
 
 margin-top: 30px;
+
+}
+
+.position-bas {
+    padding-top: 80%;
 
 }

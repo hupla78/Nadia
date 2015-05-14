@@ -444,3 +444,63 @@ Request URL: /www/Nadia/css/select2/select2-spinner.gif
 Stack Trace:
 #0 /opt/lampp/htdocs/www/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-05-14 17:27:49 Error: [NotFoundException] Invalid adresse pofile
+Request URL: /www/Nadia/AdressePofiles/edit/img/iconn.ico
+Stack Trace:
+#0 [internal function]: AdressePofilesController->edit('img', 'iconn.ico')
+#1 /opt/lampp/htdocs/www/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(AdressePofilesController), Array)
+#2 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdressePofilesController), Object(CakeRequest))
+#4 /opt/lampp/htdocs/www/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-05-14 17:27:49 Error: [NotFoundException] Invalid adresse pofile
+Request URL: /www/Nadia/AdressePofiles/edit/img/iconn.ico
+Stack Trace:
+#0 [internal function]: AdressePofilesController->edit('img', 'iconn.ico')
+#1 /opt/lampp/htdocs/www/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(AdressePofilesController), Array)
+#2 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdressePofilesController), Object(CakeRequest))
+#4 /opt/lampp/htdocs/www/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-05-14 18:25:53 Error: [NotFoundException] Invalid text
+Request URL: /www/Nadia/admin/texts/edit/img/iconn.ico
+Stack Trace:
+#0 [internal function]: TextsController->admin_edit('img', 'iconn.ico')
+#1 /opt/lampp/htdocs/www/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(TextsController), Array)
+#2 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(TextsController), Object(CakeRequest))
+#4 /opt/lampp/htdocs/www/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-05-14 18:29:28 Error: [MissingActionException] Action ArticlesController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'admin_img',
+)
+Request URL: /www/Nadia/admin/articles/img/iconn.ico
+Stack Trace:
+#0 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#2 /opt/lampp/htdocs/www/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-14 18:29:28 Error: [MissingActionException] Action ArticlesController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'admin_img',
+)
+Request URL: /www/Nadia/admin/articles/img/iconn.ico
+Stack Trace:
+#0 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ArticlesController), Object(CakeRequest))
+#2 /opt/lampp/htdocs/www/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-14 18:30:33 Error: [MissingActionException] Action ImgsController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'ImgsController',
+  'action' => 'admin_img',
+)
+Request URL: /www/Nadia/admin/imgs/img/iconn.ico
+Stack Trace:
+#0 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /opt/lampp/htdocs/www/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ImgsController), Object(CakeRequest))
+#2 /opt/lampp/htdocs/www/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
