@@ -66,7 +66,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'nopass',
+		'password' => '',
 		'database' => 'nadia',
 		'prefix' => '',
 		'encoding' => 'utf8',
