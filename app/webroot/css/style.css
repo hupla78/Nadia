@@ -563,3 +563,8 @@ height: 500px;
    text-align: left;
     margin-top: 30px;
 }
+
+.trad {
+    font-family: georgia;
+    font-size: 1.5em;
+}

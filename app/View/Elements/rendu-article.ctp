@@ -1,7 +1,7 @@
 <div class="large-6 medium-12 small-12 columns hauteur-elmt" >
 <div class="panel row transition-souris hauteur-elmt"  >
 	<div class="place-elt">
-	<p class="text-center1 hide-for-medium" ><?php echo  $key['Article']['name'];?></p>
+	<p class="text-center1" ><?php echo  $key['Article']['name'];?></p>
 
 	<div class="large-12 medium-6 small-12 columns element-bordure" >
 	<?php
@@ -14,17 +14,41 @@ if($key['Img']['value']!=null){
         ?>
 		
 		</div>
+
+		<div class="large-12 medium-6 small-12 columns element-bordure show-for-medium" >
+	<?php
+if($key['Img']['value']!=null){
+	echo $this->Html->image('import/'.$key['Img']['value'],array('width'=>'40%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
+}else{
+	echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
+
+}
+        ?>
+
 		</div>
-			<p class="text-center1 show-for-medium" ><?php echo  $key['Article']['name'];?></p>
+       <div class="large-12 medium-6 small-12 columns element-bordure show-for-medium" >
+	<?php
+if($key['Img']['value']!=null){
+	echo $this->Html->image('import/'.$key['Img']['value'],array('width'=>'40%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
+}else{
+	echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
 
+}
+        ?>
 
-<div class="large-6 medium-3 small-6 columns" >
+		</div>
+
+		</div>
+
+		<div class=" large-12 medium-12 small-12 columns ">
+
+<div class="large-6 medium-6 small-6 columns" >
 		<p id="prix-article">Prix: <b><?php echo $key['Article']['prix'] ?>€ </b>
 		</p>
 		
 		</div>
 			
-		<div class="large-6 medium-3 small-6 columns" >
+		<div class="large-6 medium-6 small-6 columns" >
 		<p id="prix-article">
 		
 
@@ -41,7 +65,7 @@ if($key['Img']['value']!=null){
 
 			</p>
 </div>
-
+    </div>
     <div class=" large-12 medium-12 small-12 columns ">
         <p class="txt-debordement-article">
 

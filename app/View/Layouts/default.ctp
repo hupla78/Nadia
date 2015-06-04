@@ -243,7 +243,7 @@ if($val==0){echo"Le panier est vide";}else{
 		    <div class="large-12 columns medium-12 columns small-12 columns ">
 
  <div class="large-6 columns medium-6 columns small-6 columns">
-			<p id="nousre">
+			<p id="nousre show-for-large show-for-medium">
 
 			    Nous retrouver sur :
 
@@ -251,10 +251,11 @@ if($val==0){echo"Le panier est vide";}else{
                 </div>
 		 <div class="large-6 columns medium-6 columns small-6 columns place">
 		 	 <div class="large-4 columns medium-3 columns small-3 columns place">
-             <p>Traduire le site :</p>
+             <p class="show-for-large show-for-medium">Traduire le site :</p>
              </div>
-             <div class="large-2 columns medium-3 columns small-3 columns place2">
-             <div id="translator_910"> <noscript>Javascript is disable - <a href="http://www.supportduweb.com/">http://www.supportduweb.com/</a> - <a href="http://www.supportduweb.com/generateur-boutons-traduction-translation-google-gratuit-html-code=script-boutons-traduire-page-web.html">Générateur de boutons de traduction</a></noscript> <script type="text/javascript" src="http://services.supportduweb.com/translator/910-3-yyyynynnn.js"></script></div>
+             <div class="large-2 columns medium-3 columns small-2 columns place2">
+             <div id="translator_7265"><noscript>Javascript is disable - <a href="http://www.supportduweb.com/">http://www.supportduweb.com/</a> - <a href="http://www.supportduweb.com/generateur-boutons-traduction-translation-google-gratuit-html-code=script-boutons-traduire-page-web.html">Générateur de boutons de traduction</a></noscript></div><script type="text/javascript" src="http://services.supportduweb.com/translator/7265-3-yynynynnn.js"></script>
+
                  </div>
 
      </div>
