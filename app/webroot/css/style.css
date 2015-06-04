@@ -348,11 +348,12 @@ height: 700px;
 
 .espace-barre2 {
     margin-top: 35px;
+    padding-left: 27%;
 }
 
 .class-panier {
     font-family: arial black;
-
+padding-right: 8%;
     text-align: center;
 }
 
@@ -597,4 +598,11 @@ height: 500px;
     font-family: Georgia;
     font-size: 1,5em;
 
+}
+
+.heightbody {
+    min-height: 475px;
+}
+.styleinscription{
+ text-align: left ;
 }

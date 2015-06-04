@@ -1,6 +1,6 @@
 <div class="colors index">
-	<h2><?php echo __('Colors'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<h2><?php echo __('Couleurs'); ?></h2>
+	<table cellpadding="10" cellspacing="5">
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
@@ -27,7 +27,7 @@
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
-	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}'),array('class'=>'couleurs')
 	));
 	?>	</p>
 	<div class="paging">

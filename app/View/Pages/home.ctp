@@ -14,11 +14,16 @@
                   <li >
     <?php   echo $Acms->getEditionPage('slider'.$count++);
             
-            echo $this->Html->image('import/'.$key, array('width'=>'100%'));?>
+            echo $this->Html->image('import/'.$key, array('width'=>'100%'));
+
+
+                      ?>
                   
                   </li>
           <?php endforeach; ?>
                
+
+
            
         </ul>
 </div> 

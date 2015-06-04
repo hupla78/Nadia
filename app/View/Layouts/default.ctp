@@ -45,7 +45,7 @@ echo $this->Html->scriptBlock('var CbunnyObj = ' . $this->Js->object($cbunny) . 
 	</style>
 
     </head>
-    <body>
+    <body class="heightbody">
 
 
 	<?php echo $Acms->getEditionPage('color-fond-exterieur'); ?>
@@ -150,8 +150,11 @@ if($val==0){echo"Le panier est vide";}else{
 
 
 				<div class="large-6 columns medium-6 small-6 espace-barre2">
+
                    <?php echo $Acms->getEditionPages(array('panier-fond-color','panier-text-color','panier-fond-passage-color'));?>
+
                     <?php echo $this->Html->link("Mon panier",array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false),array('class'=>'button acm-panier'))?>
+
 				</div>
 
 
@@ -192,7 +195,7 @@ if($val==0){echo"Le panier est vide";}else{
 					<?php echo $Acms->getEditionPage('color-police-menu-generale-sans-souris'); ?>
 
 
-					<?php echo $this->Html->link('Collection',array('prefix'=>false,'admin'=>false,'controller'=>'actualites','action'=>'index', ),array('class'=>'pi-text-center'))?>
+					<?php echo $this->Html->link('Actualités',array('prefix'=>false,'admin'=>false,'controller'=>'actualites','action'=>'index', ),array('class'=>'pi-text-center'))?>
 
 					<?php echo $Acms->getEditionPage('color-police-menu-generale-passage-souris'); ?>
 
@@ -224,7 +227,7 @@ if($val==0){echo"Le panier est vide";}else{
 
 
 
-		<div id="content" class="row">
+		<div id="content" class="row heightbody">
 
 		    <?php echo $this->Session->flash();?>
 
