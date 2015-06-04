@@ -1,10 +1,10 @@
 <div class="large-12 medium-12 columns">
    <div class="panel">
     <h3>Mes informations</h3>
-    <div>
+   <div class="large-6 medium-6 small-6 columns ">
         pseudo : <?php echo($userInfo['User']['username']); ?>
     </div>
-    <div>
+    <div class="large-6 medium-6 small-6 columns">
         email : <?php echo($userInfo['User']['email']); ?>
 
     </div>
@@ -34,18 +34,21 @@
 </div>
 </div>
 
-<div class="large-6 medium-12 columns">
+<div class="large-6 medium-12 columns ">
    <div class="panel">
     <h3 class="center">Mes Adresses</h3>
 
     <?php foreach(  $userInfo['AdressePofile'] as $adresse ): ?>
 
-    <div class="large-12 small-12 adressecont">
+    <div class="large-12 small-12 adressecont columns">
         <h5 class="adresse">
+           <div class="margindutop">
             <?php echo $adresse['name'];?>
+            </div>
         </h5>
-        <p>
 
+        <p>
+<div class="large-9 small-9 columns adresse2">
             <?php
 
 echo($adresse['num_rue']      ." ".
@@ -53,20 +56,24 @@ echo($adresse['num_rue']      ." ".
      $adresse['codePostal']   ." ".
      $adresse['vile']);
             ?>
+
+         </div>
+         <div class="large-3 small-3 columns ">
 <?php echo( $this->Html->link('edit',array(
                     'controller'=>'AdressePofiles',
                     'action'=>'edit',$adresse['id']),
-                                array('class'=>'button goRight'))
+                                array('class'=>'button '))
 ); ?>
+        </div>
         </p>
+</div>
 
-    </div>
 
     <?php endforeach; ?>
 <?php echo( $this->Html->link('Crée une adresse',array(
                     'controller'=>'AdressePofiles',
                     'action'=>'add'),
-                                array('class'=>'button'))
+                                array('class'=>'button margindutop'))
 ); ?>
 
 </div>

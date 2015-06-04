@@ -13,7 +13,7 @@
 if($article['Img']['value'] == null){
 	echo $this->Html->image('noImg.jpg',array('width'=>'80%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
 }else{
-	echo $this->Html->image('import/'.$article['Img']['value'],array('width'=>'100%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
+	echo $this->Html->image('import/'.$article['Img']['value'],array('width'=>'80%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
 }
 ?>
 </li>
@@ -23,7 +23,7 @@ if($article['Img']['value'] == null){
 if($article['Img']['value'] == null){
 	echo $this->Html->image('noImg.jpg',array('width'=>'80%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
 }else{
-	echo $this->Html->image('import/'.$article['Img']['value'],array('width'=>'100%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
+	echo $this->Html->image('import/'.$article['Img']['value'],array('width'=>'80%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
 }
 ?>
 </li>
@@ -34,7 +34,7 @@ if($article['Img']['value'] == null){
 if($article['Img']['value'] == null){
 	echo $this->Html->image('noImg.jpg',array('width'=>'80%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
 }else{
-	echo $this->Html->image('import/'.$article['Img']['value'],array('width'=>'100%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
+	echo $this->Html->image('import/'.$article['Img']['value'],array('width'=>'80%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
 }
 ?>
 </li>

@@ -104,7 +104,7 @@ body{
 text-align: left;
 margin-left: 10px;
     font-family: Helvetica neue,Helvetica,Arial;
-font-size: 1.8em;
+font-size: 1.6em;
 margin-top: 15px;
 margin-bottom: 30px;}
 
@@ -218,6 +218,8 @@ li.separbot div.panel{
     
     padding-left: 10px;
     padding-right: 10px;
+    display: table;
+    margin: auto;
     
 }
 
@@ -469,10 +471,11 @@ height: 700px;
 h5.adresse {
    margin-left: 30px;
 
+
 }
 
 .adressecont {
-    border-top: 1px black solid;
+    border-bottom: 1px black solid;
 }
 
 .justify {
@@ -567,4 +570,31 @@ height: 500px;
 .trad {
     font-family: georgia;
     font-size: 1.5em;
+}
+
+.espacetop {
+    padding-top: 15px;
+}
+
+.inline-block {
+    display: inline-block;
+
+
+}
+
+.adresse2 {
+    margin-top: 30px;
+}
+.margindutop{
+
+    margin-top: 30px;
+}
+.pad {
+    padding-bottom: 10px;
+}
+
+#nousre show-for-large show-for-medium {
+    font-family: Georgia;
+    font-size: 1,5em;
+
 }
