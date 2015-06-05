@@ -635,5 +635,16 @@ height: 500px;
 
 }
 
+.center-text{
+    font-family: arial;
+    font-size: 1.4em;
+    text-align: center;
 
 
+
+}
+
+
+.paging {
+    padding: 10px;
+}

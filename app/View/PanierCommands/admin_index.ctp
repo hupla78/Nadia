@@ -28,7 +28,7 @@
 		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $panierCommand['PanierCommand']['id'])); ?><br>
-			<?php echo $this->Html->link(__('a ete evoyé'), array('action' => 'isSend', $panierCommand['PanierCommand']['id'])); ?>
+			<?php echo $this->Html->link(__('a été envoyé'), array('action' => 'isSend', $panierCommand['PanierCommand']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -37,15 +37,20 @@
 	<p>
 	<?php
 	echo $this->Paginator->counter(array(
-	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
+	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}'),'class'=>'center-text'
 	));
 	?>	</p>
-	<div class="paging">
+	<div class=" large-12 columns medium-12 columns small-12 columns">
+	<div class="paging large-3 columns medium-3 columns small-6 columns">
 	<?php
-		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
-		echo $this->Paginator->numbers(array('separator' => ''));
-		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+		echo $this->Paginator->prev('< ' . __('Page précédente'), array(), null, array('class' => 'prev disabled '));
+		?>
+		</div>
+		<div class="paging large-3 columns medium-3 columns small-6 columns">
+		<?php
+		echo $this->Paginator->next(__('Page suivante') . ' >', array(), null, array('class' => 'next disabled '));
 	?>
 	</div>
+    </div>
 </div>
 

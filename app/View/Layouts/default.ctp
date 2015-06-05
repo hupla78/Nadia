@@ -263,7 +263,7 @@ if($val==0){echo"Le panier est vide";}else{
 
      </div>
 			<div class="large-12 columns medium-12 columns small-12 columns">
-			    <div class="large-3 columns medium-3 columns small-3 columns">
+			    <div class="large-3 columns medium-3 columns small-6 columns">
 
 
 <?php echo $this->Html->link(
@@ -274,7 +274,7 @@ if($val==0){echo"Le panier est vide";}else{
 ?>
 				</div>
 
-				<div class="large-3 columns medium-3 columns small-3 columns">
+				<div class="large-3 columns medium-3 columns small-6 columns">
 <?php
 	echo $this->Html->link(
 		$this->Html->image('bouton-twitter.png'),
@@ -284,7 +284,7 @@ if($val==0){echo"Le panier est vide";}else{
 
 ?>
 		</div>
-				<div class="large-3 columns medium-3 columns small-3 columns">
+				<div class="large-3 columns medium-3 columns small-6 columns">
 <?php
 	echo $this->Html->link(
 		$this->Html->image('Logo_little_market.png'),
@@ -295,7 +295,7 @@ if($val==0){echo"Le panier est vide";}else{
 
 			</div>
 
-			<div class="large-3 columns medium-3 columns small-3 columns">
+			<div class="large-3 columns medium-3 columns small-6 columns">
 <?php
 	echo $this->Html->link(
 		$this->Html->image('insta.png'),

@@ -13,7 +13,7 @@
 		</dd>
 
 
-		<dt><?php echo __('Adresse Pofile'); ?></dt>
+		<dt><?php echo __('Adresse Profile'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($panierCommand['AdressePofile']['name'], array('controller' => 'adresse_pofiles', 'action' => 'view', $panierCommand['AdressePofile']['id'])); ?>
 			&nbsp;
