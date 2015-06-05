@@ -574,11 +574,14 @@ height: 500px;
 }
 
 .espacetop {
-    padding-top: 15px;
+    margin-top: 25px;
 }
 
 .inline-block {
     display: inline-block;
+    width: auto;
+    margin: auto;
+    height: auto;
 
 
 }
@@ -606,3 +609,31 @@ height: 500px;
 .styleinscription{
  text-align: left ;
 }
+
+.Payement {
+    font-family: georgia;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+   border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 60px;
+
+
+
+}
+
+.espace-top {
+    margin-top: 40px;
+}
+
+.imagePay{
+ width: 300px;
+    height: auto;
+    display: table;
+    margin: auto;
+
+}
+
+
+
