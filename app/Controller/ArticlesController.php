@@ -24,15 +24,14 @@ class ArticlesController extends AppController {
  */
 	public $components = array('Paginator', 'Session');
 
-    
-    
+
+
 /**
  * admin_index method
  *
  * @return void
  */
 	public function admin_index() {
-		$this->Article->recursive = 0;
 		$this->set('articles', $this->Paginator->paginate());
 	}
 
@@ -84,6 +83,7 @@ class ArticlesController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Article->save($this->request->data)) {
+
 				$this->Session->setFlash(__('The article has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
@@ -118,14 +118,14 @@ class ArticlesController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
-    
+
     //
     public function Boutique(){
     }
     public function Panier(){
-    
+
     }
-    
-    
-    
+
+
+
 }

@@ -7,7 +7,7 @@
 		echo $this->Form->input('name');
 		echo $this->Form->input('prix');
 		echo $this->Form->input('description');
-		echo $this->Form->input('img_id');
+		echo $this->Form->input('Img.Img',array('options'=>$imgs,'style'=>'height:400px'));
 		echo $this->Form->input('category_id');
 	?>
 	</fieldset>

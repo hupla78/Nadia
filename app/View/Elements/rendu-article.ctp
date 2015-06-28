@@ -1,81 +1,67 @@
 <div class="large-6 medium-12 small-12 columns hauteur-elmt" >
-<div class="panel row transition-souris hauteur-elmt"  >
-	<div class="place-elt">
-	<p class="text-center1" ><?php echo  $key['Article']['name'];?></p>
+    <div class="panel row transition-souris hauteur-elmt"  >
+        <div class="place-elt">
+            <p class="text-center1" ><?php echo  $key['Article']['name'];?></p>
 
-	<div class="large-12 medium-6 small-12 columns element-bordure" >
-	<?php
-if($key['Img']['value']!=null){
-	echo $this->Html->image('import/'.$key['Img']['value'],array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
-}else{
-	echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
+            <ul class="example-orbit" data-orbit>
+                <?php foreach($key['Img'] as $oneimg ): ?>
 
-}
-        ?>
-		
-		</div>
 
-		<div class="large-12 medium-6 small-12 columns element-bordure show-for-medium" >
-	<?php
-if($key['Img']['value']!=null){
-	echo $this->Html->image('import/'.$key['Img']['value'],array('width'=>'40%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
-}else{
-	echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
+                <li>
+                    <?php
+                        if($oneimg['value']!=null){
+                            echo $this->Html->image('import/'.$oneimg['value'],array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
+                        }else{
+                            echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
 
-}
-        ?>
+                        }
+                    ?>
 
-		</div>
-       <div class="large-12 medium-6 small-12 columns element-bordure show-for-medium" >
-	<?php
-if($key['Img']['value']!=null){
-	echo $this->Html->image('import/'.$key['Img']['value'],array('width'=>'40%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
-}else{
-	echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
 
-}
-        ?>
+                </li>
+                <?php endforeach; ?>
+            </ul>
 
-		</div>
 
-		</div>
 
-		<div class=" large-12 medium-12 small-12 columns ">
+        </div>
 
-<div class="large-6 medium-6 small-6 columns" >
-		<p id="prix-article">Prix: <b><?php echo $key['Article']['prix'] ?>€ </b>
-		</p>
-		
-		</div>
-			
-		<div class="large-6 medium-6 small-6 columns" >
-		<p id="prix-article">
-		
+        <div class=" large-12 medium-12 small-12 columns ">
 
-		<?php echo $this->Html->link('Ajouter au panier',array(
-			'controller'=>'boutiques',
-			'action'=>'addArticle',
-			$key['Article']['id'],1));?>
+            <div class="large-6 medium-6 small-6 columns" >
+                <p id="prix-article">Prix: <b><?php echo $key['Article']['prix'] ?>€ </b>
+                </p>
 
-		<?php echo $this->Html->image('panierajout.png',array('width'=>'30px','height'=>'30px', 'url'=>array(
-			'controller'=>'boutiques',
-			'action'=>'addArticle',
-			$key['Article']['id'],1)));?>
-					
+            </div>
 
-			</p>
-</div>
+            <div class="large-6 medium-6 small-6 columns" >
+                <p id="prix-article">
+
+
+                    <?php echo $this->Html->link('Ajouter au panier',array(
+                        'controller'=>'boutiques',
+                        'action'=>'addArticle',
+                        $key['Article']['id'],1));?>
+
+                    <?php echo $this->Html->image('panierajout.png',array('width'=>'30px','height'=>'30px', 'url'=>array(
+                        'controller'=>'boutiques',
+                        'action'=>'addArticle',
+                        $key['Article']['id'],1)));?>
+
+
+                </p>
+            </div>
+        </div>
+        <div class=" large-12 medium-12 small-12 columns ">
+            <p class="txt-debordement-article">
+
+                <?php  echo $key['Article']['description']?>
+            </p>
+            <p class="savoir-article" ><?php echo $this->Html->link('En savoir plus',array('prefix'=>false,
+                                                                                           'controller'=>'boutiques',
+                                                                                           'action'=>'view',
+                                                                                           $key['Article']['id']));?></p>
+        </div>
     </div>
-    <div class=" large-12 medium-12 small-12 columns ">
-        <p class="txt-debordement-article">
-
-	    <?php  echo $key['Article']['description']?>
-	</p>
-	<p class="savoir-article" ><?php echo $this->Html->link('En savoir plus',array('prefix'=>false,
-			'controller'=>'boutiques',
-			'action'=>'view',
-			$key['Article']['id']));?></p>
-	</div>
-</div>
 
 </div>

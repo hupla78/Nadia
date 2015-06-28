@@ -354,29 +354,29 @@ class BoutiquesController extends AppController {
 
 
 
-public function isCancel(){
+    public function isCancel(){
 
 
-
-}
-
-public function search() {
-    $this->autoRender = false;
-    $term = $this->request->query['q'];
-    $list =  $this->Boutique->Article->find('all',array('fields'=>array('id','name'),
-                                                        'conditions' => array(
-                                                            'Article.name LIKE' => '%'.$term.'%'
-                                                        )
-                                                       ));
-    foreach($list as $key => $tem){
-        $result[$key]['id'] = $tem['Article']['id'];
-        $result[$key]['text'] = $tem['Article']['name'];
 
     }
 
+    public function search() {
+        $this->autoRender = false;
+        $term = $this->request->query['q'];
+        $list =  $this->Boutique->Article->find('all',array('fields'=>array('id','name'),
+                                                            'conditions' => array(
+                                                                'Article.name LIKE' => '%'.$term.'%'
+                                                            )
+                                                           ));
+        foreach($list as $key => $tem){
+            $result[$key]['id'] = $tem['Article']['id'];
+            $result[$key]['text'] = $tem['Article']['name'];
 
-    echo json_encode($result);
-}
+        }
+
+
+        echo json_encode($result);
+    }
 
 
 

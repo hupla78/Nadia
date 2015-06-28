@@ -20,7 +20,11 @@
 		<td><?php echo h($article['Article']['prix']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['description']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($article['Img']['name'], array('controller' => 'imgs', 'action' => 'view', $article['Img']['id'])); ?>
+      <?php foreach($article['Img'] as $oneimg ){
+    	echo $this->Html->image('import/'.$oneimg['value'],array('width'=>'10%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
+      }?>
+
+
 		</td>
 		<td>
 			<?php echo $this->Html->link($article['Category']['value'], array('controller' => 'categories', 'action' => 'view', $article['Category']['id'])); ?>

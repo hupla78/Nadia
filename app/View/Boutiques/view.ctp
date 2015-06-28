@@ -8,36 +8,22 @@
 
  <ul class="example-orbit" data-orbit>
 
+
+<?php foreach($article['Img'] as $oneImg ): ?>
+
 <li>
 <?php
-if($article['Img']['value'] == null){
+if($oneImg['value'] == null){
 	echo $this->Html->image('noImg.jpg',array('width'=>'80%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
 }else{
-	echo $this->Html->image('import/'.$article['Img']['value'],array('width'=>'60%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
+	echo $this->Html->image('import/'.$oneImg['value'],array('width'=>'60%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
 }
 ?>
 </li>
 
-<li>
-<?php
-if($article['Img']['value'] == null){
-	echo $this->Html->image('noImg.jpg',array('width'=>'80%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
-}else{
-	echo $this->Html->image('import/'.$article['Img']['value'],array('width'=>'60%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
-}
-?>
-</li>
+<?php endforeach; ?>
 
 
-<li>
-<?php
-if($article['Img']['value'] == null){
-	echo $this->Html->image('noImg.jpg',array('width'=>'60%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
-}else{
-	echo $this->Html->image('import/'.$article['Img']['value'],array('width'=>'80%', 'style'=>'max-height:800px', 'class'=>'element-article-img '));
-}
-?>
-</li>
 
 
 

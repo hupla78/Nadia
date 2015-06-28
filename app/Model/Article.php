@@ -67,16 +67,6 @@ class Article extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
-		'img_id' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
 		'category_id' => array(
 			'numeric' => array(
 				'rule' => array('numeric'),
@@ -97,13 +87,6 @@ class Article extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'Img' => array(
-			'className' => 'Img',
-			'foreignKey' => 'img_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		),
 		'Category' => array(
 			'className' => 'Category',
 			'foreignKey' => 'category_id',
@@ -112,4 +95,9 @@ class Article extends AppModel {
 			'order' => ''
 		)
 	);
+    public $hasAndBelongsToMany = array(
+        'Img'
+
+    );
+
 }

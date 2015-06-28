@@ -19,31 +19,40 @@
     <div class="large-6 small-12 columns">
 
 <?php
-          /**         echo $this->Html->link('Par Paypal',array(
-                    'controller'=>'Boutiques',
-                    'action'=>'pay',
-                    'paypal'),
-                                array('class'=>'button'));*/
+echo $this->Html->link(
+    $this->Html->image('paypal.jpg',array('class'=>'imagePay')
+                            ),
+    array(
+        'controller'=>  'Boutiques' ,
+        'action'    =>  'pay'       ,
+        'paypal'
+    ),
+    array(
+        'escape'    =>  false
+    )
+);
 ?>
-
-    <?php
-	echo $this->Html->image('paypal.jpg',array('class'=>'imagePay'));
-
-?>
-
-
-
-
-
         </div>
+
+
+
+
+
 <div class="large-6 small-12 columns espacetop">
          <?php
-	echo $this->Html->image('Paiement.jpeg',array('class'=>'imagePay'));
+	echo $this->Html->link(
 
-?>
+        $this->Html->image('Paiement.jpeg',array('class'=>'imagePay')),
+            array(
+                    'controller'=>'Boutiques',
+                    'action'=>'pay',
+                    'card'),
+            array('escape' => false));
+
+    ?>
 
  <!--
-                   echo $this->Html->link('Par Carte',array(
+                   'Par Carte',array(
                     'controller'=>'Boutiques',
                     'action'=>'pay',
                     'card'),
