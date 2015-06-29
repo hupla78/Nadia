@@ -1,5 +1,3 @@
-
-
 <?php
 /**
  * Application level Controller
@@ -49,8 +47,7 @@ class AppController extends Controller{
 
     }
     public function forceSSL() {
-       //$this->redirect('https://' . $_SERVER['SERVER_NAME'] . $this->here);
-       // debug($_SERVER);
+       $this->redirect('https://' . $_SERVER['SERVER_NAME'] . $this->here);
     }
 
     public function needToBeAdmin(){

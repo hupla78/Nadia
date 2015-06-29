@@ -66,7 +66,7 @@ Cache::config('default', array('engine' => 'File'));
  * advanced ways of loading plugins
  *
  * CakePlugin::loadAll(); // Loads all plugins at once*/
-  CakePlugin::load(array('DebugKit','Paypal')); //Loads a single plugin named DebugKit
+  CakePlugin::load(array('Paypal')); //Loads a single plugin named DebugKit
  
 
      
