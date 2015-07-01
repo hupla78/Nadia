@@ -1,10 +1,10 @@
 <?php
-echo $this->Html->script('http://maps.google.com/maps/api/js?key=AIzaSyCcjATeNc8V6oVr672cPFuRn8P_wmPULoU&sensor=true');
+echo $this->Html->script('https://maps.google.com/maps/api/js?key=AIzaSyCcjATeNc8V6oVr672cPFuRn8P_wmPULoU&sensor=true');
 $b = 1;?>
 
 <?php
 $map_options = array(
-    "localize" => 'true',
+    "localize" => 'false',
     "type" => "ROADMAP",
     "zoom" => 10,
     "marker" => true,

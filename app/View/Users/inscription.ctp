@@ -60,6 +60,8 @@ echo $this->Form->input('adresseProfile.vile',array('div'=>array('class'=>'colum
 </fieldset>
 
 <?php
-echo $this->Form->end('Inscription',array('class'=>'buton'));
+
+echo $this->Form->submit('Connection',array('class'=>'button'));
+echo $this->Form->end('Inscription');
 
 ?>

@@ -33,7 +33,7 @@ App::uses('ConnectionManager', 'Model');
  */
 class AppController extends Controller{
 
-    public $components = array('Session','Auth','Panier','DebugKit.Toolbar','Panier');
+    public $components = array('Session','Auth','Panier');
 
     public function beforeFilter(){
         parent::beforeFilter();
@@ -47,7 +47,7 @@ class AppController extends Controller{
 
     }
     public function forceSSL() {
-       $this->redirect('https://' . $_SERVER['SERVER_NAME'] . $this->here);
+       // $this->redirect('https://' . $_SERVER['SERVER_NAME'] . $this->here);
     }
 
     public function needToBeAdmin(){

@@ -8,22 +8,25 @@
 
 
 
-
-
     </p>
 
+            <ul class="example-orbit" data-orbit>
+    <?php foreach($arti['Img'] as $oneimg ): ?>
 
-     	    <?php   if(array_key_exists('value',$arti['Img']))
-                        echo $this->Html->image('import/'.$arti['Img']['value'],array('width'=>'100%', 'style'=>'max-height:350px', 'class'=>'element-article-img '));
-                    else
-                        echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:350px', 'class'=>'element-article-img '));
-                 ?>
+                <li>
+                    <?php
+                        if($oneimg['value']!=null){
+                            echo $this->Html->image('import/'.$oneimg['value'],array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
+                        }else{
+                            echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
+
+                        }
+                    ?>
 
 
-
-
-
-
+                </li>
+                <?php endforeach; ?>
+                </ul>
 
     	     </div>
             <div class="large-12 medium-12 small-6 columns ">

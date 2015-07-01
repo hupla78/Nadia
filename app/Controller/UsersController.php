@@ -105,9 +105,9 @@ class UsersController extends AppController{
             $vtd = $this->request-data;
             $Email = new CakeEmail('gmail');
             $Email->from($this->admin);
-            $Email->to(vtd['desti']);
-            $Email->subject(vtd['sujet']);
-            $Email->viewVars(array('message'=>vtd['text']));
+            $Email->to($vtd['desti']);
+            $Email->subject($vtd['sujet']);
+            $Email->viewVars(array('message'=>$vtd['text']));
             $Email->send();}
     }
 
@@ -118,8 +118,8 @@ class UsersController extends AppController{
             $Email = new CakeEmail('gmail');
             $Email->from($this->admin);
             $Email->to($tepo);
-            $Email->subject(vtd['sujet']);
-            $Email->viewVars(array('message'=>vtd['text']));
+            $Email->subject($vtd['sujet']);
+            $Email->viewVars(array('message'=>$vtd['text']));
             $Email->send();}else{
             $this->set('users',$this->User->find('list',array('fields'=>'User.email')));
         }
@@ -134,8 +134,8 @@ class UsersController extends AppController{
             $Email = new CakeEmail('gmail');
             $Email->from($this->Session->read('Auth.User.email'));
             $Email->to('ruhtra.php@gmail.com');
-            $Email->subject(vtd['sujet']);
-            $Email->viewVars(array('message'=>vtd['text']));
+            $Email->subject($vtd['sujet']);
+            $Email->viewVars(array('message'=>$vtd['text']));
             $Email->send();
         }
 

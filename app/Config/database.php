@@ -61,8 +61,19 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array(
-		'datasource' =>               'Database/Mysql',
+    	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => 'nopass',
+		'database' => 'nadia',
+		'prefix' => '',
+		'encoding' => 'utf8',
+	);
+
+	public $default1 = array(
+		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'mysql51-142.perso',
 		'login' => 'fildebohfan',
