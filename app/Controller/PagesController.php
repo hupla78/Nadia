@@ -92,6 +92,9 @@ class PagesController extends AppController {
 
     public function aide(){}
 
+    public function tempo(){
+        $this->layout = 'construct';
+    }
     
     
     
