@@ -65,6 +65,19 @@ class PanierVente extends AppModel {
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
+    public function substractcommand($data){
+             debug($data);
+
+           $this->Article->recursive = -1;
+            foreach($data['PanierVente'] as $elem ){
+               $new = $this->Article->findById($elem['article_id']);
+
+               $new['Article']['quantity'] -= $elem['q'];
+               $this->Article->Save($new);
+            }
+
+
+    }
 /**
  * belongsTo associations
  *
@@ -78,12 +91,6 @@ class PanierVente extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		/*'Command' => array(
-			'className' => 'Command',
-			'foreignKey' => 'command_id',
-			'conditions' => '',
-			'fields' => '',
-			'order' => ''
-		)*/
+
 	);
 }

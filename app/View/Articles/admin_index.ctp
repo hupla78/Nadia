@@ -6,6 +6,7 @@
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th><?php echo $this->Paginator->sort('prix'); ?></th>
+			<th><?php echo $this->Paginator->sort('quantity'); ?></th>
 			<th><?php echo $this->Paginator->sort('description'); ?></th>
 			<th><?php echo $this->Paginator->sort('img_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('category_id'); ?></th>
@@ -18,6 +19,7 @@
 		<td><?php echo h($article['Article']['id']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['name']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['prix']); ?>&nbsp;</td>
+		<td><?php echo h($article['Article']['quantity']); ?>&nbsp;</td>
 		<td><?php echo h($article['Article']['description']); ?>&nbsp;</td>
 		<td>
       <?php foreach($article['Img'] as $oneimg ){

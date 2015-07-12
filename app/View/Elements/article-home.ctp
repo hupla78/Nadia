@@ -36,8 +36,8 @@
 
 
 <div class="large-6 medium-3 small-6 columns" >
-		<p id="prix-article">Prix: <b><?php echo ($arti['prix'].'€'); ?> </b>
-		</p>
+		<p id="prix-article">Prix: <b><?php echo ($arti['prix'].'€'); ?></b></p>
+		<p id="disponible">Dispo: <b><?php echo ($arti['quantity']); ?></b></p>
 
 		</div>
 

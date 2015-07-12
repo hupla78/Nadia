@@ -243,7 +243,8 @@ class BoutiquesController extends AppController {
 
     }
 
-    public function pay($by){
+    public function pay($by){//
+$this->redirect(array('action'=>'ispayd','card'));return;//debug
 
         $this->Panier->needAdresse();
 
@@ -269,6 +270,10 @@ class BoutiquesController extends AppController {
 
                 try {
                     $var = $this->Paypal->doDirectPayment($payment);
+                    //for debug
+                        $var['ACK']="Success";
+
+                    //
                     if($var['ACK']=="Success")
                     {
                         $this->redirect(array('action'=>'ispayd','card'));
@@ -289,7 +294,7 @@ class BoutiquesController extends AppController {
 
     public function ispayd($by){
         $this->Panier->needAdresse();
-        if($by = 'paypal'){
+        if($by == 'paypal'){
             $this->Paypal = new Paypal(array(
                 'sandboxMode' => true,
                 'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
@@ -325,7 +330,10 @@ class BoutiquesController extends AppController {
         }
 
 
+
         $tab=$this->Panier->exportToBDDFormat();
+        $this->Boutique->PanierCommand->PanierVente->substractcommand($tab);
+
         $this->Boutique->PanierCommand->saveAssociated($tab);
 
         setlocale(LC_TIME, "fr_FR");

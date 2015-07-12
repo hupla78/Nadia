@@ -21,7 +21,6 @@
 
 App::uses('Controller', 'Controller');
 App::uses('ConnectionManager', 'Model');
-
 /**
  * Application Controller
  *
@@ -91,18 +90,6 @@ class AppController extends Controller{
         echo json_encode($result);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 class Acms{
@@ -164,4 +151,4 @@ class Acms{
 
 
 }
-
+?>

@@ -3,18 +3,21 @@
         <div class="place-elt">
             <p class="text-center1" ><?php echo  $key['Article']['name'];?></p>
 
-            <ul class="example-orbit" data-orbit>
+            <ul class="example-orbit" data-orbit
+                 data-options="
+                  pause_on_hover:false;
+                  ">
                 <?php foreach($key['Img'] as $oneimg ): ?>
 
 
                 <li>
                     <?php
-                        if($oneimg['value']!=null){
-                            echo $this->Html->image('import/'.$oneimg['value'],array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
-                        }else{
-                            echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
+if($oneimg['value']!=null){
+    echo $this->Html->image('import/'.$oneimg['value'],array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
+}else{
+    echo $this->Html->image('noImg.jpg',array('width'=>'100%', 'style'=>'max-height:400px', 'class'=>'element-article-img '));
 
-                        }
+}
                     ?>
 
 
@@ -29,9 +32,8 @@
         <div class=" large-12 medium-12 small-12 columns ">
 
             <div class="large-6 medium-6 small-6 columns" >
-                <p id="prix-article">Prix: <b><?php echo $key['Article']['prix'] ?>€ </b>
-                </p>
-
+                <p id="prix-article">    Prix: <b><?php echo $key['Article']['prix'] ?>€        </b>    </p>
+                <p id="quantity">        Disponible: <b><?php echo $key['Article']['quantity']?>    </b>    </p>
             </div>
 
             <div class="large-6 medium-6 small-6 columns" >
