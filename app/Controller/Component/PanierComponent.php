@@ -20,20 +20,34 @@ class PanierComponent extends Component{
         $this->controller->Boutique->Article->recursive=-1;
         $article = $this->controller->Boutique->Article->findById($id);
 
-        if($id == false){die('erreur 1 : article introuvable');return;}
+        if($id == false){
+            $this->controller->Session->setFlash('erreur 1 : article introuvable');return;}
 
-        if($quant < 1 or $quant > 100){die('erreur 2 : quantité imposible');return;}
+        if($quant < 1 or $quant > 100){
+            $this->controller->Session->setFlash('erreur 2 : quantité imposible');return;}
 
-        if(empty($article)){die('erreur 3 : article n\'exite pas ');return;}
+        if(empty($article)){
+            $this->controller->Session->setFlash('erreur 3 : article n\'exite pas ');return;}
+
+
 
         if($article['Article']['quantity']<$quant)
-            die('erreur 4 : la quantité n\'est pas en stock');
-
+        {$this->controller->Session->setFlash('erreur 4 : la quantité n\'est pas en stock');return;}
 
 
         if(!$this->controller->Session->check('Panier')){$this->create();}
 
+
+
         if($this->controller->Session->check('Panier.'.$id)){
+
+            if($article['Article']['quantity'] < $quant +$this->controller->Session->read('Panier.'.$id.'.nombre'))
+            {
+            $this->controller->Session->setFlash('erreur 5 : la quantité n\'est pas en stock');
+            return;
+            }
+
+
             $nombre = $this->controller->Session->read('Panier.'.$id.'.nombre');
             $this->controller->Session->write('Panier.'.$id.'.nombre',$nombre+$quant);
             $this->modifTotal( $article['Article']['prix']);
