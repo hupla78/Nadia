@@ -23,6 +23,7 @@
 <?php /** echo $this->Html->link('categories',array('admin'=>true,'controller'=>'categories','action'=>'index')); */?>
 	           <?php echo $this->Html->link('Points De Ventes',array('admin'=>true,'controller'=>'pointDeVentes','action'=>'index'),array('class'=>'button')); ?>
 	           <?php echo $this->Html->link('Actualité',array('admin'=>true,'controller'=>'actualites','action'=>'index'),array('class'=>'button')); ?>
+	           <?php echo $this->Html->link('Email',array('admin'=>true,'controller'=>'Users','action'=>'sendToUser'),array('class'=>'button')); ?>
 
 
         

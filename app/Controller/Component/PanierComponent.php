@@ -17,14 +17,19 @@ class PanierComponent extends Component{
     //je met un article dans le panier
     public function add($id = false ,$quant = 1){
 
-
-        $article = $this->controller->Boutique->Article->findById($id,array('recursive'=>0));
+        $this->controller->Boutique->Article->recursive=-1;
+        $article = $this->controller->Boutique->Article->findById($id);
 
         if($id == false){die('erreur 1 : article introuvable');return;}
 
         if($quant < 1 or $quant > 100){die('erreur 2 : quantité imposible');return;}
 
         if(empty($article)){die('erreur 3 : article n\'exite pas ');return;}
+
+        if($article['Article']['quantity']<$quant)
+            die('erreur 4 : la quantité n\'est pas en stock');
+
+
 
         if(!$this->controller->Session->check('Panier')){$this->create();}
 

@@ -3,6 +3,7 @@ App::uses('CakeEmail', 'Network/Email');
 
 class UsersController extends AppController{
 
+
     public $admin = 'ruhtra.php@gmail.com';
 
     public function beforeFilter(){
@@ -23,12 +24,9 @@ class UsersController extends AppController{
 
 
     public function login(){
-
         if ($this->request->is('post')) {
-
             if ($this->Auth->login()) {
                 return $this->redirect($this->Auth->redirectUrl());
-
             } else {
                 $this->Session->setFlash('Erreur Utilisateur ou mdp');
             }
@@ -47,31 +45,29 @@ class UsersController extends AppController{
 
     public function inscription(){
 
+
+
         if ($this->request->is('post')) {
             $this->User->create();
             if ($this->User->save($this->request->data)) {
 
-
-
-
-
                 $this->Session->setFlash(__('votre compte a ete crée.'));
 
-                //				$email = new CakeEmail('gmail');
-                //				$email->template('inscription');
-                //				$email	->emailFormat('both')
-                //					->to($this->admin)
-                //					->from('ruhtra.php@gmail.com')
-                //					->viewVars(array('message'=>'inscription sucess'))
-                //					->send();
-
-
+                $email = new CakeEmail('gmail');
+                $email->template('inscription')
+                    ->emailFormat('html')
+                    ->subject('Inscription')
+                    ->viewVars( array(
+                                      'name'=>$this->request->data['User']['username']))
+                    ->to($this->request->data['User']['email'])
+                    ->from(Configure::read('email.sender'))
+                    ->send();
                 $this->Auth->login();
                 $this->request->data['adresseProfile']['user_id'] = $this->Session->read('Auth.User.id');
-
                 $this->User->AdressePofile->create();
                 $this->User->AdressePofile->save($this->request->data['adresseProfile']);
                 return $this->redirect('/');
+
             } else {
                 $this->Session->setFlash(__('no'));
             }
@@ -87,8 +83,6 @@ class UsersController extends AppController{
         $this->set('userInfo',$user);
 
     }
-
-
 
     public function index(){
         $temp = $this->User->findById($this->Session->read('Auth.User.id'));
@@ -138,32 +132,35 @@ class UsersController extends AppController{
             $Email->viewVars(array('message'=>$vtd['text']));
             $Email->send();
         }
-
     }
 
-    public function text()
+     public function admin_sendToUser()
     {
-        $Email = new CakeEmail();
-        $Email->template('inscription','informatif');
-        $Email	->emailFormat('both')
-            ->to('ruhtra.mar@gmail.com')
-            ->from('ruhtra.php@gmail.com')
-            ->send();
 
+        if(!empty($this->request->data)){
+            $vtd = $this->request->data;
+            $this->User->recursive=0;
+            $list=$this->User->find('list',array('fields'=>array('User.email')));
+
+
+            $email = new CakeEmail('gmail');
+                $email->template('new')
+                    ->emailFormat('html')
+                    ->subject($vtd['Email']['sujet'])
+                    ->viewVars(array(
+                        'text'=>$vtd['Email']['text'],
+                        'sujet'=>$vtd['Email']['sujet']
+                    ))
+                    ->to($list)
+                    ->from(Configure::read('email.sender'))
+                    ->send();
+            $this->Session->setFlash('Le mail a corectement éte envoyé');
+            $this->request->data=array();
+        }
     }
 
 
-    public function admin_testEmail(){
 
-        $Email = new CakeEmail('gmail');
-        $Email->from("ruhtra.mar@gmail.com");
-        $Email->to('ruhtra.php@gmail.com');
-        $Email->subject("lapin");
-        $Email->viewVars("lapin");
-        $Email->send();
-
-
-    }
 
 
 

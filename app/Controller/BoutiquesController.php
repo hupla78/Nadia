@@ -340,18 +340,44 @@ $this->redirect(array('action'=>'ispayd','card'));return;//debug
         $temp = array(
             'userName'      =>  $this->Session->read('Auth.User.username'),
             'Adresse'       =>  $this->Boutique->User->AdressePofile->findById( $this->Session->read('Panier.PayInfo.adresseId'),array('recursive'=>0)),
-            'prix!Total'    =>  $this->Session->read('Panier.Total'),
+            'prixTotal'    =>  $this->Session->read('Panier.Total'),
             'date'          =>  strftime("%d/%m/%Y"),
             'state'         =>  'Votre commande a bien éte enregistré'
         );
 
+        debug($temp['Adresse']);
         $email = new CakeEmail('gmail');
-        $email->template('informatif');
-        $email->emailFormat('both')
-            ->to($this->Session->read('Auth.User.email'))
-            ->from('ruhtra.php@gmail.com')
-            ->viewVars($temp)
-            ->send();
+        $email->template('informatif')
+                    ->emailFormat('html')
+                    ->subject("achat Sur Fil de boheme")
+                    ->viewVars(array(
+                        'adresse'=>$temp['Adresse']['AdressePofile'],
+                        'prixTotal'=>$temp['prixTotal'],
+                        'userName'=>$temp['userName']
+
+                    ))
+                    ->to($this->Session->read('Auth.User.email'))
+                    ->from(Configure::read('email.sender'))
+                    ->send();
+
+
+        $emailtoadmin = new CakeEmail('gmail');
+        $emailtoadmin->template('command')
+                    ->emailFormat('html')
+            ->subject("achat de ".$temp['userName'])
+                    ->viewVars(array(
+                        'adresse' => $temp['Adresse']['AdressePofile'],
+                        'prix'    => $temp['prixTotal'],
+                        'commandlist' => $this->Panier->ListArticle()
+                    ))
+                    ->from($this->Session->read('Auth.User.email'))
+                    ->to(Configure::read('email.sender'))
+                    ->send();
+
+
+        die();
+
+
         $this->Panier->destroy();
         $this->set('success',true);
     }

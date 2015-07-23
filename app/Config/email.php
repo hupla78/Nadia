@@ -37,6 +37,8 @@
  * The origin email. See CakeEmail::from() about the valid values
  *
  */
+Configure::write('email.sender','ruhtra.php@gmail.com');
+
 
 class EmailConfig {
 
