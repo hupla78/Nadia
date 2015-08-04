@@ -1626,3 +1626,701 @@ Stack Trace:
 #6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
 #7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2015-07-23 17:10:49 Error: [NotFoundException] Invalid panier command
+Request URL: /PanierCommands/view/img/iconn.ico
+Stack Trace:
+#0 [internal function]: PanierCommandsController->view('img', 'iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PanierCommandsController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PanierCommandsController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-07-23 17:10:57 Error: [NotFoundException] Invalid adresse pofile
+Request URL: /adresse_pofiles/view/img/iconn.ico
+Stack Trace:
+#0 [internal function]: AdressePofilesController->view('img', 'iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(AdressePofilesController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AdressePofilesController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-07-24 13:40:16 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-25 08:23:34 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-29 08:12:18 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:12:18 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:12:21 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:12:21 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:12:22 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:12:22 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:12:22 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:12:22 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:12:56 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:12:56 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:12:57 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:12:57 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:12:57 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:12:57 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:06 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:06 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:06 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:06 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:13 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:13 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:13 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:13 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:14 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:14 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:14 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:14 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:14 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:14 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:15 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:15 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:15 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:15 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:15 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:15 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:16 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:16 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:16 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:16 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:16 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:16 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:17 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:17 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:17 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:17 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:13:17 Error: Fatal Error (4): syntax error, unexpected 'endif' (T_ENDIF) in [/usr/share/nginx/html/Nadia/app/View/Layouts/default.ctp, line 229]
+2015-07-29 08:13:17 Error: [FatalErrorException] syntax error, unexpected 'endif' (T_ENDIF)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 229)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 229, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:14:03 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-29 08:14:18 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-29 08:14:39 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp',
+)
+Request URL: /pages/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.ico', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.ico')
+#3 [internal function]: PagesController->display('img', 'iconn.ico')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-07-29 08:15:01 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-29 08:15:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/select2/select2-spinner.gif
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-07-29 08:15:21 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /Boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-29 08:29:15 Error: Fatal Error (4): syntax error, unexpected '/' in [/usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php, line 310]
+2015-07-29 08:29:15 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /Boutiques/choixPayment
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 310)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 310, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 310, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-29 08:30:29 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-03 18:59:44 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-03 18:59:45 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.ico.ctp',
+)
+Request URL: /pages/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.ico', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.ico')
+#3 [internal function]: PagesController->display('img', 'iconn.ico')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-08-03 19:00:06 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-03 19:00:22 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-03 19:00:24 Error: [MissingActionException] Action BoutiquesController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoutiquesController',
+  'action' => 'img',
+)
+Request URL: /Boutiques/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-04 08:35:52 Error: [PaypalException] This transaction cannot be processed. The amount to be charged is zero.
+Request URL: /Boutiques/pay/paypal
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/Controller/BoutiquesController.php(250): Paypal->setExpressCheckout(Array)
+#1 [internal function]: BoutiquesController->pay('paypal')
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#5 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-08-04 08:43:50 Error: Fatal Error (4): syntax error, unexpected '}' in [/usr/share/nginx/html/Nadia/app/Controller/UsersController.php, line 38]
+2015-08-04 08:43:50 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /Users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 38, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 38, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-08-04 08:43:51 Error: Fatal Error (4): syntax error, unexpected '}' in [/usr/share/nginx/html/Nadia/app/Controller/UsersController.php, line 38]
+2015-08-04 08:43:51 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /Users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 38, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 38, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-08-04 09:39:22 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/UsersController.php, line 45]
+2015-08-04 09:39:22 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /users/login
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 45, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 45, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-08-04 09:39:23 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/usr/share/nginx/html/Nadia/app/Controller/UsersController.php, line 45]
+2015-08-04 09:39:23 Error: [FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/usr/share/ngin...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/usr/share/ngin...', 45, Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/usr/share/ngin...', 45, Array)
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-08-04 09:44:01 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-04 09:44:28 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-04 09:44:38 Error: [MissingActionException] Action UsersController::admin_img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_img',
+)
+Request URL: /admin/Users/img/iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-04 10:24:32 Error: [NotFoundException] Invalid boutique
+Request URL: /boutiques/view/img/iconn.ico
+Stack Trace:
+#0 [internal function]: BoutiquesController->view('img', 'iconn.ico')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BoutiquesController), Array)
+#2 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(BoutiquesController), Object(CakeRequest))
+#4 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-08-04 10:53:32 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/editcolor.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-04 10:56:52 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /Users/img/editcolor.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-04 10:57:10 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/editcolor.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/editcolor.png.ctp',
+)
+Request URL: /pages/img/editcolor.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/editcolor.p...')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/editcolor.p...', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/editcolor.p...')
+#3 [internal function]: PagesController->display('img', 'editcolor.png')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-08-04 10:57:13 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/editcolor.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/editcolor.png.ctp',
+)
+Request URL: /pages/img/editcolor.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/editcolor.p...')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/editcolor.p...', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/editcolor.p...')
+#3 [internal function]: PagesController->display('img', 'editcolor.png')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-08-04 11:04:26 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp',
+)
+Request URL: /pages/img/iconn.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.png')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.png', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.png')
+#3 [internal function]: PagesController->display('img', 'iconn.png')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-08-04 11:04:29 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp',
+)
+Request URL: /pages/img/iconn.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.png')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.png', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.png')
+#3 [internal function]: PagesController->display('img', 'iconn.png')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-08-04 11:04:29 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp',
+)
+Request URL: /pages/img/iconn.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.png')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.png', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.png')
+#3 [internal function]: PagesController->display('img', 'iconn.png')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-08-04 11:04:30 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp',
+)
+Request URL: /pages/img/iconn.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.png')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.png', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.png')
+#3 [internal function]: PagesController->display('img', 'iconn.png')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-08-04 11:04:40 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /users/img/iconn.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-04 11:04:51 Error: [MissingActionException] Action UsersController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'img',
+)
+Request URL: /Users/img/iconn.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-04 11:04:52 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp',
+)
+Request URL: /pages/img/iconn.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.png')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.png', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.png')
+#3 [internal function]: PagesController->display('img', 'iconn.png')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-08-04 11:04:54 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp',
+)
+Request URL: /pages/img/iconn.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.png')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.png', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.png')
+#3 [internal function]: PagesController->display('img', 'iconn.png')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-08-04 11:06:51 Error: [MissingViewException] View file "/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/usr/share/nginx/html/Nadia/app/View/Pages/img/iconn.png.ctp',
+)
+Request URL: /pages/img/iconn.png
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/lib/Cake/View/View.php(468): View->_getViewFileName('img/iconn.png')
+#1 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(954): View->render('img/iconn.png', NULL)
+#2 /usr/share/nginx/html/Nadia/app/Controller/PagesController.php(75): Controller->render('img/iconn.png')
+#3 [internal function]: PagesController->display('img', 'iconn.png')
+#4 /usr/share/nginx/html/Nadia/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 /usr/share/nginx/html/Nadia/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#7 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-08-04 11:12:40 Error: [MissingControllerException] Controller class Iconn.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Iconn.icoController',
+  'plugin' => NULL,
+)
+Request URL: /iconn.ico
+Stack Trace:
+#0 /usr/share/nginx/html/Nadia/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

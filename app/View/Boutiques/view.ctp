@@ -2,13 +2,11 @@
 <div class="large-12 medium-12 small-12 columns " >
 <div class="panel row "  >
 
-
-<p class="text-center1 hide-for-medium" ><?php echo  $article['Article']['name'];?></p>
-
+<br>
+<h2 class="text-center" ><?php echo  $article['Article']['name'];?></h2>
+<br>
 
  <ul class="example-orbit" data-orbit>
-
-
 <?php foreach($article['Img'] as $oneImg ): ?>
 
 <li>

@@ -38,7 +38,6 @@ class PanierComponent extends Component{
         if(!$this->controller->Session->check('Panier')){$this->create();}
 
 
-
         if($this->controller->Session->check('Panier.'.$id)){
 
             if($article['Article']['quantity'] < $quant +$this->controller->Session->read('Panier.'.$id.'.nombre'))

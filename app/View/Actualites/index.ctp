@@ -4,7 +4,7 @@
 
 <div class="large-12 columns medium-12 small-12 panel">
     <div class="large-12 columns medium-12 small-12 titre">
-        <h4 class="center"><?php echo($a['Actualite']['titre']); ?></h4>
+        <h3 class="center"><?php echo($a['Actualite']['titre']); ?></h3>
     </div>
     <div class="large-4 medium-5 small-12 columns">
         <?php echo $this->Html->image('import/'.$a['Img']['value'],array('class'=>'center')); ?>

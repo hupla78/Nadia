@@ -24,12 +24,18 @@ class UsersController extends AppController{
 
 
     public function login(){
-        if ($this->request->is('post')) {
-            if ($this->Auth->login()) {
-                return $this->redirect($this->Auth->redirectUrl());
-            } else {
-                $this->Session->setFlash('Erreur Utilisateur ou mdp');
+
+        if($this->Auth->user('id')==null){
+            if ($this->request->is('post')) {
+                if ($this->Auth->login()) {
+                    return $this->redirect($this->Auth->redirectUrl());
+                } else {
+                    $this->Session->setFlash('Erreur Utilisateur ou mdp');
+                }
             }
+        }
+        else{
+            $this->redirect(array('controller'=>'Users','action'=>'userInfo'));
         }
     }
 
@@ -58,7 +64,7 @@ class UsersController extends AppController{
                     ->emailFormat('html')
                     ->subject('Inscription')
                     ->viewVars( array(
-                                      'name'=>$this->request->data['User']['username']))
+                        'name'=>$this->request->data['User']['username']))
                     ->to($this->request->data['User']['email'])
                     ->from(Configure::read('email.sender'))
                     ->send();
@@ -134,7 +140,7 @@ class UsersController extends AppController{
         }
     }
 
-     public function admin_sendToUser()
+    public function admin_sendToUser()
     {
 
         if(!empty($this->request->data)){
@@ -144,16 +150,16 @@ class UsersController extends AppController{
 
 
             $email = new CakeEmail('gmail');
-                $email->template('new')
-                    ->emailFormat('html')
-                    ->subject($vtd['Email']['sujet'])
-                    ->viewVars(array(
-                        'text'=>$vtd['Email']['text'],
-                        'sujet'=>$vtd['Email']['sujet']
-                    ))
-                    ->to($list)
-                    ->from(Configure::read('email.sender'))
-                    ->send();
+            $email->template('new')
+                ->emailFormat('html')
+                ->subject($vtd['Email']['sujet'])
+                ->viewVars(array(
+                    'text'=>$vtd['Email']['text'],
+                    'sujet'=>$vtd['Email']['sujet']
+                ))
+                ->to($list)
+                ->from(Configure::read('email.sender'))
+                ->send();
             $this->Session->setFlash('Le mail a corectement éte envoyé');
             $this->request->data=array();
         }

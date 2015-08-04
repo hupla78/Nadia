@@ -119,8 +119,7 @@ class BoutiquesController extends AppController {
 
 
 
-    public function index()
-    {
+    public function index(){
         if(!empty($this->request->data)){
             $ele = $this->Boutique->Article->find('all');
         }else{
@@ -140,13 +139,11 @@ class BoutiquesController extends AppController {
         $this->set('article', $this->Boutique->Article->findById($id));
     }
 
-    public function panier()
-    {
+    public function panier(){
         $this->set('panier',$this->Panier->listArticle());
     }
 
-    public function addArticle($id=null)
-    {
+    public function addArticle($id=null){
         $elem = 1;
 
         if(!empty($this->request->data))
@@ -156,8 +153,7 @@ class BoutiquesController extends AppController {
         return $this->redirect($this->referer()) ;
     }
 
-    public function removeArticle($id=null)
-    {
+    public function removeArticle($id=null){
         $elem = 1;
 
         if(!empty($this->request->data))
@@ -170,8 +166,7 @@ class BoutiquesController extends AppController {
 
 
 
-    public function subArticle($id=null)
-    {
+    public function subArticle($id=null){
         $elem = 1;
 
         if(!empty($this->request->data))
@@ -182,8 +177,7 @@ class BoutiquesController extends AppController {
 
     }
 
-    public function article($id=null)
-    {
+    public function article($id=null){
         if (!$this->Boutique->Article->exists($id)) {
             throw new NotFoundException(__('Invalid cm'));
         }
@@ -193,25 +187,20 @@ class BoutiquesController extends AppController {
     }
 
 
-    public function command()
-    {
+    public function command(){
         $this->set('panier',$this->Panier->listArticle());
     }
-    public function choixPayment()
-    {
+
+
+
+    public function choixPayment(){
         $this->Panier->needAdresse();
         if(!empty($this->request->data)){
-
+            return '/';
         }
-
-
-
     }
-    public function choixAdresse()
-    {
 
-
-
+    public function choixAdresse(){
         if(!empty($this->request->data) and $this->request->data['Boutique']['adresse']!='' ){
             $this->Panier->setAdresse($this->request->data['Boutique']['adresse']);
             $this->redirect(array('action'=>'choixPayment'));
@@ -219,15 +208,10 @@ class BoutiquesController extends AppController {
         }else{
             if ($this->request->data['Boutique']['adresse']!=''){
                 $this->Session->setFlash('hi');}
-
-
-            $temps = $this->Boutique->User->findById($this->Session->read('Auth.User.id')); 
-
-
+            $temps = $this->Boutique->User->findById($this->Session->read('Auth.User.id'));
             $id = 0;
             $adresse = array();
             foreach($temps['AdressePofile'] as $temp){
-
                 $tempAdresse = '<b>'.$temp['name'].'</b><br>'
                     .$temp['num_rue'].' '
                     .$temp['rue'].' '
@@ -235,35 +219,40 @@ class BoutiquesController extends AppController {
                     .$temp['vile'];
                 $adresse[$temp['id']]=$tempAdresse;
             }
-
             //debug($adresse);
             $this->set('adresse',$adresse);
         }
-
-
     }
 
     public function pay($by){//
-$this->redirect(array('action'=>'ispayd','card'));return;//debug
 
         $this->Panier->needAdresse();
 
-
-        $this->Paypal = new Paypal(array(
+        $this->Paypal = new Paypal(array(//metre avec des config write
             'sandboxMode' => true,
             'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
             'nvpPassword' =>'2HR969LT2MH9HDLQ',
             'nvpSignature' =>'AKTakJYviyXLZdCG0TFUUN7j2S7pA8FBcAE5jnXB8AnV8w.YTO77lXon'
         ));
 
+        if($by != 'paypal' && $by != 'card'){
+            $this->Panier->destroy();
+            return $this->redirect('/');
+        }
+
+
         if($by == "paypal"){
+
             $order= $this->Panier->exportToPaypalFormat();
-            debug($order);
+
+            //debug($order);
+
             $this->Panier->setPaypal($this->Paypal->setExpressCheckout($order));
             $this->redirect($this->Panier->getPaypal());
-        }elseif($by == "card"){
-            if(!empty($this->request->data)){
 
+        }elseif($by == "card"){
+
+            if(!empty($this->request->data)){
                 $payment = $this->request->data['boutiques'];
                 $payment['amount'] = $this->Panier->getTotal();
                 $payment['currency'] = 'EUR';
@@ -271,7 +260,7 @@ $this->redirect(array('action'=>'ispayd','card'));return;//debug
                 try {
                     $var = $this->Paypal->doDirectPayment($payment);
                     //for debug
-                        $var['ACK']="Success";
+                    $var['ACK']="Success";
 
                     //
                     if($var['ACK']=="Success")
@@ -348,31 +337,31 @@ $this->redirect(array('action'=>'ispayd','card'));return;//debug
         debug($temp['Adresse']);
         $email = new CakeEmail('gmail');
         $email->template('informatif')
-                    ->emailFormat('html')
-                    ->subject("achat Sur Fil de boheme")
-                    ->viewVars(array(
-                        'adresse'=>$temp['Adresse']['AdressePofile'],
-                        'prixTotal'=>$temp['prixTotal'],
-                        'userName'=>$temp['userName']
+            ->emailFormat('html')
+            ->subject("achat Sur Fil de boheme")
+            ->viewVars(array(
+                'adresse'=>$temp['Adresse']['AdressePofile'],
+                'prixTotal'=>$temp['prixTotal'],
+                'userName'=>$temp['userName']
 
-                    ))
-                    ->to($this->Session->read('Auth.User.email'))
-                    ->from(Configure::read('email.sender'))
-                    ->send();
+            ))
+            ->to($this->Session->read('Auth.User.email'))
+            ->from(Configure::read('email.sender'))
+            ->send();
 
 
         $emailtoadmin = new CakeEmail('gmail');
         $emailtoadmin->template('command')
-                    ->emailFormat('html')
+            ->emailFormat('html')
             ->subject("achat de ".$temp['userName'])
-                    ->viewVars(array(
-                        'adresse' => $temp['Adresse']['AdressePofile'],
-                        'prix'    => $temp['prixTotal'],
-                        'commandlist' => $this->Panier->ListArticle()
-                    ))
-                    ->from($this->Session->read('Auth.User.email'))
-                    ->to(Configure::read('email.sender'))
-                    ->send();
+            ->viewVars(array(
+                'adresse' => $temp['Adresse']['AdressePofile'],
+                'prix'    => $temp['prixTotal'],
+                'commandlist' => $this->Panier->ListArticle()
+            ))
+            ->from($this->Session->read('Auth.User.email'))
+            ->to(Configure::read('email.sender'))
+            ->send();
 
 
         die();

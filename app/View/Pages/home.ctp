@@ -60,7 +60,7 @@
 
 
       <div class="large-6 columns medium-6 columns small-6 columns ">
-<p id="nousre2"> La nouvelle collection  </p>
+<h2 id="nousre2"> La nouvelle collection  </h2>
      </div>
 
  <div class="large-6 columns medium-6 columns small-6 columns mise-forme">
