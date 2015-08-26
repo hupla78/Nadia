@@ -10,6 +10,7 @@
 		echo $this->Form->input('description');
 		echo $this->Form->input('Img.Img',array('options'=>$imgs,'style'=>'height:400px'));
 		echo $this->Form->input('category_id');
+        echo $this->Form->input('visible',array('label'=>'visible dans la liste des produits'));
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>

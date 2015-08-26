@@ -16,9 +16,6 @@ class BoutiquesController extends AppController {
         $this->Auth->allow('panier','index','article','subArticle','addArticle','removeArticle','search','view');
     }
 
-
-
-
     /**
 	 * Components
 	 *
@@ -121,11 +118,16 @@ class BoutiquesController extends AppController {
 
     public function index(){
         if(!empty($this->request->data)){
-            $ele = $this->Boutique->Article->find('all');
+            $ele = $this->Boutique->Article->find('all',array(
+                'conditions'=> array(
+                    'Article.visible '=>1
+                )));
         }else{
-            $ele = $this->Boutique->Article->find('all');
+            $ele = $this->Boutique->Article->find('all',array(
+                'conditions'=> array(
+                    'Article.visible '=>1
+                )));
         }
-
         $this->set('boutique',$ele);
     }
 
@@ -193,11 +195,23 @@ class BoutiquesController extends AppController {
 
 
 
-    public function choixPayment(){
+    public function choixPayment($type=null){
         $this->Panier->needAdresse();
         if(!empty($this->request->data)){
             return '/';
         }
+        if($type==null){
+            return;
+        }  
+           
+        if($type=='card'){
+            $this->redirect(array());
+        }else{
+            $this->redirect(array());
+        }
+           
+       
+      
     }
 
     public function choixAdresse(){
@@ -242,11 +256,7 @@ class BoutiquesController extends AppController {
 
 
         if($by == "paypal"){
-
             $order= $this->Panier->exportToPaypalFormat();
-
-            //debug($order);
-
             $this->Panier->setPaypal($this->Paypal->setExpressCheckout($order));
             $this->redirect($this->Panier->getPaypal());
 
@@ -258,46 +268,48 @@ class BoutiquesController extends AppController {
                 $payment['currency'] = 'EUR';
 
                 try {
+                    //debug($this->Session->read());
                     $var = $this->Paypal->doDirectPayment($payment);
-                    //for debug
-                    $var['ACK']="Success";
-
-                    //
                     if($var['ACK']=="Success")
                     {
-                        $this->redirect(array('action'=>'ispayd','card'));
+                        $this->PAnier->isSucess('card',true);
+                        $this->redirect(array('action'=>'isPayd','card'));
                     }
                 } catch (Exception $e) {
                     $this->Session->setFlash($e->getMessage());
                 }
             }
-
-
         }
 
     }
 
-
-
-
-
-    public function ispayd($by){
+    public function ispayd($by=null){
+        if($by==null){
+            $this->Session->setFlash('Erreur de payment');
+            return $this->redirect('/');
+        }
+        
+        
         $this->Panier->needAdresse();
+       
+        
         if($by == 'paypal'){
-            $this->Paypal = new Paypal(array(
+            
+             $this->Paypal = new Paypal(array(
                 'sandboxMode' => true,
                 'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
                 'nvpPassword' =>'2HR969LT2MH9HDLQ',
                 'nvpSignature' =>'AKTakJYviyXLZdCG0TFUUN7j2S7pA8FBcAE5jnXB8AnV8w.YTO77lXon'
             ));
-
+        
             $token      = $this->request->query('token');
             $PayerID    = $this->request->query('PayerID');
             $order      = $this->Panier->exportToPaypalFormat();
             $req        = $this->Paypal->getExpressCheckoutDetails($token);
-
+        
+            debug($req);
+            
             if($req['ACK']=="Success"){
-
                 try {
                     $this->Paypal->doExpressCheckoutPayment($order, $token, $PayerID);
                 } catch (PaypalRedirectException $e) {
@@ -305,36 +317,32 @@ class BoutiquesController extends AppController {
                 } catch (Exception $e) {
                     $this->Session->setFlash($e->getMessage());
                 }
-
+                
                 $this->set('success',true);
-
-
             }else{
+                $this->Session->setFlash('Erreur de transaction:');
                 $this->set('success',false);
                 return;
             }
 
         }elseif($by == 'card'){
-            $this->set('sucess',true);
+           // $this->set('sucess',true);
         }
-
-
-
+        
         $tab=$this->Panier->exportToBDDFormat();
         $this->Boutique->PanierCommand->PanierVente->substractcommand($tab);
-
         $this->Boutique->PanierCommand->saveAssociated($tab);
 
         setlocale(LC_TIME, "fr_FR");
+        
         $temp = array(
             'userName'      =>  $this->Session->read('Auth.User.username'),
             'Adresse'       =>  $this->Boutique->User->AdressePofile->findById( $this->Session->read('Panier.PayInfo.adresseId'),array('recursive'=>0)),
             'prixTotal'    =>  $this->Session->read('Panier.Total'),
             'date'          =>  strftime("%d/%m/%Y"),
-            'state'         =>  'Votre commande a bien éte enregistré'
+            'state'         =>  'Votre commande a bien éte enregistré et payer '
         );
 
-        debug($temp['Adresse']);
         $email = new CakeEmail('gmail');
         $email->template('informatif')
             ->emailFormat('html')
@@ -362,23 +370,11 @@ class BoutiquesController extends AppController {
             ->from($this->Session->read('Auth.User.email'))
             ->to(Configure::read('email.sender'))
             ->send();
-
-
-        die();
-
-
-        $this->Panier->destroy();
+        //$this->Panier->destroy();
         $this->set('success',true);
     }
 
-
-
-
-
-
-
     public function isCancel(){
-
 
 
     }

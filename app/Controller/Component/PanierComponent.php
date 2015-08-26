@@ -3,14 +3,46 @@
 
 class PanierComponent extends Component{
 
-    private $controller =  false;
-
-
+    private $controller =  null;
 
 
     public function __construct(ComponentCollection $collection,$settings){
         $this->controller = $collection->getController();
+        return;
+    }
 
+
+
+    public function setPaymentType($type=null,$force=false){
+        if($type==null){
+            $this->controller->Session->setFlash('redirection: une erreur de choix de payment');
+            $this->controller->redirect('/');
+            return;
+        }
+
+        if($this->controller->Session->check('Panier.PayInfo.type')){
+            if($force){
+                $oldtype = $this->controller->Session->read('Panier.PayInfo.type');
+                $this->controller->Session->write('Panier.PayInfo.type',$type);
+                $this->controller->Session->setFlash('Votre moyen de payment est passé de '.$oldtype.' a '.$type);
+                return;
+            }
+            else{
+                $this->controller->Session->setFlash('redirection: le choix du payment a deja été effectué');
+                $this->controller->redirect('/');
+                return;
+            }
+        }
+        $this->controller->Session->write('Panier.PayInfo.type',$type);
+        $this->controller->Session->write('Panier.PayInfo.Sucess',false);
+        return;
+    }
+    
+
+
+/* get du type de payment paypal ou card */
+    public function getPaymentType(){
+        return $this->controller->Session->read('Panier.PayInfo.type');
     }
 
 
@@ -29,8 +61,6 @@ class PanierComponent extends Component{
         if(empty($article)){
             $this->controller->Session->setFlash('erreur 3 : article n\'exite pas ');return;}
 
-
-
         if($article['Article']['quantity']<$quant)
         {$this->controller->Session->setFlash('erreur 4 : la quantité n\'est pas en stock');return;}
 
@@ -42,8 +72,8 @@ class PanierComponent extends Component{
 
             if($article['Article']['quantity'] < $quant +$this->controller->Session->read('Panier.'.$id.'.nombre'))
             {
-            $this->controller->Session->setFlash('erreur 5 : la quantité n\'est pas en stock');
-            return;
+                $this->controller->Session->setFlash('erreur 5 : la quantité n\'est pas en stock');
+                return;
             }
 
 
@@ -55,16 +85,12 @@ class PanierComponent extends Component{
             return;
         }
 
-
-
-
         $article = array_merge($article,array('nombre'=>$quant,'time'=>'notReady'));
         debug($id);
 
         $this->controller->Session->write('Panier.'.$id,$article);
         $this->modifTotal( $article['Article']['prix']);
         $this->modifTotalArticle($quant);
-        //$this->controller->Session->destroy();
 
     }
 
@@ -73,7 +99,8 @@ class PanierComponent extends Component{
 
         $quantActuel = $this->controller->Session->read('Panier.'.$id.'.nombre');
 
-        if($quantActuel ==  null){ return;}
+        if($quantActuel ==  null){
+            $this->Session->flash('quantité = 0');return;}
 
         $prix = $this->controller->Session->read('Panier.'.$id.'.Article.prix');
 
@@ -84,11 +111,8 @@ class PanierComponent extends Component{
             return;
         }
 
-
         $this->controller->Session->write('Panier.'.$id.'.nombre',$quantActuel-$quant);
         $this->modifTotal(- $prix );
-
-
     }
 
 
@@ -101,77 +125,70 @@ class PanierComponent extends Component{
 
 
     public function rem($id){
-        $totalArticle           = $this->controller->Session->read('Panier.TotalArticle');
+        $totalArticle    = $this->controller->Session->read('Panier.TotalArticle');
         $total           = $this->controller->Session->read('Panier.Total');
-
         $nbactuelleDe    = $this->controller->Session->read('Panier.'.$id.'.nombre');
         $prix            = $this->controller->Session->read('Panier.'.$id.'.Article.prix');
-
         $this->controller->Session->write('Panier.TotalArticle',$totalArticle-$nbactuelleDe);
         $this->controller->Session->write('Panier.Total',$total-$nbactuelleDe*$prix);
         $this->controller->Session->delete('Panier.'.$id);
-
     }
 
 
 
     // je cree la commande pas
     public function create(){
-
         $this->controller->Session->write('Panier.Total' ,0.00);
         $this->controller->Session->write('Panier.TotalArticle' ,0);
+        return;
     }
-
-
-    // je renvoie vers le lien d'achat
-    public function buy(){
-
-
-    }
-
 
     //je renvoi la liste des articles
     public function listArticle(){
-
         return $this->controller->Session->read('Panier');
     }
 
     //verifie les prix et ce qui est dans le panier
-    public function check(){}
+    public function check(){
+        
+    
+    }
 
 
     private function modifTotal($numbre){
-
         $total = $this->controller->Session->read('Panier.Total');
         $total = $total + $numbre;
         $this->controller->Session->Write('Panier.Total',$total);
-
+        return;
     }
 
-    private function modifTotalArticle($numbre){
 
+
+    private function modifTotalArticle($numbre){
         $total = $this->controller->Session->read('Panier.TotalArticle');
         $total = $total + $numbre;
         $this->controller->Session->Write('Panier.TotalArticle',$total);
-
+        return;
     }
 
-    public function needAdresse(){
 
+
+
+    public function needAdresse(){
         if($this->controller->Session->check('Panier.PayInfo.adresseId')){
             return true;
         }else{
             $this->controller->redirect(array('action'=>'choixAdresse'));
         }
-
-
     }
+
 
     public function setAdresse($id){
         $this->controller->Session->Write('Panier.PayInfo.adresseId',$id);
-
     }
-   public function exportToPaypalFormat(){
+
+
+    public function exportToPaypalFormat(){
 
         $tab=array();
         $id=0;
@@ -183,9 +200,8 @@ class PanierComponent extends Component{
                     'tax' =>number_format($temp['Article']['prix']*0.196,2),
                     'subtotal' => number_format($temp['Article']['prix']*(1-0.196),2),
                     'qty' => $temp['nombre']
-
                 );
-        }
+            }
         }
 
         $adress = 'https://' . $_SERVER['SERVER_NAME']."/Boutiques/";
@@ -197,58 +213,49 @@ class PanierComponent extends Component{
             'custom' => 'bingbong',
             'shipping' => '0',
             'items' => $tab
-
         );
+        return $order;
+    }
 
-                return $order;
-
-   }
 
     public function getTotal(){
         return $this->controller->Session->read('Panier.Total');
     }
 
 
-        public function exportToBDDFormat(){
-
-
-            $tempo = $this->controller->Session->read('Panier');
-          //  debug($tempo);
-            foreach($tempo as $key => $temp){
-                if(is_array($temp)&&$key!="PayInfo"){
-                    $tab[$key]= array(
-
-                        'article_id'=>$key,
-                        'p'=>$temp['Article']['prix'],
-                        'q'=>$temp['nombre']
-                    );
-                }
+    public function exportToBDDFormat(){
+        $tempo = $this->controller->Session->read('Panier');
+        foreach($tempo as $key => $temp){
+            if(is_array($temp)&&$key!="PayInfo"){
+                $tab[$key]= array(
+                    'article_id'=>$key,
+                    'p'=>$temp['Article']['prix'],
+                    'q'=>$temp['nombre']
+                );
             }
-
-            $tab1 = array(
-                'PanierCommand'=> array(
-                    'adresse_pofile_id'=>$tempo['PayInfo']['adresseId'],
-                    'user_id'=>$this->controller->Session->read('Auth.User.id')),
-                'PanierVente'=>$tab
-            );
-           // debug($tab1);
-            return $tab1;
-
-
         }
-        public function destroy(){
-            $this->controller->Session->delete('Panier');
+        $tab1 = array(
+            'PanierCommand'=> array(
+                'adresse_pofile_id'=>$tempo['PayInfo']['adresseId'],
+                'user_id'=>$this->controller->Session->read('Auth.User.id')),
+            'PanierVente'=>$tab
+        );
+        return $tab1;
+    }
 
-        }
+
+    public function destroy(){
+        $this->controller->Session->delete('Panier');
+    }
+
 
     public function setPaypal($token){
         $this->controller->Session->write('Panier.PayInfo.token',$token);
-
     }
+
+
     public function getPaypal(){
         return $this->controller->Session->read('Panier.PayInfo.token');
-
     }
-
-    }
+}
 ?>

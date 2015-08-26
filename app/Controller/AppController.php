@@ -46,7 +46,7 @@ class AppController extends Controller{
 
     }
     public function forceSSL() {
-       // $this->redirect('https://' . $_SERVER['SERVER_NAME'] . $this->here);
+        // $this->redirect('https://' . $_SERVER['SERVER_NAME'] . $this->here);
     }
 
     public function needToBeAdmin(){
@@ -128,14 +128,13 @@ class Acms{
 
 
     public function getEditionPage($lap = 'undefine'){
-
-        if($this->admin)return '<a  href="'.$this->local.'/admin/cms/findbyname/'.$lap.'" title="'.$lap.'" id="editAdmin" ></a>';
-
-        else 		return '';
+        if($this->admin)
+            return '<a  href="'.$this->local.'/admin/cms/findbyname/'.$lap.'" title="'.$lap.'" id="editAdmin" ></a>';
+        else 	
+            return '';
     }
 
     public function getEditionPages($lap){
-
         if($this->admin){
             $retList = '<ul id="editAdminList">';
             foreach($lap as $a){
@@ -144,11 +143,23 @@ class Acms{
             $retList = $retList."</ul>";
             return $retList;
         }
-
-        else 		return '';
+        else 
+            return '';
     }
 
+    public function getEdit($controller,$id){
+        if($this->admin){
+            return '<a href="'.$this->local.'/admin/'.$controller.'/edit/'.$id.'" title="'.$id.'" id="editAdmin"></a>';
+        }else{
+            return '';
+        }
+    }
 
-
+    public function getThatTextIfAdmin($that){
+        if($this->admin){
+            return $that;
+        }
+        return '';
+    }
 }
 ?>

@@ -32,6 +32,8 @@ $map_options = array(
 
 <div class="large-12 columns medium-12 small-12 panel">
     <div class="large-12 columns medium-12 small-12 titre">
+        <?php echo($Acms->getEdit('pointDeVentes',$a['PointDeVente']['id'])); ?>
+        
         <h4 class="center"><?php echo($a['PointDeVente']['name']); ?></h4>
     </div>
     <div class="large-4 medium-5 small-12 columns">
@@ -57,5 +59,5 @@ $map_options = array(
         </div>
     </div>
 </div>
-
 <?php endforeach; ?>
+<?php echo($Acms->getThatTextIfAdmin($this->Html->link('Nouvelle boutique',array('controller'=>'pointDeVentes','action'=>'add','admin'=>true),array('class'=>'button center')))); ?>

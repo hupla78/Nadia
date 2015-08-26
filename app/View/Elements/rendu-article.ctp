@@ -1,5 +1,7 @@
 <div class="large-6 medium-12 small-12 columns hauteur-elmt" >
     <div class="panel row transition-souris hauteur-elmt"  >
+       
+        <?php echo($Acms->getEdit('articles',$key['Article']['id'])); ?>
         <div class="place-elt">
             <p class="text-center1" ><?php echo  $key['Article']['name'];?></p>
 
