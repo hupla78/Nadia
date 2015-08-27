@@ -17,7 +17,7 @@ class PanierComponent extends Component{
         if($type==null){
             $this->controller->Session->setFlash('redirection: une erreur de choix de payment');
             $this->controller->redirect('/');
-            return;
+            return false;
         }
 
         if($this->controller->Session->check('Panier.PayInfo.type')){
@@ -28,14 +28,19 @@ class PanierComponent extends Component{
                 return;
             }
             else{
-                $this->controller->Session->setFlash('redirection: le choix du payment a deja été effectué');
-                $this->controller->redirect('/');
-                return;
+                if($type != $this->controller->Session->read('Panier.PayInfo.type')){
+                    $this->controller->Session->setFlash('redirection: le choix du payment a deja été effectué');
+                    return false;
+                }else{
+                    $this->controller->Session->setFlash('redirection: le choix du payment a deja été effectué');
+                    return true;
+                }
+
             }
         }
         $this->controller->Session->write('Panier.PayInfo.type',$type);
         $this->controller->Session->write('Panier.PayInfo.Sucess',false);
-        return;
+        return true;
     }
     
 

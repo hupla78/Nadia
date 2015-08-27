@@ -241,13 +241,12 @@ class BoutiquesController extends AppController {
     public function pay($by){//
 
         $this->Panier->needAdresse();
+        if(!$this->Panier->setPaymentType($by,false)){
+             $this->Panier->destroy();
+            return $this->redirect('/');
+        }
 
-        $this->Paypal = new Paypal(array(//metre avec des config write
-            'sandboxMode' => true,
-            'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
-            'nvpPassword' =>'2HR969LT2MH9HDLQ',
-            'nvpSignature' =>'AKTakJYviyXLZdCG0TFUUN7j2S7pA8FBcAE5jnXB8AnV8w.YTO77lXon'
-        ));
+        $this->Paypal = new Paypal(Configure::read('PaypalCode'));
 
         if($by != 'paypal' && $by != 'card'){
             $this->Panier->destroy();
@@ -289,6 +288,12 @@ class BoutiquesController extends AppController {
             return $this->redirect('/');
         }
         
+        if($by != $this->Panier->getPaymentType())
+        {
+            $this->Session->setFlash('Erreur de payment');
+            return $this->redirect('/');
+        }
+
         
         $this->Panier->needAdresse();
        
@@ -396,14 +401,5 @@ class BoutiquesController extends AppController {
 
         echo json_encode($result);
     }
-
-
-
-
-
-
-
-
-
 
 }
