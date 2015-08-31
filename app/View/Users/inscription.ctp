@@ -14,15 +14,16 @@ echo $this->Form->input('passwordVerif',array('type'=>'password'));
     <legend>Adresse</legend>
     <?php
 echo $this->Form->input('adresseProfile.name',
-                        array('value'=>'chez moi',
-                              'label'=>'adress de livraison'));
+                        array('value'=>'domicile',
+                              'label'=>'Nom du lieux de livraison'));
 
 echo $this->Form->input('adresseProfile.num_rue',
-                        array('label'=>'numero',
+                        array('label'=>'Numéro',
                               'div'=>array('class' =>'columns large-1 medium-2 small-3')));
 
 echo $this->Form->input('adresseProfile.rue',
-                        array('div'=>array('class'=>'columns large-11 medium-10  small-9')));
+                        array(  'labe'=>'Nom de la rue',
+                                'div'=>array('class'=>'columns large-11 medium-10  small-9')));
 
 echo $this->Form->input('adresseProfile.codePostal',
                         array('div'=>array('class'=>'columns large-1 medium-2 small-3')));
@@ -39,7 +40,6 @@ echo $this->Form->input('adresseProfile.vile',
 </fieldset>
 
 <?php
-
 echo $this->Form->submit('Inscription',array('class'=>'button'));
 echo $this->Form->end();
 

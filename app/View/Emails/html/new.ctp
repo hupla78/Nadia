@@ -23,17 +23,6 @@
                     </table>
                     <!-- fin header -->
 
-
-                    <!-- start image -->
-                    <table cellpadding="0" cellspacing="0" width="580" background="http://webdesignweb.fr/sources/email-html/img/1px.png" style="padding:0px 0px 0px 0px;">
-                        <tr>
-                            <td>
-                                <a href="https://fildeboheme.com" target="_blank"><img src="https://fildeboheme.com/img/logo.jpg" width="500" height="220" style="border:none;margin-left:60px;" /></a>
-                            </td>
-                        </tr>
-                    </table>
-                    <!-- end image -->
-
                     <!-- start texte -->
                     <table cellpadding="0" cellspacing="0" width="580" background="http://webdesignweb.fr/sources/email-html/img/1px.png" style="padding:0px 0px 0px 0px;">
                         <tr>

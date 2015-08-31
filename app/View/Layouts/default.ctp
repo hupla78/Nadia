@@ -85,7 +85,7 @@ else{
                                     <?php echo $this->Html->link('Panier',array('controller'=>'boutiques','action'=>'panier','prefix'=>false,'admin'=>false))?>
                                 </li>
                                 <li>
-                                    <?php echo $this->Html->link('Nouveautés',array('controller'=>'actualites','action'=>'index'))?>
+                                    <?php echo $this->Html->link('Nouveautés/CGV',array('controller'=>'actualites','action'=>'index'))?>
                                 </li>
                             </ul>
                         </aside>
@@ -132,7 +132,7 @@ if($val==0){echo"Le panier est vide";}else{
                                     </li>
                                     <li class="menud large-3 small-6 medium-3 columns separbot">
                                         <?php echo $Acms->getEditionPage('color-police-menu-generale-sans-souris'); ?>
-                                        <?php echo $this->Html->link('Actualités',array('prefix'=>false,'admin'=>false,'controller'=>'actualites','action'=>'index', ),array('class'=>'pi-text-center'))?>
+                                        <?php echo $this->Html->link('Actualités/CGV',array('prefix'=>false,'admin'=>false,'controller'=>'actualites','action'=>'index', ),array('class'=>'pi-text-center'))?>
                                         <?php echo $Acms->getEditionPage('color-police-menu-generale-passage-souris'); ?>
                                     </li>
                                     <li class="menud large-3 small-6 medium-3 columns separbot">
@@ -172,7 +172,7 @@ if($val==0){echo"Le panier est vide";}else{
                                 <?php
 echo $this->Html->link(
     $this->Html->image('rejoindre-facebook.png'),
-    'http://www.facebook.com',
+    'https://www.facebook.com/fildeboheme',
     array('target' => '_blank', 'escape' => false, 'class' => '')
 );
                                 ?>
@@ -181,7 +181,7 @@ echo $this->Html->link(
                                 <?php
 echo $this->Html->link(
     $this->Html->image('bouton-twitter.png'),
-    'http://www.twitter.com',
+    'https://twitter.com/fildeboheme',
     array('target' => '_blank', 'escape' => false, 'class' => '')
 );?>
                            </div>

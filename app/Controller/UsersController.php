@@ -57,7 +57,7 @@ class UsersController extends AppController{
             $this->User->create();
             if ($this->User->save($this->request->data)) {
 
-                $this->Session->setFlash(__('votre compte a ete crée.'));
+                $this->Session->setFlash(__('Votre compte à été crée.'));
 
                 $email = new CakeEmail('gmail');
                 $email->template('inscription')
