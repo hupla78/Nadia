@@ -1,3 +1,14 @@
+<div class="actions">
+	<h3><?php echo __('Actions'); ?></h3>
+	<ul>
+		<li><?php echo $this->Html->link(__('Edit Point De Vente'), array('action' => 'edit', $pointDeVente['PointDeVente']['id'])); ?> </li>
+		<li><?php echo $this->Form->postLink(__('Delete Point De Vente'), array('action' => 'delete', $pointDeVente['PointDeVente']['id']), array(), __('Are you sure you want to delete # %s?', $pointDeVente['PointDeVente']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Point De Ventes'), array('action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Point De Vente'), array('action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Imgs'), array('controller' => 'imgs', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Img'), array('controller' => 'imgs', 'action' => 'add')); ?> </li>
+	</ul>
+</div>
 <div class="pointDeVentes view">
 <h2><?php echo __('Point De Vente'); ?></h2>
 	<dl>
@@ -42,15 +53,4 @@
 			&nbsp;
 		</dd>
 	</dl>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('Edit Point De Vente'), array('action' => 'edit', $pointDeVente['PointDeVente']['id'])); ?> </li>
-		<li><?php echo $this->Form->postLink(__('Delete Point De Vente'), array('action' => 'delete', $pointDeVente['PointDeVente']['id']), array(), __('Are you sure you want to delete # %s?', $pointDeVente['PointDeVente']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Point De Ventes'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Point De Vente'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Imgs'), array('controller' => 'imgs', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Img'), array('controller' => 'imgs', 'action' => 'add')); ?> </li>
-	</ul>
 </div>
