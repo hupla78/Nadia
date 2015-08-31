@@ -145,6 +145,7 @@ class PanierComponent extends Component{
     public function create(){
         $this->controller->Session->write('Panier.Total' ,0.00);
         $this->controller->Session->write('Panier.TotalArticle' ,0);
+        $this->controller->Session->write('Panier.PayInfo.sucess',false);
         return;
     }
 
@@ -155,8 +156,7 @@ class PanierComponent extends Component{
 
     //verifie les prix et ce qui est dans le panier
     public function check(){
-        
-    
+
     }
 
 
@@ -229,6 +229,12 @@ class PanierComponent extends Component{
 
 
     public function exportToBDDFormat(){
+
+        if(!$this->payIs()){
+            $this->destroy();
+            $this->controller->Session->setFlash('il est impossible de prendre en compte votre comande si elle n\'a pas éte payé.');
+        }
+
         $tempo = $this->controller->Session->read('Panier');
         foreach($tempo as $key => $temp){
             if(is_array($temp)&&$key!="PayInfo"){
@@ -253,6 +259,22 @@ class PanierComponent extends Component{
         $this->controller->Session->delete('Panier');
     }
 
+    public function isPay($by=null){
+        if($by==null){
+            return;
+        }
+        if($by == $this->controller->Session->read('Panier.PayInfo.type')){
+            $this->controller->Session->write('Panier.PayInfo.sucess',true);
+            return;
+        }else{
+            $this->controller->Session->setFlash('erreur de validation de la commande.');
+            return;
+        }
+    }
+
+    public function payIs(){
+        return $this->controller->Session->read('Panier.PayInfo.sucess');
+    }
 
     public function setPaypal($token){
         $this->controller->Session->write('Panier.PayInfo.token',$token);

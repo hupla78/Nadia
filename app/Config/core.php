@@ -263,7 +263,7 @@ Configure::write('Security.cipherSeed', '86859309657453542496749683645');
 Configure::write('Acl.classname', 'DbAcl');
 Configure::write('Acl.database', 'default');
 
-Configure::write('PaypalCode',
+Configure::write('PaypalCode.sandbox',
                  array(//metre avec des config write
                      'sandboxMode' => true,
                      'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
@@ -272,6 +272,14 @@ Configure::write('PaypalCode',
                  )
                 );
 
+Configure::write('PaypalCode.real',
+                 array(//metre avec des config write
+                     'sandboxMode' => false,
+                     'nvpUsername' =>'fildeboheme_api1.gmail.com',
+                     'nvpPassword' =>'KSSB94CHZ2QVFTY7',
+                     'nvpSignature' =>'AFcWxV21C7fd0v3bYYYRCpSSRl31Ac6hXYuhx4qgH7Y-QxZ7lspjF0MC'
+                 )
+                );
 
 /**
  * Uncomment this line and correct your server timezone to fix

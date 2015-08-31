@@ -143,6 +143,7 @@ class BoutiquesController extends AppController {
 
     public function panier(){
         $this->set('panier',$this->Panier->listArticle());
+        debug($this->Panier->listArticle());
     }
 
     public function addArticle($id=null){
@@ -203,15 +204,15 @@ class BoutiquesController extends AppController {
         if($type==null){
             return;
         }  
-           
+
         if($type=='card'){
             $this->redirect(array());
         }else{
             $this->redirect(array());
         }
-           
-       
-      
+
+
+
     }
 
     public function choixAdresse(){
@@ -242,11 +243,11 @@ class BoutiquesController extends AppController {
 
         $this->Panier->needAdresse();
         if(!$this->Panier->setPaymentType($by,false)){
-             $this->Panier->destroy();
+            $this->Panier->destroy();
             return $this->redirect('/');
         }
 
-        $this->Paypal = new Paypal(Configure::read('PaypalCode'));
+        $this->Paypal = new Paypal(Configure::read('PaypalCode.sandbox'));
 
         if($by != 'paypal' && $by != 'card'){
             $this->Panier->destroy();
@@ -267,11 +268,10 @@ class BoutiquesController extends AppController {
                 $payment['currency'] = 'EUR';
 
                 try {
-                    //debug($this->Session->read());
                     $var = $this->Paypal->doDirectPayment($payment);
                     if($var['ACK']=="Success")
                     {
-                        $this->PAnier->isSucess('card',true);
+                        $this->Panier->isPay('card');
                         $this->redirect(array('action'=>'isPayd','card'));
                     }
                 } catch (Exception $e) {
@@ -287,33 +287,26 @@ class BoutiquesController extends AppController {
             $this->Session->setFlash('Erreur de payment');
             return $this->redirect('/');
         }
-        
+
         if($by != $this->Panier->getPaymentType())
         {
             $this->Session->setFlash('Erreur de payment');
             return $this->redirect('/');
         }
 
-        
         $this->Panier->needAdresse();
-       
-        
+
         if($by == 'paypal'){
-            
-             $this->Paypal = new Paypal(array(
-                'sandboxMode' => true,
-                'nvpUsername' =>'ruhtra.mar_api1.gmail.com',
-                'nvpPassword' =>'2HR969LT2MH9HDLQ',
-                'nvpSignature' =>'AKTakJYviyXLZdCG0TFUUN7j2S7pA8FBcAE5jnXB8AnV8w.YTO77lXon'
-            ));
-        
+
+            $this->Paypal = new Paypal(Configure::read('PaypalCode.sandbox'));
+
             $token      = $this->request->query('token');
             $PayerID    = $this->request->query('PayerID');
             $order      = $this->Panier->exportToPaypalFormat();
             $req        = $this->Paypal->getExpressCheckoutDetails($token);
-        
+
             debug($req);
-            
+
             if($req['ACK']=="Success"){
                 try {
                     $this->Paypal->doExpressCheckoutPayment($order, $token, $PayerID);
@@ -322,7 +315,7 @@ class BoutiquesController extends AppController {
                 } catch (Exception $e) {
                     $this->Session->setFlash($e->getMessage());
                 }
-                
+                $this->Panier->isPay('paypal');
                 $this->set('success',true);
             }else{
                 $this->Session->setFlash('Erreur de transaction:');
@@ -331,15 +324,22 @@ class BoutiquesController extends AppController {
             }
 
         }elseif($by == 'card'){
-           // $this->set('sucess',true);
+            if($this->Panier->payIs()){
+                $this->set('sucess',true);
+            }else{
+                $this->Session->setFlash('Le payment n\'a pas éte efectué.');
+                $this->Panier->destroy();
+                return $this->redirect('/');
+            }
         }
         
+
         $tab=$this->Panier->exportToBDDFormat();
         $this->Boutique->PanierCommand->PanierVente->substractcommand($tab);
         $this->Boutique->PanierCommand->saveAssociated($tab);
 
         setlocale(LC_TIME, "fr_FR");
-        
+
         $temp = array(
             'userName'      =>  $this->Session->read('Auth.User.username'),
             'Adresse'       =>  $this->Boutique->User->AdressePofile->findById( $this->Session->read('Panier.PayInfo.adresseId'),array('recursive'=>0)),
@@ -375,13 +375,14 @@ class BoutiquesController extends AppController {
             ->from($this->Session->read('Auth.User.email'))
             ->to(Configure::read('email.sender'))
             ->send();
-        //$this->Panier->destroy();
+
+        $this->Panier->destroy();
         $this->set('success',true);
+        return;
     }
 
     public function isCancel(){
-
-
+        return;
     }
 
     public function search() {
@@ -395,11 +396,7 @@ class BoutiquesController extends AppController {
         foreach($list as $key => $tem){
             $result[$key]['id'] = $tem['Article']['id'];
             $result[$key]['text'] = $tem['Article']['name'];
-
         }
-
-
         echo json_encode($result);
     }
-
 }

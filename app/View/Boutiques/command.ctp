@@ -11,7 +11,7 @@
         </thead>
         <?php $total = 0;
 foreach ($panier as $key):?>
-        <?php if(is_array($key)and key($key)!="adresseId" ):?>
+        <?php if(is_array($key)and key($key)!="adresseId" and key($key)!="sucess"):?>
         <tr>
             <td><?php echo $key['Article']['name']?></td>
             <td><?php echo $key['nombre'];?></td>
@@ -24,7 +24,6 @@ echo $cal; ?>€
         <tr>
             <?php endif;?>
             <?php endforeach;?>
-
         <tr>
             <td colspan="3">Total</td>
             <td colspan="1"><?php echo $panier['Total'];?>€</td>

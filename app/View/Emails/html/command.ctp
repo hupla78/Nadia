@@ -34,7 +34,7 @@
 	<?php $total = 0;?>
 	<?php foreach ($commandlist as $key):?>
 	<?php
-	 if(is_array($key)and key($key)!="adresseId" ):?>
+	 if(is_array($key)and key($key)!="adresseId"and  key($key)!="sucess" ):?>
 	<tr>
 		<td><?php echo $key['Article']['name']?></td>
 		<td>
