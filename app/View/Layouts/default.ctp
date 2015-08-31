@@ -189,7 +189,7 @@ echo $this->Html->link(
                                 <?php
 echo $this->Html->link(
     $this->Html->image('Logo_little_market.png'),
-    'http://www.alittlemarket.com',
+    'http://www.alittlemarket.com/boutique/fil_de_boheme-88680.html',
     array('target' => '_blank', 'escape' => false, 'class' => '')
 );?>
                             </div>
